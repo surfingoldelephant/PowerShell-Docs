@@ -48,12 +48,12 @@ The following table lists the preference variables and their default values.
 | [`$OutputEncoding`][16]                | [`ASCIIEncoding`][60] object                                     |
 | [`$ProgressPreference`][17]            | [`Continue`][54]                                                 |
 | [`$PSDefaultParameterValues`][18]      | `@{}` (empty hash table)                                         |
-| [`$PSEmailServer`][19]                 | `$Null` (none)                                                   |
+| [`$PSEmailServer`][19]                 | `$null` (none)                                                   |
 | [`$PSModuleAutoLoadingPreference`][20] | `All`                                                            |
 | [`$PSSessionApplicationName`][21]      | `'wsman'`                                                        |
 | [`$PSSessionConfigurationName`][22]    | `'http://schemas.microsoft.com/powershell/Microsoft.PowerShell'` |
 | [`$PSSessionOption`][23]               | [`PSSessionOption`][59] object                                   |
-| [`$Transcript`][24]                    | `$Null` (none)                                                   |
+| [`$Transcript`][24]                    | `$null` (none)                                                   |
 | [`$VerbosePreference`][25]             | [`SilentlyContinue`][54]                                         |
 | [`$WarningPreference`][26]             | [`Continue`][54]                                                 |
 | [`$WhatIfPreference`][27]              | `$false`                                                         |
