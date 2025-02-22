@@ -40,7 +40,7 @@ Many thanks to **@ArmaanMcleod** and others for all their work to improve tab co
 - Fall back to type inference when hashtable key-value cannot be retrieved from safe expression
   ([#21184][21184]) (Thanks @MartinGC94!)
 - Fix the regression when doing type inference for `$_` ([#21223][21223]) (Thanks @MartinGC94!)
-- Expand `~` to `$home` on Windows with tab completion ([#21529][21529])
+- Expand `~` to `$HOME` on Windows with tab completion ([#21529][21529])
 - Don't complete when declaring parameter name and class member ([#21182][21182]) (Thanks
   @MartinGC94!)
 - Prevent fallback to file completion when tab completing type names ([#20084][20084]) (Thanks
