@@ -161,7 +161,7 @@ This cmdlet returns a **CultureInfo** object representing the current culture.
 
 ## NOTES
 
-You can also use the `$PsCulture` and `$PsUICulture` variables. The `$PsCulture` variable stores the
+You can also use the `$PSCulture` and `$PsUICulture` variables. The `$PSCulture` variable stores the
 name of the current culture and the `$PsUICulture` variable stores the name of the current UI
 culture.
 

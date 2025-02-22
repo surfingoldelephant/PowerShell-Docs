@@ -1169,7 +1169,7 @@ only:
 
 - All operators except `-match`
 - The `if` statement
-- The following automatic variables: `$PsCulture`, `$PsUICulture`, `$true`, `$false`, and `$null`.
+- The following automatic variables: `$PSCulture`, `$PsUICulture`, `$true`, `$false`, and `$null`.
 - Comments
 - Pipelines
 - Statements separated by semicolons (`;`)
