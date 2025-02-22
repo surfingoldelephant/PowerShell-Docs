@@ -1660,7 +1660,7 @@ function Test {
         [Parameter(Position = 0, ParameterSetname = "SetB")]
         [int]$in
     )
-    $PsCmdlet.ParameterSetName
+    $PSCmdlet.ParameterSetName
 }
 
 Test 42d   # outputs "SetA"
