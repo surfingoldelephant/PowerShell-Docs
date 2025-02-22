@@ -912,7 +912,7 @@ $PSDefaultParameterValues["Out-File:Encoding"] = "UTF8"
 
 This adds an entry to the `$PSDefaultParameterValues` hashtable that sets `UTF8` as the default
 value for the `Out-File -Encoding` parameter. This is session-specific so you should place it in
-your `$profile`.
+your `$PROFILE`.
 
 I use this often to pre-assign values that I type quite often.
 
