@@ -857,7 +857,7 @@ is case-insensitive.
 
 A pattern may contain a regular expression ([§3.16][§3.16]), in which case, regular expression string
 comparisons are performed, but only if the *switch-parameter* `-Regex` is present. By default, the
-comparison is case-insensitive. If `-Regex` is present and a pattern is matched, `$matches` is
+comparison is case-insensitive. If `-Regex` is present and a pattern is matched, `$Matches` is
 defined in the *switch-clause* *statement-block* for that pattern.
 
 A *switch-parameter* may be abbreviated; any distinct leading part of a parameter may be used. For

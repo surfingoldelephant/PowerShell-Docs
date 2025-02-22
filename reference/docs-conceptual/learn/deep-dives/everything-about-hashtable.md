@@ -932,7 +932,7 @@ For a more in-depth breakdown, see this great article on [Automatic Defaults][Au
 
 ## Regex $Matches
 
-When you use the `-match` operator, an automatic variable called `$matches` is created with the
+When you use the `-match` operator, an automatic variable called `$Matches` is created with the
 results of the match. If you have any sub expressions in your regex, those sub matches are also
 listed.
 
