@@ -34,10 +34,10 @@ The following table lists the preference variables and their default values.
 | [`$InformationPreference`][07]         | [`SilentlyContinue`][54]                                         |
 | [`$LogCommandHealthEvent`][08]         | `$false` (not logged)                                            |
 | [`$LogCommandLifecycleEvent`][08]      | `$false` (not logged)                                            |
-| [`$LogEngineHealthEvent`][08]          | `$True` (logged)                                                 |
-| [`$LogEngineLifecycleEvent`][08]       | `$True` (logged)                                                 |
-| [`$LogProviderLifecycleEvent`][08]     | `$True` (logged)                                                 |
-| [`$LogProviderHealthEvent`][08]        | `$True` (logged)                                                 |
+| [`$LogEngineHealthEvent`][08]          | `$true` (logged)                                                 |
+| [`$LogEngineLifecycleEvent`][08]       | `$true` (logged)                                                 |
+| [`$LogProviderLifecycleEvent`][08]     | `$true` (logged)                                                 |
+| [`$LogProviderHealthEvent`][08]        | `$true` (logged)                                                 |
 | [`$MaximumAliasCount`][09]             | `4096`                                                           |
 | [`$MaximumDriveCount`][10]             | `4096`                                                           |
 | [`$MaximumErrorCount`][11]             | `256`                                                            |

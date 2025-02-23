@@ -502,7 +502,7 @@ Accept wildcard characters: False
 Indicates whether the set of properties that are serialized is inherited. The default value is
 `$null`. The acceptable values for this parameter are:
 
-- `$True`. The property set is inherited.
+- `$true`. The property set is inherited.
 - `$false`. The property set is not inherited.
 - `$null`. Inheritance is not defined.
 

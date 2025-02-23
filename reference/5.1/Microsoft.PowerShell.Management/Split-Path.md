@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -IsAbsolute
 
-Indicates that this cmdlet returns `$True` if the path is absolute and `$false` if it's relative. On
+Indicates that this cmdlet returns `$true` if the path is absolute and `$false` if it's relative. On
 Windows, an absolute path string must start with a provider drive specifier, like `C:` or `HKCU:`. A
 relative path starts with a dot (`.`) or a dot-dot (`..`).
 

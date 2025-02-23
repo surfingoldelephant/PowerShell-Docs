@@ -169,7 +169,7 @@ mode:
 
 - `$PSCulture`
 - `$PSUICulture`
-- `$True`
+- `$true`
 - `$false`
 - `$null`
 
