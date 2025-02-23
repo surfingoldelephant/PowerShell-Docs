@@ -169,7 +169,7 @@ file on the computer is newer than `July 13, 2009`.
 The NewerThan parameter works only in file system drives.
 
 ```powershell
-Test-Path $pshome\PowerShell.exe -NewerThan "July 13, 2009"
+Test-Path $PSHOME\PowerShell.exe -NewerThan "July 13, 2009"
 ```
 
 ```Output

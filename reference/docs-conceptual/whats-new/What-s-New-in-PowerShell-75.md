@@ -136,7 +136,7 @@ Many thanks to **@ArmaanMcleod** and others for all their work to improve tab co
 - Fix using assembly to use Path.Combine when constructing assembly paths ([#21169][21169])
 - Validate the value for using namespace during semantic checks to prevent declaring invalid
   namespaces ([#21162][21162])
-- Handle global tool specially when prepending `$PSHome` to PATH ([#24228][24228])
+- Handle global tool specially when prepending `$PSHOME` to PATH ([#24228][24228])
 
 ## Experimental features
 
