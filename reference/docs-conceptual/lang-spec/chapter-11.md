@@ -77,7 +77,7 @@ environment variable PSModulePath points to a set of directories to be searched 
 cmdlets look for modules whose names do not include a fully qualified path. Additional lookup paths
 can be provided; for example,
 
-`$Env:PSModulepath = $Env:PSModulepath + ";<additional-path>"`
+`$Env:PSModulePath = $Env:PSModulePath + ";<additional-path>"`
 
 Any additional paths added affect the current session only.
 
