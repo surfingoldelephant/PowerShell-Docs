@@ -785,14 +785,14 @@ To enable a **Log*Event**, type the variable with a value of `$true`, for
 example:
 
 ```powershell
-$LogCommandLifeCycleEvent = $true
+$LogCommandLifecycleEvent = $true
 ```
 
 To disable an event type, type the variable with a value of `$false`, for
 example:
 
 ```powershell
-$LogCommandLifeCycleEvent = $false
+$LogCommandLifecycleEvent = $false
 ```
 
 The events that you enable are effective only for the current PowerShell
@@ -988,16 +988,16 @@ Specifies the default email server that's used to send email messages. This
 preference variable is used by cmdlets that send email, such as the
 [Send-MailMessage][48] cmdlet.
 
-## $PSModuleAutoloadingPreference
+## $PSModuleAutoLoadingPreference
 
 Enables and disables automatic importing of modules in the session. The
-`$PSModuleAutoloadingPreference` variable doesn't exist by default. The default
+`$PSModuleAutoLoadingPreference` variable doesn't exist by default. The default
 behavior when the variable isn't defined is the same as
-`$PSModuleAutoloadingPreference = 'All'`.
+`$PSModuleAutoLoadingPreference = 'All'`.
 
 To automatically import a module, get or use a command contained in the module.
 
-The `$PSModuleAutoloadingPreference` variable takes one of the
+The `$PSModuleAutoLoadingPreference` variable takes one of the
 [`PSModuleAutoLoadingPreference`][58] enumeration values:
 
 - `All`: Modules are imported automatically on first-use.

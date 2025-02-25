@@ -23,7 +23,7 @@ A module is a self-contained, reusable unit that can include cmdlets,
 providers, functions, variables, and other resources. By default, PowerShell
 automatically loads an installed module the first time you use a command from
 the module. You can configure automatic module loading behavior using the
-variable `$PSModuleAutoloadingPreference`. For more information, see
+variable `$PSModuleAutoLoadingPreference`. For more information, see
 [about_Preference_Variables][08].
 
 You can also manually load or unload modules during a PowerShell session. To

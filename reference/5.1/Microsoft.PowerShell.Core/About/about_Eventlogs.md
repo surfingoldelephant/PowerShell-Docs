@@ -93,11 +93,11 @@ The following table lists the event log preference variables.
 
 |           Variable           |                   Description                   |
 | ---------------------------- | ----------------------------------------------- |
-| `$LogEngineLifeCycleEvent`   | Logs the start and stop of PowerShell           |
+| `$LogEngineLifecycleEvent`   | Logs the start and stop of PowerShell           |
 | `$LogEngineHealthEvent`      | Logs PowerShell program errors                  |
-| `$LogProviderLifeCycleEvent` | Logs the start and stop of PowerShell providers |
+| `$LogProviderLifecycleEvent` | Logs the start and stop of PowerShell providers |
 | `$LogProviderHealthEvent`    | Logs PowerShell provider errors                 |
-| `$LogCommandLifeCycleEvent`  | Logs the starting and completion of commands    |
+| `$LogCommandLifecycleEvent`  | Logs the starting and completion of commands    |
 | `$LogCommandHealthEvent`     | Logs command errors                             |
 
 (For information about Windows PowerShell providers, see
@@ -105,29 +105,29 @@ The following table lists the event log preference variables.
 
 By default, only the following event types are enabled:
 
-- `$LogEngineLifeCycleEvent`
+- `$LogEngineLifecycleEvent`
 - `$LogEngineHealthEvent`
-- `$LogProviderLifeCycleEvent`
+- `$LogProviderLifecycleEvent`
 - `$LogProviderHealthEvent`
 
 To enable an event type, set the preference variable for that event type to
 `$true`. For example, to enable command life-cycle events, type:
 
 ```powershell
-$LogCommandLifeCycleEvent
+$LogCommandLifecycleEvent
 ```
 
 Or, type:
 
 ```powershell
-$LogCommandLifeCycleEvent = $true
+$LogCommandLifecycleEvent = $true
 ```
 
 To disable an event type, set the preference variable for that event type to
 `$false`. For example, to disable command life-cycle events, type:
 
 ```powershell
-$LogProviderLifeCycleEvent = $false
+$LogProviderLifecycleEvent = $false
 ```
 
 You can disable any event, except for the events that indicate that the Windows

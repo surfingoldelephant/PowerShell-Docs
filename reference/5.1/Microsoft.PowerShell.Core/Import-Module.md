@@ -88,8 +88,8 @@ Import-Module [-Global] [-Prefix <String>] [-Function <String[]>] [-Cmdlet <Stri
 The `Import-Module` cmdlet adds one or more modules to the current session. Starting in PowerShell
 3.0, installed modules are automatically imported to the session when you use any commands or
 providers in the module. However, you can still use the `Import-Module` command to import a module.
-You can disable automatic module importing using the `$PSModuleAutoloadingPreference` preference
-variable. For more information about the `$PSModuleAutoloadingPreference` variable, see
+You can disable automatic module importing using the `$PSModuleAutoLoadingPreference` preference
+variable. For more information about the `$PSModuleAutoLoadingPreference` variable, see
 [about_Preference_Variables](About/about_Preference_Variables.md).
 
 A module is a package that contains members that can be used in PowerShell. Members include
