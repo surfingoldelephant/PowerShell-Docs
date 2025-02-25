@@ -197,7 +197,7 @@ cmdlets. Type the drive name followed by a colon (`:`). For example, to view
 the contents of the `Alias:` drive, type:
 
 ```powershell
-Get-Item alias:
+Get-Item Alias:
 ```
 
 You can view and manage the data in any drive from another drive by including

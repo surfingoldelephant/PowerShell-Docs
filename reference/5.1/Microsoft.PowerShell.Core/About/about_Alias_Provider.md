@@ -149,7 +149,7 @@ current location is in the `Alias:` drive, the `-Path` parameter is not needed.
 This command also uses the `-Options` dynamic parameter to set the **AllScope**
 option on the alias. The `-Options` parameter is available in the `New-Item`
 cmdlet only when you are in the `Alias:` drive. The dot (`.`) indicates the
-current directory, which is the alias drive.
+current directory, which is the `Alias:` drive.
 
 ```
 PS Alias:\> New-Item -Path . -Name serv -Value Get-Service -Options "AllScope"
@@ -313,7 +313,7 @@ Get-Help Get-ChildItem
 ```
 
 ```powershell
-Get-Help Get-ChildItem -Path alias:
+Get-Help Get-ChildItem -Path Alias:
 ```
 
 ## See also
