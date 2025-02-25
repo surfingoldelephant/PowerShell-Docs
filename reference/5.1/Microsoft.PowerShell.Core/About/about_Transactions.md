@@ -232,7 +232,7 @@ For example, the following command, which sets the current location in the
 Software key of the `HKCU:` drive, isn't included in the transaction.
 
 ```powershell
-cd hkcu:\Software
+cd HKCU:\Software
 ```
 
 The following command, which creates the MyCompany key, uses the

@@ -52,7 +52,7 @@ Windows PowerShell. For more information, see [about_Transactions](../Microsoft.
 ### Example 1: Start and roll back a transaction
 
 ```powershell
-Set-Location hkcu:\software
+Set-Location HKCU:\software
 Start-Transaction
 New-Item "ContosoCompany" -UseTransaction
 New-ItemProperty "ContosoCompany" -Name "MyKey" -Value 123 -UseTransaction
@@ -65,7 +65,7 @@ changes are made to the registry.
 ### Example 2: Start and complete a transaction
 
 ```powershell
-Set-Location hkcu:\software
+Set-Location HKCU:\software
 Start-Transaction
 New-Item "ContosoCompany" -UseTransaction
 New-ItemProperty "ContosoCompany" -Name "MyKey" -Value 123 -UseTransaction
@@ -235,7 +235,7 @@ As a result, the registry is changed.
 ### Example 6: Run commands that are not part of a transaction
 
 ```powershell
-Set-Location hkcu:\software
+Set-Location HKCU:\software
 Start-Transaction
 New-Item "ContosoCompany1" -UseTransaction
 New-Item "ContosoCompany2"
