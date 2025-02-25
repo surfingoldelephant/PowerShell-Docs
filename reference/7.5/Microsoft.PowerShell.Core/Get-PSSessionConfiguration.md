@@ -131,7 +131,7 @@ the content of the Plugin node. This is another way to look at the session confi
 computer.
 
 ```powershell
-dir wsman:\localhost\plugin
+dir WSMan:\localhost\plugin
 ```
 
 ```Output

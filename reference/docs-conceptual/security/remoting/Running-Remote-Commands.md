@@ -149,7 +149,7 @@ PowerShell includes cmdlets that allow you to:
 - Import commands from a remote session that actually run implicitly on the remote session
 - Configure the security of a remote session
 
-PowerShell on Windows includes a WSMan provider. The provider creates a `WSMAN:` drive that lets you
+PowerShell on Windows includes a WSMan provider. The provider creates a `WSMan:` drive that lets you
 navigate through a hierarchy of configuration settings on the local computer and remote computers.
 
 For more information about the WSMan provider, see [WSMan Provider][07] and

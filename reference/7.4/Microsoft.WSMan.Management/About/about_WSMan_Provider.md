@@ -173,15 +173,15 @@ Get-ChildItem -path WSMan:\SERVER01
 > The above command assume that a connection to the remote system already
 > exists.
 
-## Setting the value of items in the  WSMAN: drive
+## Setting the value of items in the  WSMan: drive
 
 You can use the `Set-Item` cmdlet to change configuration settings in the
-`WSMAN` drive. The following example sets the **TrustedHosts** value to
+`WSMan:` drive. The following example sets the **TrustedHosts** value to
 accept all hosts with the suffix "contoso.com".
 
 ```powershell
 # You do not need to specify the -Path parameter name when using Set-Item.
-PS WSMAN:\localhost\Client> Set-Item .\TrustedHosts -Value "*.contoso.com"
+PS WSMan:\localhost\Client> Set-Item .\TrustedHosts -Value "*.contoso.com"
 ```
 
 The `Set-Item` cmdlet supports an additional parameter `-Concatenate` that
@@ -189,15 +189,15 @@ appends a value instead of changing it. The following example will append a
 new value "*.domain2.com" to the old value stored in `TrustedHost:`
 
 ```powershell
-Set-Item WSMAN:\localhost\Client\TrustedHosts *.domain2.com -Concatenate
+Set-Item WSMan:\localhost\Client\TrustedHosts *.domain2.com -Concatenate
 ```
 
-## Creating items in the WSMAN: drive
+## Creating items in the WSMan: drive
 
 ### Creating a new listener
 
 The `New-Item` cmdlet creates items within a provider drive. Each provider
-has different item types that you can create. In the `WSMAN:` drive, you can
+has different item types that you can create. In the `WSMan:` drive, you can
 create *Listeners* which you configure to receive and respond to remote
 requests. The following command creates a new HTTP listener using the `New-Item`
 cmdlet.
@@ -592,7 +592,7 @@ Get-Help Get-ChildItem
 ```
 
 ```powershell
-Get-Help Get-ChildItem -Path wsman:
+Get-Help Get-ChildItem -Path WSMan:
 ```
 
 ## See also
