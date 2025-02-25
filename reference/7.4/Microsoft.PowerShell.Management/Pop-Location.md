@@ -50,7 +50,7 @@ For more information about location stacks, see the [Notes](#notes).
 ```
 PS C:\> pushd HKLM:\Software\Microsoft\PowerShell
 PS HKLM:\Software\Microsoft\PowerShell> pushd Cert:\LocalMachine\TrustedPublisher
-PS cert:\LocalMachine\TrustedPublisher> popd
+PS Cert:\LocalMachine\TrustedPublisher> popd
 PS HKLM:\Software\Microsoft\PowerShell> popd
 PS C:\>
 ```

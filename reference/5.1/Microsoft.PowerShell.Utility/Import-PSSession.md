@@ -327,7 +327,7 @@ Accept wildcard characters: False
 Specifies an array of commands that results from using the specified arguments (parameter values).
 
 For instance, to import the variant of the `Get-Item` command in the certificate (Cert:) drive in
-the PSSession in `$S`, type `Import-PSSession -Session $S -Command Get-Item -ArgumentList cert:`.
+the PSSession in `$S`, type `Import-PSSession -Session $S -Command Get-Item -ArgumentList Cert:`.
 
 ```yaml
 Type: System.Object[]

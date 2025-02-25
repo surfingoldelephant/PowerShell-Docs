@@ -206,7 +206,7 @@ a certificate file in the file system directory.
 At the PowerShell prompt, type:
 
 ```powershell
-Get-ChildItem cert:\CurrentUser\my -CodeSigning
+Get-ChildItem Cert:\CurrentUser\my -CodeSigning
 ```
 
 This command uses the PowerShell Certificate provider to view information

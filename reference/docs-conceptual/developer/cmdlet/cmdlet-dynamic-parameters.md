@@ -28,7 +28,7 @@ The following examples show how the **CodeSigningCert** parameter is added at ru
 In this example, the PowerShell runtime has added the parameter and the cmdlet is successful.
 
 ```powershell
-Get-Item -Path cert:\CurrentUser -CodeSigningCert
+Get-Item -Path Cert:\CurrentUser -CodeSigningCert
 ```
 
 ```Output

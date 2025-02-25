@@ -183,7 +183,7 @@ Exports the variant of the command that results from using the specified argumen
 values).
 
 For example, to export the variant of the `Get-Item` command in the certificate (Cert:) drive in
-the PSSession in `$S`, type `Export-PSSession -Session $S -Command Get-Item -ArgumentList cert:`.
+the PSSession in `$S`, type `Export-PSSession -Session $S -Command Get-Item -ArgumentList Cert:`.
 
 ```yaml
 Type: System.Object[]

@@ -212,7 +212,7 @@ specify the drive path. For example, to change your location to the root
 directory of the `Cert:` drive, type:
 
 ```powershell
-Set-Location cert:
+Set-Location Cert:
 ```
 
 Then, to view the contents of the `Cert:` drive, type:
