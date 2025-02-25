@@ -47,7 +47,7 @@ This sample demonstrates the following:
   content of an item. (This sample does not show how to add dynamic parameters to the `Get-Content`
   cmdlet.).
 - Overwriting the
-  [Microsoft.PowerShell.Commands.Filesystemprovider.Getcontentwriter*](/dotnet/api/Microsoft.PowerShell.Commands.FileSystemProvider.GetContentWriter)
+  [Microsoft.PowerShell.Commands.FileSystemProvider.Getcontentwriter*](/dotnet/api/Microsoft.PowerShell.Commands.FileSystemProvider.GetContentWriter)
   method to change the behavior of the `Set-Content` cmdlet, allowing the user to update the content
   of an item. (This sample does not show how to add dynamic parameters to the `Set-Content` cmdlet.)
 

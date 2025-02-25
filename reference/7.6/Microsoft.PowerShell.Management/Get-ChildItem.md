@@ -52,7 +52,7 @@ Get-ChildItem [[-Filter] <string>] -LiteralPath <string[]> [-Include <string[]>]
  [<CommonParameters>]
 ```
 
-### Items (Default) - Filesystem provider
+### Items (Default) - FileSystem provider
 
 ```
 Get-ChildItem [[-Path] <string[]>] [[-Filter] <string>] [-Include <string[]>]
@@ -124,7 +124,7 @@ as follows:
 - `s` (system)
 
 For more information about the mode flags, see
-[about_Filesystem_Provider](../microsoft.powershell.core/about/about_filesystem_provider.md#attributes-flagsexpression).
+[about_FileSystem_Provider](../microsoft.powershell.core/about/about_filesystem_provider.md#attributes-flagsexpression).
 
 ### Example 2: Get child item names in a directory
 
@@ -1026,7 +1026,7 @@ The cmdlet outputs this type when accessing the `Env:` drive.
 
 ### System.IO.FileInfo
 
-The cmdlet outputs these types when accessing the Filesystem drives.
+The cmdlet outputs these types when accessing the FileSystem drives.
 
 ### System.Management.Automation.FunctionInfo
 

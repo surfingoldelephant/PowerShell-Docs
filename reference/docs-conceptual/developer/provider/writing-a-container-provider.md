@@ -7,7 +7,7 @@ title: Writing a container provider
 # Writing a container provider
 
 This topic describes how to implement the methods of a Windows PowerShell provider that support
-items that contain other items, such as folders in the file system provider. To be able to support
+items that contain other items, such as folders in the FileSystem provider. To be able to support
 containers, a provider must derive from the
 [System.Management.Automation.Provider.Containercmdletprovider](/dotnet/api/System.Management.Automation.Provider.ContainerCmdletProvider)
 class.

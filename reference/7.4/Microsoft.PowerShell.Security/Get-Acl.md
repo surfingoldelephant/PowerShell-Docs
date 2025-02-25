@@ -289,7 +289,7 @@ and access list, PowerShell displays the following properties and property value
   Descriptor Definition Language format. PowerShell uses the **GetSddlForm** method of security
   descriptors to get this data.
 
-Because `Get-Acl` is supported by the file system and registry providers, you can use `Get-Acl` to
+Because `Get-Acl` is supported by the FileSystem and registry providers, you can use `Get-Acl` to
 view the ACL of file system objects, such as files and directories, and registry objects, such as
 registry keys and entries.
 

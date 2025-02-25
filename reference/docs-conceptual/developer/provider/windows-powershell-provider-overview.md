@@ -72,7 +72,7 @@ registry Windows PowerShell provider can use `\\server\regkeypath` as a provider
 To allow the provider cmdlet to access data using non-Windows PowerShell application programming
 interfaces (APIs), your Windows PowerShell provider should support a provider-internal path. This
 path is indicated after the "::" in the provider-qualified path. For example, the provider-internal
-path for the filesystem Windows PowerShell provider is `\\uncshare\abc\bar`.
+path for the FileSystem Windows PowerShell provider is `\\uncshare\abc\bar`.
 
 ## Overriding cmdlet parameters
 

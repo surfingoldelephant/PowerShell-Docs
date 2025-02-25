@@ -89,7 +89,7 @@ values of their Name, Module, and PSSnapin properties.
 The second command uses the `Where-Object` cmdlet to get the providers that come from the
 **Microsoft.PowerShell.Security** snap-in.
 
-### Example 4: Resolve the path of the Home property of the file system provider
+### Example 4: Resolve the path of the Home property of the FileSystem provider
 
 ```powershell
 C:\> Resolve-Path ~

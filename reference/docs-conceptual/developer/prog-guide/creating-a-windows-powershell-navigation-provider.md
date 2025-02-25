@@ -107,7 +107,7 @@ The following conditions may apply to your implementation of
   aware that each parameter can only represent a part of a path, and the combined parts might not
   generate a fully-qualified path. For example, the
   [System.Management.Automation.Provider.Navigationcmdletprovider.Makepath*](/dotnet/api/System.Management.Automation.Provider.NavigationCmdletProvider.MakePath)
-  method for the filesystem provider might receive "windows\system32" in the `parent` parameter and
+  method for the FileSystem provider might receive "windows\system32" in the `parent` parameter and
   "abc.dll" in the `child` parameter. The method joins these values with the "\\" separator and
   returns "windows\system32\abc.dll", which is not a fully-qualified file system path.
 
@@ -138,7 +138,7 @@ only "\\" separators, then splits the parent path off at the last "\\" and retur
 Your implementation of the
 [System.Management.Automation.Provider.Navigationcmdletprovider.Getparentpath*](/dotnet/api/System.Management.Automation.Provider.NavigationCmdletProvider.GetParentPath)
 method should split the path lexically on the path separator for the provider namespace. For
-example, the filesystem provider uses this method to look for the last "\\" and returns everything
+example, the FileSystem provider uses this method to look for the last "\\" and returns everything
 to the left of the separator.
 
 ## Retrieve the Child Path Name
@@ -217,7 +217,7 @@ appropriate property, for example, the **CmdletProvider.Exclude** property.
 
 By default, overrides of this method should not move objects over existing objects unless the
 [System.Management.Automation.Provider.Cmdletprovider.Force*](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.Force)
-property is set to `true`. For example, the filesystem provider will not copy c:\temp\abc.txt over
+property is set to `true`. For example, the FileSystem provider will not copy c:\temp\abc.txt over
 an existing c:\bar.txt file unless the
 [System.Management.Automation.Provider.Cmdletprovider.Force*](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.Force)
 property is set to `true`. If the path specified in the `destination` parameter exists and is a

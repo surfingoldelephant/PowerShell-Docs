@@ -33,7 +33,7 @@ example, mydrive:\abc\bar.
 
 To allow the Windows PowerShell runtime to initialize and uninitialize the provider, your Windows
 PowerShell provider must support a provider-qualified path. For example,
-FileSystem::\\\uncshare\abc\bar is the provider-qualified path for the filesystem provider furnished
+FileSystem::\\\uncshare\abc\bar is the provider-qualified path for the FileSystem provider furnished
 by Windows PowerShell.
 
 ### Defining a Provider-Direct Path
@@ -47,7 +47,7 @@ registry Windows PowerShell provider can use \\\server\regkeypath as a provider-
 To allow the provider cmdlet to access data using non-Windows PowerShell application programming
 interfaces (APIs), your Windows PowerShell provider should support a provider-internal path. This
 path is indicated after the "::" in the provider-qualified path. For example, the provider-internal
-path for the filesystem Windows PowerShell provider is \\\uncshare\abc\bar.
+path for the FileSystem Windows PowerShell provider is \\\uncshare\abc\bar.
 
 ## Changing Stored Data
 

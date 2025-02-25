@@ -401,7 +401,7 @@ tools and operating systems.
 
 ### Unify cmdlets with parameter `-Encoding` to be of type `System.Text.Encoding`
 
-The `-Encoding` value `Byte` has been removed from the filesystem provider cmdlets. A new parameter,
+The `-Encoding` value `Byte` has been removed from the FileSystem provider cmdlets. A new parameter,
 `-AsByteStream`, is now used to specify that a byte stream is required as input or that the output
 is a stream of bytes.
 

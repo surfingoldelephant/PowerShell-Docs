@@ -560,7 +560,7 @@ The cmdlet outputs this type when accessing the `Env:` drive.
 
 ### System.IO.FileInfo
 
-The cmdlet outputs these types when accessing the Filesystem drives.
+The cmdlet outputs these types when accessing the FileSystem drives.
 
 ### System.Management.Automation.FunctionInfo
 

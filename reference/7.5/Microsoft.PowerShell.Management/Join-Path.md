@@ -103,7 +103,7 @@ This command uses `Join-Path` to combine multiple path roots with a child path.
 ### Example 6: Combine the roots of a file system drive with a child path
 
 ```powershell
-Get-PSDrive -PSProvider filesystem | ForEach-Object {$_.Root} | Join-Path -ChildPath "Subdir"
+Get-PSDrive -PSProvider FileSystem | ForEach-Object {$_.Root} | Join-Path -ChildPath "Subdir"
 ```
 
 ```output

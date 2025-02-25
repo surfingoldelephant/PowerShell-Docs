@@ -98,10 +98,10 @@ Environment variable objects are stored on the drive Env: ([§3.1][§3.1]).
 
 ### 3.1.3 File system
 
-The PowerShell file system provider allows directories and files to be created, opened, changed, and
+The PowerShell FileSystem provider allows directories and files to be created, opened, changed, and
 deleted.
 
-The file system provider is a hierarchical namespace that contains objects that represent the
+The FileSystem provider is a hierarchical namespace that contains objects that represent the
 underlying file system.
 
 Files are stored on drives with names like A:, B:, C:, and so on ([§3.1][§3.1]). Directories and files
