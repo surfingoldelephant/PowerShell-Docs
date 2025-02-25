@@ -83,7 +83,7 @@ Like all functions, the `Prompt` function is stored in the `Function:` drive.
 To display the script that creates the current `Prompt` function, type:
 
 ```powershell
-(Get-Item function:prompt).ScriptBlock
+(Get-Item Function:prompt).ScriptBlock
 ```
 
 ### The default prompt

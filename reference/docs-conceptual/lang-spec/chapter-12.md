@@ -362,7 +362,7 @@ ValueFromPipeline=$true)]<br />
 <p>This argument specifies whether the parameter takes its value from a property of a pipeline object that has either the same name or the same alias as this parameter. A value of $true indicates that it does. A value of $false indicates that it does not.</p>
 <p>Specify $true if the following conditions are true: the parameter accesses a property of the piped object, and the property has the same name as the parameter, or the property has the same alias as the parameter.</p>
 <p>A parameter having ValueFromPipelineByPropertyName set to $true need not have a parameter in the same set with ValueFromPipeline set to $true.</p>
-<p>If a function has a parameter $ComputerName, and the piped object has a ComputerName property, the value of the ComputerName property is assigned to the $ComputerName parameter of the function:</p>
+<p>If a function has a parameter $ComputerName, and the piped object has a ComputerName property, the value of the ComputerName property is assigned to the $ComputerName parameter of the Function:</p>
 <p>param ( [parameter(Mandatory = $true,<br />
 ValueFromPipelineByPropertyName = $true)]<br />
 [string[]] $ComputerName )</p>

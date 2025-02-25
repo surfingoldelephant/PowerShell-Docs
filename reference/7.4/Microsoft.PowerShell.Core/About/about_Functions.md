@@ -687,13 +687,13 @@ property of the function. For example, to display the commands in the Help
 function that comes with PowerShell, type:
 
 ```powershell
-(Get-ChildItem function:help).Definition
+(Get-ChildItem Function:help).Definition
 ```
 
 You can also use the following syntax.
 
 ```powershell
-$function:help
+$Function:help
 ```
 
 For more information about the `Function:` drive, see the help topic for the

@@ -101,21 +101,21 @@ You can retrieve a function's definition by accessing the **Definition**
 property, as shown below.
 
 ```powershell
-(Get-Item -Path function:more).Definition
+(Get-Item -Path Function:more).Definition
 ```
 
 You can also retrieve a function's definition using its provider path prefixed
 by the dollar sign (`$`).
 
 ```powershell
-$function:more
+$Function:more
 ```
 
 To retrieve the definition for a function that has a dash (`-`) in the name,
 wrap the value after the dollar sign in curly braces.
 
 ```powershell
-${function:Clear-Host}
+${Function:Clear-Host}
 ```
 
 ### Getting selected functions
