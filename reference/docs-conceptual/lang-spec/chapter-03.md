@@ -80,7 +80,7 @@ Alias objects are stored on the drive Alias: ([§3.1][§3.1]).
 
 ### 3.1.2 Environment variables
 
-The PowerShell environment provider allows operating system environment variables to be retrieved,
+The PowerShell Environment provider allows operating system environment variables to be retrieved,
 added, changed, cleared, and deleted.
 
 The provider Environment is a flat namespace that contains only objects that represent the

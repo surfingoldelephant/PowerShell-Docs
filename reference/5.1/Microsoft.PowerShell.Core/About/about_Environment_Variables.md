@@ -25,7 +25,7 @@ For full descriptions of these variables, see the
 ## Long description
 
 PowerShell can access and manage environment variables in any of the supported
-operating system platforms. The PowerShell environment provider lets you get,
+operating system platforms. The PowerShell Environment provider lets you get,
 add, change, clear, and delete environment variables in the current console.
 
 Environment variables, unlike other types of variables in PowerShell, are
