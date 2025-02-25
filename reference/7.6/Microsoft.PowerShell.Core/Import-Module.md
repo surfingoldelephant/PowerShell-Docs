@@ -152,7 +152,7 @@ Import-Module -Name PSDiagnostics
 
 ### Example 2: Import all modules specified by the module path
 
-This example imports all available modules in the path specified by the `$env:PSModulePath`
+This example imports all available modules in the path specified by the `$Env:PSModulePath`
 environment variable into the current session.
 
 ```powershell
@@ -950,7 +950,7 @@ the module, such as a `.psd1`, `.psm1`, `.dll`, or `.ps1` file. File paths are o
 characters aren't permitted. You can also pipe module names and filenames to `Import-Module`.
 
 If you omit a path, `Import-Module` looks for the module in the paths saved in the
-`$env:PSModulePath` environment variable.
+`$Env:PSModulePath` environment variable.
 
 Specify only the module name whenever possible. When you specify a filename, only the members that
 are implemented in that file are imported. If the module contains other files, they aren't
@@ -1143,7 +1143,7 @@ Accept wildcard characters: False
 
 Skips the check on the `CompatiblePSEditions` field.
 
-Allows loading a module from the `"$($env:windir)\System32\WindowsPowerShell\v1.0\Modules"` module
+Allows loading a module from the `"$($Env:windir)\System32\WindowsPowerShell\v1.0\Modules"` module
 directory into PowerShell Core when that module doesn't specify `Core` in the
 `CompatiblePSEditions` manifest field.
 

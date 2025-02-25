@@ -222,13 +222,13 @@ and change the current loop iteration. For more information, see
 ### `$HOME`
 
 Contains the full path of the user's home directory. On Windows, this variable
-uses the value of the `"$env:USERPROFILE"` Windows environment variable,
+uses the value of the `"$Env:USERPROFILE"` Windows environment variable,
 typically `C:\Users\<UserName>`. On Unix, this variable uses the value of the
 `HOME` environment variable.
 
 > [!IMPORTANT]
 > Windows can redirect the location of the user's profile. This means that
-> `$HOME` may not have the same value as `"$env:HOMEDRIVE$env:HOMEPATH"`.
+> `$HOME` may not have the same value as `"$Env:HOMEDRIVE$Env:HOMEPATH"`.
 
 ### `$Host`
 

@@ -435,7 +435,7 @@ point. In PowerShell, this information is available from the **LinkTarget** prop
 filesystem object returned by `Get-ChildItem` and is displayed in the default output.
 
 ```powershell
-PS D:\> New-Item -ItemType Junction -Name tmp -Target $env:TEMP
+PS D:\> New-Item -ItemType Junction -Name tmp -Target $Env:TEMP
 PS D:\> Get-ChildItem | Select-Object name, LinkTarget
 
 Name     LinkTarget

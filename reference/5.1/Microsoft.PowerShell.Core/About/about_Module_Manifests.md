@@ -99,7 +99,7 @@ Allowed variables
 - `$PSScriptRoot`
 - `$PSEdition`
 - `$EnabledExperimentalFeatures`
-- Any environment variables, like `$ENV:TEMP`
+- Any environment variables, like `$Env:TEMP`
 
 For more information, see [about_Language_Modes][08].
 

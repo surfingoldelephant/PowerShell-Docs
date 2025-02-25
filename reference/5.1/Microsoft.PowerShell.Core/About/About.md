@@ -417,7 +417,7 @@ The automatic variable that contains the current object in the pipeline object.
 
 ### [about_PSModulePath](about_PSModulePath.md)
 
-This article the purpose and usage of the `$env:PSModulePath` environment
+This article the purpose and usage of the `$Env:PSModulePath` environment
 variable.
 
 ### [about_PSSession_Details](about_PSSession_Details.md)

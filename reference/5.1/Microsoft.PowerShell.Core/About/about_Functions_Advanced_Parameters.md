@@ -1228,7 +1228,7 @@ You can define `User` drive in Just Enough Administration (JEA) session
 configurations. For this example, we create the User: drive.
 
 ```powershell
-New-PSDrive -Name 'User' -PSProvider FileSystem -Root $env:HOMEPATH
+New-PSDrive -Name 'User' -PSProvider FileSystem -Root $Env:HOMEPATH
 ```
 
 ```Output

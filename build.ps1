@@ -26,11 +26,11 @@ $threadJob = Get-Module ThreadJob -ListAvailable
 if ($null -eq $threadjob) {
     Install-Module ThreadJob -RequiredVersion 2.0.2 -Scope CurrentUser -Force -Verbose
 
-    $psmPathContainsUserPath = ($env:PSModulePath).Contains("$env:UserProfile\Documents\WindowsPowerShell\Modules")
+    $psmPathContainsUserPath = ($Env:PSModulePath).Contains("$Env:UserProfile\Documents\WindowsPowerShell\Modules")
 
     if(-not $psmPathContainsUserPath)
     {
-        $env:PSModulePath += ";$env:UserProfile\Documents\WindowsPowerShell\Modules"
+        $Env:PSModulePath += ";$Env:UserProfile\Documents\WindowsPowerShell\Modules"
     }
 
     Import-Module ThreadJob -Force -Verbose

@@ -148,7 +148,7 @@ Now let's set up the variables we'll use to represent the servers:
 
 ```powershell
 # Set up variables for reuse
-$ServerA = $env:COMPUTERNAME
+$ServerA = $Env:COMPUTERNAME
 $ServerB = Get-ADComputer -Identity ServerB
 $ServerC = Get-ADComputer -Identity ServerC
 ```

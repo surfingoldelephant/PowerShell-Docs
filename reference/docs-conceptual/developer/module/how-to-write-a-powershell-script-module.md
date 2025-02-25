@@ -18,7 +18,7 @@ To create a script module, save a valid PowerShell script to a `.psm1` file. The
 directory where it's stored must use the same name. For example, a script named `MyPsScript.psm1` is
 stored in a directory named `MyPsScript`.
 
-The module's directory needs to be in a path specified in `$env:PSModulePath`. The module's
+The module's directory needs to be in a path specified in `$Env:PSModulePath`. The module's
 directory can contain any resources that are needed to run the script, and a module manifest file
 that describes to PowerShell how your module works.
 
@@ -103,7 +103,7 @@ The following steps describe how to create a PowerShell module.
 1. To install and run your module, save the module to one of the appropriate PowerShell paths, and
    use `Import-Module`.
 
-   The paths where you can install your module are located in the `$env:PSModulePath` global
+   The paths where you can install your module are located in the `$Env:PSModulePath` global
    variable. For example, a common path to save a module on a system would be
    `%SystemRoot%/users/<user>/Documents/PowerShell/Modules/<moduleName>`. Be sure to create a
    directory for your module that uses the same name as the script module, even if it's only a

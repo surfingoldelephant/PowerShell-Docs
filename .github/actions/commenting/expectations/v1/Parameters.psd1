@@ -36,7 +36,7 @@
         IfNullOrEmpty = {
           param($ErrorTarget)
 
-          if ([string]::IsNullOrEmpty($env:INPUT_MESSAGE_PATH)) {
+          if ([string]::IsNullOrEmpty($Env:INPUT_MESSAGE_PATH)) {
             $Message = @(
               'Could not determine the message body or path to write as the expectation comment;'
               'was either value passed as an input to the action?'
@@ -80,7 +80,7 @@
         IfNullOrEmpty = {
           param($ErrorTarget)
 
-          if ([string]::IsNullOrEmpty($env:INPUT_MESSAGE_BODY)) {
+          if ([string]::IsNullOrEmpty($Env:INPUT_MESSAGE_BODY)) {
             $Message = @(
               'Could not determine the message body or path to write as the expectation comment;'
               'was either value passed as an input to the action?'

@@ -503,7 +503,7 @@ computer.
 
 Type the NetBIOS name, an IP address, or a fully qualified domain name (FQDN) of one computer.
 Wildcard characters aren't permitted. To specify the local computer, type the computer name, a dot
-(`.`), `$env:COMPUTERNAME`, or localhost.
+(`.`), `$Env:COMPUTERNAME`, or localhost.
 
 ```yaml
 Type: System.String

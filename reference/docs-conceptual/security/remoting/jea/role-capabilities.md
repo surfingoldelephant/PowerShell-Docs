@@ -306,15 +306,15 @@ For tab completion to work properly in JEA sessions you must include the built-i
 
 Prior to PowerShell 6, for PowerShell to find a role capability file it must be stored in a
 `RoleCapabilities` folder in a PowerShell module. The module can be stored in any folder included
-in the `$env:PSModulePath` environment variable, however you shouldn't place it in
-`$env:SystemRoot\System32` or a folder where untrusted users could modify the files.
+in the `$Env:PSModulePath` environment variable, however you shouldn't place it in
+`$Env:SystemRoot\System32` or a folder where untrusted users could modify the files.
 
 The following example creates a PowerShell script module called **ContosoJEA** in the
-`$env:ProgramFiles` path to host the role capabilities file.
+`$Env:ProgramFiles` path to host the role capabilities file.
 
 ```powershell
 # Create a folder for the module
-$modulePath = Join-Path $env:ProgramFiles "WindowsPowerShell\Modules\ContosoJEA"
+$modulePath = Join-Path $Env:ProgramFiles "WindowsPowerShell\Modules\ContosoJEA"
 New-Item -ItemType Directory -Path $modulePath
 
 # Create an empty script module and module manifest.

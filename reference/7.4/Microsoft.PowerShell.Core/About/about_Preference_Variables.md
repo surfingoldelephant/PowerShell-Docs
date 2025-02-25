@@ -60,8 +60,8 @@ PowerShell includes the following environment variables that store user
 preferences. For more information about these environment variables, see
 [about_Environment_Variables][30].
 
-- `$env:PSExecutionPolicyPreference`
-- `$env:PSModulePath`
+- `$Env:PSExecutionPolicyPreference`
+- `$Env:PSModulePath`
 
 > [!NOTE]
 > Changes to preference variables apply only in the scope they are made

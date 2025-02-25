@@ -33,7 +33,7 @@ remoting and reflected into current PowerShell session. This is the same
 transport method used for PowerShell jobs.
 
 When a module is imported into the `WinPSCompatSession` session, implicit
-remoting generates a proxy module in the user's `$env:Temp` directory and
+remoting generates a proxy module in the user's `$Env:Temp` directory and
 imports this proxy module into current PowerShell session. The proxy module
 allows PowerShell to detect that the module was loaded using Windows PowerShell
 Compatibility functionality.
@@ -148,7 +148,7 @@ The Windows PowerShell Compatibility functionality:
 
 The Windows PowerShell Compatibility feature uses implicit remoting to make
 Windows PowerShell 5.1 modules available in PowerShell 7. Implicit remoting
-creates temporary files in the `$env:Temp` directory. Each proxied module is
+creates temporary files in the `$Env:Temp` directory. Each proxied module is
 stored in a separate folder with the following naming convention:
 
 - `remoteIpMoProxy_<ModuleName>_<ModuleVersion>_localhost_<SessionGuid>`.

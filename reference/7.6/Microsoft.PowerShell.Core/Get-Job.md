@@ -95,7 +95,7 @@ Get-Job
 ```Output
 Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
 --     ----            -------------   -----         -----------     --------             -------
-1      Job1            BackgroundJob   Completed     True            localhost             $env:COMPUTERNAME
+1      Job1            BackgroundJob   Completed     True            localhost             $Env:COMPUTERNAME
 ```
 
 ### Example 2: Stop a job by using an instance ID
@@ -179,7 +179,7 @@ Get-Job -Name Job*
 ```Output
 Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
 --     ----            -------------   -----         -----------     --------             -------
-1      Job1            BackgroundJob   Completed     True            localhost             $env:COMPUTERNAME
+1      Job1            BackgroundJob   Completed     True            localhost             $Env:COMPUTERNAME
 ```
 
 ### Example 7: Use a job object to represent the job in a command

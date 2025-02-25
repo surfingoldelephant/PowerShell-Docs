@@ -63,7 +63,7 @@ For testing, you just need to create a default policy and a self signed code sig
 
    ```powershell
    $newSelfSignedCertificateSplat = @{
-       DnsName = $env:COMPUTERNAME
+       DnsName = $Env:COMPUTERNAME
        CertStoreLocation = "Cert:\CurrentUser\My\"
        Type = 'CodeSigningCert'
    }

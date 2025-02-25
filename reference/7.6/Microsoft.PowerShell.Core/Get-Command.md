@@ -42,7 +42,7 @@ have been imported into the current session, use the **ListImported** parameter.
 
 Without parameters, `Get-Command` gets all the cmdlets, functions, and aliases installed on the
 computer. `Get-Command *` gets all types of commands, including all the non-PowerShell files in the
-Path environment variable (`$env:PATH`), which it lists in the Application command type.
+Path environment variable (`$Env:PATH`), which it lists in the Application command type.
 
 `Get-Command` that uses the exact name of the command, without wildcard characters, automatically
 imports the module that contains the command so that you can use the command immediately. To enable,
@@ -155,7 +155,7 @@ cmdlet by another cmdlet or a provider.
 ### Example 8: Get all commands of all types
 
 This command gets all commands of all types on the local computer, including executable files in the
-paths of the **Path** environment variable (`$env:PATH`).
+paths of the **Path** environment variable (`$Env:PATH`).
 
 ```powershell
 Get-Command *
@@ -403,15 +403,15 @@ The acceptable values for this parameter are:
 
 - `All`: Gets all command types. This parameter value is the equivalent of `Get-Command *`.
 
-- `Application`: Searches folders in the `$env:PATH` environment variable for non-PowerShell
+- `Application`: Searches folders in the `$Env:PATH` environment variable for non-PowerShell
   executable files. On Windows, executable files have a file extension that is listed in the
-  `$env:PATHEXT` environment variable. For more information, see
+  `$Env:PATHEXT` environment variable. For more information, see
   [about_Environment_Variables](About/about_Environment_Variables.md).
 
 - `Cmdlet`: Gets all cmdlets.
 
 - `ExternalScript`: Gets all `.ps1` files in the paths listed in the **Path** environment variable
-  (`$env:PATH`).
+  (`$Env:PATH`).
 
 - `Filter` and `Function`: Gets all PowerShell advanced and simple functions and filters.
 

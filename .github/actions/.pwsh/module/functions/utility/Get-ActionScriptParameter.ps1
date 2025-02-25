@@ -53,8 +53,8 @@ function Get-ActionScriptParameter {
 
     begin {
         $ActionParameters = @{}
-        $ErrorTarget = if ($env:GITHUB_ACTIONS) {
-            $env:GITHUB_ACTION
+        $ErrorTarget = if ($Env:GITHUB_ACTIONS) {
+            $Env:GITHUB_ACTION
         } else {
             $PSCmdlet.MyInvocation.InvocationName
         }

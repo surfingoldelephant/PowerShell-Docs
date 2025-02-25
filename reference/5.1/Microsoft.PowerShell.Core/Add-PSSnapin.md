@@ -88,7 +88,7 @@ find the value of the PSSnapin property of the Set-Alias cmdlet.
 ```powershell
 PS C:\> Get-PSSnapin
 PS C:\> Get-PSSnapin -Registered
-PS C:\> Set-Alias installutil $env:windir\Microsoft.NET\Framework\v2.0.50727\installutil.exe
+PS C:\> Set-Alias installutil $Env:windir\Microsoft.NET\Framework\v2.0.50727\installutil.exe
 PS C:\> installutil C:\Dev\Management\ManagementCmdlets.dll
 PS C:\> Get-PSSnapin -Registered
 PS C:\> add-pssnapin ManagementFeatures

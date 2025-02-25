@@ -125,7 +125,7 @@ $Env:Foo | Get-Member -MemberType Properties
 ```Output
 Get-Member : You must specify an object for the Get-Member cmdlet.
 At line:1 char:12
-+ $env:foo | Get-Member
++ $Env:foo | Get-Member
 +            ~~~~~~~~~~
     + CategoryInfo          : CloseError: (:) [Get-Member], InvalidOperationException
     + FullyQualifiedErrorId : NoObjectInGetMember,Microsoft.PowerShell.Commands.GetMemberCommand
@@ -328,10 +328,10 @@ The environment variables that store preferences include:
 
 - `PSModulePath`
 
-  The `$env:PSModulePath` environment variable contains a list of folder
+  The `$Env:PSModulePath` environment variable contains a list of folder
   locations that are searched to find modules and resources.
 
-  By default, the effective locations assigned to `$env:PSModulePath` are:
+  By default, the effective locations assigned to `$Env:PSModulePath` are:
 
   - System-wide locations: These folders contain modules that ship with
     PowerShell. The modules are store in the `$PSHOME\Modules` location. Also,
@@ -344,11 +344,11 @@ The environment variables that store preferences include:
 
     - On Windows, the location of the user-specific **CurrentUser** scope is
       the `$HOME\Documents\PowerShell\Modules` folder. The location of the
-      **AllUsers** scope is `$env:ProgramFiles\PowerShell\Modules`.
+      **AllUsers** scope is `$Env:ProgramFiles\PowerShell\Modules`.
 
   In addition, setup programs that install modules in other directories, such
   as the Program Files directory, can append their locations to the value of
-  `$env:PSModulePath`.
+  `$Env:PSModulePath`.
 
   For more information, see [about_PSModulePath][08].
 
@@ -361,7 +361,7 @@ The environment variables that store preferences include:
 
   The default location of the cache is:
 
-  - `$env:LOCALAPPDATA\Microsoft\Windows\PowerShell`
+  - `$Env:LOCALAPPDATA\Microsoft\Windows\PowerShell`
 
   The default filename for the cache is `ModuleAnalysisCache`.
 
@@ -383,7 +383,7 @@ The environment variables that store preferences include:
 
   ```powershell
   # `NUL` here is a special device on Windows that can't be written to
-  $env:PSModuleAnalysisCachePath = 'NUL'
+  $Env:PSModuleAnalysisCachePath = 'NUL'
   ```
 
   This sets the path to the **NUL** device. PowerShell can't write to the
@@ -415,13 +415,13 @@ The environment variables that store preferences include:
 
 - `PATH`
 
-  The `$env:PATH` environment variable contains a list of folder locations that
+  The `$Env:PATH` environment variable contains a list of folder locations that
   the operating system searches for executable files. On Windows, the list of
   folder locations is separated by the semi-colon (`;`) character.
 
 - `PATHEXT`
 
-  The `$env:PATHEXT` variable contains a list of file extensions that Windows
+  The `$Env:PATHEXT` variable contains a list of file extensions that Windows
   considers to be executable files. When a script file with one of the listed
   extensions is executed from PowerShell, the script runs in the current
   console or terminal session. If the file extension isn't listed, the script

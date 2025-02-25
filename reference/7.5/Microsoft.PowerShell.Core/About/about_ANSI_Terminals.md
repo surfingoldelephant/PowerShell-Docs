@@ -249,13 +249,13 @@ When you inspect the contents of `out.txt` there are no ANSI escape sequences.
 Support for ANSI escape sequences can be turned off using the **TERM** or
 **NO_COLOR** environment variables.
 
-The following values of `$env:TERM` change the behavior as follows:
+The following values of `$Env:TERM` change the behavior as follows:
 
 - `dumb` - sets `$Host.UI.SupportsVirtualTerminal = $false`
 - `xterm-mono` - sets `$PSStyle.OutputRendering = PlainText`
 - `xterm` - sets `$PSStyle.OutputRendering = PlainText`
 
-If `$env:NO_COLOR` exists, then `$PSStyle.OutputRendering` is set to
+If `$Env:NO_COLOR` exists, then `$PSStyle.OutputRendering` is set to
 **PlainText**. For more information about the **NO_COLOR** environment
 variable, see [https://no-color.org/][04].
 

@@ -191,7 +191,7 @@ user's directories that were changed after the start date.
 function Get-NewPix
 {
   $start = Get-Date -Month 1 -Day 1 -Year 2010
-  $allpix = Get-ChildItem -Path $env:UserProfile\*.jpg -Recurse
+  $allpix = Get-ChildItem -Path $Env:UserProfile\*.jpg -Recurse
   $allpix | Where-Object {$_.LastWriteTime -gt $Start}
 }
 ```

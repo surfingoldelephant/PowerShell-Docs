@@ -83,7 +83,7 @@ Set-Item -Path alias:np -Value "c:\windows\notepad.exe"
 This command changes the value of the UserRole environment variable to Administrator.
 
 ```powershell
-Set-Item -Path env:UserRole -Value "Administrator"
+Set-Item -Path Env:UserRole -Value "Administrator"
 ```
 
 ### Example 3: Modify your prompt function

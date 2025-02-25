@@ -36,8 +36,8 @@ or physical drive, directory, or mapped network share.
 Beginning in PowerShell Version 7.0, a drive called `TEMP:` is mapped to the
 user's temporary directory path. PowerShell uses the .NET [GetTempPath()][05]
 method to determine the location of the temporary folder. On Windows, the
-location is the same as `$env:TEMP`. On non-Windows systems, the location is
-the same as `$env:TMPDIR` or `/tmp` if the environment variable isn't defined.
+location is the same as `$Env:TEMP`. On non-Windows systems, the location is
+the same as `$Env:TMPDIR` or `/tmp` if the environment variable isn't defined.
 
 The **FileSystem** provider supports the following cmdlets, which are covered
 in this article.

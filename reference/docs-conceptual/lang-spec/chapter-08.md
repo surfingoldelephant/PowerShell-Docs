@@ -249,7 +249,7 @@ If the command type is Application, the parameter `--%` is not passed to the com
 after `--%` have any environment variables (strings surrounded by `%`) expanded. For example:
 
 ```powershell
-echoargs.exe --% "%path%" # %path% is replaced with the value $env:path
+echoargs.exe --% "%path%" # %path% is replaced with the value $Env:path
 ```
 
 The order of evaluation of arguments is unspecified.

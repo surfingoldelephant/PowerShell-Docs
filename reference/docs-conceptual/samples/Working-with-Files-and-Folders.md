@@ -35,7 +35,7 @@ The following command finds all executables within the Program Files folder that
 after October 1, 2005 and that are neither smaller than 1 megabyte nor larger than 10 megabytes:
 
 ```powershell
-Get-ChildItem -Path $env:ProgramFiles -Recurse -Include *.exe |
+Get-ChildItem -Path $Env:ProgramFiles -Recurse -Include *.exe |
     Where-Object -FilterScript {
         ($_.LastWriteTime -gt '2005-10-01') -and ($_.Length -ge 1mb) -and ($_.Length -le 10mb)
     }
@@ -137,7 +137,7 @@ local drive `P:` rooted in the local Program Files directory, visible only from 
 session:
 
 ```powershell
-New-PSDrive -Name P -Root $env:ProgramFiles -PSProvider FileSystem
+New-PSDrive -Name P -Root $Env:ProgramFiles -PSProvider FileSystem
 ```
 
 Just as with network drives, drives mapped within PowerShell are immediately visible to the

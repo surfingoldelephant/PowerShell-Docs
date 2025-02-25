@@ -367,7 +367,7 @@ The following command gets the child items in the directory that is represented
 by the `ProgramFiles(x86)` environment variable.
 
 ```powershell
-Get-ChildItem ${env:ProgramFiles(x86)}
+Get-ChildItem ${Env:ProgramFiles(x86)}
 ```
 
 To reference a variable name that includes braces, enclose the variable name in

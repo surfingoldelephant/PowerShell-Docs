@@ -215,12 +215,12 @@ and change the current loop iteration. For more information, see
 ### `$HOME`
 
 Contains the full path of the user's home directory. This variable uses the
-value of the `"$env:USERPROFILE"` Windows environment variable, typically
+value of the `"$Env:USERPROFILE"` Windows environment variable, typically
 `C:\Users\<UserName>`.
 
 > [!IMPORTANT]
 > Windows can redirect the location of the user's profile. This means that
-> `$HOME` may not have the same value as `"$env:HOMEDRIVE$env:HOMEPATH"`.
+> `$HOME` may not have the same value as `"$Env:HOMEDRIVE$Env:HOMEPATH"`.
 
 ### `$Host`
 
@@ -550,7 +550,7 @@ available for use in module manifest files, whereas `$PSVersionTable` isn't.
 ### `$PSHOME`
 
 Contains the full path of the installation directory for PowerShell, typically,
-`$env:windir\System32\PowerShell\v1.0` in Windows systems. You can use this
+`$Env:windir\System32\PowerShell\v1.0` in Windows systems. You can use this
 variable in the paths of PowerShell files. For example, the following command
 searches the conceptual Help topics for the word **Help**:
 

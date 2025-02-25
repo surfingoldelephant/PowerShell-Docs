@@ -519,7 +519,7 @@ For error:
 If the remote computer is running a 64-bit version of Windows, and the remote
 command uses a 32-bit session configuration, like **Microsoft.PowerShell32**,
 WinRM loads a WOW64 process. Windows automatically redirects all references to
-`$env:Windir\System32` to the `$env:Windir\SysWOW64` directory.
+`$Env:Windir\System32` to the `$Env:Windir\SysWOW64` directory.
 
 As a result, running tools in the `System32` directory that do not have
 counterparts in the `SysWow64` directory can't be found.
@@ -529,7 +529,7 @@ value of the **PROCESSOR_ARCHITECTURE** environment variable.
 
 ```powershell
 $s = New-PSSession -ComputerName Server01 -ConfigurationName CustomShell
-Invoke-Command -Session $s {$env:PROCESSOR_ARCHITECTURE}
+Invoke-Command -Session $s {$Env:PROCESSOR_ARCHITECTURE}
 ```
 
 ```Output

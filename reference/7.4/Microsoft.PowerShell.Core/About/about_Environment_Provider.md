@@ -78,16 +78,16 @@ drive. To reference an environment variable from another location, use the
 drive name `Env:` in the path.
 
 The **Environment** provider also exposes environment variables using a
-variable prefix of `$env:`.  The following command views the contents of the
-**ProgramFiles** environment variable. The `$env:` variable prefix can
+variable prefix of `$Env:`.  The following command views the contents of the
+**ProgramFiles** environment variable. The `$Env:` variable prefix can
 be used from any PowerShell drive.
 
 ```
-PS C:\> $env:ProgramFiles
+PS C:\> $Env:ProgramFiles
 C:\Program Files
 ```
 
-You can also change the value of an environment variable using the `$env:`
+You can also change the value of an environment variable using the `$Env:`
 variable prefix.  Any changes made only pertain to the current PowerShell
 session for as long as it is active.
 
@@ -125,7 +125,7 @@ Get-ChildItem -Path Env:windir
 You can also use the variable prefix format as well.
 
 ```powershell
-$env:windir
+$Env:windir
 ```
 
 ## Create an environment variable
@@ -210,7 +210,7 @@ Get-Help Get-ChildItem
 ```
 
 ```powershell
-Get-Help Get-ChildItem -Path env:
+Get-Help Get-ChildItem -Path Env:
 ```
 
 ## See also

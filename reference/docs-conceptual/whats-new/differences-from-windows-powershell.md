@@ -963,7 +963,7 @@ In the past, PowerShell shipped a function on Windows called `more` that wrapped
 function has now been removed.
 
 Also, the `help` function changed to use `more.com` on Windows, or the system's default pager
-specified by `$env:PAGER` on non-Windows platforms.
+specified by `$Env:PAGER` on non-Windows platforms.
 
 ### `cd DriveName:` now returns users to the current working directory in that drive
 

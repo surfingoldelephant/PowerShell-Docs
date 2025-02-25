@@ -84,10 +84,10 @@ interpretation by the current shell. For example, if you are in `cmd.exe` and
 want to pass an environment variable value, you would use the `cmd.exe` syntax:
 `pwsh -File .\test.ps1 -TestParam %windir%`
 
-In contrast, running `pwsh -File .\test.ps1 -TestParam $env:windir` in
-`cmd.exe` results in the script receiving the literal string `$env:windir`
+In contrast, running `pwsh -File .\test.ps1 -TestParam $Env:windir` in
+`cmd.exe` results in the script receiving the literal string `$Env:windir`
 because it has no special meaning to the current `cmd.exe` shell. The
-`$env:windir` style of environment variable reference _can_ be used inside a
+`$Env:windir` style of environment variable reference _can_ be used inside a
 **Command** parameter, since there it's interpreted as PowerShell code.
 
 Similarly, if you want to execute the same command from a _Batch script_, you
@@ -295,7 +295,7 @@ pwsh -EncodedCommand $encodedCommand
 ### -ExecutionPolicy | -ex | -ep
 
 Sets the default execution policy for the current session and saves it in the
-`$env:PSExecutionPolicyPreference` environment variable. This parameter does
+`$Env:PSExecutionPolicyPreference` environment variable. This parameter does
 not change the persistently configured execution policies.
 
 This parameter only applies to Windows computers. On non-Windows platforms, the

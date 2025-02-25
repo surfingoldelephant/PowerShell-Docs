@@ -167,7 +167,7 @@ process {
     $null = $Summary.AppendLine(
       "**Success:** Author (``$User``) may $($Texts.Target.Markdown)"
     )
-    $Summary.ToString() >> $ENV:GITHUB_STEP_SUMMARY
+    $Summary.ToString() >> $Env:GITHUB_STEP_SUMMARY
     # Console Logging
     $ConsoleMessage = New-Object -TypeName System.Text.StringBuilder
     $null = $ConsoleMessage.Append("$($Texts.Success.Console): ")
@@ -179,7 +179,7 @@ process {
     $null = $Summary.AppendLine(
       "**Failure:** Author (``$User``) may not $($Texts.Target.Markdown)"
     )
-    $Summary.ToString() >> $ENV:GITHUB_STEP_SUMMARY
+    $Summary.ToString() >> $Env:GITHUB_STEP_SUMMARY
     # Console Logging / Throw Error
     $Message = "Author ($($Texts.Author.Console)) may not $($Texts.Target.Error)"
     $Message = Format-GHAConsoleText -Text $Message

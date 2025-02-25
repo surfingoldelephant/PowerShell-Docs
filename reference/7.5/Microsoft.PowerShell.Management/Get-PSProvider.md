@@ -111,7 +111,7 @@ C:\Users\User01
 
 This example shows that the tilde symbol (`~`) represents the value of the **Home** property of the
 FileSystem provider. The **Home** property value is optional, but for the **FileSystem** provider,
-it is defined as `$env:HOMEDRIVE\$env:HOMEPATH` or `$HOME`.
+it is defined as `$Env:HOMEDRIVE\$Env:HOMEPATH` or `$HOME`.
 
 ## PARAMETERS
 

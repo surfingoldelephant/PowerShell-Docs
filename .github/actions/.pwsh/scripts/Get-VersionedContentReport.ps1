@@ -129,7 +129,7 @@ process {
 
   if ($ChangedContent.Count -eq 0) {
     $null = $Summary.AppendLine('No changes to versioned content found.').AppendLine()
-    $Summary.ToString() >> $ENV:GITHUB_STEP_SUMMARY
+    $Summary.ToString() >> $Env:GITHUB_STEP_SUMMARY
     exit 0
   } else {
     Write-Host "Changed Content after inclusion/exclusion:" -ForegroundColor Blue
@@ -246,7 +246,7 @@ process {
       Add-VersionedContentTable @TableParameters
     }
   }
-  $Summary.ToString() >> $ENV:GITHUB_STEP_SUMMARY
+  $Summary.ToString() >> $Env:GITHUB_STEP_SUMMARY
   exit 0
 }
 

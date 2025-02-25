@@ -520,7 +520,7 @@ platforms store the file in different locations. The filename is stored in a var
 
 If you don't use this parameter, the default path is:
 
-`$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\$($Host.Name)_history.txt`
+`$Env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\$($Host.Name)_history.txt`
 
 ```yaml
 Type: System.String
@@ -529,7 +529,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: A file named $($Host.Name)_history.txt in $env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine on Windows and $env:XDG_DATA_HOME/powershell/PSReadLine or $HOME/.local/share/powershell/PSReadLine on non-Windows platforms
+Default value: A file named $($Host.Name)_history.txt in $Env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine on Windows and $Env:XDG_DATA_HOME/powershell/PSReadLine or $HOME/.local/share/powershell/PSReadLine on non-Windows platforms
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

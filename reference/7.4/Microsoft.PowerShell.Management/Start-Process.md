@@ -130,8 +130,8 @@ Note that the first command specifies a string as **ArgumentList**. The second c
 array.
 
 ```powershell
-Start-Process -FilePath "$env:comspec" -ArgumentList "/c dir `"%SystemDrive%\Program Files`""
-Start-Process -FilePath "$env:comspec" -ArgumentList "/c","dir","`"%SystemDrive%\Program Files`""
+Start-Process -FilePath "$Env:comspec" -ArgumentList "/c dir `"%SystemDrive%\Program Files`""
+Start-Process -FilePath "$Env:comspec" -ArgumentList "/c","dir","`"%SystemDrive%\Program Files`""
 ```
 
 ### Example 8: Create a detached process on Linux
@@ -167,12 +167,12 @@ command doesn't override the environment variable. In the second command, `FOO` 
 the third command, `FOO` is set to `$null`, which removes it.
 
 ```powershell
-$env:FOO = 'foo'
-Start-Process pwsh -NoNewWindow -ArgumentList '-c', '$env:FOO'
-Start-Process pwsh -NoNewWindow -ArgumentList '-c', '$env:FOO' -Environment @{
+$Env:FOO = 'foo'
+Start-Process pwsh -NoNewWindow -ArgumentList '-c', '$Env:FOO'
+Start-Process pwsh -NoNewWindow -ArgumentList '-c', '$Env:FOO' -Environment @{
     FOO  = 'bar'
 }
-Start-Process pwsh -NoNewWindow -ArgumentList '-c', '$env:FOO' -Environment @{
+Start-Process pwsh -NoNewWindow -ArgumentList '-c', '$Env:FOO' -Environment @{
     FOO  = $null
 }
 ```
@@ -402,7 +402,7 @@ started process runs with the environment variables inherited from the parent pr
 
 On Windows, when you use **UseNewEnvironment**, the new process starts only containing the default
 environment variables defined for the **Machine** scope. This has the side effect that the
-`$env:USERNAME` is set to **SYSTEM**. None of the variables from the **User** scope are included.
+`$Env:USERNAME` is set to **SYSTEM**. None of the variables from the **User** scope are included.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -74,10 +74,10 @@ interpretation by the current shell. For example, if you are in `cmd.exe` and
 want to pass an environment variable value, you would use the `cmd.exe` syntax:
 `powershell.exe -File .\test.ps1 -TestParam %windir%`
 
-In contrast, running `powershell.exe -File .\test.ps1 -TestParam $env:windir`
-in `cmd.exe` results in the script receiving the literal string `$env:windir`
+In contrast, running `powershell.exe -File .\test.ps1 -TestParam $Env:windir`
+in `cmd.exe` results in the script receiving the literal string `$Env:windir`
 because it has no special meaning to the current `cmd.exe` shell. The
-`$env:windir` style of environment variable reference _can_ be used inside a
+`$Env:windir` style of environment variable reference _can_ be used inside a
 **Command** parameter, since there it's interpreted as PowerShell code.
 
 Similarly, if you want to execute the same command from a _Batch script_, you
@@ -211,7 +211,7 @@ braces. The string must be formatted using UTF-16LE character encoding.
 ### -ExecutionPolicy \<ExecutionPolicy\>
 
 Sets the default execution policy for the current session and saves it in the
-`$env:PSExecutionPolicyPreference` environment variable. This parameter does
+`$Env:PSExecutionPolicyPreference` environment variable. This parameter does
 not change the PowerShell execution policy that's set in the registry. For
 information about PowerShell execution policies, including a list of valid
 values, see [about_Execution_Policies][04].

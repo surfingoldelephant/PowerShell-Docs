@@ -186,7 +186,7 @@ prompt.
 For example, the following prompt includes your computer name:
 
 ```powershell
-function prompt {"PS [$env:COMPUTERNAME]> "}
+function prompt {"PS [$Env:COMPUTERNAME]> "}
 ```
 
 On the Server01 computer, the prompt resembles the following prompt:

@@ -142,7 +142,7 @@ information about splatting, check out the [about_Splatting][about_Splatting] ar
 
 ```powershell
 $remoteKeyParams = @{
-    ComputerName = $env:COMPUTERNAME
+    ComputerName = $Env:COMPUTERNAME
     Path = 'HKLM:\SOFTWARE\Microsoft\WebManagement\Server'
     Name = 'EnableRemoteManagement'
     Value = '1'
@@ -159,7 +159,7 @@ only a username, the cmdlet automatically prompts for the password. The
 
 ```powershell
 $remoteKeyParams = @{
-    ComputerName = $env:COMPUTERNAME
+    ComputerName = $Env:COMPUTERNAME
     Path = 'HKLM:\SOFTWARE\Microsoft\WebManagement\Server'
     Name = 'EnableRemoteManagement'
     Value = '1'
@@ -191,7 +191,7 @@ $password = ConvertTo-SecureString "P@ssw0rd" -AsPlainText -Force
 $Cred = New-Object System.Management.Automation.PSCredential ("duffney", $password)
 
 $remoteKeyParams = @{
-    ComputerName = $env:COMPUTERNAME
+    ComputerName = $Env:COMPUTERNAME
     Path = 'HKLM:\SOFTWARE\Microsoft\WebManagement\Server'
     Name = 'EnableRemoteManagement'
     Value = '1'
@@ -212,7 +212,7 @@ credentials, as shown in this example:
 
 ```powershell
 $remoteKeyParams = @{
-    ComputerName = $env:COMPUTERNAME
+    ComputerName = $Env:COMPUTERNAME
     Path = 'HKLM:\SOFTWARE\Microsoft\WebManagement\Server'
     Name = 'EnableRemoteManagement'
     Value = '1'

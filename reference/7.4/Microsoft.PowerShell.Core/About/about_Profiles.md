@@ -239,7 +239,7 @@ CustomizeConsole
 
 ```powershell
 function Prompt {
-    $env:COMPUTERNAME + "\" + (Get-Location) + "> "
+    $Env:COMPUTERNAME + "\" + (Get-Location) + "> "
 }
 ```
 

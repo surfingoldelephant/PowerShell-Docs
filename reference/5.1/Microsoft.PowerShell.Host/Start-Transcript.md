@@ -86,7 +86,7 @@ the `\\Server01\Transcripts` file share.
 
 ```powershell
 $sharepath  = '\\Server01\Transcripts'
-$username   = $env:USERNAME
+$username   = $Env:USERNAME
 $hostname   = hostname
 $version    = $PSVersionTable.PSVersion.ToString()
 $datetime   = Get-Date -f 'yyyyMMddHHmmss'

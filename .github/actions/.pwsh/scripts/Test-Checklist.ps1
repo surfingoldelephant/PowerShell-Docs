@@ -84,7 +84,7 @@ process {
   # Add final newline and write summary; at this point we know everything we need for
   # the summary itself, the rest is for console logging and failure reporting
   $null = $Summary.AppendLine()
-  $Summary.ToString() >> $ENV:GITHUB_STEP_SUMMARY
+  $Summary.ToString() >> $Env:GITHUB_STEP_SUMMARY
   
   # Get an appropriate padding width so the status values line up
   $PaddingWidth = 0

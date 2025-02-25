@@ -201,7 +201,7 @@ function Get-MrPSVersion {
 }
 
 function Get-MrComputerName {
-    $env:COMPUTERNAME
+    $Env:COMPUTERNAME
 }
 ```
 
@@ -233,10 +233,10 @@ Import-Module C:\MyScriptModule.psm1
 
 The module autoloading feature was introduced in PowerShell version 3. To take advantage of module
 autoloading, a script module needs to be saved in a folder with the same base name as the `.PSM1` file
-and in a location specified in `$env:PSModulePath`.
+and in a location specified in `$Env:PSModulePath`.
 
 ```powershell
-$env:PSModulePath
+$Env:PSModulePath
 ```
 
 ```Output
@@ -249,7 +249,7 @@ The results are difficult to read. Since the paths are separated by a semicolon,
 results to return each path on a separate line. This makes them easier to read.
 
 ```powershell
-$env:PSModulePath -split ';'
+$Env:PSModulePath -split ';'
 ```
 
 ```Output
@@ -301,7 +301,7 @@ Script     0.0        myscriptmodule                      {Get-MrComputerName, G
 The module manifest can be created with all of the recommended information.
 
 ```powershell
-New-ModuleManifest -Path $env:ProgramFiles\WindowsPowerShell\Modules\MyScriptModule\MyScriptModule.psd1 -RootModule MyScriptModule -Author 'Mike F Robbins' -Description 'MyScriptModule' -CompanyName 'mikefrobbins.com'
+New-ModuleManifest -Path $Env:ProgramFiles\WindowsPowerShell\Modules\MyScriptModule\MyScriptModule.psd1 -RootModule MyScriptModule -Author 'Mike F Robbins' -Description 'MyScriptModule' -CompanyName 'mikefrobbins.com'
 ```
 
 If any of this information is missed during the initial creation of the module manifest, it can be
@@ -323,7 +323,7 @@ function Get-MrPSVersion {
 }
 
 function Get-MrComputerName {
-    $env:COMPUTERNAME
+    $Env:COMPUTERNAME
 }
 
 Export-ModuleMember -Function Get-MrPSVersion

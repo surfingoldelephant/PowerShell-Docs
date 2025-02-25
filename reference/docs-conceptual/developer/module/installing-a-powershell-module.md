@@ -212,7 +212,7 @@ Then, the installer assures the value of the **PSModulePath** environment variab
 of the common files modules subdirectory.
 
 ```powershell
-$m = $env:ProgramFiles + '\Common Files\Modules'
+$m = $Env:ProgramFiles + '\Common Files\Modules'
 $p = [Environment]::GetEnvironmentVariable("PSModulePath")
 $q = $p -split ';'
 if ($q -notContains $m) {

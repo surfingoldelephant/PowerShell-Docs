@@ -130,7 +130,7 @@ that others may access it. For example, your module can be stored in the system 
 PowerShell is installed, or it can be stored in a user folder.
 
 Generally speaking, you can determine where you should install your module by using one of the paths
-stored in the `$ENV:PSModulePath` variable. Using one of these paths means that PowerShell can
+stored in the `$Env:PSModulePath` variable. Using one of these paths means that PowerShell can
 automatically find and load your module when a user makes a call to it in their code. If you store
 your module somewhere else, you can explicitly let PowerShell know by passing in the location of
 your module as a parameter when you call `Install-Module`.
@@ -185,7 +185,7 @@ paths.
 $PSScriptRoot This variable contains the directory from which the script module is being executed.
 It enables scripts to use the module path to access other resources.
 
-$env:PSModulePath This environment variable contains a list of the directories in which Windows
+$Env:PSModulePath This environment variable contains a list of the directories in which Windows
 PowerShell modules are stored. Windows PowerShell uses the value of this variable when importing
 modules automatically and updating Help topics for modules.
 

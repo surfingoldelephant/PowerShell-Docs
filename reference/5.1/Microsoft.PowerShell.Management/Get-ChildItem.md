@@ -394,7 +394,7 @@ point. In PowerShell, this information is available from the **Target** property
 object returned by `Get-ChildItem`.
 
 ```powershell
-PS D:\> New-Item -ItemType Junction -Name tmp -Target $env:TEMP
+PS D:\> New-Item -ItemType Junction -Name tmp -Target $Env:TEMP
 PS D:\> Get-ChildItem | Select-Object name,*target
 
 Name     Target

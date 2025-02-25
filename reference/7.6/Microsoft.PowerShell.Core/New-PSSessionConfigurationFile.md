@@ -647,9 +647,9 @@ Accept wildcard characters: False
 Configures sessions that use this session configuration to expose the `User:` PSDrive. User drives
 are unique for each connecting user and allow users to copy data to and from PowerShell endpoints
 even if the File System provider is not exposed. User drive roots are created under
-`$env:LOCALAPPDATA\Microsoft\PowerShell\DriveRoots\`. For each user connecting to the endpoint, a
-folder is created with the name `$env:USERDOMAIN\$env:USERNAME`. For computers in workgroups, the
-value of `$env:USERDOMAIN` is the hostname.
+`$Env:LOCALAPPDATA\Microsoft\PowerShell\DriveRoots\`. For each user connecting to the endpoint, a
+folder is created with the name `$Env:USERDOMAIN\$Env:USERNAME`. For computers in workgroups, the
+value of `$Env:USERDOMAIN` is the hostname.
 
 Contents in the user drive persist across user sessions and are not automatically removed. By
 default, users can only store up to 50MB of data in the user drive. This can be customized with the

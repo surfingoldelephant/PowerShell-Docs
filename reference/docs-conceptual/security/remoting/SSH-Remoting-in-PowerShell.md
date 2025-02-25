@@ -68,7 +68,7 @@ remote computer. And, you must enable **password** or **key-based** authenticati
    > If you want to set PowerShell as the default shell for OpenSSH, see
    > [Configuring Windows for OpenSSH][07].
 
-1. Edit the `sshd_config` file located at `$env:ProgramData\ssh`.
+1. Edit the `sshd_config` file located at `$Env:ProgramData\ssh`.
 
    Make sure password authentication is enabled:
 
