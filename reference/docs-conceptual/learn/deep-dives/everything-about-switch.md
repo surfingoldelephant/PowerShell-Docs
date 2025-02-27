@@ -281,7 +281,7 @@ advanced processing.
 The `switch` can be on an expression instead of a variable.
 
 ``` powershell
-switch ( ( Get-Service | Where status -eq 'running' ).name ) {...}
+switch ( ( Get-Service | where status -eq 'running' ).Name ) {...}
 ```
 
 Whatever the expression evaluates to is the value used for the match.

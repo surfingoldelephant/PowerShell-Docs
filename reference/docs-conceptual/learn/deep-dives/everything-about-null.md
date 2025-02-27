@@ -355,7 +355,7 @@ Depending on your code, you should account for the `$null` in your logic.
 
 Either check for `$null` first
 
-- Filter out null on the pipeline (`... | Where {$null -ne $_} | ...`)
+- Filter out null on the pipeline (`... | where {$null -ne $_} | ...`)
 - Handle it in the pipeline function
 
 ## foreach

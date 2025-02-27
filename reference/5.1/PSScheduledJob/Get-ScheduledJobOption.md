@@ -81,9 +81,9 @@ the job options of each scheduled job.
 This example shows how to find job options object with particular values.
 
 ```powershell
-Get-ScheduledJob | Get-ScheduledJobOption | Where {$_.RunElevated -and !$_.WaketoRun}
+Get-ScheduledJob | Get-ScheduledJobOption | where {$_.RunElevated -and !$_.WaketoRun}
 
-Get-ScheduledJob | Get-ScheduledJobOption | Where {$_.RunElevated -and !$_.WaketoRun} |
+Get-ScheduledJob | Get-ScheduledJobOption | where {$_.RunElevated -and !$_.WaketoRun} |
     ForEach-Object {$_.JobDefinition}
 ```
 

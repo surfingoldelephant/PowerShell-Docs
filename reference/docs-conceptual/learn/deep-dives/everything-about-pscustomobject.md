@@ -120,7 +120,7 @@ information about intrinsic members, see
 Sometimes you need a list of all the property names on an object.
 
 ```powershell
-$myObject | Get-Member -MemberType NoteProperty | Select -ExpandProperty Name
+$myObject | Get-Member -MemberType NoteProperty | select -ExpandProperty Name
 ```
 
 We can get this same list off of the `psobject` property too.

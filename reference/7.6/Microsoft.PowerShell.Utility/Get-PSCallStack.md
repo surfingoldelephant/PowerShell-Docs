@@ -52,7 +52,7 @@ My-Alias Get-Content
 $p = $args[0]
 DEBUG: Stepped to ':    $p = $args[0]    '
 [DBG]: PS C:\ps-test> s
-Get-Alias | Where {$_.Definition -like "*$p*"} | Format-Table Definition,
+Get-Alias | where {$_.Definition -like "*$p*"} | Format-Table Definition,
 [DBG]: PS C:\ps-test>Get-PSCallStack
 
 Name        CommandLineParameters         UnboundArguments              Location

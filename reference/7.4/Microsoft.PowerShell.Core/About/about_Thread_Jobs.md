@@ -160,7 +160,7 @@ two cases for that meet this criteria.
 
 ```powershell
 (Measure-Command {
-    1..1000 | ForEach { Start-ThreadJob { Write-Output "Hello $using:_" } } | Receive-Job -Wait
+    1..1000 | foreach { Start-ThreadJob { Write-Output "Hello $using:_" } } | Receive-Job -Wait
 }).TotalMilliseconds
 36860.8226
 
@@ -201,7 +201,7 @@ The script completes in half the time when the jobs are run in parallel.
 
 ```powershell
 Measure-Command {
-    $logs = $logNames | ForEach {
+    $logs = $logNames | foreach {
         Start-ThreadJob {
             Get-WinEvent -LogName $using:_ -MaxEvents 5000 2>$null
         } -ThrottleLimit 10
@@ -255,7 +255,7 @@ the process.
 
 ```powershell
 $threadSafeDictionary = [System.Collections.Concurrent.ConcurrentDictionary[string,object]]::new()
-$jobs = Get-Process | ForEach {
+$jobs = Get-Process | foreach {
     Start-ThreadJob {
         $proc = $using:_
         $dict = $using:threadSafeDictionary

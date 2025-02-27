@@ -67,7 +67,7 @@ WSMan       Microsoft.WSMan.Management
 ```
 
 ```powershell
-Get-PSProvider | Where {$_.ModuleName -eq "Microsoft.PowerShell.Security"}
+Get-PSProvider | where {$_.ModuleName -eq "Microsoft.PowerShell.Security"}
 ```
 
 ```Output

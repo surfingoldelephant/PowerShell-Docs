@@ -406,7 +406,7 @@ The `name` is what the cmdlet would label that column. The `expression` is a scr
 executed where `$_` is the value of the object on the pipe. Here is that script in action:
 
 ```powershell
-$drives = Get-PSDrive | Where Used
+$drives = Get-PSDrive | where Used
 $drives | Select-Object -Property name, $property
 
 Name     totalSpaceGB

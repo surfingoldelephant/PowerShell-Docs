@@ -190,7 +190,7 @@ the **MemberName** parameter of the `ForEach-Object` cmdlet.
 
 ```powershell
 Get-Module -ListAvailable | ForEach-Object -MemberName Path
-Get-Module -ListAvailable | Foreach Path
+Get-Module -ListAvailable | foreach Path
 ```
 
 The second command is equivalent to the first. It uses the `Foreach` alias of the `ForEach-Object`
@@ -626,7 +626,7 @@ Specifies the name of the member property to get or the member method to call. T
 instance members, not static members.
 
 Wildcard characters are permitted, but work only if the resulting string resolves to a unique value.
-For example, if you run `Get-Process | ForEach -MemberName *Name`, the wildcard pattern matches more
+For example, if you run `Get-Process | foreach -MemberName *Name`, the wildcard pattern matches more
 than one member causing the command to fail.
 
 This parameter was introduced in Windows PowerShell 3.0.

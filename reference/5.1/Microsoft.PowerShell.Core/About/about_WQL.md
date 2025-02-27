@@ -444,7 +444,7 @@ The query should return any process from `Hotepad.exe` through `Notepad.exe`.
 ```powershell
 Notepad   # Starts Notepad
 $query = "SELECT * FROM Win32_Process WHERE Name LIKE '[H-N]otepad.exe'"
-Get-WmiObject -Query $query | Select Name, ProcessID
+Get-WmiObject -Query $query | select Name, ProcessID
 ```
 
 ```output
