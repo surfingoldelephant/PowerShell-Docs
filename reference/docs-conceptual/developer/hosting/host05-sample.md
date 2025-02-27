@@ -9,8 +9,8 @@ title: Host05 Sample
 This sample shows how to build an interactive console-based host application that reads commands
 from the command line, executes the commands, and then displays the results to the console. This
 host application also supports calls to remote computers by using the
-[Enter-PsSession](/powershell/module/Microsoft.PowerShell.Core/Enter-PSSession) and
-[Exit-PsSession](/powershell/module/Microsoft.PowerShell.Core/Exit-PSSession) cmdlets.
+[Enter-PSSession](/powershell/module/Microsoft.PowerShell.Core/Enter-PSSession) and
+[Exit-PSSession](/powershell/module/Microsoft.PowerShell.Core/Exit-PSSession) cmdlets.
 
 ## Requirements
 
@@ -44,8 +44,8 @@ host application also supports calls to remote computers by using the
 - Implement the
   [System.Management.Automation.Host.IHostSupportsInteractiveSession](/dotnet/api/System.Management.Automation.Host.IHostSupportsInteractiveSession)
   interface to support interactive remoting by using the
-  [Enter-PsSession](/powershell/module/Microsoft.PowerShell.Core/Enter-PSSession) and
-  [Exit-PsSession](/powershell/module/Microsoft.PowerShell.Core/Exit-PSSession) cmdlets.
+  [Enter-PSSession](/powershell/module/Microsoft.PowerShell.Core/Enter-PSSession) and
+  [Exit-PSSession](/powershell/module/Microsoft.PowerShell.Core/Exit-PSSession) cmdlets.
 
 ## Example 1
 

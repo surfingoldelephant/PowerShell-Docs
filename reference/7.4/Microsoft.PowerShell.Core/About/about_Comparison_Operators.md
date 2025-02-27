@@ -783,7 +783,7 @@ $a -isnot $b.GetType() # Output: True
 - [about_Regular_Expressions][10]
 - [about_Wildcards][11]
 - [Compare-Object][14]
-- [Foreach-Object][12]
+- [ForEach-Object][12]
 - [Where-Object][13]
 
 <!-- link references -->

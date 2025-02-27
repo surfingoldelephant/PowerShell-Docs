@@ -406,7 +406,7 @@ PowerShell includes the following aliases for `Set-Item`:
   - To change the names and data in registry values, use the `New-ItemProperty`, `Set-ItemProperty`, and
     `Rename-ItemProperty` cmdlets.
 - `Set-Item` is designed to work with the data exposed by any provider.
-  To list the providers available in your session, type `Get-PsProvider`.
+  To list the providers available in your session, type `Get-PSProvider`.
   For more information, see [about_Providers](../Microsoft.PowerShell.Core/About/about_Providers.md).
 
 ## RELATED LINKS

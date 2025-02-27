@@ -194,7 +194,7 @@ Msg2 = To exit, type "quit".
 A data section that includes a user-written cmdlet that generates data:
 
 ```powershell
-DATA -supportedCommand Format-XML {
+DATA -supportedCommand Format-Xml {
     Format-Xml -Strings string1, string2, string3
 }
 ```

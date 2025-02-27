@@ -43,8 +43,8 @@ the user.
 - Implement the
   [System.Management.Automation.Host.IHostSupportsInteractiveSession](/dotnet/api/System.Management.Automation.Host.IHostSupportsInteractiveSession)
   interface to support interactive remoting by using the
-  [Enter-PsSession](/powershell/module/Microsoft.PowerShell.Core/Enter-PSSession) and
-  [Exit-PsSession](/powershell/module/Microsoft.PowerShell.Core/Exit-PSSession) cmdlets.
+  [Enter-PSSession](/powershell/module/Microsoft.PowerShell.Core/Enter-PSSession) and
+  [Exit-PSSession](/powershell/module/Microsoft.PowerShell.Core/Exit-PSSession) cmdlets.
 
 - Use the Tokenize API to colorize the command line as it is typed.
 

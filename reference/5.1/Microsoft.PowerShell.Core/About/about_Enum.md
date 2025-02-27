@@ -712,7 +712,7 @@ enum Shade {
     Black
 }
 
-[Shade].GetEnumValues() | Foreach-Object -Process {
+[Shade].GetEnumValues() | ForEach-Object -Process {
     [pscustomobject]@{
         EnumValue    = $_
         StringValue  = $_.ToString()

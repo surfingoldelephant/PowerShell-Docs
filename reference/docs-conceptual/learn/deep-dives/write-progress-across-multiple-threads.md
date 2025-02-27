@@ -1,5 +1,5 @@
 ---
-description: How to use Write-Progress across multiple threads with Foreach-Object -Parallel
+description: How to use Write-Progress across multiple threads with ForEach-Object -Parallel
 ms.date: 11/16/2022
 title: Displaying progress while multi-threading
 ---
@@ -8,7 +8,7 @@ title: Displaying progress while multi-threading
 
 Starting in PowerShell 7.0, the ability to work in multiple threads simultaneously is possible using
 the **Parallel** parameter in the
-[Foreach-Object](/powershell/module/Microsoft.PowerShell.Core/Foreach-Object) cmdlet. Monitoring the
+[ForEach-Object](/powershell/module/Microsoft.PowerShell.Core/ForEach-Object) cmdlet. Monitoring the
 progress of these threads can be a challenge though. Normally, you can monitor the progress of a
 process using [Write-Progress](/powershell/module/Microsoft.PowerShell.Utility/Write-Progress).
 However, since PowerShell uses a separate runspace for each thread when using **Parallel**,
@@ -31,30 +31,30 @@ runs without error.
 $dataset = @(
     @{
         Id   = 1
-        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | ForEach-Object {$_*100}
     }
     @{
         Id   = 2
-        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | ForEach-Object {$_*100}
     }
     @{
         Id   = 3
-        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | ForEach-Object {$_*100}
     }
     @{
         Id   = 4
-        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | ForEach-Object {$_*100}
     }
     @{
         Id   = 5
-        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | ForEach-Object {$_*100}
     }
 )
 
 # Create a hashtable for process.
 # Keys should be ID's of the processes
 $origin = @{}
-$dataset | Foreach-Object {$origin.($_.Id) = @{}}
+$dataset | ForEach-Object {$origin.($_.Id) = @{}}
 
 # Create synced hashtable
 $sync = [System.Collections.Hashtable]::Synchronized($origin)
@@ -79,7 +79,7 @@ This section runs the multi-threaded processes and creates some of the output us
 progress.
 
 ```powershell
-$job = $dataset | Foreach-Object -ThrottleLimit 3 -AsJob -Parallel {
+$job = $dataset | ForEach-Object -ThrottleLimit 3 -AsJob -Parallel {
     $syncCopy = $using:sync
     $process = $syncCopy.$($PSItem.Id)
 
@@ -107,7 +107,7 @@ $job = $dataset | Foreach-Object -ThrottleLimit 3 -AsJob -Parallel {
 }
 ```
 
-The mock processes are sent to `Foreach-Object` and started as jobs. The **ThrottleLimit** is set to
+The mock processes are sent to `ForEach-Object` and started as jobs. The **ThrottleLimit** is set to
 **3** to highlight running multiple processes in a queue. The jobs are stored in the `$job` variable
 and allows us to know when all the processes have finished later on.
 
@@ -134,7 +134,7 @@ PowerShell window.
 ```powershell
 while($job.State -eq 'Running')
 {
-    $sync.Keys | Foreach-Object {
+    $sync.Keys | ForEach-Object {
         # If key is not defined, ignore
         if(![string]::IsNullOrEmpty($sync.$_.Keys))
         {
@@ -172,35 +172,35 @@ hashtable from the current key is used to splat the parameters to `Write-Progres
 $dataset = @(
     @{
         Id   = 1
-        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | ForEach-Object {$_*100}
     }
     @{
         Id   = 2
-        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | ForEach-Object {$_*100}
     }
     @{
         Id   = 3
-        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | ForEach-Object {$_*100}
     }
     @{
         Id   = 4
-        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | ForEach-Object {$_*100}
     }
     @{
         Id   = 5
-        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | ForEach-Object {$_*100}
     }
 )
 
 # Create a hashtable for process.
 # Keys should be ID's of the processes
 $origin = @{}
-$dataset | Foreach-Object {$origin.($_.Id) = @{}}
+$dataset | ForEach-Object {$origin.($_.Id) = @{}}
 
 # Create synced hashtable
 $sync = [System.Collections.Hashtable]::Synchronized($origin)
 
-$job = $dataset | Foreach-Object -ThrottleLimit 3 -AsJob -Parallel {
+$job = $dataset | ForEach-Object -ThrottleLimit 3 -AsJob -Parallel {
     $syncCopy = $using:sync
     $process = $syncCopy.$($PSItem.Id)
 
@@ -229,7 +229,7 @@ $job = $dataset | Foreach-Object -ThrottleLimit 3 -AsJob -Parallel {
 
 while($job.State -eq 'Running')
 {
-    $sync.Keys | Foreach-Object {
+    $sync.Keys | ForEach-Object {
         # If key is not defined, ignore
         if(![string]::IsNullOrEmpty($sync.$_.Keys))
         {

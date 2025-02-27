@@ -213,7 +213,7 @@ ScriptName : C:\ps-test\sample.ps1
 ### Example 8: Set a breakpoint in a runspace
 
 In this example, a job is started. The runspace is stored in a variable and passed to the
-`Set-PSBreakPoint` command with the **Runspace** parameter.
+`Set-PSBreakpoint` command with the **Runspace** parameter.
 
 ```powershell
 Start-Job -ScriptBlock {

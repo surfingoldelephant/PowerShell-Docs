@@ -320,7 +320,7 @@ This example shows what happens to a job that's running in a disconnected sessio
 
 ```powershell
 PS> $s = New-PSSession -ComputerName Server01 -Name Test
-PS> $j = Invoke-Command -Session $s { 1..1500 | Foreach-Object {"Return $_"; sleep 30}} -AsJob
+PS> $j = Invoke-Command -Session $s { 1..1500 | ForEach-Object {"Return $_"; sleep 30}} -AsJob
 PS> $j
 
 Id     Name           State         HasMoreData     Location

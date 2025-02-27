@@ -60,7 +60,7 @@ to continue and then prompted for a file name.
 ```
 Add-PSSnapin NewPSSnapin
 Export-Console -path NewPSSnapinConsole.psc1
-powershell.exe -PsConsoleFile NewPsSnapinConsole.psc1
+powershell.exe -PSConsoleFile NewPsSnapinConsole.psc1
 ```
 
 These commands add the **NewPSSnapin** Windows PowerShell snap-in to the current session, export the
@@ -253,7 +253,7 @@ This cmdlet creates a file that contains the exported aliases.
   To use a Windows PowerShell console file in a new session, use the following syntax to start
   Windows PowerShell:
 
-  `powershell.exe -PsConsoleFile \<ConsoleFile\>.psc1`
+  `powershell.exe -PSConsoleFile \<ConsoleFile\>.psc1`
 
   You can also save Windows PowerShell snap-ins for future sessions by adding an Add-PSSnapin
   command to your Windows PowerShell profile. For more information, see [about_Profiles](About/about_Profiles.md).

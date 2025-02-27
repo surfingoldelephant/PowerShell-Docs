@@ -578,7 +578,7 @@ expression.
 ```powershell
 $myProcess.peakWorkingSet
 (Get-Process PowerShell).Kill()
-'OS', 'Platform' | Foreach-Object { $PSVersionTable. $_ }
+'OS', 'Platform' | ForEach-Object { $PSVersionTable. $_ }
 ```
 
 Starting PowerShell 3.0, when you use the operator on a list collection object
@@ -594,7 +594,7 @@ properties and methods of an object, use the Static parameter of the
 
 ```powershell
 [datetime]::Now
-'MinValue', 'MaxValue' | Foreach-Object { [int]:: $_ }
+'MinValue', 'MaxValue' | ForEach-Object { [int]:: $_ }
 ```
 
 ## See also

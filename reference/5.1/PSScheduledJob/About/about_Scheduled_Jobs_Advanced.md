@@ -117,7 +117,7 @@ Mode                LastWriteTime     Length Name
 ```
 
 You can open and examine the **ScheduledJobDefinition.xml**, **Results.xml**
-and **Status.xml** files or use the `Select-XML` cmdlet to parse the files.
+and **Status.xml** files or use the `Select-Xml` cmdlet to parse the files.
 
 > [!WARNING]
 > Do not edit the XML files. If any XML file contains invalid XML, PowerShell

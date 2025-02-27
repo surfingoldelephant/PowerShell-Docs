@@ -453,16 +453,16 @@ Output: 5
 
 > [!NOTE]
 > [PipelineVariable](About/about_CommonParameters.md) common parameter variables are _not_
-> supported in `Foreach-Object -Parallel` scenarios even with the `$using:` keyword.
+> supported in `ForEach-Object -Parallel` scenarios even with the `$using:` keyword.
 
 ### Example 17: Passing variables in nested parallel script ScriptBlockSet
 
-You can create a variable outside a `Foreach-Object -Parallel` scoped scriptblock and use
+You can create a variable outside a `ForEach-Object -Parallel` scoped scriptblock and use
 it inside the scriptblock with the `$using` keyword.
 
 ```powershell
 $test1 = 'TestA'
-1..2 | Foreach-Object -Parallel {
+1..2 | ForEach-Object -Parallel {
     $using:test1
 }
 ```
@@ -476,10 +476,10 @@ TestA
 # You CANNOT create a variable inside a scoped scriptblock
 # to be used in a nested foreach parallel scriptblock.
 $test1 = 'TestA'
-1..2 | Foreach-Object -Parallel {
+1..2 | ForEach-Object -Parallel {
     $using:test1
     $test2 = 'TestB'
-    1..2 | Foreach-Object -Parallel {
+    1..2 | ForEach-Object -Parallel {
         $using:test2
     }
 }
@@ -487,7 +487,7 @@ $test1 = 'TestA'
 
 ```Output
 Line |
-   2 |  1..2 | Foreach-Object -Parallel {
+   2 |  1..2 | ForEach-Object -Parallel {
      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~
      | The value of the using variable '$using:test2' can't be retrieved because it has
      | not been set in the local session.
@@ -869,7 +869,7 @@ Using `ForEach-Object -Parallel`:
 
   Terminating errors, such as exceptions, terminate the individual parallel instance of the
   scriptblocks in which they occur. A terminating error in one scriptblocks may not cause the
-  termination of the `Foreach-Object` cmdlet. The other scriptblocks, running in parallel, continue
+  termination of the `ForEach-Object` cmdlet. The other scriptblocks, running in parallel, continue
   to run unless they also encounter a terminating error. The terminating error is written to the
   error data stream as an **ErrorRecord** with a **FullyQualifiedErrorId** of `PSTaskException`.
   Terminating errors can be converted to non-terminating errors using PowerShell `try`/`catch` or

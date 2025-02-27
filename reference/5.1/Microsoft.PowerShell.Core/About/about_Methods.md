@@ -190,7 +190,7 @@ At line:1 char:12
 l.Commands.GetProcessCommand
 ```
 
-This example is functionally equivalent to using the `Foreach-Object` cmdlet to
+This example is functionally equivalent to using the `ForEach-Object` cmdlet to
 run the method on each object in the collection.
 
 ```powershell

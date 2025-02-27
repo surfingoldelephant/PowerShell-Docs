@@ -38,7 +38,7 @@ imported automatically on first use and you can use the Import-Module cmdlet to 
 ### Example 1: Add snap-ins
 
 ```powershell
-PS C:\> Add-PSSnapIn -Name Microsoft.Exchange, Microsoft.Windows.AD
+PS C:\> Add-PSSnapin -Name Microsoft.Exchange, Microsoft.Windows.AD
 ```
 
 This command adds the Microsoft Exchange and Active Directory snap-ins to the current session.

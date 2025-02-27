@@ -290,7 +290,7 @@ Examples:
 New-Object 'int[,]' 3,2
 New-Object -ArgumentList 3,2 -TypeName 'int[,]'
 
-dir e:\PowerShell\Scripts\*statement*.ps1 | Foreach-Object {$_.Length}
+dir e:\PowerShell\Scripts\*statement*.ps1 | ForEach-Object {$_.Length}
 
 dir e:\PowerShell\Scripts\*.ps1 |
     Select-String -List "catch" |
@@ -1185,12 +1185,12 @@ not contain any variable substitutions or sub-expression expansions.
 Examples:
 
 The **SupportedCommand** parameter indicates that the given cmdlets or functions generate data only.
-For example, the following data section includes a user-written cmdlet, `ConvertTo-XML`, which
+For example, the following data section includes a user-written cmdlet, `ConvertTo-Xml`, which
 formats data in an XML file:
 
 ```powershell
-data -supportedCommand ConvertTo-XML {
-    Format-XML -strings string1, string2, string3
+data -supportedCommand ConvertTo-Xml {
+    Format-Xml -strings string1, string2, string3
 }
 ```
 

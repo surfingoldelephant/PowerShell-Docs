@@ -110,7 +110,7 @@ begin {
       Error = "target the '$TargetBranch' branch."
     }
   } Else {
-    $ConsolePaths = $TargetPath | Foreach-Object -Process {
+    $ConsolePaths = $TargetPath | ForEach-Object -Process {
       Format-ConsoleStyle -Text $_ -StyleComponent $TargetStyle
     }
     $MarkdownPaths = $TargetPath | ForEach-Object -Process {"- ``$_``"}

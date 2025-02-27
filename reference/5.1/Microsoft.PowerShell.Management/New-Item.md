@@ -676,7 +676,7 @@ Windows PowerShell includes the following aliases for `New-Item`:
 - `ni`
 
 `New-Item` is designed to work with the data exposed by any provider. To list the providers
-available in your session, type `Get-PsProvider`. For more information, see
+available in your session, type `Get-PSProvider`. For more information, see
 [about_Providers](../Microsoft.PowerShell.Core/About/about_Providers.md).
 
 ## RELATED LINKS
