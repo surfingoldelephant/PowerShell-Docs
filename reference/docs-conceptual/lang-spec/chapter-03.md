@@ -111,7 +111,7 @@ A directory or file is an item ([§3.3][§3.3]).
 
 ### 3.1.4 Functions
 
-The PowerShell function provider allows functions ([§8.10][§8.10]) and filters ([§8.10][§8.10].1) to be
+The PowerShell Function provider allows functions ([§8.10][§8.10]) and filters ([§8.10][§8.10].1) to be
 retrieved, added, changed, cleared, and deleted.
 
 The provider Function is a flat namespace that contains only the function and filter objects.
