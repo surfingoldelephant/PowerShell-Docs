@@ -130,7 +130,7 @@ Get-Process | Sort-Object -Property handles
 ```
 
 You can pipe objects to the formatting, export, and output cmdlets, such as
-`Format-List`, `Format-Table`, `Export-Clixml`, `Export-CSV`, and `Out-File`.
+`Format-List`, `Format-Table`, `Export-Clixml`, `Export-Csv`, and `Out-File`.
 
 This example shows how to use the `Format-List` cmdlet to display a list of
 properties for a process object.

@@ -21,7 +21,7 @@ There are many ways to create objects, this list is not definitive:
 
 - [New-Object][16]: Creates an instance of a .NET Framework object or COM
   object.
-- [Import-Csv][15] / [ConvertFrom-CSV][11]: Creates custom objects
+- [Import-Csv][15] / [ConvertFrom-Csv][11]: Creates custom objects
   (**PSCustomObject**) from the items defined as character separated values.
 - [ConvertFrom-Json][12]: Creates custom objects defined in JavaScript Object
   Notation (JSON).

@@ -32,7 +32,7 @@ $myObject = [PSCustomObject]@{
 
 This method works well for me because I use hashtables for just about everything. But there are
 times when I would like PowerShell to treat hashtables more like an object. The first place you
-notice the difference is when you want to use `Format-Table` or `Export-CSV` and you realize that a
+notice the difference is when you want to use `Format-Table` or `Export-Csv` and you realize that a
 hashtable is just a collection of key/value pairs.
 
 You can then access and use the values like you would a normal object.

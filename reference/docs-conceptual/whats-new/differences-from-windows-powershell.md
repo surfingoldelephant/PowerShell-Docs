@@ -901,13 +901,13 @@ supported.
 
 ### `Import-Csv` applies `PSTypeNames` upon import when type information is present in the CSV
 
-Previously, objects exported using `Export-CSV` with `TypeInformation` imported with
+Previously, objects exported using `Export-Csv` with `TypeInformation` imported with
 `ConvertFrom-Csv` were not retaining the type information. This change adds the type information to
 `PSTypeNames` member if available from the CSV file.
 
 ### `-NoTypeInformation` is the default on `Export-Csv`
 
-Previously, the `Export-CSV` cmdlet would output a comment as the first line containing the type
+Previously, the `Export-Csv` cmdlet would output a comment as the first line containing the type
 name of the object. The change excludes the type information by default because it's not understood
 by most CSV tools. This change was made to address customer feedback.
 

@@ -671,7 +671,7 @@ Kevin                          {age, city}
 Alex                           {age, city}
 ```
 
-My go to command for looking at these things is `ConvertTo-JSON` because it's very clean and I
+My go to command for looking at these things is `ConvertTo-Json` because it's very clean and I
 frequently use JSON on other things.
 
 ```powershell
@@ -739,7 +739,7 @@ if you start with a `pscustomobject` so the column order is preserved. But you c
 `pscustomobject` inline if needed.
 
 ```powershell
-$person | ForEach-Object{ [pscustomobject]$_ } | Export-CSV -Path $path
+$person | ForEach-Object{ [pscustomobject]$_ } | Export-Csv -Path $path
 ```
 
 Again, check out my write-up on using a [pscustomobject][pscustomobject].
@@ -750,8 +750,8 @@ If I need to save a nested hashtable to a file and then read it back in again, I
 cmdlets to do it.
 
 ```powershell
-$people | ConvertTo-JSON | Set-Content -Path $path
-$people = Get-Content -Path $path -Raw | ConvertFrom-JSON
+$people | ConvertTo-Json | Set-Content -Path $path
+$people = Get-Content -Path $path -Raw | ConvertFrom-Json
 ```
 
 There are two important points about this method. First is that the JSON is written out multiline so
@@ -968,7 +968,7 @@ One little known feature of `Group-Object` is that it can turn some datasets int
 you.
 
 ```powershell
-Import-CSV $Path | Group-Object -AsHashtable -Property email
+Import-Csv $Path | Group-Object -AsHashtable -Property email
 ```
 
 This will add each row into a hashtable and use the specified property as the key to access it.
