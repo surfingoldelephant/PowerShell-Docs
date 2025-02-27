@@ -120,7 +120,7 @@ namespace Microsoft.Samples.PowerShell.Host
       // commands. This will result in the output being written using the PSHost
       // and PSHostUserInterface classes instead of returning objects to the hosting
       // application.
-      pipe.Commands.Add("out-default");
+      pipe.Commands.Add("Out-Default");
       pipe.Commands[0].MergeMyResults(PipelineResultTypes.Error,PipelineResultTypes.Output);
 
       // Invoke the pipeline. There will not be any objects

@@ -300,7 +300,7 @@ module. You make those functions visible in the JEA session using the **VisibleF
 like you would with built-in and third-party modules.
 
 For tab completion to work properly in JEA sessions you must include the built-in function
-`tabexpansion2` in the **VisibleFunctions** list.
+`TabExpansion2` in the **VisibleFunctions** list.
 
 ## Make the role capabilities available to a configuration
 

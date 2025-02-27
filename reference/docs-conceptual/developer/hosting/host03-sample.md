@@ -155,7 +155,7 @@ namespace Microsoft.Samples.PowerShell.Host
         // commands. This will result in the output being written using the PSHost
         // and PSHostUserInterface classes instead of returning objects to the hosting
         // application.
-        this.currentPowerShell.AddCommand("out-default");
+        this.currentPowerShell.AddCommand("Out-Default");
         this.currentPowerShell.Commands.Commands[0].MergeMyResults(PipelineResultTypes.Error, PipelineResultTypes.Output);
 
         // If there was any input specified, pass it in, otherwise just
@@ -435,7 +435,7 @@ namespace Microsoft.Samples.PowerShell.Host
         // commands. This will result in the output being written using the PSHost
         // and PSHostUserInterface classes instead of returning objects to the hosting
         // application.
-        currentPipeline.Commands.Add("out-default");
+        currentPipeline.Commands.Add("Out-Default");
         currentPipeline.Commands[0].MergeMyResults(PipelineResultTypes.Error, PipelineResultTypes.Output);
 
         // If there was any input specified, pass it in, otherwise just
@@ -479,8 +479,8 @@ namespace Microsoft.Samples.PowerShell.Host
         // using the display formatter. To do this we run
         // a second pipeline passing in the error record.
         // The runtime will bind this to the $input variable
-        // which is why $input is being piped to out-default
-        executeHelper("$input | out-default", rte.ErrorRecord);
+        // which is why $input is being piped to Out-Default
+        executeHelper("$input | Out-Default", rte.ErrorRecord);
       }
     }
 

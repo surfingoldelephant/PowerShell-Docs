@@ -498,7 +498,7 @@ hashtable.
 ### Splatting for optional parameters
 
 One of the most common ways I use splatting is to deal with optional parameters that come from
-some place else in my script. Let's say I have a function that wraps a `Get-CIMInstance` call that
+some place else in my script. Let's say I have a function that wraps a `Get-CimInstance` call that
 has an optional `$Credential` argument.
 
 ```powershell
@@ -512,11 +512,11 @@ if($Credential)
     $CIMParams.Credential = $Credential
 }
 
-Get-CIMInstance @CIMParams
+Get-CimInstance @CIMParams
 ```
 
 I start by creating my hashtable with common parameters. Then I add the `$Credential` if it exists.
-Because I'm using splatting here, I only need to have the call to `Get-CIMInstance` in my code
+Because I'm using splatting here, I only need to have the call to `Get-CimInstance` in my code
 once. This design pattern is very clean and can handle lots of optional parameters easily.
 
 To be fair, you could write your commands to allow `$null` values for parameters. You just don't

@@ -181,7 +181,7 @@ $psISE.CurrentPowerShellTab.output.clear()
 
 Supported in Windows PowerShell ISE 2.0 and later.
 
-The read-only property that gets the current prompt text. Note: the **Prompt** function can be
+The read-only property that gets the current prompt text. Note: the **prompt** function can be
 overridden by the user'&trade;s profile. If the result is other than a simple string, then this property
 returns nothing.
 

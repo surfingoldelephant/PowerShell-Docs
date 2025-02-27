@@ -633,7 +633,7 @@ SYNTAX
 
 DESCRIPTION
     > This cmdlet is only available on the Windows platform. The
-    `Get-Hotfix` cmdlet uses the Win32_QuickFixEngineering WMI class to
+    `Get-HotFix` cmdlet uses the Win32_QuickFixEngineering WMI class to
     list hotfixes that are installed on the local computer or specified
     remote computers.
 

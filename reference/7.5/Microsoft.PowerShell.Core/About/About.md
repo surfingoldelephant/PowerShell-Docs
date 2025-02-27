@@ -398,8 +398,8 @@ Describes how to create and use a PowerShell profile.
 
 ### [about_Prompts](about_Prompts.md)
 
-Describes the `Prompt` function and demonstrates how to create a custom
-`Prompt` function.
+Describes the `prompt` function and demonstrates how to create a custom
+`prompt` function.
 
 ### [about_Properties](about_Properties.md)
 

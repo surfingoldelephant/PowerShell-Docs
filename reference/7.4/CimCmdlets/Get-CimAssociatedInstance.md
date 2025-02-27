@@ -286,7 +286,7 @@ name.
 By default, the value of this parameter is null, and all associated CIM instances are returned.
 
 You can filter the association results to match a specific class name. Filtering happens on the
-server. If this parameter isn't specified, `Get-CIMAssociatedInstance` returns all existing
+server. If this parameter isn't specified, `Get-CimAssociatedInstance` returns all existing
 associations. For example, if class A is associated with classes B, C and D, then this parameter can
 be used to restrict the output to a specific type (B, C or D).
 

@@ -213,7 +213,7 @@ namespace Microsoft.Samples.PowerShell.Host
         // commands. This will result in the output being written using the PSHost
         // and PSHostUserInterface classes instead of returning objects to the hosting
         // application.
-        this.currentPowerShell.AddCommand("out-default");
+        this.currentPowerShell.AddCommand("Out-Default");
         this.currentPowerShell.Commands.Commands[0].MergeMyResults(PipelineResultTypes.Error, PipelineResultTypes.Output);
 
         // If there was any input specified, pass it in, otherwise just

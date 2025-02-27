@@ -88,7 +88,7 @@ sections:
 
           These cmdlets include the following:
 
-          - `Get-Hotfix`
+          - `Get-HotFix`
           - `Rename-Computer`
           - `Restart-Computer`
           - `Stop-Computer`
@@ -112,7 +112,7 @@ sections:
           For example:
 
           ```PowerShell
-          Get-Help Get-Hotfix -Parameter ComputerName
+          Get-Help Get-HotFix -Parameter ComputerName
           ```
 
           For all other commands, use the `Invoke-Command` cmdlet.

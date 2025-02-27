@@ -315,7 +315,7 @@ function Add-Extension
 
 ## Example 5:  Redirecting to a Different Help Topic
 
-The following code is an excerpt from the beginning of the built-in `Help` function in PowerShell,
+The following code is an excerpt from the beginning of the built-in `help` function in PowerShell,
 which displays one screen of Help text at a time. Because the Help topic for the Get-Help cmdlet
 describes the Help function, the Help function uses the `.ForwardHelpTargetName` and
 `.ForwardHelpCategory` keywords to redirect the user to the Get-Help cmdlet Help topic.
@@ -336,7 +336,7 @@ function help
 }
 ```
 
-The following command uses this feature. When a user types a `Get-Help` command for the `Help`
+The following command uses this feature. When a user types a `Get-Help` command for the `help`
 function, `Get-Help` displays the Help topic for the `Get-Help` cmdlet.
 
 ```powershell

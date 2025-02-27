@@ -138,7 +138,7 @@ TotalMilliseconds : 180000
 
 ```powershell
 $a.UICulture = (Get-UICulture)
-$a.OpenTimeout = (New-Timespan -Minutes 4)
+$a.OpenTimeout = (New-TimeSpan -Minutes 4)
 $a.MaximumConnectionRedirectionCount = 1
 $a
 ```

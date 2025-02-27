@@ -238,7 +238,7 @@ CustomizeConsole
 ### Add a customized PowerShell prompt
 
 ```powershell
-function Prompt {
+function prompt {
     $Env:COMPUTERNAME + "\" + (Get-Location) + "> "
 }
 ```

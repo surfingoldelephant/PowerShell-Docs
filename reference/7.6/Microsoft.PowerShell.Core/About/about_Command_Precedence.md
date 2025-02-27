@@ -58,7 +58,7 @@ when it runs commands.
 1. External executable files (including PowerShell script files)
 
 Therefore, if you type `help`, PowerShell first looks for an alias named
-`help`, then a function named `Help`, and finally a cmdlet named `Help`. It
+`help`, then a function named `help`, and finally a cmdlet named `help`. It
 runs the first `help` item that it finds.
 
 For example, if your session contains a cmdlet and a function, both named
