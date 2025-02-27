@@ -110,7 +110,7 @@ Get-Service wmi | Start-Service
 ```
 
 For another example, you can pipe the output of `Get-Item` or `Get-ChildItem`
-within the PowerShell registry provider to the `New-ItemProperty` cmdlet. This
+within the PowerShell Registry provider to the `New-ItemProperty` cmdlet. This
 example adds a new registry entry, **NoOfEmployees**, with a value of **8124**,
 to the **MyCompany** registry key.
 

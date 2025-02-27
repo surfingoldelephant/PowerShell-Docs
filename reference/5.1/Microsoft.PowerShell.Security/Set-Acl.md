@@ -460,7 +460,7 @@ security object depends on the type of the item.
 
 ## NOTES
 
-The `Set-Acl` cmdlet is supported by the PowerShell FileSystem and registry providers. As such, you
+The `Set-Acl` cmdlet is supported by the PowerShell FileSystem and Registry providers. As such, you
 can use it to change the security descriptors of files, directories, and registry keys.
 
 ## RELATED LINKS

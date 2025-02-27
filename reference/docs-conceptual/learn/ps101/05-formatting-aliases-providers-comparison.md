@@ -636,7 +636,7 @@ Comparison Operators.
 1. Why is it necessary to perform formatting as far to the right as possible?
 1. How do you determine what the actual cmdlet is for the `%` alias?
 1. Why shouldn't you use aliases in scripts you save or code you share with others?
-1. Perform a directory listing on the drives that are associated with one of the registry providers.
+1. Perform a directory listing on the drives that are associated with the Registry provider.
 1. What's one of the main benefits of using the replace operator instead of the replace method?
 
 ## References

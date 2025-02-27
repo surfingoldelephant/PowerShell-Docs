@@ -50,8 +50,8 @@ HKEY_CURRENT_USER\Volatile Environment
 These are the top-level keys visible under `HKEY_CURRENT_USER` in the Registry Editor
 (`regedit.exe`).
 
-You can also specify this registry path by specifying the registry provider's name, followed by
-`::`. The registry provider's full name is `Microsoft.PowerShell.Core\Registry`, but this can be
+You can also specify this registry path by specifying the Registry provider's name, followed by
+`::`. The Registry provider's full name is `Microsoft.PowerShell.Core\Registry`, but this can be
 shortened to just `Registry`. Any of the following commands will list the contents directly under
 `HKCU:`.
 

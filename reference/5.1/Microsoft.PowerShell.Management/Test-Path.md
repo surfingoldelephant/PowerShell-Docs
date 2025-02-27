@@ -135,7 +135,7 @@ case, because the PowerShell profile is a `.ps1` file, the cmdlet returns `$true
 
 ### Example 5: Check paths in the Registry
 
-These commands use `Test-Path` with the PowerShell registry provider.
+These commands use `Test-Path` with the PowerShell Registry provider.
 
 The first command tests whether the registry path of the **Microsoft.PowerShell** registry key is
 correct on the system. If PowerShell is installed correctly, the cmdlet returns `$true`.
