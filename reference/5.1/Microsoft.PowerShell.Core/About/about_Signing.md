@@ -260,7 +260,7 @@ PowerShell command prompt:
 $cert = Get-ChildItem Cert:\CurrentUser\My -CodeSigningCert |
     Select-Object -First 1
 
-Set-AuthenticodeSignature add-signature.ps1 $cert
+Set-AuthenticodeSignature Add-Signature.ps1 $cert
 ```
 
 The `Set-AuthenticodeSignature` cmdlet adds the signature to the script file as

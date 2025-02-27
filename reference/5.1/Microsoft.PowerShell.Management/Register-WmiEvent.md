@@ -85,7 +85,7 @@ This example shows how to use an action to respond to an event. In this case, wh
 any `Start-Process` commands in the current session are written to an XML file.
 
 ```powershell
-$action = { Get-History | where { $_.commandline -like "*start-process*" } | export-cliXml "commandHistory.clixml" }
+$action = { Get-History | where { $_.Commandline -like "*Start-Process*" } | Export-CliXml "commandHistory.clixml" }
 Register-WmiEvent -Class 'Win32_ProcessStartTrace' -SourceIdentifier "ProcessStarted" -Action $action
 ```
 

@@ -84,7 +84,7 @@ namespace Microsoft.Samples.PowerShell.Host
 
     /// <summary>
     /// This sample uses the PowerShell runtime along with a host
-    /// implementation to call get-process and display the results
+    /// implementation to call Get-Process and display the results
     /// as you would see them in powershell.exe.
     /// </summary>
     /// <param name="args">Ignored</param>
@@ -110,7 +110,7 @@ namespace Microsoft.Samples.PowerShell.Host
       // date displayed in German.
 
       pipe.Commands.AddScript(@"
-                    get-process | sort handlecount
+                    Get-Process | sort HandleCount
                     # This should display the date in German...
                     get-date | out-string
                     ");

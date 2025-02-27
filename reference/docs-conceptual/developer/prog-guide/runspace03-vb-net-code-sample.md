@@ -63,7 +63,7 @@ Namespace Microsoft.Samples.PowerShell.Runspaces
 
             ' The script to run to get these processes. Input passed
             ' to the script will be available in the $input variable.
-            Dim script As String = "$input | get-process -name {$_}"
+            Dim script As String = "$input | Get-Process -name {$_}"
 
             ' Create an instance of the RunspaceInvoke class.
             Dim invoker As New RunspaceInvoke()

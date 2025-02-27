@@ -281,7 +281,7 @@ test their parameter sets to stop a process.
   stop processes on the Notepad object retrieved by the `Get-Process` command.
 
   ```
-  PS> get-process notepad | stop-proc
+  PS> Get-Process notepad | stop-proc
   Confirm
   Are you sure you want to perform this action?
   Performing operation "stop-proc" on Target "notepad (444)".

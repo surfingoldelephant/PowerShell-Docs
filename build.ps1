@@ -137,7 +137,7 @@ Get-ChildItem $ReferenceDocset -Directory -Exclude $excludeList | ForEach-Object
                 # Adding warningaction=stop to throw errors for all warnings, erroraction=stop to make them terminating errors
                 New-ExternalHelp -Path $ModulePath -OutputPath $MamlOutputFolder -Force -WarningAction Stop -ErrorAction Stop
 
-                # For each module, create update-help help files (cab and helpinfo.xml files)
+                # For each module, create Update-Help help files (cab and helpinfo.xml files)
                 if (-not $SkipCabs) {
                     $cabInfo = New-ExternalHelpCab -CabFilesFolder $MamlOutputFolder -LandingPagePath $LandingPage -OutputFolder $CabOutputFolder
 

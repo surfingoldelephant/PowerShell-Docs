@@ -91,9 +91,9 @@ PS C:\> Get-PSSnapin -Registered
 PS C:\> Set-Alias installutil $Env:windir\Microsoft.NET\Framework\v2.0.50727\installutil.exe
 PS C:\> installutil C:\Dev\Management\ManagementCmdlets.dll
 PS C:\> Get-PSSnapin -Registered
-PS C:\> add-pssnapin ManagementFeatures
+PS C:\> Add-PSSnapin ManagementFeatures
 PS C:\> Get-Command -Module ManagementFeatures
-PS C:\> (Get-Command Set-Alias).pssnapin
+PS C:\> (Get-Command Set-Alias).PSSnapin
 ```
 
 This example demonstrates the process of registering a snap-in on your system and then adding it to

@@ -58,7 +58,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
       // building all of the other data structures needed to run the command.
       using (PowerShell powershell = PowerShell.Create())
       {
-        powershell.AddCommand("get-process").AddCommand("sort-object").AddArgument("ID");
+        powershell.AddCommand("Get-Process").AddCommand("sort-object").AddArgument("ID");
         if (Runspace.DefaultRunspace == null)
         {
           Runspace.DefaultRunspace = powershell.Runspace;

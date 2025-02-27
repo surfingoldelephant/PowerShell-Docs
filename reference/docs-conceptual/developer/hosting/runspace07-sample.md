@@ -47,7 +47,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
     /// <summary>
     /// This sample shows how to create a runspace and how to run commands
     /// using a PowerShell object. It builds a pipeline that runs the
-    /// get-process cmdlet, which is piped to the measure-object
+    /// Get-Process cmdlet, which is piped to the measure-object
     /// cmdlet to count the number of processes running on the system.
     /// </summary>
     /// <param name="args">The parameter is not used.</param>
@@ -83,9 +83,9 @@ namespace Microsoft.Samples.PowerShell.Runspaces
         // when we're done.
         using (powershell)
         {
-          // Add the get-process cmdlet to the PowerShell object. Notice
+          // Add the Get-Process cmdlet to the PowerShell object. Notice
           // we are specify the name of the cmdlet, not a script.
-          powershell.AddCommand("get-process");
+          powershell.AddCommand("Get-Process");
 
           // Add the measure-object cmdlet to count the number
           // of objects being returned. Commands are always added to the end

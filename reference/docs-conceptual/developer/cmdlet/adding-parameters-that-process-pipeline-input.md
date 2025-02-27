@@ -192,7 +192,7 @@ from the command line, see the
   PowerShell) as an upstream command to retrieve the "IEXPLORE" processes.
 
   ```powershell
-  PS> get-process iexplore | get-proc
+  PS> Get-Process iexplore | get-proc
   ```
 
   The following output appears.

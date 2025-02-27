@@ -42,7 +42,7 @@ namespace Samples
   {
     /// <summary>
     /// This sample shows how to construct a remote RunspacePool and how to
-    /// concurrently run the get-process and get-service commands using the
+    /// concurrently run the Get-Process and Get-Service commands using the
     /// runspaces of the pool.
     /// </summary>
     /// <param name="args">Parameter is not used.</param>
@@ -66,16 +66,16 @@ namespace Samples
         remoteRunspacePool.Open();
 
         // Call the Create() method to create a pipeline, call the AddCommand(string)
-        // method to add the "get-process" command, and then call the BeginInvoke()
+        // method to add the "Get-Process" command, and then call the BeginInvoke()
         // method to run the command asynchronously using a runspace of the pool.
-        PowerShell gpsCommand = PowerShell.Create().AddCommand("get-process");
+        PowerShell gpsCommand = PowerShell.Create().AddCommand("Get-Process");
         gpsCommand.RunspacePool = remoteRunspacePool;
         IAsyncResult gpsCommandAsyncResult = gpsCommand.BeginInvoke();
 
         // The previous call does not block the current thread because it is
         // running asynchronously. Because the remote runspace pool can open two
         // runspaces, the second command can be run.
-        PowerShell getServiceCommand = PowerShell.Create().AddCommand("get-service");
+        PowerShell getServiceCommand = PowerShell.Create().AddCommand("Get-Service");
         getServiceCommand.RunspacePool = remoteRunspacePool;
         IAsyncResult getServiceCommandAsyncResult = getServiceCommand.BeginInvoke();
 
@@ -87,7 +87,7 @@ namespace Samples
         // Process the output from the first command.
         if ((gpsCommandOutput != null) && (gpsCommandOutput.Count > 0))
         {
-          Console.WriteLine("The first output from running get-process command: ");
+          Console.WriteLine("The first output from running Get-Process command: ");
           Console.WriteLine(
                             "Process Name: {0} Process Id: {1}",
                             gpsCommandOutput[0].Properties["ProcessName"].Value,
@@ -103,7 +103,7 @@ namespace Samples
         // Process the output of the second command as needed.
         if ((getServiceCommandOutput != null) && (getServiceCommandOutput.Count > 0))
         {
-          Console.WriteLine("The first output from running get-service command: ");
+          Console.WriteLine("The first output from running Get-Service command: ");
           Console.WriteLine(
                             "Service Name: {0} Description: {1} State: {2}",
                             getServiceCommandOutput[0].Properties["ServiceName"].Value,

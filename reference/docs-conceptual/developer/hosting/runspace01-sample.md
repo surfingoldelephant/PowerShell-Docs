@@ -40,7 +40,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
   {
     /// <summary>
     /// This sample uses the PowerShell class to execute
-    /// the get-process cmdlet synchronously. The name and
+    /// the Get-Process cmdlet synchronously. The name and
     /// handlecount are then extracted from the PSObjects
     /// returned and displayed.
     /// </summary>
@@ -57,7 +57,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
     {
       // Create a PowerShell object. Creating this object takes care of
       // building all of the other data structures needed to run the command.
-      using (PowerShell powershell = PowerShell.Create().AddCommand("get-process"))
+      using (PowerShell powershell = PowerShell.Create().AddCommand("Get-Process"))
       {
         Console.WriteLine("Process              HandleCount");
         Console.WriteLine("--------------------------------");

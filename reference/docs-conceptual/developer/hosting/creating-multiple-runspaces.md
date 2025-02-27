@@ -42,7 +42,7 @@ namespace HostRunspacePool
         rsp.Open();
 
         // Create a PowerShell object to run the following command.
-        //  get-process wmi*
+        //  Get-Process wmi*
         PowerShell gpc = PowerShell.Create();
         // Specify the runspace to use and add commands.
         gpc.RunspacePool = rsp;
@@ -54,7 +54,7 @@ namespace HostRunspacePool
         PSDataCollection<PSObject> gpcOutput = gpc.EndInvoke(gpcAsyncResult);
 
         // Process the output.
-        Console.WriteLine("The output from running the command: get-process wmi*");
+        Console.WriteLine("The output from running the command: Get-Process wmi*");
         for (int i= 0; i < gpcOutput.Count; i++)
         {
          Console.WriteLine(

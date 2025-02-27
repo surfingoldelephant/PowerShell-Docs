@@ -118,7 +118,7 @@ ParamName                       ParamValue
 psmaximumreceivedobjectsizemb   20
 
 "Restart WinRM service"
-WinRM service need to be restarted to make the changes effective. Do you want to run the command "restart-service winrm"?
+WinRM service need to be restarted to make the changes effective. Do you want to run the command "Restart-Service winrm"?
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
 ```
 
@@ -148,7 +148,7 @@ startupscript        c:\ps-test\Mainte...
 
 "Restart WinRM service"
 WinRM service need to be restarted to make the changes effective. Do you want to run
-the command "restart-service winrm"?
+the command "Restart-Service winrm"?
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
 
 ```

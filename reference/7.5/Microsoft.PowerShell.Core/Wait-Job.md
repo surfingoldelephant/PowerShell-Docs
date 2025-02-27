@@ -266,7 +266,7 @@ Get-Job
 ```Output
 Id   Name     State      HasMoreData     Location             Command
 --   ----     -----      -----------     --------             -------
-1    Job1     Completed  True            localhost,Server01.. get-service
+1    Job1     Completed  True            localhost,Server01.. Get-Service
 4    Job4     Completed  True            localhost            dir | where
 ```
 

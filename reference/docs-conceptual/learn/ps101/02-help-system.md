@@ -648,10 +648,10 @@ RELATED LINKS
     Win32_QuickFixEngineering class
 
 REMARKS
-    To see the examples, type: "get-help Get-HotFix -examples".
-    For more information, type: "get-help Get-HotFix -detailed".
-    For technical information, type: "get-help Get-HotFix -full".
-    For online help, type: "get-help Get-HotFix -online"
+    To see the examples, type: "Get-Help Get-HotFix -examples".
+    For more information, type: "Get-Help Get-HotFix -detailed".
+    For technical information, type: "Get-Help Get-HotFix -full".
+    For online help, type: "Get-Help Get-HotFix -online"
 ```
 
 You can also find commands that lack help articles with `Get-Help`, although this capability isn't

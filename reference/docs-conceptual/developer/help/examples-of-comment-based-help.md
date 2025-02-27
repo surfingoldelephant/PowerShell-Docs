@@ -105,7 +105,7 @@ PARAMETERS
         This cmdlet supports the common parameters: -Verbose, -Debug,
         -ErrorAction, -ErrorVariable, -WarningAction, -WarningVariable,
         -OutBuffer and -OutVariable. For more information, type
-        "get-help about_commonparameters".
+        "Get-Help about_commonparameters".
 
 INPUTS
     None. You can't pipe objects to Add-Extension.
@@ -228,7 +228,7 @@ PARAMETERS
         This cmdlet supports the common parameters: -Verbose, -Debug,
         -ErrorAction, -ErrorVariable, -WarningAction, -WarningVariable,
         -OutBuffer and -OutVariable. For more information, type,
-        "get-help about_commonparameters".
+        "Get-Help about_commonparameters".
 
 INPUTS
         None. You can't pipe objects to Update-Month.ps1.
@@ -340,7 +340,7 @@ The following command uses this feature. When a user types a `Get-Help` command 
 function, `Get-Help` displays the Help topic for the `Get-Help` cmdlet.
 
 ```powershell
-PS> get-help help
+PS> Get-Help help
 ```
 
 ```Output

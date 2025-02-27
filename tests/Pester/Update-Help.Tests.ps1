@@ -1,5 +1,5 @@
 # Test Settings:
-# This is the list of PowerShell Core modules for which we test update-help
+# This is the list of PowerShell Core modules for which we test Update-Help
 $powershellCoreModules = @(
     "Microsoft.PowerShell.Host"
     "Microsoft.PowerShell.Core"

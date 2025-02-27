@@ -146,9 +146,9 @@ InstanceID -Auto
 ```Output
 Id Name Command                 State  InstanceId
 -- ---- -------                 -----  ----------
-1 Job1 start-service schedule Running 05abb67a-2932-4bd5-b331-c0254b8d9146
-3 Job3 start-service schedule Running c03cbd45-19f3-4558-ba94-ebe41b68ad03
-5 Job5 get-service s*         Blocked e3bbfed1-9c53-401a-a2c3-a8db34336adf
+1 Job1 Start-Service schedule Running 05abb67a-2932-4bd5-b331-c0254b8d9146
+3 Job3 Start-Service schedule Running c03cbd45-19f3-4558-ba94-ebe41b68ad03
+5 Job5 Get-Service s*         Blocked e3bbfed1-9c53-401a-a2c3-a8db34336adf
 ```
 
 ```powershell

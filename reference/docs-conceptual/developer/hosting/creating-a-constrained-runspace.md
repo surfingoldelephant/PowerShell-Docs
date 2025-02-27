@@ -48,7 +48,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
 
       // Add the Get-Process and Get-Command cmdlets to the session state.
       SessionStateCmdletEntry ssce1 = new SessionStateCmdletEntry(
-                                                            "get-process",
+                                                            "Get-Process",
                                                             typeof(GetProcessCommand),
                                                             null);
       iss.Commands.Add(ssce1);

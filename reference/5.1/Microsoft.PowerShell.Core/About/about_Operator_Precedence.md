@@ -34,7 +34,7 @@ precedence.
 
 The Operator column lists the operators. The Reference column lists the
 PowerShell Help topic in which the operator is described. To display the topic,
-type `get-help <topic-name>`.
+type `Get-Help <topic-name>`.
 
 |          OPERATOR           |              REFERENCE               |
 | --------------------------- | ------------------------------------ |

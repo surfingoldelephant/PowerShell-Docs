@@ -315,7 +315,7 @@ PS> Get-Job | Format-List -Property *
 HasMoreData   : False
 StatusMessage :
 Location      : localhost
-Command       : get-process
+Command       : Get-Process
 JobStateInfo  : Failed
 Finished      : System.Threading.ManualReset
 EventInstanceId    : fb792295-1318-4f5d-8ac8-8a89c5261507

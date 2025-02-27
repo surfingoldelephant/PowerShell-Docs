@@ -75,7 +75,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
 
       // The script to run to get these processes. Input passed
       // to the script will be available in the $input variable.
-      string script = "$input | get-process -name {$_}";
+      string script = "$input | Get-Process -name {$_}";
 
       // Create a PowerShell object. Creating this object takes care of
       // building all of the other data structures needed to run the script.

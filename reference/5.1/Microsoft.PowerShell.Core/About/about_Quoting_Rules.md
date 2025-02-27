@@ -283,14 +283,14 @@ the here-string, all quotation marks are interpreted literally. For example:
 
 ```powershell
 @"
-For help, type "get-help"
+For help, type "Get-Help"
 "@
 ```
 
 The output of this command is:
 
 ```Output
-For help, type "get-help"
+For help, type "Get-Help"
 ```
 
 Using a here-string can simplify using a string in a command. For example:
