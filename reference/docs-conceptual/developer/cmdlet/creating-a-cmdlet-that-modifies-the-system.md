@@ -32,7 +32,7 @@ system outside Windows PowerShell. For example, stopping a process, enabling or 
 account, or adding a row to a database table are all changes to the system that should be confirmed.
 In contrast, operations that read data or establish transient connections do not change the system
 and generally do not require confirmation. Confirmation is also not needed for actions whose effect
-is limited to inside the Windows PowerShell runtime, such as `set-variable`. Cmdlets that might or
+is limited to inside the Windows PowerShell runtime, such as `Set-Variable`. Cmdlets that might or
 might not make a persistent change should declare `SupportsShouldProcess` and call
 [System.Management.Automation.Cmdlet.ShouldProcess](/dotnet/api/System.Management.Automation.Cmdlet.ShouldProcess)
 only if they are about to make a persistent change.

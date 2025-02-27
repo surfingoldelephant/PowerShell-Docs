@@ -1088,7 +1088,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
 1. Start Windows PowerShell, and search the Notes file for occurrences of lines with the expression ".NET". Note that the quotation marks around the name of the path are required only if the path consists of more than one word.
 
     ```powershell
-    select-str -Path "notes" -Pattern ".NET" -SimpleMatch=$false
+    Select-Str -Path "notes" -Pattern ".NET" -SimpleMatch=$false
     ```
 
     The following output appears.
@@ -1109,7 +1109,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
 2. Search the Notes file for occurrences of lines with the word "over", followed by any other text. The `SimpleMatch` parameter is using the default value of `false`. The search is case-insensitive because the `CaseSensitive` parameter is set to `false`.
 
     ```powershell
-    select-str -Path notes -Pattern "over*" -SimpleMatch -CaseSensitive:$false
+    Select-Str -Path notes -Pattern "over*" -SimpleMatch -CaseSensitive:$false
     ```
 
     The following output appears.
@@ -1130,7 +1130,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
 3. Search the Notes file using a regular expression as the pattern. The cmdlet searches for alphabetical characters and blank spaces enclosed in parentheses.
 
     ```powershell
-    select-str -Path notes -Pattern "\([A-Za-z:blank:]" -SimpleMatch:$false
+    Select-Str -Path notes -Pattern "\([A-Za-z:blank:]" -SimpleMatch:$false
     ```
 
     The following output appears.
@@ -1151,7 +1151,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
 4. Perform a case-sensitive search of the Notes file for occurrences of the word "Parameter".
 
     ```powershell
-    select-str -Path notes -Pattern Parameter -CaseSensitive
+    Select-Str -Path notes -Pattern Parameter -CaseSensitive
     ```
 
     The following output appears.
@@ -1172,7 +1172,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
 5. Search the Variable provider shipped with Windows PowerShell for variables that have numerical values from 0 through 9.
 
     ```powershell
-    select-str -Path * -Pattern "[0-9]"
+    Select-Str -Path * -Pattern "[0-9]"
     ```
 
     The following output appears.
@@ -1188,7 +1188,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
 6. Use a script block to search the file SelectStrCommandSample.cs for the string "Pos". The **cmatch** function for the script performs a case-insensitive pattern match.
 
     ```powershell
-    select-str -Path "SelectStrCommandSample.cs" -Script { if ($args[0] -cmatch "Pos"){ return $true } return $false }
+    Select-Str -Path "SelectStrCommandSample.cs" -Script { if ($args[0] -cmatch "Pos"){ return $true } return $false }
     ```
 
     The following output appears.

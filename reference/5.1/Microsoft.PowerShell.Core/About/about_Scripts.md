@@ -320,11 +320,11 @@ removed, as shown in the following example.
 C:\PS> .\UtilityFunctions.ps1
 
 C:\PS> New-Profile
-The term 'new-profile' is not recognized as a cmdlet, function, operable
+The term 'New-Profile' is not recognized as a cmdlet, function, operable
 program, or script file. Verify the term and try again.
 At line:1 char:12
-+ new-profile <<<<
-   + CategoryInfo          : ObjectNotFound: (new-profile:String) [],
++ New-Profile <<<<
+   + CategoryInfo          : ObjectNotFound: (New-Profile:String) [],
    + FullyQualifiedErrorId : CommandNotFoundException
 
 C:\PS> $profileName

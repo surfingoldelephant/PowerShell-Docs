@@ -308,7 +308,7 @@ sections, the debugger breaks at the first line of each section.
 For example:
 
 ```powershell
-function test-cmdlet {
+function Test-Cmdlet {
     begin {
         Write-Output "Begin"
     }
@@ -320,32 +320,32 @@ function test-cmdlet {
     }
 }
 
-C:\PS> Set-PSBreakpoint -Command test-cmdlet
+C:\PS> Set-PSBreakpoint -Command Test-Cmdlet
 
-C:\PS> test-cmdlet
+C:\PS> Test-Cmdlet
 
 Begin
 Entering debug mode. Use h or ? for help.
 
-Hit Command breakpoint on 'prompt:test-cmdlet'
+Hit Command breakpoint on 'prompt:Test-Cmdlet'
 
-test-cmdlet
+Test-Cmdlet
 
 [DBG]: C:\PS> c
 Process
 Entering debug mode. Use h or ? for help.
 
-Hit Command breakpoint on 'prompt:test-cmdlet'
+Hit Command breakpoint on 'prompt:Test-Cmdlet'
 
-test-cmdlet
+Test-Cmdlet
 
 [DBG]: C:\PS> c
 End
 Entering debug mode. Use h or ? for help.
 
-Hit Command breakpoint on 'prompt:test-cmdlet'
+Hit Command breakpoint on 'prompt:Test-Cmdlet'
 
-test-cmdlet
+Test-Cmdlet
 
 [DBG]: C:\PS>
 ```
@@ -436,7 +436,7 @@ function psversion {
     "Upgrade to PowerShell 7!"
   }
   else {
-    "Have you run a background job today (start-job)?"
+    "Have you run a background job today (Start-Job)?"
   }
 }
 
@@ -545,7 +545,7 @@ steps to the next statement in the script.
 ```powershell
 DBG> o
 Windows PowerShell 2.0
-Have you run a background job today (start-job)?
+Have you run a background job today (Start-Job)?
 test.ps1:13  "Done $scriptName"
 ```
 
@@ -638,7 +638,7 @@ displayed, but it isn't executed.
 ```powershell
 DBG> v
 Windows PowerShell 2.0
-Have you run a background job today (start-job)?
+Have you run a background job today (Start-Job)?
 test.ps1:13  "Done $scriptName"
 ```
 
@@ -694,7 +694,7 @@ are read-only, so you can't add an action to the current breakpoint.)
 ```powershell
 DBG> c
 Windows PowerShell 2.0
-Have you run a background job today (start-job)?
+Have you run a background job today (Start-Job)?
 Done C:\ps-test\test.ps1
 
 PS C:\ps-test> Get-PSBreakpoint | Remove-PSBreakpoint

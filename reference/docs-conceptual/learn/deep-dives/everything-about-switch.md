@@ -411,7 +411,7 @@ switch -Wildcard ($Messages)
 ```Output
 Downloading update
 WARNING: Ran into errors downloading file
-write-error -message $PSItem : Error: out of disk space
+Write-Error -message $PSItem : Error: out of disk space
 + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
 + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException
 ```

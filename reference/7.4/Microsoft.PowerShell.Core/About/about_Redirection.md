@@ -301,7 +301,7 @@ redirection operators as well. Put the following command near the top of your
 script to set `Out-File:Width` for the whole script:
 
 ```powershell
-$PSDefaultParameterValues['out-file:width'] = 2000
+$PSDefaultParameterValues['Out-File:Width'] = 2000
 ```
 
 Increasing the output width will increase memory consumption when logging
@@ -313,7 +313,7 @@ you will need to pipe the output through `Format-Table -AutoSize` before
 outputting to file.
 
 ```powershell
-$PSDefaultParameterValues['out-file:width'] = 2000
+$PSDefaultParameterValues['Out-File:Width'] = 2000
 Get-Service | Format-Table -AutoSize > services.log
 ```
 

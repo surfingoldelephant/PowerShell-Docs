@@ -164,7 +164,7 @@ Strings that include permitted variables.
 ```powershell
 DATA {
     if ($null) {
-        "To get help for this cmdlet, type Get-Help new-dictionary."
+        "To get help for this cmdlet, type Get-Help New-Dictionary."
     }
 }
 ```

@@ -84,7 +84,7 @@ This example demonstrates that dynamic modules are not returned by the `Get-Modu
 members that they export are returned by the `Get-Command` cmdlet.
 
 ```powershell
-new-module -scriptblock {function Hello {"Hello!"}}
+New-Module -scriptblock {function Hello {"Hello!"}}
 ```
 
 ```Output

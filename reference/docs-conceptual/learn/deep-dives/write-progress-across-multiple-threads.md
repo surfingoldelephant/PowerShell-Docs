@@ -54,7 +54,7 @@ $dataset = @(
 # Create a hashtable for process.
 # Keys should be ID's of the processes
 $origin = @{}
-$dataset | Foreach-Object {$origin.($_.id) = @{}}
+$dataset | Foreach-Object {$origin.($_.Id) = @{}}
 
 # Create synced hashtable
 $sync = [System.Collections.Hashtable]::Synchronized($origin)
@@ -88,10 +88,10 @@ $job = $dataset | Foreach-Object -ThrottleLimit 3 -AsJob -Parallel {
     $process.Status = "Processing"
 
     # Fake workload start up that takes x amount of time to complete
-    start-sleep -Milliseconds ($PSItem.wait*5)
+    Start-Sleep -Milliseconds ($PSItem.Wait*5)
 
     # Process. update activity
-    $process.Activity = "Id $($PSItem.id) processing"
+    $process.Activity = "Id $($PSItem.Id) processing"
     foreach ($percent in 1..100)
     {
         # Update process on status
@@ -136,7 +136,7 @@ while($job.State -eq 'Running')
 {
     $sync.Keys | Foreach-Object {
         # If key is not defined, ignore
-        if(![string]::IsNullOrEmpty($sync.$_.keys))
+        if(![string]::IsNullOrEmpty($sync.$_.Keys))
         {
             # Create parameter hashtable to splat
             $param = $sync.$_
@@ -195,7 +195,7 @@ $dataset = @(
 # Create a hashtable for process.
 # Keys should be ID's of the processes
 $origin = @{}
-$dataset | Foreach-Object {$origin.($_.id) = @{}}
+$dataset | Foreach-Object {$origin.($_.Id) = @{}}
 
 # Create synced hashtable
 $sync = [System.Collections.Hashtable]::Synchronized($origin)
@@ -209,10 +209,10 @@ $job = $dataset | Foreach-Object -ThrottleLimit 3 -AsJob -Parallel {
     $process.Status = "Processing"
 
     # Fake workload start up that takes x amount of time to complete
-    start-sleep -Milliseconds ($PSItem.wait*5)
+    Start-Sleep -Milliseconds ($PSItem.Wait*5)
 
     # Process. update activity
-    $process.Activity = "Id $($PSItem.id) processing"
+    $process.Activity = "Id $($PSItem.Id) processing"
     foreach ($percent in 1..100)
     {
         # Update process on status
@@ -231,7 +231,7 @@ while($job.State -eq 'Running')
 {
     $sync.Keys | Foreach-Object {
         # If key is not defined, ignore
-        if(![string]::IsNullOrEmpty($sync.$_.keys))
+        if(![string]::IsNullOrEmpty($sync.$_.Keys))
         {
             # Create parameter hashtable to splat
             $param = $sync.$_

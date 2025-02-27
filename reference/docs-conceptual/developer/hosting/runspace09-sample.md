@@ -71,7 +71,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
       {
         // Add a script to the PowerShell object. The script generates the
         // numbers from 1 to 10 in half second intervals.
-        powershell.AddScript("1..10 | foreach {$_ ; start-sleep -milli 500}");
+        powershell.AddScript("1..10 | foreach {$_ ; Start-Sleep -milli 500}");
 
         // Add the event handlers.  If we did not care about hooking the DataAdded
         // event, we would let BeginInvoke create the output stream for us.
