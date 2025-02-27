@@ -140,7 +140,7 @@ base class. The following table defines the cmdlets implemented by this class.
 |     Cmdlet      |                                                                        Definition                                                                        |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Copy-Item`     | Copies items from one location to another. This cmdlet does not pass an output object through the pipeline unless its `PassThru` parameter is specified. |
-| `Get-Childitem` | Retrieves the child items at the specified location, and streams them as objects.                                                                        |
+| `Get-ChildItem` | Retrieves the child items at the specified location, and streams them as objects.                                                                        |
 | `New-Item`      | Creates new items at the specified location, and streams the resultant object.                                                                           |
 | `Remove-Item`   | Removes items from the specified location.                                                                                                               |
 | `Rename-Item`   | Renames an item at the specified location. This cmdlet does not pass an output object through the pipeline unless its `PassThru` parameter is specified. |

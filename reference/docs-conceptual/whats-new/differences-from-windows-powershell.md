@@ -729,7 +729,7 @@ With **ConciseView**, if an error is not from a script or parser error, then it'
 error message:
 
 ```powershell
-Get-Childitem -Path c:\NotReal
+Get-ChildItem -Path c:\NotReal
 ```
 
 ```Output

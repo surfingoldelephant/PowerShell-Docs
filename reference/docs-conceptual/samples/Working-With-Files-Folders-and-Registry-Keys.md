@@ -64,7 +64,7 @@ Mode                LastWriteTime     Length Name
 
 ### Filtering items by name
 
-To display only the names of items, use the **Name** parameter of `Get-Childitem`:
+To display only the names of items, use the **Name** parameter of `Get-ChildItem`:
 
 ```
 PS> Get-ChildItem -Path C:\WINDOWS -Name

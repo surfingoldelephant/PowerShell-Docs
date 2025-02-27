@@ -315,7 +315,7 @@ derivation. This example will test the sample navigation provider.
    Set-Location mydb:
    ```
 
-2. Now run the `Get-Childitem` cmdlet to retrieve a list of the database items, which are the
+2. Now run the `Get-ChildItem` cmdlet to retrieve a list of the database items, which are the
    available database tables. For each table, this cmdlet also retrieves the number of table rows.
 
    ```powershell
@@ -361,7 +361,7 @@ derivation. This example will test the sample navigation provider.
    mydb:\Employees
    ```
 
-5. Now use the `Get-Childitem` cmdlet piped to the `Format-Table` cmdlet. This set of cmdlets
+5. Now use the `Get-ChildItem` cmdlet piped to the `Format-Table` cmdlet. This set of cmdlets
    retrieves the items for the Employees data table, which are the table rows. They are formatted as
    specified by the `Format-Table` cmdlet.
 
