@@ -77,7 +77,7 @@ feature.
 ```powershell
 $s = New-PSSession -ComputerName Server01 -Credential Domain01\Admin02
 $j = Invoke-Command -Session $s -ScriptBlock {Start-Job -ScriptBlock {Get-EventLog -LogName System}}
-Invoke-Command -Session $s -ScriptBlock { Stop-job -Job $Using:j }
+Invoke-Command -Session $s -ScriptBlock { Stop-Job -Job $Using:j }
 ```
 
 This example shows how to use the `Stop-Job` cmdlet to stop a job that is running on a remote

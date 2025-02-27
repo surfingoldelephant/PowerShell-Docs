@@ -172,7 +172,7 @@ instance in a table. A calculated property named **Label** displays the elapsed
 time of each job instance.
 
 ```powershell
-Get-job -Name UpdateHelpJob |
+Get-Job -Name UpdateHelpJob |
   Format-Table -Property ID, PSBeginTime, PSEndTime,
 @{Label="Elapsed Time";Expression={$.PsEndTime - $.PSBeginTime}}
 ```

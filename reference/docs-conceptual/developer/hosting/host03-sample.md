@@ -228,7 +228,7 @@ namespace Microsoft.Samples.PowerShell.Host
             string str = result[0].BaseObject as string;
             if (!string.IsNullOrEmpty(str))
             {
-              // Remove \r\n that is added by Out-string.
+              // Remove \r\n that is added by Out-String.
               this.myHost.UI.WriteErrorLine(str.Substring(0, str.Length - 2));
             }
           }

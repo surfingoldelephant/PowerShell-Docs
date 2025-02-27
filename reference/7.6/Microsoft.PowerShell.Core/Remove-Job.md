@@ -98,7 +98,7 @@ An alternative is to use the **Job** parameter, such as `Remove-Job -Job $batch`
 In this example, all the jobs in the current PowerShell session are deleted.
 
 ```powershell
-Get-job | Remove-Job
+Get-Job | Remove-Job
 ```
 
 `Get-Job` gets all the jobs in the current PowerShell session. The job objects are sent down the

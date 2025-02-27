@@ -19,7 +19,7 @@ cmdlet. For more information about the components of a list view, see [Creating 
    formatting file.
 
 1. Open Windows PowerShell, and run the following command to load the formatting file into the
-   current session: `Update-formatdata -prependpath PathToFormattingFile`.
+   current session: `Update-FormatData -prependpath PathToFormattingFile`.
 
 > [!WARNING]
 > This formatting file defines the display of an object that is already defined by a Windows

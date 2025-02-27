@@ -142,7 +142,7 @@ format to ASCII using the **Encoding** parameter:
 Get-Process | Out-File -FilePath C:\temp\processlist.txt -Encoding ASCII
 ```
 
-`Out-file` formats file contents to look like console output. This causes the output to be truncated
+`Out-File` formats file contents to look like console output. This causes the output to be truncated
 just as it's in a console window in most circumstances. For example, if you run the following
 command:
 

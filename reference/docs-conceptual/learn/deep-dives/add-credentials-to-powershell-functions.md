@@ -134,9 +134,9 @@ The following sections show different methods of providing credentials to `Set-R
 
 ### Prompting for credentials
 
-Using `Get-Credential` in parentheses `()` at run time causes the `Get-credential` to run first. You
+Using `Get-Credential` in parentheses `()` at run time causes the `Get-Credential` to run first. You
 are prompted for a username and password. You could use the **Credential** or **UserName**
-parameters of `Get-credential` to pre-populate the username and domain. The following example uses a
+parameters of `Get-Credential` to pre-populate the username and domain. The following example uses a
 technique called splatting to pass parameters to the `Set-RemoteRegistryValue` function. For more
 information about splatting, check out the [about_Splatting][about_Splatting] article.
 
