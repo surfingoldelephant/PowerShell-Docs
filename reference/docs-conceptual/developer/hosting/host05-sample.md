@@ -286,7 +286,7 @@ namespace Microsoft.Samples.PowerShell.Host
 
         try
         {
-          this.currentPowerShell.AddScript("$input").AddCommand("out-string");
+          this.currentPowerShell.AddScript("$input").AddCommand("Out-String");
 
           // Do not merge errors, this function will swallow errors.
           Collection<PSObject> result;

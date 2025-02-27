@@ -29,13 +29,13 @@ PowerShell has the  following type operators:
 - `-is`   |Returns TRUE when the input is an instance of the specified .NET type.
 
   ```powershell
-  (get-date) -is [DateTime]     # Result is True
+  (Get-Date) -is [DateTime]     # Result is True
   ```
 
 - `-isnot`|Returns TRUE when the input not an instance of the specified.NET type.
 
   ```powershell
-  (get-date) -isnot [DateTime]  # Result is False
+  (Get-Date) -isnot [DateTime]  # Result is False
   ```
 
 - `-as`   |Converts the input to the   specified .NET type.
@@ -154,7 +154,7 @@ False
 PS> 32 -is "int"
 True
 
-PS> (get-date) -is [DateTime]
+PS> (Get-Date) -is [DateTime]
 True
 
 PS> "12/31/2007" -is [DateTime]
@@ -166,7 +166,7 @@ True
 PS> (Get-Process PowerShell)[0] -is [System.Diagnostics.Process]
 True
 
-PS> (get-command get-member) -is [System.Management.Automation.CmdletInfo]
+PS> (Get-Command Get-Member) -is [System.Management.Automation.CmdletInfo]
 True
 ```
 
@@ -179,25 +179,25 @@ return **System.Globalization.CultureInfo** objects, a collection of these
 objects is a System.Object array.
 
 ```powershell
-PS> (get-culture) -is [System.Globalization.CultureInfo]
+PS> (Get-Culture) -is [System.Globalization.CultureInfo]
 True
 
-PS> (get-uiculture) -is [System.Globalization.CultureInfo]
+PS> (Get-UICulture) -is [System.Globalization.CultureInfo]
 True
 
-PS> (get-culture), (get-uiculture) -is [System.Globalization.CultureInfo]
+PS> (Get-Culture), (Get-UICulture) -is [System.Globalization.CultureInfo]
 False
 
-PS> (get-culture), (get-uiculture) -is [Array]
+PS> (Get-Culture), (Get-UICulture) -is [Array]
 True
 
-PS> (get-culture), (get-uiculture) | foreach {
+PS> (Get-Culture), (Get-UICulture) | foreach {
   $_ -is [System.Globalization.CultureInfo])
 }
 True
 True
 
-PS> (get-culture), (get-uiculture) -is [Object]
+PS> (Get-Culture), (Get-UICulture) -is [Object]
 True
 ```
 

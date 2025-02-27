@@ -173,7 +173,7 @@ from the command line, see the
   through the pipeline.
 
   ```powershell
-  PS> type ProcessNames | get-proc
+  PS> type ProcessNames | Get-Proc
   ```
 
   The following output appears.
@@ -192,7 +192,7 @@ from the command line, see the
   PowerShell) as an upstream command to retrieve the "IEXPLORE" processes.
 
   ```powershell
-  PS> Get-Process iexplore | get-proc
+  PS> Get-Process iexplore | Get-Proc
   ```
 
   The following output appears.

@@ -167,7 +167,7 @@ True
 PS> (Get-Process PowerShell)[0] -is [System.Diagnostics.Process]
 True
 
-PS> (get-command get-member) -is [System.Management.Automation.CmdletInfo]
+PS> (Get-Command Get-Member) -is [System.Management.Automation.CmdletInfo]
 True
 ```
 

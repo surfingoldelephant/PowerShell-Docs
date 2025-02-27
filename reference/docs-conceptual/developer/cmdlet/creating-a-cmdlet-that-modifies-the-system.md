@@ -383,13 +383,13 @@ using cmdlets from the command line, see the
   the cmdlet specifies the `Name` parameter as mandatory, the cmdlet queries for the parameter.
 
     ```powershell
-    PS> stop-proc
+    PS> Stop-Proc
     ```
 
     The following output appears.
 
     ```
-    Cmdlet stop-proc at command pipeline position 1
+    Cmdlet Stop-Proc at command pipeline position 1
     Supply values for the following parameters:
     Name[0]:
     ```
@@ -398,7 +398,7 @@ using cmdlets from the command line, see the
   action.
 
     ```powershell
-    PS> stop-proc -Name notepad
+    PS> Stop-Proc -Name notepad
     ```
 
     The following output appears.
@@ -406,7 +406,7 @@ using cmdlets from the command line, see the
     ```
     Confirm
     Are you sure you want to perform this action?
-    Performing operation "stop-proc" on Target "notepad (4996)".
+    Performing operation "Stop-Proc" on Target "notepad (4996)".
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
     ```
 
@@ -414,7 +414,7 @@ using cmdlets from the command line, see the
   about performing this action because it will cause the operating system to reboot.
 
     ```powershell
-    PS> stop-proc -Name Winlogon
+    PS> Stop-Proc -Name Winlogon
     ```
 
     The following output appears.
@@ -422,7 +422,7 @@ using cmdlets from the command line, see the
     ```Output
     Confirm
     Are you sure you want to perform this action?
-    Performing operation "stop-proc" on Target "winlogon (656)".
+    Performing operation "Stop-Proc" on Target "winlogon (656)".
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
     Warning!
     The process " winlogon " is a critical process and should not be stopped. Are you sure you wish to stop the process?
@@ -433,7 +433,7 @@ using cmdlets from the command line, see the
   entry uses the `Force` parameter to override the warning.
 
     ```powershell
-    PS> stop-proc -Name winlogon -Force
+    PS> Stop-Proc -Name winlogon -Force
     ```
 
     The following output appears.
@@ -441,7 +441,7 @@ using cmdlets from the command line, see the
     ```Output
     Confirm
     Are you sure you want to perform this action?
-    Performing operation "stop-proc" on Target "winlogon (656)".
+    Performing operation "Stop-Proc" on Target "winlogon (656)".
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): N
     ```
 

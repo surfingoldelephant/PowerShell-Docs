@@ -98,7 +98,7 @@ command provides a quick way to find the aliases that are built into PowerShell,
 the **ReadOnly** option.
 
 **Options** is just one property of the **AliasInfo** objects that `Get-Alias` gets. To find all
-properties and methods of **AliasInfo** objects, type `Get-Alias | get-member`.
+properties and methods of **AliasInfo** objects, type `Get-Alias | Get-Member`.
 
 ### Example 5: Get aliases by name and filter by beginning letter
 

@@ -34,7 +34,7 @@ Namespace Microsoft.Samples.PowerShell.Runspaces
             Dim invoker As New RunspaceInvoke()
 
             Dim results As Collection(Of PSObject) = _
-                invoker.Invoke("Get-Process | sort-object ID")
+                invoker.Invoke("Get-Process | Sort-Object ID")
 
             ' The generic collection needs to be re-wrapped in an ArrayList
             ' for data-binding to work...

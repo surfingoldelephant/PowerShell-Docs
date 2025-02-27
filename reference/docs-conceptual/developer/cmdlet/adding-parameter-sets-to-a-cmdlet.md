@@ -270,10 +270,10 @@ test their parameter sets to stop a process.
   parameter set to stop the process.
 
   ```
-  PS> stop-proc -Id 444
+  PS> Stop-Proc -Id 444
   Confirm
   Are you sure you want to perform this action?
-  Performing operation "stop-proc" on Target "notepad (444)".
+  Performing operation "Stop-Proc" on Target "notepad (444)".
   [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
   ```
 
@@ -281,10 +281,10 @@ test their parameter sets to stop a process.
   stop processes on the Notepad object retrieved by the `Get-Process` command.
 
   ```
-  PS> Get-Process notepad | stop-proc
+  PS> Get-Process notepad | Stop-Proc
   Confirm
   Are you sure you want to perform this action?
-  Performing operation "stop-proc" on Target "notepad (444)".
+  Performing operation "Stop-Proc" on Target "notepad (444)".
   [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): N
   ```
 

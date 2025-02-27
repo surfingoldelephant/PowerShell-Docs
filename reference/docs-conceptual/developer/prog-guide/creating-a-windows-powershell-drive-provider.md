@@ -184,7 +184,7 @@ derivation. Let's test the sample drive provider.
 3. Create a new drive using the sample drive provider:
 
    ```powershell
-   new-psdrive -name mydb -root c:\ps\northwind.mdb -psprovider AccessDb`
+   New-PSDrive -name mydb -root c:\ps\northwind.mdb -psprovider AccessDb`
    ```
 
    The following output appears:
@@ -203,7 +203,7 @@ derivation. Let's test the sample drive provider.
    > functionality for that interaction. For more information, see
    > [Creating a Windows PowerShell Container Provider](./creating-a-windows-powershell-container-provider.md).
 
-   **PS> (get-psdrive mydb).connection**
+   **PS> (Get-PSDrive mydb).connection**
 
    The following output appears:
 
@@ -222,7 +222,7 @@ derivation. Let's test the sample drive provider.
 5. Remove the drive and exit the shell:
 
    ```powershell
-   PS> remove-psdrive mydb
+   PS> Remove-PSDrive mydb
    PS> exit
    ```
 

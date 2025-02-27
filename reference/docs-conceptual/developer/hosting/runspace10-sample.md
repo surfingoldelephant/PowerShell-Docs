@@ -100,8 +100,8 @@ namespace Microsoft.Samples.PowerShell.Runspaces
       // by Windows PowerShell.
       InitialSessionState iss = InitialSessionState.CreateDefault();
 
-      // Add the get-proc cmdlet to the InitialSessionState object.
-      SessionStateCmdletEntry ssce = new SessionStateCmdletEntry("get-proc", typeof(GetProcCommand), null);
+      // Add the Get-Proc cmdlet to the InitialSessionState object.
+      SessionStateCmdletEntry ssce = new SessionStateCmdletEntry("Get-Proc", typeof(GetProcCommand), null);
       iss.Commands.Add(ssce);
 
       // Create a Runspace object that uses the InitialSessionState object.
@@ -115,8 +115,8 @@ namespace Microsoft.Samples.PowerShell.Runspaces
         {
           powershell.Runspace = myRunSpace;
 
-          // Add the get-proc cmdlet to the pipeline of the PowerShell object.
-          powershell.AddCommand("get-proc");
+          // Add the Get-Proc cmdlet to the pipeline of the PowerShell object.
+          powershell.AddCommand("Get-Proc");
 
           Collection<PSObject> results = powershell.Invoke();
 

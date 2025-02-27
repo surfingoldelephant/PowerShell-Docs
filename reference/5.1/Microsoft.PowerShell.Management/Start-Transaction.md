@@ -95,7 +95,7 @@ New-Item : The registry key at the specified path does not exist.
 
 ```Output
 At line:1 char:9
-+ new-item <<<<  -Path NoPath -Name ContosoCompany -UseTransaction
++ New-Item <<<<  -Path NoPath -Name ContosoCompany -UseTransaction
 ```
 
 ```powershell
@@ -308,7 +308,7 @@ New-Item HKCU:\Software\ContosoCompany -UseTransaction
 ```Output
 New-Item : Cannot use transaction. The transaction has been rolled back or has timed out.
 At line:1 char:9
-+ new-item <<<<  MyCompany -UseTransaction
++ New-Item <<<<  MyCompany -UseTransaction
 ```
 
 This command uses the **Timeout** parameter of `Start-Transaction` to start a transaction that must

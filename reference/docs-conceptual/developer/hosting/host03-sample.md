@@ -185,7 +185,7 @@ namespace Microsoft.Samples.PowerShell.Host
     /// using the display formatter. To do this we run
     /// a second pipeline passing in the error record.
     /// The runtime will bind this to the $input variable
-    /// which is why $input is being piped to out-string.
+    /// which is why $input is being piped to Out-String.
     /// We then call WriteErrorLine to make sure the error
     /// gets displayed in the correct error color.
 
@@ -214,7 +214,7 @@ namespace Microsoft.Samples.PowerShell.Host
 
         try
         {
-          this.currentPowerShell.AddScript("$input").AddCommand("out-string");
+          this.currentPowerShell.AddScript("$input").AddCommand("Out-String");
 
           // Do not merge errors, this function will swallow errors.
           Collection<PSObject> result;

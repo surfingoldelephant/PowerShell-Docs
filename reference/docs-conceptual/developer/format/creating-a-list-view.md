@@ -13,7 +13,7 @@ A list view displays data in a single column (in sequential order). The data dis
 The following output shows how Windows PowerShell displays the properties of [System.Serviceprocess.Servicecontroller?Displayproperty=Fullname](/dotnet/api/System.ServiceProcess.ServiceController) objects that are returned by the [Get-Service](/powershell/module/microsoft.powershell.management/get-service) cmdlet. In this example, three objects were returned, with each object separated from the preceding object by a blank line.
 
 ```powershell
-Get-Service | format-list
+Get-Service | Format-List
 ```
 
 ```output

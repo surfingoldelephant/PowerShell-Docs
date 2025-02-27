@@ -92,7 +92,7 @@ Register-WmiEvent -Class 'Win32_ProcessStartTrace' -SourceIdentifier "ProcessSta
 ```Output
 Id    Name            State      HasMoreData   Location  Command
 --    ----            -----      -----------   --------  -------
-1     ProcessStarted  NotStarted False                   get-history | where {...
+1     ProcessStarted  NotStarted False                   Get-History | where {...
 ```
 
 When you use the **Action** parameter, `Register-WmiEvent` returns a background job that represents

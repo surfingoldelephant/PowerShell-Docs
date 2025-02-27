@@ -24,7 +24,7 @@ This sample demonstrates the following.
 
 - Creating a [System.Management.Automation.Powershell](/dotnet/api/system.management.automation.powershell) object that uses the runspace.
 
-- Adding the snap-in's get-proc cmdlet to the pipeline of the [System.Management.Automation.Powershell](/dotnet/api/system.management.automation.powershell) object.
+- Adding the snap-in's Get-Proc cmdlet to the pipeline of the [System.Management.Automation.Powershell](/dotnet/api/system.management.automation.powershell) object.
 
 - Running the command synchronously.
 
@@ -63,7 +63,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
     /// 2. Adding a snap-in to the initial session state.
     /// 3. Creating a runspace that uses the initial session state.
     /// 4. Creating a PowerShell object that uses the runspace.
-    /// 5. Adding the snap-in's get-proc cmdlet to the PowerShell object.
+    /// 5. Adding the snap-in's Get-Proc cmdlet to the PowerShell object.
     /// 6. Using PSObject objects to extract and display properties from
     ///    the objects returned by the cmdlet.
     /// </remarks>
@@ -87,7 +87,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
         using (PowerShell powershell = PowerShell.Create())
         {
           // Add the snap-in cmdlet and specify the runspace.
-          powershell.AddCommand("GetProcPSSnapIn01\\get-proc");
+          powershell.AddCommand("GetProcPSSnapIn01\\Get-Proc");
           powershell.Runspace = myRunSpace;
 
           // Run the cmdlet synchronously.

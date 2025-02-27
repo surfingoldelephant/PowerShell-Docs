@@ -1013,7 +1013,7 @@ the `throw` statement.
 Examples:
 
 ```powershell
-$a = new-object 'int[]' 10
+$a = New-Object 'int[]' 10
 $i = 20 # out-of-bounds subscript
 
 while ($true) {

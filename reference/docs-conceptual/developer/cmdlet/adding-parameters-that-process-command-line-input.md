@@ -41,7 +41,7 @@ A cmdlet parameter enables the user to provide input to the cmdlet. In the follo
 `Get-Proc` and `Get-Member` are the names of pipelined cmdlets, and `MemberType` is a parameter
 for the `Get-Member` cmdlet. The parameter has the argument "property."
 
-**PS> get-proc ; `get-member` -membertype property**
+**PS> Get-Proc ; `Get-Member` -membertype property**
 
 To declare parameters for a cmdlet, you must first define the properties that represent the
 parameters. In the `Get-Proc` cmdlet, the only parameter is `Name`, which in this case represents
@@ -245,7 +245,7 @@ cmdlets from the command line, see
   which is named "IEXPLORE."
 
   ```powershell
-  get-proc -name iexplore
+  Get-Proc -name iexplore
   ```
 
   The following output appears.
@@ -260,7 +260,7 @@ cmdlets from the command line, see
   "NOTEPAD," use the following command. If there are multiple processes, all of them are displayed.
 
   ```powershell
-  get-proc -name iexplore, outlook, notepad
+  Get-Proc -name iexplore, outlook, notepad
   ```
 
   The following output appears.

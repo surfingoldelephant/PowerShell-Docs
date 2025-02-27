@@ -302,7 +302,7 @@ Cert:\> Set-Location ~
 
 ```Output
 Set-Location : Home location for this provider isn't set. To set the home
-location, call "(get-psprovider 'Certificate').Home = 'path'".
+location, call "(Get-PSProvider 'Certificate').Home = 'path'".
 At line:1 char:1
 + Set-Location ~
 + ~~~~~~~~~~~~~~

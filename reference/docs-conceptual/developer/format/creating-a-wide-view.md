@@ -19,7 +19,7 @@ example, the two columns are used to display the name of the process for each re
 name of the object's property isn't displayed, only the value of the property.
 
 ```powershell
-Get-Process | format-wide
+Get-Process | Format-Wide
 ```
 
 ```Output

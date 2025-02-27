@@ -136,7 +136,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
 1. Start Windows PowerShell, and get the current processes running on the computer.
 
     ```powershell
-    get-proc
+    Get-Proc
     ```
 
     The following output appears.
@@ -154,7 +154,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
 2. Assign a variable to the cmdlet results for easier manipulation.
 
     ```powershell
-    $p=get-proc
+    $p=Get-Proc
     ```
 
 3. Get the number of processes.

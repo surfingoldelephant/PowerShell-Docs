@@ -52,13 +52,13 @@ Namespace Microsoft.Samples.PowerShell.Runspaces
             ' Define a list of patterns to use in matching
             ' Note that the fourth pattern is not a valid regular
             ' expression so it will cause a terminating exception to
-            ' be thrown when used in select-string.
+            ' be thrown when used in Select-String.
             Dim patterns() As String = {"aa", "bc", "ab*c", "*", "abc"}
 
             ' The script to run to use the patterns. Input passed
             ' to the script will be available in the $input variable.
             Dim script As String = "$input | where {" & _
-                " select-string $_ -inputobject 'abc' }"
+                " Select-String $_ -inputobject 'abc' }"
 
             ' Create an instance of the RunspaceInvoke class.
             Dim invoker As New RunspaceInvoke()

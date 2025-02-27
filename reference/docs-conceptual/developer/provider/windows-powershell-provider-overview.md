@@ -52,7 +52,7 @@ ways. A provider should support one or more of the following path types.
 A drive-qualified path is a combination of the item name, the container and subcontainers in which
 the item is located, and the Windows PowerShell drive through which the item is accessed. (Drives
 are defined by the provider that is used to access the data store. This path starts with the drive
-name followed by a colon (:). For example: `get-childitem C:`
+name followed by a colon (:). For example: `Get-ChildItem C:`
 
 ### Provider-qualified paths
 

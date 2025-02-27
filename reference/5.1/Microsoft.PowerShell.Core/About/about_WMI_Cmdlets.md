@@ -58,7 +58,7 @@ The following WMI cmdlets are included.
 The following command displays the BIOS information for the local computer.
 
 ```powershell
-C:\PS> get-wmiobject win32_bios | format-list *
+C:\PS> Get-WmiObject win32_bios | Format-List *
 ```
 
 The following command displays information about the WinRM service for three
@@ -66,7 +66,7 @@ remote computers.
 
 ```powershell
 $wql = "select * from win32_service where name='WinRM'"
-get-wmiobject -query $wql -computername server01, server01, server03
+Get-WmiObject -query $wql -computername server01, server01, server03
 ```
 
 The following more complex command exits all instances of a program.
@@ -74,8 +74,8 @@ The following more complex command exits all instances of a program.
 ```powershell
 C:\PS> notepad.exe
 C:\PS> $wql = "select * from win32_process where name='notepad.exe'"
-C:\PS> $np = get-wmiobject -query $wql
-C:\PS> $np | remove-wmiobject
+C:\PS> $np = Get-WmiObject -query $wql
+C:\PS> $np | Remove-WmiObject
 ```
 
 ### WMI-BASED REMOTING

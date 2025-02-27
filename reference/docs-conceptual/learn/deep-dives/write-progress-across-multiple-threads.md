@@ -31,23 +31,23 @@ runs without error.
 $dataset = @(
     @{
         Id   = 1
-        Wait = 3..10 | get-random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
     }
     @{
         Id   = 2
-        Wait = 3..10 | get-random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
     }
     @{
         Id   = 3
-        Wait = 3..10 | get-random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
     }
     @{
         Id   = 4
-        Wait = 3..10 | get-random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
     }
     @{
         Id   = 5
-        Wait = 3..10 | get-random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
     }
 )
 
@@ -172,23 +172,23 @@ hashtable from the current key is used to splat the parameters to `Write-Progres
 $dataset = @(
     @{
         Id   = 1
-        Wait = 3..10 | get-random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
     }
     @{
         Id   = 2
-        Wait = 3..10 | get-random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
     }
     @{
         Id   = 3
-        Wait = 3..10 | get-random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
     }
     @{
         Id   = 4
-        Wait = 3..10 | get-random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
     }
     @{
         Id   = 5
-        Wait = 3..10 | get-random | Foreach-Object {$_*100}
+        Wait = 3..10 | Get-Random | Foreach-Object {$_*100}
     }
 )
 

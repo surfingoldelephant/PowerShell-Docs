@@ -54,7 +54,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
       iss.Commands.Add(ssce1);
 
       SessionStateCmdletEntry ssce2 = new SessionStateCmdletEntry(
-                                                            "get-command",
+                                                            "Get-Command",
                                                             typeof(GetCommandCommand),
                                                             null);
       iss.Commands.Add(ssce2);
@@ -68,7 +68,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
           powershell.Runspace = myRunSpace;
 
           // Create a pipeline with the Get-Command command.
-          powershell.AddCommand("get-command");
+          powershell.AddCommand("Get-Command");
 
           Collection<PSObject> results = powershell.Invoke();
 
@@ -102,7 +102,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
 
 ```csharp
 defaultSessionState = InitialSessionState.CreateDefault();
-commandIndex = GetIndexOfEntry(defaultSessionState.Commands, "get-childitem");
+commandIndex = GetIndexOfEntry(defaultSessionState.Commands, "Get-ChildItem");
 defaultSessionState.Commands[commandIndex].Visibility = SessionStateEntryVisibility.Private;
 
 this.runspace = RunspaceFactory.CreateRunspace(defaultSessionState);

@@ -112,7 +112,7 @@ namespace Microsoft.Samples.PowerShell.Host
       pipe.Commands.AddScript(@"
                     Get-Process | sort HandleCount
                     # This should display the date in German...
-                    get-date | out-string
+                    Get-Date | Out-String
                     ");
 
       // Add the default outputter to the end of the pipe and indicate

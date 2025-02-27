@@ -48,8 +48,8 @@ namespace Microsoft.Samples.PowerShell.Runspaces
     /// <summary>
     /// This sample shows how to use a PowerShell object to run commands. The
     /// PowerShell object builds a pipeline that include the Get-Process cmdlet,
-    /// which is then piped to the sort-object cmdlet. Parameters are added to the
-    /// sort-object cmdlet to sort the HandleCount property in descending order.
+    /// which is then piped to the Sort-Object cmdlet. Parameters are added to the
+    /// Sort-Object cmdlet to sort the HandleCount property in descending order.
     /// </summary>
     /// <param name="args">Parameter is not used.</param>
     /// <remarks>
@@ -76,10 +76,10 @@ namespace Microsoft.Samples.PowerShell.Runspaces
         // Add the Get-Process cmdlet to the pipeline of the PowerShell object.
         powershell.AddCommand("Get-Process");
 
-        // Add the sort-object cmdlet and its parameters to the pipeline of
+        // Add the Sort-Object cmdlet and its parameters to the pipeline of
         // the PowerShell object so that we can sort the HandleCount property
         //  in descending order.
-        powershell.AddCommand("sort-object").AddParameter("descending").AddParameter("property", "handlecount");
+        powershell.AddCommand("Sort-Object").AddParameter("descending").AddParameter("property", "handlecount");
 
         // Run the commands of the pipeline synchronously.
         results = powershell.Invoke();

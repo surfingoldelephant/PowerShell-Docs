@@ -46,7 +46,7 @@ Get-Item -Path C:\ -CodeSigningCert
 ```Output
 Get-Item : A parameter cannot be found that matches parameter name 'codesigningcert'.
 At line:1 char:37
-+  get-item -path C:\ -codesigningcert <<<<
++  Get-Item -path C:\ -codesigningcert <<<<
 --------
     CategoryInfo          : InvalidArgument: (:) [Get-Item], ParameterBindingException
     FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetItemCommand

@@ -24,7 +24,7 @@ This sample demonstrates the following.
 
 - Creating a [System.Management.Automation.Powershell](/dotnet/api/system.management.automation.powershell) object that uses the runspace.
 
-- Adding the module's get-proc cmdlet to the pipeline of the [System.Management.Automation.Powershell](/dotnet/api/system.management.automation.powershell) object.
+- Adding the module's Get-Proc cmdlet to the pipeline of the [System.Management.Automation.Powershell](/dotnet/api/system.management.automation.powershell) object.
 
 - Running the command synchronously.
 
@@ -63,7 +63,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
     /// 2. Adding a module to the initial session state.
     /// 3. Creating a runspace that uses the initial session state.
     /// 4. Creating a PowerShell object that uses the runspace.
-    /// 5. Adding the module's get-proc cmdlet to the PowerShell object.
+    /// 5. Adding the module's Get-Proc cmdlet to the PowerShell object.
     /// 6. Running the command synchronously.
     /// 7. Using PSObject objects to extract and display properties from
     ///    the objects returned by the cmdlet.
@@ -85,7 +85,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
         using (PowerShell powershell = PowerShell.Create())
         {
           // Add the cmdlet and specify the runspace.
-          powershell.AddCommand(@"GetProcessSample02\get-proc");
+          powershell.AddCommand(@"GetProcessSample02\Get-Proc");
           powershell.Runspace = myRunSpace;
 
           Collection<PSObject> results = powershell.Invoke();

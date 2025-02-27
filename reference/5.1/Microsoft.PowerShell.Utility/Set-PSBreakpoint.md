@@ -159,7 +159,7 @@ HitCount : 0
 Action   :
 
 function CheckLog {
->> get-eventlog -log Application |
+>> Get-EventLog -log Application |
 >> where {($_.source -like "TestApp") -and ($_.Message -like "*failed*")}
 >>}
 >>
