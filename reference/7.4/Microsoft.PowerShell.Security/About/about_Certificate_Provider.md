@@ -76,7 +76,7 @@ the `Cert:` drive.
 Set-Location Cert:
 ```
 
-You can also work with the certificate provider from any other PowerShell
+You can also work with the Certificate provider from any other PowerShell
 drive. To reference an alias from another location, use the `Cert:` drive name
 in the path.
 

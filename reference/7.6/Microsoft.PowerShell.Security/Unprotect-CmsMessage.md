@@ -196,7 +196,7 @@ Accept wildcard characters: False
 
 Specifies one or more CMS message recipients, identified in any of the following formats:
 
-- An actual certificate (as retrieved from the certificate provider).
+- An actual certificate (as retrieved from the Certificate provider).
 - Path to the a file containing the certificate.
 - Path to a directory containing the certificate.
 - Thumbprint of the certificate (used to look in the certificate store).
