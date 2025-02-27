@@ -130,7 +130,7 @@ the dollar sign (`$`). This has the same effect as prefixing the variables name
 with the dollar sign (`$`).
 
 ```powershell
-$variable:HOME
+$Variable:HOME
 ```
 
 ### Get variables using wildcards
@@ -273,7 +273,7 @@ Get-Help Get-ChildItem
 ```
 
 ```powershell
-Get-Help Get-ChildItem -Path variable:
+Get-Help Get-ChildItem -Path Variable:
 ```
 
 ## See also

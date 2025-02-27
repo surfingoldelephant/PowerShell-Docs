@@ -218,7 +218,7 @@ function prompt {
   $principal = [Security.Principal.WindowsPrincipal] $identity
   $adminRole = [Security.Principal.WindowsBuiltInRole]::Administrator
 
-  $(if (Test-Path variable:/PSDebugContext) { '[DBG]: ' }
+  $(if (Test-Path Variable:/PSDebugContext) { '[DBG]: ' }
     elseif($principal.IsInRole($adminRole)) { "[ADMIN]: " }
     else { '' }
   ) + 'PS ' + $(Get-Location) +
