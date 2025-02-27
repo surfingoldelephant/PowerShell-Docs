@@ -1169,7 +1169,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
     Pattern      : Parameter
     ```
 
-5. Search the variable provider shipped with Windows PowerShell for variables that have numerical values from 0 through 9.
+5. Search the Variable provider shipped with Windows PowerShell for variables that have numerical values from 0 through 9.
 
     ```powershell
     select-str -Path * -Pattern "[0-9]"

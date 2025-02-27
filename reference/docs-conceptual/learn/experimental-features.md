@@ -198,7 +198,7 @@ This feature was added in PowerShell 7.4-preview.1.
 
 When enabled, this feature adds support for redirecting to the variable drive. This feature allows
 you to redirect data to a variable using the `variable:name` syntax. PowerShell inspects the target
-of the redirection and if it uses the variable provider it calls `Set-Variable` rather than
+of the redirection and if it uses the Variable provider it calls `Set-Variable` rather than
 `Out-File`.
 
 The following example shows how to redirect the output of a command to a variable:
