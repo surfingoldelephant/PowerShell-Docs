@@ -173,18 +173,18 @@ $flavor = 'Chocolate'
 ## Tab completions for comment-based keywords
 
 Beginning in PowerShell 7.2, support was added for tab completion of the
-`#requires` parameters and the keywords for comment-based help.
+`#Requires` parameters and the keywords for comment-based help.
 
-### Example for `#requires` statement
+### Example for `#Requires` statement
 
 ```powershell
-#requires -<Ctrl-Space>
+#Requires -<Ctrl-Space>
 ```
 
 Menu expansion shows the following parameter options:
 
 ```powershell
-#requires -<Ctrl-Space>
+#Requires -<Ctrl-Space>
 Modules     PSEdition     RunAsAdministrator    Version
 ```
 

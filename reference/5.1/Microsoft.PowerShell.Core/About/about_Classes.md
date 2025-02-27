@@ -527,7 +527,7 @@ module is removed, so are the type accelerators.
 
 ## Manually importing classes from a PowerShell module
 
-`Import-Module` and the `#requires` statement only import the module functions,
+`Import-Module` and the `#Requires` statement only import the module functions,
 aliases, and variables, as defined by the module. Classes aren't imported.
 
 If a module defines classes and enumerations but doesn't add type accelerators

@@ -73,7 +73,7 @@ input-character:
     Any Unicode character except a new-line-character
 
 requires-comment:
-    #requires whitespace command-arguments
+    #Requires whitespace command-arguments
 
 dash:
     - (U+002D)

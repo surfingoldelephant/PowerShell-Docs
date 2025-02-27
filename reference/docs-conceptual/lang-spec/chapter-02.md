@@ -115,7 +115,7 @@ input-character:
     Any Unicode character except a new-line-character
 
 requires-comment:
-    #requires whitespace command-arguments
+    #Requires whitespace command-arguments
 
 dash:
     - (U+002D)
@@ -172,7 +172,7 @@ A _requires-comment_ specifies the criteria that have to be met for its containi
 allowed to run. The primary criterion is the version of PowerShell being used to run the script. The
 minimum version requirement is specified as follows:
 
-`#requires -Version N[.n]`
+`#Requires -Version N[.n]`
 
 Where _N_ is the (required) major version and _n_ is the (optional) minor version.
 
@@ -191,10 +191,10 @@ A _requires-comment_ cannot be present inside a snap-in.
 There are four other forms of a _requires-comment_:
 
 ```Syntax
-#requires --Assembly AssemblyId
-#requires --Module ModuleName
-#requires --PsSnapIn PsSnapIn [ -Version *N* [.n] ]
-#requires --ShellId ShellId
+#Requires --Assembly AssemblyId
+#Requires --Module ModuleName
+#Requires --PsSnapIn PsSnapIn [ -Version *N* [.n] ]
+#Requires --ShellId ShellId
 ```
 
 ### 2.2.4 White space

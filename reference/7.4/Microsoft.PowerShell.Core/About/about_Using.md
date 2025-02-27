@@ -91,7 +91,7 @@ A module specification is a hashtable that has the following keys.
   - `RequiredVersion` - Specifies an exact, required version of the module.
     This can't be used with the other Version keys.
 
-`Import-Module` and the `#requires` statement only import the module functions,
+`Import-Module` and the `#Requires` statement only import the module functions,
 aliases, and variables, as defined by the module. Classes and enumerations
 aren't imported.
 
@@ -120,7 +120,7 @@ following classes:
 - **Deck**
 - **Card**
 
-`Import-Module` and the `#requires` statement only import the module functions,
+`Import-Module` and the `#Requires` statement only import the module functions,
 aliases, and variables, as defined by the module. Classes aren't imported. The
 `using module` command imports the module and also loads the class definitions.
 

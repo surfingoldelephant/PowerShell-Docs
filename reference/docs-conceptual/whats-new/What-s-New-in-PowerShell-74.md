@@ -17,7 +17,7 @@ For a complete list of changes, see the [CHANGELOG][chg] in the GitHub repositor
 - Added the **ProgressAction** parameter to the Common Parameters
 - Update some PowerShell APIs to throw **ArgumentException** instead of **ArgumentNullException**
   when the argument is an empty string ([#19215][19215]) (Thanks @xtqqczze!)
-- Remove code related to `#requires -pssnapin` ([#19320][19320])
+- Remove code related to `#Requires -PSSnapin` ([#19320][19320])
 - `Test-Json` now uses JsonSchema.NET instead of Newtonsoft.Json.Schema.
   - With this change, `Test-Json` no longer supports the older Draft 4 schemas. ([#18141][18141])
     (Thanks @gregsdennis!). For more information about JSON schemas, see [JSON Schema][14]
@@ -188,7 +188,7 @@ Other Engine updates
 - Add a public API for getting locations of PSModulePath elements ([#19422][19422])
 - Fix incorrect string to type conversion ([#19560][19560]) (Thanks @MartinGC94!)
 - Fix slow execution when many breakpoints are used ([#14953][14953]) (Thanks @nohwnd!)
-- Remove code related to `#requires -pssnapin` ([#19320][19320])
+- Remove code related to `#Requires -PSSnapin` ([#19320][19320])
 
 ## Experimental Features
 
