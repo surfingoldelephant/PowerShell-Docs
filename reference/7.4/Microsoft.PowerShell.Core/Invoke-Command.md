@@ -1730,7 +1730,7 @@ on a single computer.
 
 If the remote computer isn't in a domain that the local computer trusts, the computer might not be
 able to authenticate the user's credentials. To add the remote computer to the list of trusted hosts
-in WS-Management, use the following command in the `WSMAN` provider, where `<Remote-Computer-Name>`
+in WS-Management, use the following command in the `WSMan` provider, where `<Remote-Computer-Name>`
 is the name of the remote computer:
 
 `Set-Item -Path WSMan:\Localhost\Client\TrustedHosts -Value \<Remote-Computer-Name\>`

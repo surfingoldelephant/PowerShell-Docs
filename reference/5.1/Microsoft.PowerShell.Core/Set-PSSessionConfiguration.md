@@ -140,7 +140,7 @@ operator (`|`) sends the results of the command to `Format-List`, which displays
 of the configuration object in a list. Next, using the WSMan provider, we view the initialization
 parameters for the **MaintenanceShell** configuration. `Get-ChildItem` gets the child items in the
 **InitializationParameters** node for the **MaintenanceShell** plug-in. For more information about
-the WSMan provider, type `Get-Help wsman`.
+the WSMan provider, type `Get-Help WSMan`.
 
 ```powershell
 Set-PSSessionConfiguration -Name "MaintenanceShell" -StartupScript "C:\ps-test\Maintenance.ps1"

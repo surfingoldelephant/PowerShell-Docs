@@ -153,7 +153,7 @@ PowerShell on Windows includes a WSMan provider. The provider creates a `WSMan:`
 navigate through a hierarchy of configuration settings on the local computer and remote computers.
 
 For more information about the WSMan provider, see [WSMan Provider][07] and
-[About WS-Management Cmdlets][06], or in the Windows PowerShell console, type `Get-Help wsman`.
+[About WS-Management Cmdlets][06], or in the Windows PowerShell console, type `Get-Help WSMan`.
 
 For more information, see:
 

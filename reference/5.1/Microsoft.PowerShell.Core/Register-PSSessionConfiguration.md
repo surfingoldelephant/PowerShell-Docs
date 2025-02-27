@@ -505,7 +505,7 @@ instead of this parameter. You can't use both parameters in the same command.
 If you omit this parameter, the root SDDL for the **WinRM** service is used for this configuration.
 To view or change the root SDDL, use the WSMan provider. For example
 `Get-Item WSMan:\localhost\service\rootSDDL`. For more information about the WSMan provider, type
-`Get-Help wsman`.
+`Get-Help WSMan`.
 
 ```yaml
 Type: System.String
