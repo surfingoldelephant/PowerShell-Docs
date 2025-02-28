@@ -249,7 +249,7 @@ information about a module, its requirements, and its contents.
 
 ```powershell
 # First command
-$m = Get-Module -list -Name BitsTransfer
+$m = Get-Module -List -Name BitsTransfer
 
 # Second command
 Get-Content $m.Path

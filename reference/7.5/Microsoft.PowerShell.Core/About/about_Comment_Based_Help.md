@@ -438,12 +438,12 @@ or file name.
 
 .EXAMPLE
 
-PS> extension -name "File"
+PS> extension -Name "File"
 File.txt
 
 .EXAMPLE
 
-PS> extension -name "File" -extension "doc"
+PS> extension -Name "File" -Extension "doc"
 File.doc
 
 .EXAMPLE
@@ -523,12 +523,12 @@ file name.
 
 Example 1
 
-PS> extension -name "File"
+PS> extension -Name "File"
 File.txt
 
 Example 2
 
-PS> extension -name "File" -extension "doc"
+PS> extension -Name "File" -Extension "doc"
 File.doc
 
 Example 3
@@ -587,12 +587,12 @@ file name.
 
 .EXAMPLE
 
-PS> extension -name "File"
+PS> extension -Name "File"
 File.txt
 
 .EXAMPLE
 
-PS> extension -name "File" -extension "doc"
+PS> extension -Name "File" -Extension "doc"
 File.doc
 
 .EXAMPLE
@@ -653,11 +653,11 @@ PS> .\Update-Month.ps1
 
 .EXAMPLE
 
-PS> .\Update-Month.ps1 -inputpath C:\Data\January.csv
+PS> .\Update-Month.ps1 -InputPath C:\Data\January.csv
 
 .EXAMPLE
 
-PS> .\Update-Month.ps1 -inputpath C:\Data\January.csv -outputPath `
+PS> .\Update-Month.ps1 -InputPath C:\Data\January.csv -OutputPath `
 C:\Reports\2009\January.csv
 #>
 
@@ -736,11 +736,11 @@ PS> .\Update-Month.ps1
 
 Example 2
 
-PS> .\Update-Month.ps1 -inputpath C:\Data\January.csv
+PS> .\Update-Month.ps1 -InputPath C:\Data\January.csv
 
 Example 3
 
-PS> .\Update-Month.ps1 -inputpath C:\Data\January.csv -outputPath
+PS> .\Update-Month.ps1 -InputPath C:\Data\January.csv -OutputPath
 C:\Reports\2009\January.csv
 
 # RELATED LINKS

@@ -151,7 +151,7 @@ return any objects by default, there is no output from this command. `Get-Module
 **GreetingModule** has been imported into the current session.
 
 ```powershell
-New-Module -ScriptBlock {function Hello {"Hello!"}} -name GreetingModule | Import-Module
+New-Module -ScriptBlock {function Hello {"Hello!"}} -Name GreetingModule | Import-Module
 Get-Module
 ```
 

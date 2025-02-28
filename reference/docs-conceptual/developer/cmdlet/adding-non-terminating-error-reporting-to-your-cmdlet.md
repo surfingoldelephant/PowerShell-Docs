@@ -228,7 +228,7 @@ line. Let's test the sample Get-Proc cmdlet to see whether it reports an error:
 - Start PowerShell, and use the Get-Proc cmdlet to retrieve the processes named "TEST".
 
   ```powershell
-  Get-Proc -name test
+  Get-Proc -Name test
   ```
 
   The following output appears.
@@ -236,7 +236,7 @@ line. Let's test the sample Get-Proc cmdlet to see whether it reports an error:
   ```
   Get-Proc : Operation is not valid due to the current state of the object.
   At line:1 char:9
-  + Get-Proc  <<<< -name test
+  + Get-Proc  <<<< -Name test
   ```
 
 ## See Also

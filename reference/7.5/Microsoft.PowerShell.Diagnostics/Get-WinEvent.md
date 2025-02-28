@@ -784,7 +784,7 @@ Accept wildcard characters: False
 ### -Force
 
 Gets debug and analytic logs, in addition to other event logs. The **Force** parameter is required
-to get a debug or analytic log when the value of the name parameter includes wildcard characters.
+to get a debug or analytic log when the value of the Name parameter includes wildcard characters.
 
 By default, the `Get-WinEvent` cmdlet excludes these logs unless you specify the full name of a
 debug or analytic log.

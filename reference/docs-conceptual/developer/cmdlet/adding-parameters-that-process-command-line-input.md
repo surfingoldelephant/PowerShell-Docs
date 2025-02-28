@@ -245,7 +245,7 @@ cmdlets from the command line, see
   which is named "IEXPLORE."
 
   ```powershell
-  Get-Proc -name iexplore
+  Get-Proc -Name iexplore
   ```
 
   The following output appears.
@@ -260,7 +260,7 @@ cmdlets from the command line, see
   "NOTEPAD," use the following command. If there are multiple processes, all of them are displayed.
 
   ```powershell
-  Get-Proc -name iexplore, outlook, notepad
+  Get-Proc -Name iexplore, outlook, notepad
   ```
 
   The following output appears.

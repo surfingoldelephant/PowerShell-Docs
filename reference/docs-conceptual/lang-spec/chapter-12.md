@@ -87,15 +87,15 @@ Consider a function call `Test1` that has the following param block, and which i
 param (
     [Parameter(Mandatory = $true)]
     [Alias("CN")]
-    [Alias("name", "system")]
+    [Alias("Name", "System")]
     [string[]] $ComputerName
 )
 
 Test1 "Mars", "Saturn"                # pass argument by position
 Test1 -ComputerName "Mars", "Saturn"  # pass argument by name
 Test1 -CN "Mars", "Saturn"            # pass argument using first alias
-Test1 -name "Mars", "Saturn"          # pass argument using second alias
-Test1 -sys "Mars", "Saturn"           # pass argument using third alias
+Test1 -Name "Mars", "Saturn"          # pass argument using second alias
+Test1 -Sys "Mars", "Saturn"           # pass argument using third alias
 ```
 
 Consider a function call `Test2` that has the following param block, and which is called as shown:
@@ -131,7 +131,7 @@ param (
 
 Test "Red", "Green" # $computerName has Length 2
 Test "Red" # $computerName has Length 1
-Test -comp @() # $computerName has Length 0
+Test -Comp @() # $computerName has Length 0
 ```
 
 ### 12.3.3 The AllowEmptyString attribute
@@ -150,7 +150,7 @@ param (
 
 Test "Red" # $computerName is "Red"
 Test "" # empty string is permitted
-Test -comp "" # empty string is permitted
+Test -Comp "" # empty string is permitted
 ```
 
 ### 12.3.4 The AllowNull attribute
@@ -169,7 +169,7 @@ param (
 
 Test 10, 20, 30     # $values has Length 3, values 10, 20, 30
 Test 10, $null, 30  # $values has Length 3, values 10, 0, 30
-Test -val $null     # $values has value $null
+Test -Val $null     # $values has value $null
 ```
 
 Note that the second case above does not need this attribute; there is already an implicit
@@ -387,13 +387,13 @@ Get-Date | Process-Date</p></td>
 <td>ValueFromRemainingArguments (named)</td>
 <td><p>Type: bool; Default value: $false</p>
 <p>This argument specifies whether the parameter accepts all of the remaining arguments that are not bound to the parameters of the function. A value of $true indicates that it does. A value of $false indicates that it does not.</p>
-<p>The following example shows a parameter $others that accepts all the remaining arguments of the input object that is passed to the function Test:</p>
+<p>The following example shows a parameter $Others that accepts all the remaining arguments of the input object that is passed to the function Test:</p>
 <p>param ( [parameter(Mandatory = $true)][int] $p1,<br />
 [parameter(Mandatory = $true)][int] $p2,<br />
 [parameter(ValueFromRemainingArguments = $true)]<br />
-[string[]] $others )</p>
-<p>Test 10 20 # $others has Length 0<br />
-Test 10 20 30 40 # $others has Length 2, value 30,40</p></td>
+[string[]] $Others )</p>
+<p>Test 10 20 # $Others has Length 0<br />
+Test 10 20 30 40 # $Others has Length 2, value 30,40</p></td>
 </tr>
 </tbody>
 </table>
@@ -621,16 +621,16 @@ param (
     [int] $Minimum
 )
 
-Test -c A12 # matches pattern
-Test -c A63 # does not match pattern
+Test -C A12 # matches pattern
+Test -C A63 # does not match pattern
 
-Test -h 0x4f # matches pattern
-Test -h "0XB2" # matches pattern
-Test -h 0xK3 # does not match pattern
+Test -H 0x4f # matches pattern
+Test -H "0XB2" # matches pattern
+Test -H 0xK3 # does not match pattern
 
-Test -m -4 # matches pattern
-Test -m "+7" # matches pattern
-Test -m -12 # matches pattern, but is too long
+Test -M -4 # matches pattern
+Test -M "+7" # matches pattern
+Test -M -12 # matches pattern, but is too long
 
 [ValidatePattern('\^[a-z][a-z0-9]\*$')]$ident = "abc"
 $ident = "123" # does not match pattern
@@ -675,7 +675,7 @@ param (
 )
 
 Test1 2
-Test1 -st 7
+Test1 -St 7
 Test1 -3 # value is too small
 Test1 12 # value is too large
 ```
@@ -778,11 +778,11 @@ param ( [ValidateSet("Red", "Green", "Blue")]
 
 )
 
-Test -col "RED"    # case is ignored, is a member of the set
-Test -col "white"  # case is ignored, is not a member of the set
+Test -Col "RED"    # case is ignored, is a member of the set
+Test -Col "white"  # case is ignored, is not a member of the set
 
-Test -dir "up"     # case is not ignored, is a member of the set
-Test -dir "Up"     # case is not ignored, is not a member of the set
+Test -Dir "up"     # case is not ignored, is a member of the set
+Test -Dir "Up"     # case is not ignored, is not a member of the set
 
 [ValidateSet(("Red", "Green", "Blue")]$color = "RED" # ok, case is ignored
 $color = "Purple"  # case is ignored, is not a member of the set

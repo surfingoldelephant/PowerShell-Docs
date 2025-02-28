@@ -206,7 +206,7 @@ Remove-PSDrive -Name office
 ```Output
 Remove-PSDrive : Cannot remove drive 'Office' because it is in use.
 At line:1 char:15
-+ Remove-PSDrive  <<<< -name office
++ Remove-PSDrive  <<<< -Name office
 ```
 
 ## Adding and removing drives outside PowerShell

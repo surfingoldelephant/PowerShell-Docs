@@ -42,11 +42,11 @@ function Add-Extension
         System.String. Add-Extension returns a string with the extension or file name.
 
         .EXAMPLE
-        PS> Add-Extension -name "File"
+        PS> Add-Extension -Name "File"
         File.txt
 
         .EXAMPLE
-        PS> Add-Extension -name "File" -extension "doc"
+        PS> Add-Extension -Name "File" -Extension "doc"
         File.doc
 
         .EXAMPLE
@@ -115,12 +115,12 @@ OUTPUTS
 
     -------------------------- EXAMPLE 1 --------------------------
 
-    PS> Add-Extension -name "File"
+    PS> Add-Extension -Name "File"
     File.txt
 
     -------------------------- EXAMPLE 2 --------------------------
 
-    PS> Add-Extension -name "File" -extension "doc"
+    PS> Add-Extension -Name "File" -Extension "doc"
     File.doc
 
     -------------------------- EXAMPLE 3 --------------------------
@@ -169,10 +169,10 @@ Help topic with the function, instead of the script.
   PS> .\Update-Month.ps1
 
   .EXAMPLE
-  PS> .\Update-Month.ps1 -inputpath C:\Data\January.csv
+  PS> .\Update-Month.ps1 -InputPath C:\Data\January.csv
 
   .EXAMPLE
-  PS> .\Update-Month.ps1 -inputpath C:\Data\January.csv -outputPath C:\Reports\2009\January.csv
+  PS> .\Update-Month.ps1 -InputPath C:\Data\January.csv -OutputPath C:\Reports\2009\January.csv
 #>
 
 param ([string]$InputPath, [string]$OutPutPath)
@@ -242,11 +242,11 @@ PS> .\Update-Month.ps1
 
 -------------------------- EXAMPLE 2 --------------------------
 
-PS> .\Update-Month.ps1 -inputpath C:\Data\January.csv
+PS> .\Update-Month.ps1 -InputPath C:\Data\January.csv
 
 -------------------------- EXAMPLE 3 --------------------------
 
-PS> .\Update-Month.ps1 -inputpath C:\Data\January.csv -outputPath
+PS> .\Update-Month.ps1 -InputPath C:\Data\January.csv -OutputPath
 C:\Reports\2009\January.csv
 
 RELATED LINKS
@@ -264,11 +264,11 @@ function Add-Extension
     (
         [string]
         # Specifies the file name.
-        $name,
+        $Name,
 
         [string]
         # Specifies the file name extension. "Txt" is the default.
-        $extension = "txt"
+        $Extension = "txt"
     )
     $name = $name + "." + $extension
     $name
@@ -305,7 +305,7 @@ The following example shows the use of the `.ExternalHelp` keyword in a function
 ```powershell
 function Add-Extension
 {
-    param ([string] $name, [string]$extension = "txt")
+    param ([string]$Name, [string]$Extension = "txt")
     $name = $name + "." + $extension
     $name
 

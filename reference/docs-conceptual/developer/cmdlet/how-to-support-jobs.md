@@ -172,7 +172,7 @@ using System.Diagnostics;            // Diagnostics namespace for retrieving
 //    user/documents/WindowsPowerShell/modules/GetProcessSample06
 //
 // To import the module, run the following command: Import-Module GetProcessSample06.
-// To test the cmdlet, run the following command: Get-Proc -name <process name>
+// To test the cmdlet, run the following command: Get-Proc -Name <process name>
 //
 
 //

@@ -41,7 +41,7 @@ private string userName;
 
 Positional and named parameters accept single arguments or multiple arguments separated by commas. Multiple arguments are allowed only if the parameter accepts a collection such as an array of strings. You may mix positional and named parameters in the same cmdlet. In this case, the system retrieves the named arguments first, and then attempts to map the remaining unnamed arguments to the positional parameters.
 
-The following commands show the different ways in which you can specify single and multiple arguments for the parameters of the `Get-Command` cmdlet. Notice that in the last two samples, **-name** does not need to be specified because the `Name` parameter is defined as a positional parameter.
+The following commands show the different ways in which you can specify single and multiple arguments for the parameters of the `Get-Command` cmdlet. Notice that in the last two samples, **-Name** does not need to be specified because the `Name` parameter is defined as a positional parameter.
 
 ```powershell
 Get-Command -Name Get-Service
