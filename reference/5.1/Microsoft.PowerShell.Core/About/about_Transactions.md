@@ -347,7 +347,7 @@ registry entry to the MyCompany key. The command uses the UseTransaction
 parameter to include the command in the transaction.
 
 ```powershell
-New-ItemProperty -path MyCompany -Name MyKey -value 123 -UseTransaction
+New-ItemProperty -Path MyCompany -Name MyKey -Value 123 -UseTransaction
 ```
 
 The command returns an object representing the new registry entry, but the
@@ -676,7 +676,7 @@ entry to the MyCompany key. It uses the UseTransaction parameter to include
 the command in the transaction.
 
 ```powershell
-New-ItemProperty -path MyCompany -name MyKey -UseTransaction
+New-ItemProperty -Path MyCompany -Name MyKey -UseTransaction
 ```
 
 The MyCompany key doesn't exist in the registry, but this command succeeds

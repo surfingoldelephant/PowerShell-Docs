@@ -106,7 +106,7 @@ For more information, see [about_Jobs](../Microsoft.PowerShell.Core/About/about_
 This example registers for events on the Server01 remote computer.
 
 ```powershell
-Register-WmiEvent -Class 'Win32_ProcessStartTrace' -SourceIdentifier "Start" -Computername Server01
+Register-WmiEvent -Class 'Win32_ProcessStartTrace' -SourceIdentifier "Start" -ComputerName Server01
 Get-Event -SourceIdentifier "Start"
 ```
 

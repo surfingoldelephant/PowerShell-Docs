@@ -60,7 +60,7 @@ Rename-Item -Path "project.txt" -NewName "d:\archive\old-project.txt"
 ```Output
 Rename-Item : can't rename because the target specified represents a path or device name.
 At line:1 char:12
-+ Rename-Item <<<<  -path project.txt -NewName d:\archive\old-project.txt
++ Rename-Item <<<<  -Path project.txt -NewName d:\archive\old-project.txt
 + CategoryInfo          : InvalidArgument: (:) [Rename-Item], PS>  Move-Item -Path "project.txt" -De
 stination "d:\archive\old-project.txt"
 ```

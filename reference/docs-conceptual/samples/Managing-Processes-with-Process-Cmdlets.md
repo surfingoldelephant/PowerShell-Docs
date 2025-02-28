@@ -120,7 +120,7 @@ Get-Process powershell -ComputerName localhost, Server01, Server02 |
         @{Label="WS(K)";Expression={[int]($_.WS/1024)}},
         @{Label="VM(M)";Expression={[int]($_.VM/1MB)}},
         @{Label="CPU(s)";Expression={if ($_.CPU -ne $()){$_.CPU.ToString("N")}}},
-        Id, ProcessName, MachineName -auto
+        Id, ProcessName, MachineName -Auto
 ```
 
 ```Output

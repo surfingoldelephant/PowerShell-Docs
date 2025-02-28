@@ -178,7 +178,7 @@ Running  seclogon           Secondary Logon
 
 ```powershell
 Get-Service -Name "WinRM" -ComputerName "localhost", "Server01", "Server02" |
- Format-Table -Property MachineName, Status, Name, DisplayName -auto
+ Format-Table -Property MachineName, Status, Name, DisplayName -Auto
 ```
 
 ```Output

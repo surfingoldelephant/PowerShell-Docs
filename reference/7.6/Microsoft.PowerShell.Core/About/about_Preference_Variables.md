@@ -549,7 +549,7 @@ default, **ConciseView**. `Get-ChildItem` is used to find a non-existent
 directory.
 
 ```powershell
-Get-ChildItem -path 'C:\NoRealDirectory'
+Get-ChildItem -Path 'C:\NoRealDirectory'
 ```
 
 ```Output

@@ -59,7 +59,7 @@ to continue and then prompted for a file name.
 
 ```
 Add-PSSnapin NewPSSnapin
-Export-Console -path NewPSSnapinConsole.psc1
+Export-Console -Path NewPSSnapinConsole.psc1
 powershell.exe -PSConsoleFile NewPsSnapinConsole.psc1
 ```
 
@@ -80,7 +80,7 @@ are available in the current session.
 ### Example 4: Export names of snap-ins to a specified location
 
 ```
-PS C:\> Export-Console -path Console01
+PS C:\> Export-Console -Path Console01
 PS C:\> notepad console01.psc1
 <?xml version="1.0" encoding="utf-8"?>
 <PSConsoleFile ConsoleSchemaVersion="1.0">

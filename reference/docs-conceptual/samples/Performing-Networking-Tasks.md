@@ -89,12 +89,12 @@ Get-CimInstance -Class Win32_PingStatus -Filter "Address='127.0.0.1'"
 ```
 
 The response from **Win32_PingStatus** contains 29 properties. You can use `Format-Table` to select
-the properties that are most interesting to you. The **Autosize** parameter of `Format-Table`
+the properties that are most interesting to you. The **AutoSize** parameter of `Format-Table`
 resizes the table columns so that they display properly in PowerShell.
 
 ```powershell
 Get-CimInstance -Class Win32_PingStatus -Filter "Address='127.0.0.1'" |
-    Format-Table -Property Address,ResponseTime,StatusCode -Autosize
+    Format-Table -Property Address,ResponseTime,StatusCode -AutoSize
 ```
 
 ```Output

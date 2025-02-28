@@ -143,7 +143,7 @@ Remove-Item -Path HKCU:\CurrentVersion
 
 ```Output
 Confirm
-The item at HKCU:\CurrentVersion\AdminDebug has children and the -recurse
+The item at HKCU:\CurrentVersion\AdminDebug has children and the Recurse
 parameter was not specified. If you continue, all children will be removed with
 the item. Are you sure you want to continue?
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):

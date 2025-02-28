@@ -111,12 +111,12 @@ For more information, see [Export-Console][05].
 
 To use a console file that includes the snap-in, start Windows PowerShell
 (`powershell.exe`) from the command prompt in `cmd.exe` or in another Windows
-PowerShell session. Use the **PsConsoleFile** parameter to specify the console
+PowerShell session. Use the **PSConsoleFile** parameter to specify the console
 file that includes the snap-in. For example, the following command starts
 Windows PowerShell with the `NewConsole.psc1` console file:
 
 ```powershell
-PowerShell.exe -psconsolefile NewConsole.psc1
+PowerShell.exe -PSConsoleFile NewConsole.psc1
 ```
 
 The providers and cmdlets in the snap-in are now available for use in the

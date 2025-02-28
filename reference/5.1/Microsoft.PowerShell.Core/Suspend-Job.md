@@ -177,7 +177,7 @@ Id     Name          PSJobTypeName      State       HasMoreData     Location    
 ### Example 3: Suspend a workflow job on a remote computer
 
 ```powershell
-Invoke-Command -ComputerName Srv01 -Scriptblock {Suspend-Job -Filter @{CustomID="031589"}
+Invoke-Command -ComputerName Srv01 -ScriptBlock {Suspend-Job -Filter @{CustomID="031589"}
 ```
 
 This command uses the `Invoke-Command` cmdlet to suspend a workflow job on the Srv01 remote

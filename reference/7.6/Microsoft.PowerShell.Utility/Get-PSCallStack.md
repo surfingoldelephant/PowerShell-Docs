@@ -35,7 +35,7 @@ To run a `Get-PSCallStack` command while in the debugger, type `k` or `Get-PSCal
 ```powershell
 PS C:\> function My-Alias {
 $p = $args[0]
-Get-Alias | where {$_.Definition -like "*$p"} | Format-Table definition, name -auto
+Get-Alias | where {$_.Definition -like "*$p"} | Format-Table Definition, Name -Auto
 }
 PS C:\ps-test> Set-PSBreakpoint -Command My-Alias
 Command    : My-Alias

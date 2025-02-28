@@ -138,7 +138,7 @@ order for easy reading.
 
 ```powershell
 $options = New-ScheduledJobOption -WakeToRun
-$options.PSObject.Properties | Sort-Object -Property Name | Format-Table -Property Name, Value -Autosize
+$options.PSObject.Properties | Sort-Object -Property Name | Format-Table -Property Name, Value -AutoSize
 ```
 
 ```Output

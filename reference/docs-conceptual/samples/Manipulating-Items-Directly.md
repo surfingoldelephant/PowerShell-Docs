@@ -217,7 +217,7 @@ Remove-Item C:\temp\New.Directory
 
 ```Output
 Confirm
-The item at C:\temp\New.Directory has children and the -recurse parameter was not
+The item at C:\temp\New.Directory has children and the -Recurse parameter was not
 specified. If you continue, all children will be removed with the item. Are you
  sure you want to continue?
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help

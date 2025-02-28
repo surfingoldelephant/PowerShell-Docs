@@ -125,7 +125,7 @@ GlobalID property of a scheduled job is a unique identifier (GUID). Use the Glob
 precision is required, such as when you are disabling scheduled jobs on multiple computers.
 
 ```powershell
-Get-ScheduledJob | Format-Table -Property Name, GlobalID, Command -Autosize
+Get-ScheduledJob | Format-Table -Property Name, GlobalID, Command -AutoSize
 ```
 
 ```Output

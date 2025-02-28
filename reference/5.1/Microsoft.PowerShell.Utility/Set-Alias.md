@@ -260,7 +260,7 @@ Accept wildcard characters: False
 
 Sets the **Option** property value of the alias. Values such as `ReadOnly` and `Constant`
 protect an alias from unintended changes. To see the **Option** property of all aliases in the
-session, type `Get-Alias | Format-Table -Property Name, Options -Autosize`.
+session, type `Get-Alias | Format-Table -Property Name, Options -AutoSize`.
 
 The acceptable values for this parameter are as follows:
 

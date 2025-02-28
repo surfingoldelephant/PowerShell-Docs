@@ -160,10 +160,10 @@ RELATED LINKS
     Remove-Module
 
 REMARKS
-    To see the examples, type: "Get-Help New-Module -examples".
-    For more information, type: "Get-Help New-Module -detailed".
-    For technical information, type: "Get-Help New-Module -full".
-    For online help, type: "Get-Help New-Module -online"
+    To see the examples, type: "Get-Help New-Module -Examples".
+    For more information, type: "Get-Help New-Module -Detailed".
+    For technical information, type: "Get-Help New-Module -Full".
+    For online help, type: "Get-Help New-Module -Online"
 ```
 
 In the previous chapter, I mentioned that functions should use approved verbs otherwise they'll

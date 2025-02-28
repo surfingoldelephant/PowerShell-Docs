@@ -190,7 +190,7 @@ requirements for remoting.
    assign a display name to the job.
 
    ```powershell
-   Invoke-Command -Computername Server01 -ScriptBlock {
+   Invoke-Command -ComputerName Server01 -ScriptBlock {
      Get-EventLog system} -AsJob
    ```
 

@@ -66,7 +66,7 @@ remote computers.
 
 ```powershell
 $wql = "select * from win32_service where name='WinRM'"
-Get-WmiObject -query $wql -computername server01, server01, server03
+Get-WmiObject -Query $wql -ComputerName server01, server01, server03
 ```
 
 The following more complex command exits all instances of a program.
@@ -74,7 +74,7 @@ The following more complex command exits all instances of a program.
 ```powershell
 C:\PS> notepad.exe
 C:\PS> $wql = "select * from win32_process where name='notepad.exe'"
-C:\PS> $np = Get-WmiObject -query $wql
+C:\PS> $np = Get-WmiObject -Query $wql
 C:\PS> $np | Remove-WmiObject
 ```
 
@@ -108,10 +108,10 @@ on.
 For example:
 
 ```powershell
-PS> $s = [WmiSearcher]'Select * from Win32_Process where Handlecount > 1000'
-PS> $s.Get() |sort handlecount |ft handlecount,__path,name -auto
+PS> $s = [WmiSearcher]'Select * from Win32_Process where HandleCount > 1000'
+PS> $s.Get() | sort HandleCount | ft HandleCount, __PATH, Name -Auto
 
-count  __PATH                                              name
+Count  __PATH                                              Name
 -----  ------                                              ----
 1105   \\SERVER01\root\cimv2:Win32_Process.Handle="3724"   PowerShell...
 1132   \\SERVER01\root\cimv2:Win32_Process.Handle="1388"   winlogon.exe

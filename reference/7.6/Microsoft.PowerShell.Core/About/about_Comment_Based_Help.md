@@ -221,7 +221,7 @@ function Verb-Noun {
     [CmdletBinding()]
     param (
         # This is the same as .Parameter
-        [string]$Computername
+        [string]$ComputerName
     )
     # Verb the Noun on the computer
 }
