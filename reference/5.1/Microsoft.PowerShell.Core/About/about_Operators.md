@@ -243,7 +243,7 @@ True     True     Object[]                                 System.Array
 
 PS> $list.Count
 20
-PS> $list = @(Get-Service | Where-Object Status -eq Starting )
+PS> $list = @(Get-Service | Where-Object Status -EQ Starting )
 PS> $list.GetType()
 
 IsPublic IsSerial Name                                     BaseType

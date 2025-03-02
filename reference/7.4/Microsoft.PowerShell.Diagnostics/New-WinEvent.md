@@ -47,7 +47,7 @@ In version 0, the **IsMachine** field is a boolean value. In version 1, the **Is
 an unsigned integer value.
 
 ```powershell
-(Get-WinEvent -ListProvider Microsoft-Windows-GroupPolicy).Events | Where-Object Id -eq 8007
+(Get-WinEvent -ListProvider Microsoft-Windows-GroupPolicy).Events | Where-Object Id -EQ 8007
 ```
 
 ```Output

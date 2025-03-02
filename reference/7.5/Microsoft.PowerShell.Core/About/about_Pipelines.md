@@ -604,13 +604,13 @@ use this new functionality.
 ```powershell
 # Wrapping with a pipe at the beginning of a line (no backtick required)
 Get-Process | Where-Object CPU | Where-Object Path
-    | Get-Item | Where-Object FullName -match "AppData"
+    | Get-Item | Where-Object FullName -Match "AppData"
     | Sort-Object FullName -Unique
 
 # Wrapping with a pipe on a line by itself
 Get-Process | Where-Object CPU | Where-Object Path
     |
-    Get-Item | Where-Object FullName -match "AppData"
+    Get-Item | Where-Object FullName -Match "AppData"
     |
     Sort-Object FullName -Unique
 ```

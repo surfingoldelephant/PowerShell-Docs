@@ -370,7 +370,7 @@ Get-ChildItem | Where-Object { $_.PSIsContainer }
 Get-ChildItem | Where-Object { !$_.PSIsContainer }
 # You cannot use the -not operator (!) in the comparison statement format
 # of the command.
-Get-ChildItem | Where-Object PSIsContainer -eq $false
+Get-ChildItem | Where-Object PSIsContainer -EQ $false
 ```
 
 ### Example 6: Use multiple conditions
@@ -807,7 +807,7 @@ Accept wildcard characters: False
 Indicates that this cmdlet gets objects if the property value matches any of the specified values.
 For example:
 
-`Get-Process | Where-Object -Property ProcessName -in -Value "Svchost", "TaskHost", "WsmProvHost"`
+`Get-Process | Where-Object -Property ProcessName -In -Value "Svchost", "TaskHost", "WsmProvHost"`
 
 If the input is a single object, PowerShell converts it to a collection of one object.
 

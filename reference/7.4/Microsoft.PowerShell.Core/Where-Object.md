@@ -812,7 +812,7 @@ Accept wildcard characters: False
 Indicates that this cmdlet gets objects if the property value matches any of the specified values.
 For example:
 
-`Get-Process | Where-Object -Property ProcessName -in -Value "Svchost", "TaskHost", "WsmProvHost"`
+`Get-Process | Where-Object -Property ProcessName -In -Value "Svchost", "TaskHost", "WsmProvHost"`
 
 If the input is a single object, PowerShell converts it to a collection of one object.
 

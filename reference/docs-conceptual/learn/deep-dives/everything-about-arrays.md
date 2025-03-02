@@ -556,7 +556,7 @@ Kevin     Marquette
 We can write that same query to get the `FirstName` we are looking for.
 
 ```powershell
-$data | where FirstName -eq Kevin
+$data | where FirstName -EQ Kevin
 ```
 
 #### Where()

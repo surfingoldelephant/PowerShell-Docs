@@ -35,7 +35,7 @@ the flow of the pipeline.
 
 ```powershell
 Get-Service |
-    Where-Object CanPauseAndContinue -eq $true |
+    Where-Object CanPauseAndContinue -EQ $true |
     Select-Object -Property *
 ```
 
@@ -298,7 +298,7 @@ to filter its results. This technique is inefficient if an earlier command in th
 parameter to perform the filtering.
 
 ```powershell
-Get-Service | Where-Object Name -eq w32time
+Get-Service | Where-Object Name -EQ w32time
 ```
 
 ```Output

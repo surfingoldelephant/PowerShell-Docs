@@ -425,7 +425,7 @@ It evaluates to `$true` if there's a returned process and `$false` if there isn'
 perfectly valid to use pipeline expressions or other PowerShell statements like this:
 
 ```powershell
-if ( Get-Process | where Name -eq Notepad )
+if ( Get-Process | where Name -EQ Notepad )
 ```
 
 These expressions can be combined with each other with the `-and` and `-or` operators, but you may

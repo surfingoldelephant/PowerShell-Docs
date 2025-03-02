@@ -94,7 +94,7 @@ The following example gets an encrypted event from the PowerShell event log and 
 
 ```powershell
 $event = Get-WinEvent Microsoft-Windows-PowerShell/Operational -MaxEvents 1 |
-    Where-Object Id -eq 4104
+    Where-Object Id -EQ 4104
 Unprotect-CmsMessage -EventLogRecord $event
 ```
 
@@ -105,7 +105,7 @@ using `Unprotect-CmsMessage`.
 
 ```powershell
 Get-WinEvent Microsoft-Windows-PowerShell/Operational |
-    Where-Object Id -eq 4104 |
+    Where-Object Id -EQ 4104 |
     Unprotect-CmsMessage
 ```
 
