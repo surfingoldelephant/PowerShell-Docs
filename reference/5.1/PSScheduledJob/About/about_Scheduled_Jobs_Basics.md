@@ -294,7 +294,7 @@ This examples gets the results of the newest instance of the
 
 ```powershell
 Import-Module PSScheduledJob
-Receive-Job -ID 51 -Keep
+Receive-Job -Id 51 -Keep
 ```
 
 The results of scheduled jobs are saved on disk, so the **Keep** parameter of

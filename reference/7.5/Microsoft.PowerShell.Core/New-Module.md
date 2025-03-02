@@ -122,7 +122,7 @@ This example uses the `Export-ModuleMember` cmdlet to export a variable into the
 Without the `Export-ModuleMember` command, only the function is exported.
 
 ```powershell
-New-Module -ScriptBlock {$SayHelloHelp="Type 'SayHello', a space, and a name."; function SayHello ($name) { "Hello, $name" }; Export-ModuleMember -Function SayHello -Variable SayHelloHelp}
+New-Module -ScriptBlock {$SayHelloHelp="Type 'SayHello', a space, and a name."; function SayHello ($Name) { "Hello, $Name" }; Export-ModuleMember -Function SayHello -Variable SayHelloHelp}
 $SayHelloHelp
 ```
 
@@ -196,8 +196,8 @@ The `$m` variable appears to have no assigned value.
 
 ```powershell
 $m = New-Module -ScriptBlock {
-  function Hello ($name) {"Hello, $name"}
-  function Goodbye ($name) {"Goodbye, $name"}
+  function Hello ($Name) {"Hello, $Name"}
+  function Goodbye ($Name) {"Goodbye, $Name"}
 } -AsCustomObject
 $m
 $m | Get-Member

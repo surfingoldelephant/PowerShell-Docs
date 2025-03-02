@@ -99,7 +99,7 @@ of the **TriggerID** parameter is the identifier in the ID property of the job t
 ### Example 4: Delete a job trigger from a remote scheduled job
 
 ```powershell
-Invoke-Command -ComputerName "Server01" { Remove-JobTrigger -ID 38 -TriggerID 1 }
+Invoke-Command -ComputerName "Server01" { Remove-JobTrigger -Id 38 -TriggerID 1 }
 ```
 
 This command deletes the first job trigger from the Inventory job on the Server01 computer.

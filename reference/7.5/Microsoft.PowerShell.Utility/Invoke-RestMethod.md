@@ -593,7 +593,7 @@ be used together.
 
 Example:
 
-`Invoke-RestMethod -uri 'https://api.contoso.com/widget/' -CustomMethod 'TEST'`
+`Invoke-RestMethod -Uri 'https://api.contoso.com/widget/' -CustomMethod 'TEST'`
 
 This makes a `TEST` HTTP request to the API.
 

@@ -551,7 +551,7 @@ Accept wildcard characters: False
 
 Specifies an array of session IDs. This cmdlet gets only the sessions with the specified IDs. Type
 one or more IDs, separated by commas, or use the range operator (`..`) to specify a range of IDs.
-You cannot use the ID parameter together with the **ComputerName** parameter.
+You cannot use the **Id** parameter together with the **ComputerName** parameter.
 
 An ID is an integer that uniquely identifies the user-managed sessions in the current session. It is
 easier to remember and type than the **InstanceId**, but it is unique only within the current

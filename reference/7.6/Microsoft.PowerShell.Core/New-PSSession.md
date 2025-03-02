@@ -215,7 +215,7 @@ text file, or other text-convertible format.
 ### Example 8: Create a session by using a URI
 
 ```powershell
-$s = New-PSSession -URI http://Server01:91/NewSession -Credential Domain01\User01
+$s = New-PSSession -Uri http://Server01:91/NewSession -Credential Domain01\User01
 ```
 
 This command creates a **PSSession** on the Server01 computer and stores it in the `$s` variable. It

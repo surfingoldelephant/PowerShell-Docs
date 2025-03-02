@@ -498,7 +498,7 @@ function Do-Something
     {
         try
         {
-            $result = Get-Something -ID $node
+            $result = Get-Something -Id $node
         }
         catch
         {
@@ -557,7 +557,7 @@ function Do-Something
 {
     try
     {
-        $result = Get-Something -ID $node
+        $result = Get-Something -Id $node
     }
     catch
     {

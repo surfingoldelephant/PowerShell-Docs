@@ -185,7 +185,7 @@ The `$done` variable contains a job object that represents the job that ran on S
 ### Example 5: Wait until one of several jobs finishes
 
 ```powershell
-Wait-Job -id 1, 2, 5 -Any
+Wait-Job -Id 1, 2, 5 -Any
 ```
 
 This command identifies three jobs by their IDs and waits until any one of them are in a terminating

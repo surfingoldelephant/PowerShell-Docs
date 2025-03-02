@@ -136,25 +136,25 @@ as the baseline for performance.
 ```powershell
 $tests = @{
     'PowerShell Explicit Assignment' = {
-        param($count)
+        param($Count)
 
-        $result = foreach($i in 1..$count) {
+        $result = foreach($i in 1..$Count) {
             $i
         }
     }
     '.Add(T) to List<T>' = {
-        param($count)
+        param($Count)
 
         $result = [Collections.Generic.List[int]]::new()
-        foreach($i in 1..$count) {
+        foreach($i in 1..$Count) {
             $result.Add($i)
         }
     }
     '+= Operator to Array' = {
-        param($count)
+        param($Count)
 
         $result = @()
-        foreach($i in 1..$count) {
+        foreach($i in 1..$Count) {
             $result += $i
         }
     }
@@ -501,34 +501,34 @@ $tests = @{
         param([int] $RepeatCount, [random] $RanGen)
 
         function Get-RandomNumberCore {
-            param ($rng)
+            param ($Rng)
 
-            $rng.Next()
+            $Rng.Next()
         }
 
         for ($i = 0; $i -lt $RepeatCount; $i++) {
-            $null = Get-RandomNumberCore -rng $RanGen
+            $null = Get-RandomNumberCore -Rng $RanGen
         }
     }
     'for-loop in a function' = {
         param([int] $RepeatCount, [random] $RanGen)
 
         function Get-RandomNumberAll {
-            param ($rng, $count)
+            param ($Rng, $Count)
 
-            for ($i = 0; $i -lt $count; $i++) {
-                $null = $rng.Next()
+            for ($i = 0; $i -lt $Count; $i++) {
+                $null = $Rng.Next()
             }
         }
 
-        Get-RandomNumberAll -rng $RanGen -count $RepeatCount
+        Get-RandomNumberAll -Rng $RanGen -Count $RepeatCount
     }
 }
 
 5kb, 10kb, 100kb | ForEach-Object {
-    $rng = [random]::new()
+    $Rng = [random]::new()
     $groupResult = foreach ($test in $tests.GetEnumerator()) {
-        $ms = Measure-Command { & $test.Value -RepeatCount $_ -RanGen $rng }
+        $ms = Measure-Command { & $test.Value -RepeatCount $_ -RanGen $Rng }
 
         [pscustomobject]@{
             CollectionSize    = $_
@@ -779,37 +779,37 @@ Here is a performance comparison of three techniques for creating objects with 5
 ```powershell
 $tests = @{
     '[ordered] into [pscustomobject] cast' = {
-        param([int] $iterations, [string[]] $props)
+        param([int] $Iterations, [string[]] $Props)
 
-        foreach ($i in 1..$iterations) {
+        foreach ($i in 1..$Iterations) {
             $obj = [ordered]@{}
-            foreach ($prop in $props) {
+            foreach ($prop in $Props) {
                 $obj[$prop] = $i
             }
             [pscustomobject] $obj
         }
     }
     'Add-Member'                           = {
-        param([int] $iterations, [string[]] $props)
+        param([int] $Iterations, [string[]] $Props)
 
-        foreach ($i in 1..$iterations) {
+        foreach ($i in 1..$Iterations) {
             $obj = [psobject]::new()
-            foreach ($prop in $props) {
+            foreach ($prop in $Props) {
                 $obj | Add-Member -MemberType NoteProperty -Name $prop -Value $i
             }
             $obj
         }
     }
     'PSObject.Properties.Add'              = {
-        param([int] $iterations, [string[]] $props)
+        param([int] $Iterations, [string[]] $Props)
 
         # this is how, behind the scenes, `Add-Member` attaches
         # new properties to our PSObject.
         # Worth having it here for performance comparison
 
-        foreach ($i in 1..$iterations) {
+        foreach ($i in 1..$Iterations) {
             $obj = [psobject]::new()
-            foreach ($prop in $props) {
+            foreach ($prop in $Props) {
                 $obj.PSObject.Properties.Add(
                     [psnoteproperty]::new($prop, $i))
             }
@@ -822,7 +822,7 @@ $properties = 'Prop1', 'Prop2', 'Prop3', 'Prop4', 'Prop5'
 
 1kb, 10kb, 100kb | ForEach-Object {
     $groupResult = foreach ($test in $tests.GetEnumerator()) {
-        $ms = Measure-Command { & $test.Value -iterations $_ -props $properties }
+        $ms = Measure-Command { & $test.Value -Iterations $_ -Props $properties }
 
         [pscustomobject]@{
             Iterations        = $_

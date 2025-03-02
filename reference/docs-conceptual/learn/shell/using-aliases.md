@@ -114,8 +114,8 @@ For more information, see the [Alias attribute][03] documentation.
 In addition to parameter aliases, PowerShell lets you specify the parameter name using the fewest
 characters needed to uniquely identify the parameter. For example, the `Get-ChildItem` cmdlet has
 the **Recurse** and **ReadOnly** parameters. To uniquely identify the **Recurse** parameter you only
-need to provide `-rec`. If you combine that with the command alias, `Get-ChildItem -Recurse` can be
-shortened to `dir -rec`.
+need to provide `-Rec`. If you combine that with the command alias, `Get-ChildItem -Recurse` can be
+shortened to `dir -Rec`.
 
 ## Don't use aliases in scripts
 

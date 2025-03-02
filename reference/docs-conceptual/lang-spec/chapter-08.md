@@ -1190,7 +1190,7 @@ formats data in an XML file:
 
 ```powershell
 data -SupportedCommand ConvertTo-Xml {
-    Format-Xml -strings string1, string2, string3
+    Format-Xml -Strings string1, string2, string3
 }
 ```
 
@@ -1331,17 +1331,17 @@ Windows Workflow Foundation engine.
 Consider the following definition for a function called `Get-Power`:
 
 ```powershell
-function Get-Power ([long]$base, [int]$exponent) {
+function Get-Power ([long]$Base, [int]$Exponent) {
     $result = 1
-    for ($i = 1; $i -le $exponent; ++$i) {
-        $result *= $base
+    for ($i = 1; $i -le $Exponent; ++$i) {
+        $result *= $Base
     }
     return $result
 }
 ```
 
-This function has two parameters, `$base` and `$exponent`. It also contains a set of statements
-that, for non-negative exponent values, computes `$base^$exponent^` and returns the result to
+This function has two parameters, `$Base` and `$Exponent`. It also contains a set of statements
+that, for non-negative exponent values, computes `$Base^$Exponent^` and returns the result to
 `Get-Power`'s caller.
 
 When a script, function, or filter begins execution, each parameter is initialized to its
@@ -1378,10 +1378,10 @@ value is used to initialize *p* provided *p* is not bound to any arguments in th
 Consider the following function definition and calls:
 
 ```powershell
-function Find-Str ([string]$str, [int]$start_pos = 0) { ... }
+function Find-Str ([string]$Str, [int]$StartPos = 0) { ... }
 
-Find-Str "abcabc" # 2nd argument omitted, 0 used for $start_pos
-Find-Str "abcabc" 2 # 2nd argument present, so it is used for $start_pos
+Find-Str "abcabc" # 2nd argument omitted, 0 used for $StartPos
+Find-Str "abcabc" 2 # 2nd argument present, so it is used for $StartPos
 ```
 
 ### 8.10.5 The [switch] type constraint
@@ -1499,9 +1499,9 @@ A *param-block* provides an alternate way of declaring parameters. For example, 
 of parameter declarations are equivalent:
 
 ```powershell
-function FindStr1 ([string]$str, [int]$start_pos = 0) { ... }
+function FindStr1 ([string]$Str, [int]$StartPos = 0) { ... }
 function FindStr2 {
-    param ([string]$str, [int]$start_pos = 0) ...
+    param ([string]$Str, [int]$StartPos = 0) ...
 }
 ```
 
@@ -1573,16 +1573,16 @@ corresponding parameter by position, with the first parameter having position ze
 Consider the following definition fragment for a function called `Get-Power`, and the calls to it:
 
 ```powershell
-function Get-Power ([long]$base, [int]$exponent) { ... }
+function Get-Power ([long]$Base, [int]$Exponent) { ... }
 
-Get-Power 5 3       # argument 5 is bound to parameter $base in position 0
-                    # argument 3 is bound to parameter $exponent in position 1
+Get-Power 5 3       # argument 5 is bound to parameter $Base in position 0
+                    # argument 3 is bound to parameter $Exponent in position 1
                     # no conversion is needed, and the result is 5 to the power 3
 
 Get-Power 4.7 3.2   # double argument 4.7 is rounded to int 5, double argument
                     # 3.2 is rounded to int 3, and result is 5 to the power 3
 
-Get-Power 5         # $exponent has value $null, which is converted to int 0
+Get-Power 5         # $Exponent has value $null, which is converted to int 0
 
 Get-Power           # both parameters have value $null, which is converted to int 0
 ```
@@ -1597,24 +1597,24 @@ designates the corresponding parameter. When choosing parameter names, avoid usi
 Consider the following calls to function `Get-Power`:
 
 ```powershell
-Get-Power -base 5 -exponent 3   # -base designates $base, so 5 is
-                                # bound to that, exponent designates
-                                # $exponent, so 3 is bound to that
+Get-Power -Base 5 -Exponent 3   # -Base designates $Base, so 5 is
+                                # bound to that, -Exponent designates
+                                # $Exponent, so 3 is bound to that
 
-Get-Power -Exp 3 -BAs 5         # $base takes on 5 and $exponent takes on 3
+Get-Power -Exp 3 -Bas 5         # $Base takes on 5 and $Exponent takes on 3
 
-Get-Power -e 3 -b 5             # $base takes on 5 and $exponent takes on 3
+Get-Power -E 3 -B 5             # $Base takes on 5 and $Exponent takes on 3
 ```
 
 On the other hand, calls to the following function
 
 ```powershell
-function Get-Hypot ([double]$side1, [double]$side2) {
-    return [Math]::Sqrt($side1 * $side1 + $side2 * $side2)
+function Get-Hypot ([double]$Side1, [double]$Side2) {
+    return [Math]::Sqrt($Side1 * $Side1 + $Side2 * $Side2)
 }
 ```
 
-must use parameters `-side1` and `-side2`, as there is no prefix that uniquely designates the
+must use parameters `-Side1` and `-Side2`, as there is no prefix that uniquely designates the
 parameter.
 
 The same parameter name cannot be used multiple times with or without different associated argument

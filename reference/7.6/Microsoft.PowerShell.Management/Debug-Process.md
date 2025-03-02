@@ -87,7 +87,7 @@ This command attaches a debugger to the PowerShell processes on the computer. It
 `Get-Process` cmdlet to get the PowerShell processes on the computer, and it uses a pipeline
 operator (`|`) to send the processes to the `Debug-Process` cmdlet.
 
-To specify a particular PowerShell process, use the ID parameter of `Get-Process`.
+To specify a particular PowerShell process, use the **Id** parameter of `Get-Process`.
 
 ### Example 6: Attach a debugger to a current process on the local computer
 

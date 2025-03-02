@@ -110,7 +110,7 @@ you need a different encoding, you must set the `charset` attribute in the `Cont
 This example uses the `Invoke-WebRequest` cmdlet to send a web request to the Bing.com site.
 
 ```powershell
-$Response = Invoke-WebRequest -URI https://www.bing.com/search?q=how+many+feet+in+a+mile
+$Response = Invoke-WebRequest -Uri https://www.bing.com/search?q=how+many+feet+in+a+mile
 $Response.InputFields | Where-Object {
     $_.name -like "* Value*"
 } | Select-Object Name, Value
@@ -204,7 +204,7 @@ $ContentType = 'text/plain'
 $FileStream = [System.IO.FileStream]::new($filePath, [System.IO.FileMode]::Open)
 $FileHeader = [System.Net.Http.Headers.ContentDispositionHeaderValue]::new('form-data')
 $FileHeader.Name = $FieldName
-$FileHeader.FileName = Split-Path -leaf $FilePath
+$FileHeader.FileName = Split-Path -Leaf $FilePath
 $FileContent = [System.Net.Http.StreamContent]::new($FileStream)
 $FileContent.Headers.ContentDisposition = $FileHeader
 $FileContent.Headers.ContentType = [System.Net.Http.Headers.MediaTypeHeaderValue]::Parse($ContentType)
@@ -671,7 +671,7 @@ be used together.
 
 This example makes a `TEST` HTTP request to the API:
 
-`Invoke-WebRequest -uri 'https://api.contoso.com/widget/' -CustomMethod 'TEST'`
+`Invoke-WebRequest -Uri 'https://api.contoso.com/widget/' -CustomMethod 'TEST'`
 
 This feature was added in PowerShell 6.0.0.
 

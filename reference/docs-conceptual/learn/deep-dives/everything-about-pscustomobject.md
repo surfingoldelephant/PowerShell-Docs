@@ -84,7 +84,7 @@ I find the best way to save a hashtable to a file is to save it as JSON. You can
 a `[PSCustomObject]`
 
 ```powershell
-$myObject | ConvertTo-Json -depth 1 | Set-Content -Path $Path
+$myObject | ConvertTo-Json -Depth 1 | Set-Content -Path $Path
 $myObject = Get-Content -Path $Path | ConvertFrom-Json
 ```
 

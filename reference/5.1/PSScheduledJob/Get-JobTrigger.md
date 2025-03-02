@@ -87,7 +87,7 @@ Id         Name            Triggers        Command                              
 ```
 
 ```powershell
-Get-JobTrigger -ID 3
+Get-JobTrigger -Id 3
 ```
 
 The first command uses the `Get-ScheduledJob` cmdlet to display the scheduled jobs on the local

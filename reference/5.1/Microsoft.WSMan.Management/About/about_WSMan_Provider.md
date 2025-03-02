@@ -255,7 +255,7 @@ certificate.
 $cred = Get-Credential
 New-Item -Path WSMan:\localhost\ClientCertificate `
          -Issuer 1b3fd224d66c6413fe20d21e38b304226d192dfe `
-         -URI wmicimv2/* `
+         -Uri wmicimv2/* `
          -Credential $cred;
 ```
 

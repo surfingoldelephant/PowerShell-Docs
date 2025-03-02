@@ -18,7 +18,7 @@ You can get particular processes by specifying their process names or process ID
 command gets the Idle process:
 
 ```powershell
-Get-Process -id 0
+Get-Process -Id 0
 ```
 
 ```Output

@@ -252,7 +252,7 @@ The following command uses the `Wait-Job` cmdlet to wait for a job with **ID**
 10.
 
 ```powershell
-Wait-Job -ID 10
+Wait-Job -Id 10
 ```
 
 As a result, the PowerShell prompt is suppressed until the job is completed.
@@ -262,7 +262,7 @@ You can also wait for a predetermined period of time. This command uses the
 the command prompt returns, but the job continues to run in the background.
 
 ```powershell
-Wait-Job -ID 10 -Timeout 120
+Wait-Job -Id 10 -Timeout 120
 ```
 
 ## Stopping a job

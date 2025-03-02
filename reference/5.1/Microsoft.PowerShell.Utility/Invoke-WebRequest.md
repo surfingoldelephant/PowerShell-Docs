@@ -50,7 +50,7 @@ This cmdlet was introduced in Windows PowerShell 3.0.
 This example uses the `Invoke-WebRequest` cmdlet to send a web request to the Bing.com site.
 
 ```powershell
-$Response = Invoke-WebRequest -UseBasicParsing -URI https://www.bing.com?q=how+many+feet+in+a+mile
+$Response = Invoke-WebRequest -UseBasicParsing -Uri https://www.bing.com?q=how+many+feet+in+a+mile
 $Response.InputFields |
     Where-Object name -Like "* Value" |
     Select-Object name, value

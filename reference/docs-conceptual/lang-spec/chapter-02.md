@@ -383,10 +383,10 @@ There are several different kinds of variables: user-defined ([§2.3.2.1][§2.3.
 Consider the following function definition and calls:
 
 ```powershell
-function Get-Power ([long]$base, [int]$exponent) { ... }
+function Get-Power ([long]$Base, [int]$Exponent) { ... }
 
-Get-Power 5 3 # $base is 5, $exponent is 3
-Get-Power -exponent 3 -base 5 # " " "
+Get-Power 5 3 # $Base is 5, $Exponent is 3
+Get-Power -Exponent 3 -Base 5 # " " "
 ```
 
 Each argument is passed by position or name, one at a time. However, a set of arguments can be
@@ -397,12 +397,12 @@ This automatic argument expansion is known as _splatting_. For example,
 $values = 5,3 # put arguments into an array
 Get-Power @values
 
-$hash = @{ exponent = 3; base = 5 } # put arguments into a Hashtable
+$hash = @{ Exponent = 3; Base = 5 } # put arguments into a Hashtable
 Get-Power @hash
 
 function Get-Power2 { Get-Power @args } # arguments are in an array
 
-Get-Power2 --exponent 3 --base 5 # named arguments splatted named in
+Get-Power2 -Exponent 3 -Base 5 # named arguments splatted named in
 @args
 Get-Power2 5 3 # position arguments splatted positionally in @args
 ```
@@ -573,18 +573,18 @@ There are three kinds of argument:
   _first-parameter-char_ and _parameter-chars_ together make up the parameter name, which
   corresponds to the name of a parameter (without its leading -) in the command being invoked. There
   must be no trailing colon. The argument immediately following designates an associated value. For
-  example, given a command `Get-Power`, which has parameters `$base` and `$exponent`, the following
+  example, given a command `Get-Power`, which has parameters `$Base` and `$Exponent`, the following
   invocations are equivalent:
 
   ```powershell
-  Get-Power -base 5 -exponent 3
-  Get-Power -exponent 3 -base 5
+  Get-Power -Base 5 -Exponent 3
+  Get-Power -Exponent 3 -Base 5
   ```
 
 - Positional argument ([§8.10.2][§8.10.2]) - Arguments and their corresponding parameters inside commands
   have positions with the first having position zero. The argument in position 0 is bound to the
   parameter in position 0; the argument in position 1 is bound to the parameter in position 1; and
-  so on. For example, given a command `Get-Power`, that has parameters `$base` and `$exponent` in
+  so on. For example, given a command `Get-Power`, that has parameters `$Base` and `$Exponent` in
   positions 0 and 1, respectively, the following invokes that command:
 
   ```powershell
