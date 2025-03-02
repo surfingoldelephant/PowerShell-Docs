@@ -383,7 +383,7 @@ To preview the effect of committing the transaction, enter a `Get-ChildItem`
 the data from within the transaction.
 
 ```powershell
-dir m* -useTransaction
+dir m* -UseTransaction
 ```
 
 The result shows that, if the transaction is committed, the `MyKey` entry is

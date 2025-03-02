@@ -33,7 +33,7 @@ Cmdlet          Set-Item                        Set-Item [-Path] <String[]> ...
 ## Creating new items
 
 To create a new item in the filesystem, use the `New-Item` cmdlet. Include the **Path** parameter
-with path to the item, and the **ItemType** parameter with a value of `file` or `directory`.
+with path to the item, and the **ItemType** parameter with a value of `File` or `Directory`.
 
 For example, to create a new directory named `New.Directory` in the `C:\Temp` directory, type:
 
@@ -49,11 +49,11 @@ Mode                LastWriteTime     Length Name
 d----        2006-05-18  11:29 AM            New.Directory
 ```
 
-To create a file, change the value of the **ItemType** parameter to `file`. For example, to create a
+To create a file, change the value of the **ItemType** parameter to `File`. For example, to create a
 file named `file1.txt` in the `New.Directory` directory, type:
 
 ```powershell
-New-Item -Path C:\temp\New.Directory\file1.txt -ItemType file
+New-Item -Path C:\temp\New.Directory\file1.txt -ItemType File
 ```
 
 ```Output

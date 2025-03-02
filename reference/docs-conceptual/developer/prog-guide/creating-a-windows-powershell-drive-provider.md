@@ -184,7 +184,7 @@ derivation. Let's test the sample drive provider.
 3. Create a new drive using the sample drive provider:
 
    ```powershell
-   New-PSDrive -Name mydb -root c:\ps\northwind.mdb -psprovider AccessDb`
+   New-PSDrive -Name mydb -Root c:\ps\northwind.mdb -PSProvider AccessDb`
    ```
 
    The following output appears:

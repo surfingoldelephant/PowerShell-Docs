@@ -41,7 +41,7 @@ A cmdlet parameter enables the user to provide input to the cmdlet. In the follo
 `Get-Proc` and `Get-Member` are the names of pipelined cmdlets, and `MemberType` is a parameter
 for the `Get-Member` cmdlet. The parameter has the argument "property."
 
-**PS> Get-Proc ; `Get-Member` -membertype property**
+**PS> Get-Proc ; `Get-Member` -MemberType Property**
 
 To declare parameters for a cmdlet, you must first define the properties that represent the
 parameters. In the `Get-Proc` cmdlet, the only parameter is `Name`, which in this case represents

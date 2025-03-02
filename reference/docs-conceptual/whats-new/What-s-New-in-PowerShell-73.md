@@ -104,7 +104,7 @@ PowerShell 7.3 includes the following features, updates, and breaking changes.
 - Render decimal numbers in a table using current culture ([#17650][17650])
 - Add type accelerator ordered for **OrderedDictionary** ([#17804][17804]) (Thanks @fflaten!)
 - Add `find.exe` to legacy argument binding behavior for Windows ([#17715][17715])
-- Add `-noprofileloadtime` switch to pwsh ([#17535][17535]) (Thanks @rkeithhill!)
+- Add `-NoProfileLoadTime` switch to pwsh ([#17535][17535]) (Thanks @rkeithhill!)
 
 For a complete list of changes, see the [Change Log][11] in the GitHub repository.
 

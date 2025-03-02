@@ -1145,7 +1145,7 @@ data-name:
     simple-name
 
 data-commands-allowed:
-    new-lines~opt~ -supportedcommand data-commands-list
+    new-lines~opt~ -SupportedCommand data-commands-list
 
 data-commands-list:
     new-lines~opt~ data-command
@@ -1176,7 +1176,7 @@ only:
 - Literals
 - Calls to the [ConvertFrom-StringData](xref:Microsoft.PowerShell.Utility.ConvertFrom-StringData)
   cmdlet
-- Any other cmdlets identified via the **supportedcommand** parameter
+- Any other cmdlets identified via the **SupportedCommand** parameter
 
 If the `ConvertFrom-StringData` cmdlet is used, the key/value pairs can be expressed using any form
 of string literal. However, *expandable-string-literal*s and *expandable-here-string-literal*s must
@@ -1189,7 +1189,7 @@ For example, the following data section includes a user-written cmdlet, `Convert
 formats data in an XML file:
 
 ```powershell
-data -supportedCommand ConvertTo-Xml {
+data -SupportedCommand ConvertTo-Xml {
     Format-Xml -strings string1, string2, string3
 }
 ```
@@ -1199,7 +1199,7 @@ command that converts the strings into a hash table, whose value is assigned to 
 
 ```powershell
 $messages = data {
-    ConvertFrom-StringData -stringdata @'
+    ConvertFrom-StringData -StringData @'
     Greeting = Hello
     Yes = yes
     No = no
@@ -1215,7 +1215,7 @@ be created in separate files, with the following data sections:
 
 ```powershell
 $messages = data {
-    ConvertFrom-StringData -stringdata @"
+    ConvertFrom-StringData -StringData @"
     Greeting = Guten Tag
     Yes = ja
     No = nein
@@ -1223,7 +1223,7 @@ $messages = data {
 }
 
 $messagesS = data {
-    ConvertFrom-StringData -stringdata @"
+    ConvertFrom-StringData -StringData @"
     Greeting = Buenos días
     Yes = sí
     No = no

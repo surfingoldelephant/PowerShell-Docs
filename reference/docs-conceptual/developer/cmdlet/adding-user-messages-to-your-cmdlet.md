@@ -134,7 +134,7 @@ WriteObject(process);
 
 Windows PowerShell automatically routes any [System.Management.Automation.Cmdlet.WriteDebug](/dotnet/api/System.Management.Automation.Cmdlet.WriteDebug) calls to the tracing infrastructure and cmdlets. This allows the method calls to be traced to the hosting application, a file, or a debugger without your having to do any extra development work within the cmdlet. The following command-line entry implements a tracing operation.
 
-**PS> trace-expression Stop-Proc -file proc.log -command Stop-Proc notepad**
+**PS> Trace-Expression Stop-Proc -File proc.log -Command Stop-Proc notepad**
 
 ## Writing a Warning Message
 

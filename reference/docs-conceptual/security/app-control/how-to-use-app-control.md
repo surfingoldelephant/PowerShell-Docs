@@ -134,7 +134,7 @@ events.
 
 ```powershell
 Get-WinEvent -LogName PowerShellCore/Analytic -Oldest |
-    Where-Object Id -eq 16387 | Format-List
+    Where-Object Id -EQ 16387 | Format-List
 ```
 
 ```Output

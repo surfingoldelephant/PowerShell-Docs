@@ -58,7 +58,7 @@ Namespace Microsoft.Samples.PowerShell.Runspaces
             ' The script to run to use the patterns. Input passed
             ' to the script will be available in the $input variable.
             Dim script As String = "$input | where {" & _
-                " Select-String $_ -inputobject 'abc' }"
+                " Select-String $_ -InputObject 'abc' }"
 
             ' Create an instance of the RunspaceInvoke class.
             Dim invoker As New RunspaceInvoke()

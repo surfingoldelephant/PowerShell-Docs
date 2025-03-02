@@ -203,7 +203,7 @@ requests. The following command creates a new HTTP listener using the `New-Item`
 cmdlet.
 
 ```powershell
-New-Item -Path WSMan:\localhost\Listener -Address * -Transport HTTP -force
+New-Item -Path WSMan:\localhost\Listener -Address * -Transport HTTP -Force
 ```
 
 ### Creating a new plug-in

@@ -155,7 +155,7 @@ also include `if` statements and some limited commands.
 Syntax:
 
 ```Syntax
-data <variable> [-supportedCommand <cmdlet-name>] {<permitted content>}
+data <variable> [-SupportedCommand <cmdlet-name>] {<permitted content>}
 ```
 
 ## `do`
@@ -281,7 +281,7 @@ C:\scripts\test>type test.ps1
 3
 exit 4
 
-C:\scripts\test>powershell -file ./test.ps1
+C:\scripts\test>powershell -File ./test.ps1
 1
 2
 3

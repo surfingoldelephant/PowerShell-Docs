@@ -435,7 +435,7 @@ protected override void CopyItem(string path, string copyPath, bool recurse)
                    throw e;
                }
 
-               // if table already exists then force parameter should be set
+               // if table already exists then Force parameter should be set
                // to force a copy
                if (!Force && GetTable(copyTableName) != null)
                {

@@ -36,7 +36,7 @@ The `DATA` section was added in PowerShell 2.0 feature.
 The syntax for a `DATA` section is as follows:
 
 ```Syntax
-DATA [<variable-name>] [-supportedCommand <cmdlet-name>] {
+DATA [<variable-name>] [-SupportedCommand <cmdlet-name>] {
     <Permitted content>
 }
 ```
@@ -90,7 +90,7 @@ For example, the following `DATA` section includes a user-written cmdlet,
 `Format-Xml`, that formats data in an XML file:
 
 ```powershell
-DATA -supportedCommand Format-Xml
+DATA -SupportedCommand Format-Xml
 {
     Format-Xml -Strings string1, string2, string3
 }
@@ -194,7 +194,7 @@ Msg2 = To exit, type "quit".
 A data section that includes a user-written cmdlet that generates data:
 
 ```powershell
-DATA -supportedCommand Format-Xml {
+DATA -SupportedCommand Format-Xml {
     Format-Xml -Strings string1, string2, string3
 }
 ```

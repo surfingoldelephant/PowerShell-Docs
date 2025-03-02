@@ -191,10 +191,10 @@ A _requires-comment_ cannot be present inside a snap-in.
 There are four other forms of a _requires-comment_:
 
 ```Syntax
-#Requires --Assembly AssemblyId
-#Requires --Module ModuleName
-#Requires --PsSnapIn PsSnapIn [ -Version *N* [.n] ]
-#Requires --ShellId ShellId
+#Requires -Assembly AssemblyId
+#Requires -Module ModuleName
+#Requires -PSSnapin PSSnapin [ -Version *N* [.n] ]
+#Requires -ShellId ShellId
 ```
 
 ### 2.2.4 White space

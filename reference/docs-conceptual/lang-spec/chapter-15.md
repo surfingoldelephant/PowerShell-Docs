@@ -777,7 +777,7 @@ data-name:
     simple-name
 
 data-commands-allowed:
-    new-lines~opt~ -supportedcommand data-commands-list
+    new-lines~opt~ -SupportedCommand data-commands-list
 
 data-commands-list:
     new-lines~opt~ data-command

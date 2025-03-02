@@ -147,7 +147,7 @@ alive even after you close the launching session. The `nohup` command collects o
 
 ```powershell
 # Runs for 2 minutes and appends output to ./nohup.out
-Start-Process nohup 'pwsh -noprofile -c "1..120 | % { Write-Host . -NoNewline; sleep 1 }"'
+Start-Process nohup 'pwsh -NoProfile -c "1..120 | % { Write-Host . -NoNewline; sleep 1 }"'
 ```
 
 In this example, `Start-Process` is running the Linux `nohup` command, which launches `pwsh` as a

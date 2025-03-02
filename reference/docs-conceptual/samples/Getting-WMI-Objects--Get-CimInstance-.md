@@ -24,7 +24,7 @@ classes available on the local computer by typing:
 
 ```powershell
 Get-CimClass -Namespace root/CIMV2 | 
-    Where-Object CimClassName -like Win32* | 
+    Where-Object CimClassName -Like Win32* | 
     Select-Object CimClassName
 ```
 
