@@ -119,7 +119,7 @@ directly, the values are compared to the result of the arithmetic operation
 (modulus of 2).
 
 ```powershell
-Compare-Object @{p=1} @{p=2} -property @{ Expression = { $_.p % 2 } }
+Compare-Object @{p=1} @{p=2} -Property @{ Expression = { $_.p % 2 } }
 ```
 
 ```Output

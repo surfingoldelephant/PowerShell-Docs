@@ -52,7 +52,7 @@ To get all the registered snap-ins on your system or to verify that a snap-in
 is registered, type:
 
 ```powershell
-Get-PSSnapin -registered
+Get-PSSnapin -Registered
 ```
 
 To get a list of the cmdlets in a  Windows PowerShell snap-in, type:

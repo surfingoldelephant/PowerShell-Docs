@@ -432,9 +432,9 @@ Specifies a **Where** clause to use as a filter. Uses the syntax of the WMI Quer
 > commands return only the logical disks that have a **DeviceID** of `c:` and services that have the
 > name 'WinRM' without using the **Where** keyword.
 
-`Get-WmiObject Win32_LogicalDisk -filter "DeviceID = 'c:' "`
+`Get-WmiObject Win32_LogicalDisk -Filter "DeviceID = 'c:' "`
 
-`Get-WmiObject win32_service -filter "name='WinRM'"`
+`Get-WmiObject win32_service -Filter "name='WinRM'"`
 
 ```yaml
 Type: System.String

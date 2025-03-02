@@ -224,7 +224,7 @@ of command in a string expression.
 PS> "Today is $(Get-Date)"
 Today is 12/02/2019 13:15:20
 
-PS> "Folder list: $((dir c:\ -dir).Name -join ', ')"
+PS> "Folder list: $((dir c:\ -Dir).Name -join ', ')"
 Folder list: Program Files, Program Files (x86), Users, Windows
 ```
 

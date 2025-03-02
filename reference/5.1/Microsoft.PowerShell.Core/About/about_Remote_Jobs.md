@@ -363,7 +363,7 @@ objects generated after the disconnect are returned when re-connected.
 
 ```powershell
 # Create remote session on local machine
-PS> $session = New-PSSession -cn localhost
+PS> $session = New-PSSession -Cn localhost
 
 # Start remote job
 PS> $job = Invoke-Command -Session $session -ScriptBlock { 1..60 | % { sleep 1; "Output $_" } } -AsJob

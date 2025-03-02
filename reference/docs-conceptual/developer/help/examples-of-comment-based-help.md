@@ -66,7 +66,7 @@ The following output shows the results of a `Get-Help` command that displays the
 `Add-Extension` function.
 
 ```powershell
-PS> Get-Help Add-Extension -full
+PS> Get-Help Add-Extension -Full
 ```
 
 ```Output
@@ -185,7 +185,7 @@ the Path environment variable, the `Get-Help` command that gets the script Help 
 script path.
 
 ```powershell
-PS> Get-Help c:\ps-test\update-month.ps1 -full
+PS> Get-Help c:\ps-test\update-month.ps1 -Full
 ```
 
 ```Output

@@ -418,7 +418,7 @@ I placed that in a variable but it could easily be defined inline and you can sh
 and `expression` to `e` while you're at it.
 
 ```powershell
-$drives | Select-Object -property name, @{n='totalSpaceGB';e={($_.used + $_.free) / 1GB}}
+$drives | Select-Object -Property name, @{n='totalSpaceGB';e={($_.used + $_.free) / 1GB}}
 ```
 
 I personally don't like how long that makes commands and it often promotes some bad behaviors that I

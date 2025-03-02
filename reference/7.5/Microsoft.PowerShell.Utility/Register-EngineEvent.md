@@ -87,7 +87,7 @@ Register-EngineEvent -SourceIdentifier MyEventSource -Action {
 Start-Job -Name TestJob -ScriptBlock {
     While ($true) {
         Register-EngineEvent -SourceIdentifier MyEventSource -Forward
-        Start-Sleep -seconds 2
+        Start-Sleep -Seconds 2
         "Doing some work..."
         $newEventSplat = @{
             SourceIdentifier = 'MyEventSource'
@@ -96,7 +96,7 @@ Start-Job -Name TestJob -ScriptBlock {
         New-Event @newEventSplat
     }
 }
-Start-Sleep -seconds 4
+Start-Sleep -Seconds 4
 Get-EventSubscriber
 Get-Job
 ```
@@ -126,7 +126,7 @@ This is a continuation of Example 3. In this example we wait for 10 seconds to l
 occur. Then we unregister the event subscription.
 
 ```powershell
-PS> Start-Sleep -seconds 10
+PS> Start-Sleep -Seconds 10
 PS> Get-EventSubscriber | Unregister-Event
 PS> Get-Job
 

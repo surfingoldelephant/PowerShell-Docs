@@ -51,7 +51,7 @@ Office Sessions (OSession) logs on the local computer and the Server02 remote co
 ### Example 3: Clear all logs on the specified computers then display the event log list
 
 ```powershell
-Clear-EventLog -LogName application, system -confirm
+Clear-EventLog -LogName application, system -Confirm
 ```
 
 This command prompts you for confirmation before deleting the entries in the specified event logs.
@@ -63,7 +63,7 @@ function clear-all-event-logs ($computerName="localhost")
 {
    $logs = Get-EventLog -ComputerName $computername -List | ForEach-Object {$_.Log}
    $logs | ForEach-Object {Clear-EventLog -ComputerName $computername -LogName $_ }
-   Get-EventLog -ComputerName $computername -list
+   Get-EventLog -ComputerName $computername -List
 }
 
 clear-all-event-logs -ComputerName Server01

@@ -109,7 +109,7 @@ PS C:> ISE -NoProfile
 This command gets help for PowerShell_ISE.exe.
 
 ```
-PS C:> ISE -help
+PS C:> ISE -Help
 ```
 
 ## See also
