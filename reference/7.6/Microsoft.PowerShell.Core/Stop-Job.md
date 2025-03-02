@@ -162,7 +162,7 @@ a pipeline operator (`|`) to send the jobs to a `Format-Table` command, which di
 the specified properties of each job. The table includes the **InstanceID** of each job. It uses a
 calculated property to display the job state.
 
-The second command uses a `Stop-Job` command that has the **InstanceID** parameter to stop a
+The second command uses a `Stop-Job` command that has the **InstanceId** parameter to stop a
 selected job.
 
 ### Example 7: Stop a job on a remote computer

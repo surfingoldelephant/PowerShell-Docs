@@ -51,7 +51,7 @@ This cmdlet was introduced in Windows PowerShell 3.0.
 This example disables the first trigger a scheduled job on the local computer.
 
 ```powershell
-PS C:\> Get-JobTrigger -Name "Backup-Archives" -TriggerID 1 | Disable-JobTrigger
+PS C:\> Get-JobTrigger -Name "Backup-Archives" -TriggerId 1 | Disable-JobTrigger
 ```
 
 The command uses the `Get-JobTrigger` cmdlet to get the job trigger. A pipeline operator (`|`)sends

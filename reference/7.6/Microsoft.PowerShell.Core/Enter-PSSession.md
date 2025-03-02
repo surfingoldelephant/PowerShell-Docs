@@ -583,7 +583,7 @@ Specifies the instance ID of an existing session. `Enter-PSSession` uses the spe
 the interactive session.
 
 The instance ID is a GUID. To find the instance ID of a session, use the `Get-PSSession` cmdlet. You
-can also use the **Session**, **Name**, or **ID** parameters to specify an existing session. Or, you
+can also use the **Session**, **Name**, or **Id** parameters to specify an existing session. Or, you
 can use the **ComputerName** parameter to start a temporary session.
 
 ```yaml
@@ -626,7 +626,7 @@ Specifies the friendly name of an existing session. `Enter-PSSession` uses the s
 the interactive session.
 
 If the name that you specify matches more than one session, the command fails. You can also use the
-**Session**, **InstanceID**, or **ID** parameters to specify an existing session. Or, you can use
+**Session**, **InstanceId**, or **Id** parameters to specify an existing session. Or, you can use
 the **ComputerName** parameter to start a temporary session.
 
 To establish a friendly name for a session, use the **Name** parameter of the `New-PSSession`
@@ -725,7 +725,7 @@ Accept wildcard characters: False
 ### -Session
 
 Specifies a PowerShell session (**PSSession**) to use for the interactive session. This parameter
-takes a session object. You can also use the **Name**, **InstanceID**, or **ID** parameters to
+takes a session object. You can also use the **Name**, **InstanceId**, or **Id** parameters to
 specify a **PSSession**.
 
 Enter a variable that contains a session object or a command that creates or gets a session object,

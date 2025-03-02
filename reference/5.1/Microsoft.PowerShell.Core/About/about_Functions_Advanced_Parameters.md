@@ -1141,13 +1141,13 @@ that implicitly converts a null value, such as a **string**, the null value is
 converted to an empty string even when using the **ValidateNotNull** attribute.
 For this scenario use the **ValidateNotNullOrEmpty** attribute.
 
-In the following example, the value of the **ID** parameter can't be `$null`.
+In the following example, the value of the **Id** parameter can't be `$null`.
 
 ```powershell
 param(
     [Parameter()]
     [ValidateNotNull()]
-    $ID
+    $Id
 )
 ```
 

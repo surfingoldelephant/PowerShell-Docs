@@ -50,7 +50,7 @@ Get-Process notepad | Stop-Process
 The first command uses the `Get-Process` cmdlet to get an object representing
 the Notepad process. It uses a pipeline operator (`|`) to send the process
 object to the `Stop-Process` cmdlet, which stops the Notepad process. Notice
-that the `Stop-Process` command doesn't have a **Name** or **ID** parameter to
+that the `Stop-Process` command doesn't have a **Name** or **Id** parameter to
 specify the process, because the specified process is submitted through the
 pipeline.
 

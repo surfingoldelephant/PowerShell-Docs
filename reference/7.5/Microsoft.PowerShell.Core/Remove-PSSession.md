@@ -134,7 +134,7 @@ TX-TEST-01   fc4e9dfa-f246-452d-9fa3-1adbdd64ae85
 ```
 
 ```powershell
-Remove-PSSession -InstanceID fc4e9dfa-f246-452d-9fa3-1adbdd64ae85
+Remove-PSSession -InstanceId fc4e9dfa-f246-452d-9fa3-1adbdd64ae85
 ```
 
 These commands show how to close a **PSSession** based on its instance ID, or **RemoteRunspaceID**.

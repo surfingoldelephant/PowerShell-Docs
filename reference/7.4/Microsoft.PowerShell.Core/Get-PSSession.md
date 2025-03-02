@@ -120,7 +120,7 @@ created in the current session.
 
 Without parameters, `Get-PSSession` gets all sessions that were created in the current session.
 
-Use the filtering parameters, including **Name**, **ID**, **InstanceID**, **State**,
+Use the filtering parameters, including **Name**, **Id**, **InstanceId**, **State**,
 **ApplicationName**, and **ConfigurationName** to select from among the sessions that
 `Get-PSSession` returns.
 
@@ -205,7 +205,7 @@ more variables than objects, the extra variables are not used.
 
 ```powershell
 Get-PSSession | Format-Table -Property ComputerName, InstanceID
-$s = Get-PSSession -InstanceID a786be29-a6bb-40da-80fb-782c67f7db0f
+$s = Get-PSSession -InstanceId a786be29-a6bb-40da-80fb-782c67f7db0f
 Remove-PSSession -Session $s
 ```
 
@@ -217,7 +217,7 @@ the **PSSessions** to the `Format-Table` cmdlet, which displays the **ComputerNa
 **InstanceID** properties of each **PSSession**.
 
 The second command uses the `Get-PSSession` cmdlet to get a particular **PSSession** and to save it
-in the `$s` variable. The command uses the **InstanceID** parameter to identify the **PSSession**.
+in the `$s` variable. The command uses the **InstanceId** parameter to identify the **PSSession**.
 
 The third command uses the Remove-PSSession cmdlet to delete the **PSSession** in the `$s` variable.
 
@@ -819,7 +819,7 @@ PowerShell includes the following aliases for `Get-PSSession`:
   computer and runs query commands in the session.
 - To get sessions that connect to a remote computer, use the **ComputerName** or **ConnectionUri**
   parameters to specify the remote computer. To filter the sessions that `Get-PSSession` gets, use
-  the **Name**, **ID**, **InstanceID**, and **State** parameters. Use the remaining parameters to
+  the **Name**, **Id**, **InstanceId**, and **State** parameters. Use the remaining parameters to
   configure the temporary session that `Get-PSSession` uses.
 - When you use the **ComputerName** or **ConnectionUri** parameters, `Get-PSSession` gets only
   sessions from computers running Windows PowerShell 3.0 and later versions of PowerShell.

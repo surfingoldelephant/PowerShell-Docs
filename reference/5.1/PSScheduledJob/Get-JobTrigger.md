@@ -70,7 +70,7 @@ scheduled job.
 ### Example 2: Get a job trigger by ID
 
 
-The example uses the **ID** parameter of `Get-JobTrigger` to get the job triggers of a scheduled
+The example uses the **Id** parameter of `Get-JobTrigger` to get the job triggers of a scheduled
 job.
 
 ```powershell
@@ -111,12 +111,12 @@ This command gets the job triggers of all jobs that have `Backup` or `Archive` i
 This example gets the triggers of a scheduled job on a remote computer.
 
 ```powershell
-Invoke-Command -ComputerName Server01 { Get-ScheduledJob Backup | Get-JobTrigger -TriggerID 2 }
+Invoke-Command -ComputerName Server01 { Get-ScheduledJob Backup | Get-JobTrigger -TriggerId 2 }
 ```
 
 The command uses the `Invoke-Command` cmdlet to run a command on the Server01 computer. It uses the
 `Get-ScheduledJob` cmdlet to get the `Backup` scheduled job, which it pipes to the `Get-JobTrigger`
-cmdlet. It uses the **TriggerID** parameter to get only the second trigger.
+cmdlet. It uses the **TriggerId** parameter to get only the second trigger.
 
 ### Example 5: Get all job triggers
 
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ### -TriggerId
 
 Gets the specified job triggers. Enter the trigger IDs of one or more job triggers of a scheduled
-job. Use this parameter when the scheduled job that is specified by the **Name**, **ID**, or
+job. Use this parameter when the scheduled job that is specified by the **Name**, **Id**, or
 **InputObject** parameters has multiple job triggers.
 
 ```yaml

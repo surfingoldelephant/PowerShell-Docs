@@ -108,7 +108,7 @@ Monday and Thursday at 5:00 AM.
 ## How to get a job trigger
 
 To get the job trigger of a scheduled job, use the `Get-JobTrigger` cmdlet. Use
-the **Name**, **ID**, and **InputObject** parameters to specify the scheduled
+the **Name**, **Id**, and **InputObject** parameters to specify the scheduled
 job, not the job trigger.
 
 `Get-JobTrigger` gets the job trigger of the **ProcessJob**.
@@ -149,7 +149,7 @@ $O = New-ScheduledJobOption -WakeToRun
 ## How to get job options
 
 To get the job options of a scheduled job, use the `Get-ScheduledJobOption`
-cmdlet. Use the **Name**, **ID**, and **InputObject** parameters to specify the
+cmdlet. Use the **Name**, **Id**, and **InputObject** parameters to specify the
 scheduled job, not the job options.
 
 `Get-ScheduledJobOption` gets the job options of the **ProcessJob**.
@@ -200,7 +200,7 @@ value of the **WakeToRun** option of the **ProcessJob** scheduledJob to
 **True**.
 
 The `Set` cmdlets in the **PSScheduledJob** module, such as the
-`Set-ScheduledJobOption` cmdlet, don't have **Name** or **ID** parameters. You
+`Set-ScheduledJobOption` cmdlet, don't have **Name** or **Id** parameters. You
 can use the **InputObject** parameter to specify the scheduled job options or
 pipe a scheduled job from `Get-ScheduledJobOption` cmdlet to
 `Set-ScheduledJobOption`.
