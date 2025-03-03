@@ -52,7 +52,7 @@ Cmd.exe.
 You can use this parameter to open any text file, including Windows
 PowerShell script files and XML files.
 
-### -Mta
+### -MTA
 
 Starts Windows PowerShell ISE using a multi-threaded apartment. This
 parameter is introduced in Windows PowerShell 3.0. Single-threaded

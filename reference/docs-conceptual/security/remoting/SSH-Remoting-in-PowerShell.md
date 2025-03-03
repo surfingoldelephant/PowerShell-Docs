@@ -79,11 +79,11 @@ remote computer. And, you must enable **password** or **key-based** authenticati
    Create the SSH subsystem that hosts a PowerShell process on the remote computer:
 
    ```
-   Subsystem powershell c:/progra~1/powershell/7/pwsh.exe -sshs -nologo
+   Subsystem powershell c:/progra~1/powershell/7/pwsh.exe -sshs -NoLogo
    ```
 
    > [!NOTE]
-   > Starting in PowerShell 7.4, you no longer need to use the `-nologo` parameter when running
+   > Starting in PowerShell 7.4, you no longer need to use the `-NoLogo` parameter when running
    > PowerShell in SSH server mode.
 
    > [!NOTE]
@@ -155,7 +155,7 @@ remote computer. And, you must enable **password** or **key-based** authenticati
    Add a PowerShell subsystem entry:
 
    ```
-   Subsystem powershell /usr/bin/pwsh -sshs -nologo
+   Subsystem powershell /usr/bin/pwsh -sshs -NoLogo
    ```
 
    > [!NOTE]
@@ -163,7 +163,7 @@ remote computer. And, you must enable **password** or **key-based** authenticati
    > depending on how you installed PowerShell.
 
    > [!NOTE]
-   > Starting in PowerShell 7.4, you no longer need to use the `-nologo` parameter when running
+   > Starting in PowerShell 7.4, you no longer need to use the `-NoLogo` parameter when running
    > PowerShell in SSH server mode.
 
 1. Restart the **ssh** service.
@@ -202,7 +202,7 @@ remote computer. And, you must enable **password** or **key-based** authenticati
    Add a PowerShell subsystem entry:
 
    ```
-   Subsystem powershell /usr/local/bin/pwsh -sshs -nologo
+   Subsystem powershell /usr/local/bin/pwsh -sshs -NoLogo
    ```
 
    > [!NOTE]
@@ -210,7 +210,7 @@ remote computer. And, you must enable **password** or **key-based** authenticati
    > vary depending on how you installed PowerShell.
 
    > [!NOTE]
-   > Starting in PowerShell 7.4, you no longer need to use the `-nologo` parameter when running
+   > Starting in PowerShell 7.4, you no longer need to use the `-NoLogo` parameter when running
    > PowerShell in SSH server mode.
 
    Optionally, enable key authentication:

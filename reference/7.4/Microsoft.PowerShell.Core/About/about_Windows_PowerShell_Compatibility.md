@@ -97,7 +97,7 @@ $ConfigJSON = ConvertTo-Json -InputObject @{
   "Microsoft.PowerShell:ExecutionPolicy" = "RemoteSigned"
 }
 $ConfigJSON | Out-File -Force $ConfigPath
-pwsh -settingsFile $ConfigPath
+pwsh -SettingsFile $ConfigPath
 ```
 
 For more the latest information about module compatibility, see the

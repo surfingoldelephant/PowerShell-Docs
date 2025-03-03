@@ -26,7 +26,7 @@ In Visual Studio, create a Class Library project named AccessDBProviderSample. C
 
 2. Click **Project > AccessDBProviderSample Properties > Debug**. In **Start project**, click **Start external program**, and navigate to the Windows PowerShell executable (typically c:\Windows\System32\WindowsPowerShell\v1.0\\.powershell.exe).
 
-3. Under **Start Options**, enter the following into the **Command line arguments** box: `-noexit -Command "[reflection.assembly]::loadFrom(AccessDBProviderSample.dll' ) | Import-Module"`
+3. Under **Start Options**, enter the following into the **Command line arguments** box: `-NoExit -Command "[reflection.assembly]::loadFrom(AccessDBProviderSample.dll' ) | Import-Module"`
 
 ### Declaring the provider class
 

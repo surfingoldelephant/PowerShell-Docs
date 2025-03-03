@@ -301,7 +301,7 @@ Additional changes to `pwsh(.exe)` from `powershell.exe`:
 - `pwsh` accepts the `-i` (or `-Interactive`) switch to indicate an interactive shell.
   This allows PowerShell to be used as a default shell on Unix platforms.
 - Removed parameters `-ImportSystemModules` and `-PSConsoleFile` from `pwsh.exe`.
-- Changed `pwsh -version` and built-in help for `pwsh.exe` to align with other native tools.
+- Changed `pwsh -Version` and built-in help for `pwsh.exe` to align with other native tools.
 - Invalid argument error messages for `-File` and `-Command` and exit codes consistent with Unix
   standards
 - Added `-WindowStyle` parameter on Windows. Similarly, package-based installations updates on
@@ -346,7 +346,7 @@ The PowerShell 7.2 MSI package includes following command-line options:
 On Unix, it is a convention for shells to accept `-i` for an interactive shell and many tools
 expect this behavior (`script` for example, and when setting PowerShell as the default shell) and
 calls the shell with the `-i` switch. This change is breaking in that `-i` previously could be used
-as short hand to match `-inputformat`, which now needs to be `-in`.
+as short hand to match `-InputFormat`, which now needs to be `-in`.
 
 ### Custom snap-ins
 
