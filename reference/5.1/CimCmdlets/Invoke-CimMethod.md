@@ -392,12 +392,12 @@ A URI consists of a prefix and a path to a resource. For example:
 By default, if you do not specify this parameter, the DMTF standard resource URI
 `http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/` is used and the class name is appended to it.
 
-**ResourceURI** can only be used with CIM sessions created using the WSMan protocol, or when
+**ResourceUri** can only be used with CIM sessions created using the WSMan protocol, or when
 specifying the **ComputerName** parameter, which creates a CIM session using WSMan.
 
 When you specify this parameter without specifying the **ComputerName** parameter, or when you
 specify a CIM session created using DCOM protocol, you get an error. The DCOM protocol does not
-support the **ResourceURI** parameter.
+support the **ResourceUri** parameter.
 
 If both the **ResourceUri** parameter and the **Filter** parameter are specified, the **Filter**
 parameter is ignored.
