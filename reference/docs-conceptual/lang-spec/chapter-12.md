@@ -129,9 +129,9 @@ param (
     [string[]] $ComputerName
 )
 
-Test "Red", "Green" # $computerName has Length 2
-Test "Red" # $computerName has Length 1
-Test -Comp @() # $computerName has Length 0
+Test "Red", "Green" # $ComputerName has Length 2
+Test "Red" # $ComputerName has Length 1
+Test -Comp @() # $ComputerName has Length 0
 ```
 
 ### 12.3.3 The AllowEmptyString attribute
@@ -148,7 +148,7 @@ param (
     [string] $ComputerName
 )
 
-Test "Red" # $computerName is "Red"
+Test "Red" # $ComputerName is "Red"
 Test "" # empty string is permitted
 Test -Comp "" # empty string is permitted
 ```

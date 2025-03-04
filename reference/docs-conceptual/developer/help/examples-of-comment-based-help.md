@@ -18,8 +18,8 @@ functions.
 function Add-Extension
 {
     param ([string]$Name,[string]$Extension = "txt")
-    $name = $name + "." + $extension
-    $name
+    $Name = $Name + "." + $Extension
+    $Name
 
     <#
         .SYNOPSIS
@@ -175,7 +175,7 @@ Help topic with the function, instead of the script.
   PS> .\Update-Month.ps1 -InputPath C:\Data\January.csv -OutputPath C:\Reports\2009\January.csv
 #>
 
-param ([string]$InputPath, [string]$OutPutPath)
+param ([string]$InputPath, [string]$OutputPath)
 
 function Get-Data { }
 ```
@@ -270,8 +270,8 @@ function Add-Extension
         # Specifies the file name extension. "Txt" is the default.
         $Extension = "txt"
     )
-    $name = $name + "." + $extension
-    $name
+    $Name = $Name + "." + $Extension
+    $Name
 
     <#
         .SYNOPSIS
@@ -295,7 +295,7 @@ path to an XML-based Help topic for the script.
 ```powershell
 # .ExternalHelp C:\MyScripts\Update-Month-Help.xml
 
-    param ([string]$InputPath, [string]$OutPutPath)
+    param ([string]$InputPath, [string]$OutputPath)
 
     function Get-Data { }
 ```
@@ -306,8 +306,8 @@ The following example shows the use of the `.ExternalHelp` keyword in a function
 function Add-Extension
 {
     param ([string]$Name, [string]$Extension = "txt")
-    $name = $name + "." + $extension
-    $name
+    $Name = $Name + "." + $Extension
+    $Name
 
     # .ExternalHelp C:\ps-test\Add-Extension.xml
 }

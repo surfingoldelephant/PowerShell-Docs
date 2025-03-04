@@ -1392,13 +1392,13 @@ the type switch. Type switch has two values, True and False.
 Consider the following function definition and calls:
 
 ```powershell
-function Process ([switch]$trace, $p1, $p2) { ... }
+function Process ([switch]$Trace, $P1, $P2) { ... }
 
-Process 10 20                # $trace is False, $p1 is 10, $p2 is 20
-Process 10 -trace 20         # $trace is True, $p1 is 10, $p2 is 20
-Process 10 20 -trace         # $trace is True, $p1 is 10, $p2 is 20
-Process 10 20 -trace:$false  # $trace is False, $p1 is 10, $p2 is 20
-Process 10 20 -trace:$true   # $trace is True, $p1 is 10, $p2 is 20
+Process 10 20                # $Trace is False, $P1 is 10, $P2 is 20
+Process 10 -Trace 20         # $Trace is True, $P1 is 10, $P2 is 20
+Process 10 20 -Trace         # $Trace is True, $P1 is 10, $P2 is 20
+Process 10 20 -Trace:$false  # $Trace is False, $P1 is 10, $P2 is 20
+Process 10 20 -Trace:$true   # $Trace is True, $P1 is 10, $P2 is 20
 ```
 
 ### 8.10.6 Pipelines and functions
@@ -1466,7 +1466,7 @@ registry drive.
 function Sample {
     Param ([String]$Name, [String]$Path)
     dynamicparam {
-        if ($path -match "*HKLM*:") {
+        if ($Path -match "*HKLM*:") {
             $dynParam1 = New-Object System.Management.Automation.RuntimeDefinedParameter("dp1", [Int32], $attributeCollection)
 
             $attributes = New-Object System.Management.Automation.ParameterAttribute
@@ -1656,9 +1656,9 @@ Positional parameters prefer to be bound without type conversion, if possible. F
 function Test {
     [CmdletBinding(DefaultParameterSetname = "SetB")]
     param([Parameter(Position = 0, ParameterSetname = "SetA")]
-        [decimal]$dec,
+        [decimal]$Dec,
         [Parameter(Position = 0, ParameterSetname = "SetB")]
-        [int]$in
+        [int]$In
     )
     $PSCmdlet.ParameterSetName
 }

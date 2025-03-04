@@ -59,7 +59,7 @@ This command prompts you for confirmation before deleting the entries in the spe
 ### Example 4: Clear all logs on the specified computers then display the event log list
 
 ```powershell
-function clear-all-event-logs ($computerName="localhost")
+function clear-all-event-logs ($ComputerName="localhost")
 {
    $logs = Get-EventLog -ComputerName $computername -List | ForEach-Object {$_.Log}
    $logs | ForEach-Object {Clear-EventLog -ComputerName $computername -LogName $_ }

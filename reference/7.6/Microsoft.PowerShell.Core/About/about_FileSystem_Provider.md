@@ -388,7 +388,7 @@ which gets hidden files, and `!Directory`, which gets all other files.
 Get-ChildItem -Attributes !Directory,!Directory+Hidden
 ```
 
-`dir -att !d,!d+h` is the equivalent of this command.
+`dir -Att !d,!d+h` is the equivalent of this command.
 
 ### Get Compressed and Encrypted files
 

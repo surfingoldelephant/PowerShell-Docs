@@ -43,11 +43,11 @@ The following steps describe how to create a PowerShell module.
    ```powershell
    function Show-Calendar {
    param(
-       [DateTime] $start = [DateTime]::Today,
-       [DateTime] $end = $start,
-       $firstDayOfWeek,
-       [int[]] $highlightDay,
-       [string[]] $highlightDate = [DateTime]::Today.ToString('yyyy-MM-dd')
+       [DateTime] $Start = [DateTime]::Today,
+       [DateTime] $End = $Start,
+       $FirstDayOfWeek,
+       [int[]] $HighlightDay,
+       [string[]] $HighlightDate = [DateTime]::Today.ToString('yyyy-MM-dd')
        )
 
        #actual code for the function goes here see the end of the topic for the complete code sample
@@ -173,32 +173,32 @@ member.
 #>
 function Show-Calendar {
 param(
-    [DateTime] $start = [DateTime]::Today,
-    [DateTime] $end = $start,
-    $firstDayOfWeek,
-    [int[]] $highlightDay,
-    [string[]] $highlightDate = [DateTime]::Today.ToString('yyyy-MM-dd')
+    [DateTime] $Start = [DateTime]::Today,
+    [DateTime] $End = $Start,
+    $FirstDayOfWeek,
+    [int[]] $HighlightDay,
+    [string[]] $HighlightDate = [DateTime]::Today.ToString('yyyy-MM-dd')
     )
 
 ## Determine the first day of the start and end months.
-$start = New-Object DateTime $start.Year,$start.Month,1
-$end = New-Object DateTime $end.Year,$end.Month,1
+$Start = New-Object DateTime $Start.Year,$Start.Month,1
+$End = New-Object DateTime $End.Year,$End.Month,1
 
 ## Convert the highlighted dates into real dates.
-[DateTime[]] $highlightDate = [DateTime[]] $highlightDate
+[DateTime[]] $HighlightDate = [DateTime[]] $HighlightDate
 
 ## Retrieve the DateTimeFormat information so that the
 ## calendar can be manipulated.
 $dateTimeFormat  = (Get-Culture).DateTimeFormat
-if($firstDayOfWeek)
+if($FirstDayOfWeek)
 {
-    $dateTimeFormat.FirstDayOfWeek = $firstDayOfWeek
+    $dateTimeFormat.FirstDayOfWeek = $FirstDayOfWeek
 }
 
-$currentDay = $start
+$currentDay = $Start
 
 ## Process the requested months.
-while($start -le $end)
+while($Start -le $End)
 {
     ## Return to an earlier point in the function if the first day of the month
     ## is in the middle of the week.
@@ -215,7 +215,7 @@ while($start -le $end)
     ## Continue processing dates until the function reaches the end of the month.
     ## The function continues until the week is completed with
     ## days from the next month.
-    while(($currentDay -lt $start.AddMonths(1)) -or
+    while(($currentDay -lt $Start.AddMonths(1)) -or
         ($currentDay.DayOfWeek -ne $dateTimeFormat.FirstDayOfWeek))
     {
         ## Determine the day names to use to label the columns.
@@ -229,21 +229,21 @@ while($start -le $end)
         $displayDay = " {0,2} " -f $currentDay.Day
 
         ## Determine whether to highlight a specific date.
-        if($highlightDate)
+        if($HighlightDate)
         {
             $compareDate = New-Object DateTime $currentDay.Year,
                 $currentDay.Month,$currentDay.Day
-            if($highlightDate -contains $compareDate)
+            if($HighlightDate -contains $compareDate)
             {
                 $displayDay = "*" + ("{0,2}" -f $currentDay.Day) + "*"
             }
         }
 
         ## Otherwise, highlight as part of a date range.
-        if($highlightDay -and ($highlightDay[0] -eq $currentDay.Day))
+        if($HighlightDay -and ($HighlightDay[0] -eq $currentDay.Day))
         {
             $displayDay = "[" + ("{0,2}" -f $currentDay.Day) + "]"
-            $null,$highlightDay = $highlightDay
+            $null,$HighlightDay = $HighlightDay
         }
 
         ## Add the day of the week and the day of the month as note properties.
@@ -266,13 +266,13 @@ while($start -le $end)
 
     ## Add a centered header.
     $width = ($calendar.Split("`n") | Measure-Object -Maximum Length).Maximum
-    $header = "{0:MMMM yyyy}" -f $start
+    $header = "{0:MMMM yyyy}" -f $Start
     $padding = " " * (($width - $header.Length) / 2)
     $displayCalendar = " `n" + $padding + $header + "`n " + $calendar
     $displayCalendar.TrimEnd()
 
     ## Move to the next month.
-    $start = $start.AddMonths(1)
+    $Start = $Start.AddMonths(1)
 
 }
 }

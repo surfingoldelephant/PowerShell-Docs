@@ -408,8 +408,8 @@ The following sample function includes comment-based help:
 function Add-Extension
 {
 param ([string]$Name,[string]$Extension = "txt")
-$name = $name + "." + $extension
-$name
+$Name = $Name + "." + $Extension
+$Name
 
 <#
 .SYNOPSIS
@@ -556,15 +556,15 @@ param
 
 [string]
 #Specifies the file name.
-$name,
+$Name,
 
 [string]
 #Specifies the file name extension. "Txt" is the default.
-$extension = "txt"
+$Extension = "txt"
 )
 
-$name = $name + "." + $extension
-$name
+$Name = $Name + "." + $Extension
+$Name
 
 <#
 .SYNOPSIS
@@ -661,7 +661,7 @@ PS> .\Update-Month.ps1 -InputPath C:\Data\January.csv -OutputPath `
 C:\Reports\2009\January.csv
 #>
 
-param ([string]$InputPath, [string]$OutPutPath)
+param ([string]$InputPath, [string]$OutputPath)
 
 function Get-Data { }
 ...
@@ -762,7 +762,7 @@ the keyword. Any other placement is ineffective.
 ```powershell
 # .EXTERNALHELP C:\MyScripts\Update-Month-Help.xml
 
-param ([string]$InputPath, [string]$OutPutPath)
+param ([string]$InputPath, [string]$OutputPath)
 function Get-Data { }
 ...
 ```
@@ -774,17 +774,17 @@ keyword in a function.
 function Add-Extension {
     # .EXTERNALHELP C:\ps-test\Add-Extension.xml
 
-    param ([string] $name, [string]$extension = "txt")
-    $name = $name + "." + $extension
-    $name
+    param ([string] $Name, [string]$Extension = "txt")
+    $Name = $Name + "." + $Extension
+    $Name
 }
 ```
 
 ```powershell
 function Add-Extension {
-    param ([string] $name, [string]$extension = "txt")
-    $name = $name + "." + $extension
-    $name
+    param ([string] $Name, [string]$Extension = "txt")
+    $Name = $Name + "." + $Extension
+    $Name
 
     # .EXTERNALHELP C:\ps-test\Add-Extension.xml
 }
@@ -793,9 +793,9 @@ function Add-Extension {
 ```powershell
 # .EXTERNALHELP C:\ps-test\Add-Extension.xml
 function Add-Extension {
-    param ([string] $name, [string]$extension = "txt")
-    $name = $name + "." + $extension
-    $name
+    param ([string] $Name, [string]$Extension = "txt")
+    $Name = $Name + "." + $Extension
+    $Name
 }
 ```
 

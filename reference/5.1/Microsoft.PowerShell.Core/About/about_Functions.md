@@ -71,7 +71,7 @@ like a cmdlet without using `C#` programming. For more information, see
 The following are the syntax for a function:
 
 ```Syntax
-function [<scope:>]<name> [([type]$parameter1[,[type]$parameter2])]
+function [<scope:>]<name> [([type]$Parameter1[,[type]$Parameter2])]
 {
   begin {<statement list>}
   process {<statement list>}
@@ -82,7 +82,7 @@ function [<scope:>]<name> [([type]$parameter1[,[type]$parameter2])]
 ```Syntax
 function [<scope:>]<name>
 {
-  param([type]$parameter1 [,[type]$parameter2])
+  param([type]$Parameter1 [,[type]$Parameter2])
   dynamicparam {<statement list>}
   begin {<statement list>}
   process {<statement list>}
@@ -234,7 +234,7 @@ in the following sample syntax:
 
 ```Syntax
 function <name> {
-  param ([type]$parameter1 [,[type]$parameter2])
+  param ([type]$Parameter1 [,[type]$Parameter2])
   <statement list>
 }
 ```
@@ -243,7 +243,7 @@ You can also define parameters outside the braces without the `Param` keyword,
 as shown in the following sample syntax:
 
 ```Syntax
-function <name> [([type]$parameter1[,[type]$parameter2])] {
+function <name> [([type]$Parameter1[,[type]$Parameter2])] {
   <statement list>
 }
 ```
@@ -251,8 +251,8 @@ function <name> [([type]$parameter1[,[type]$parameter2])] {
 Below is an example of this alternative syntax.
 
 ```powershell
-function Add-Numbers([int]$one, [int]$two) {
-    $one + $two
+function Add-Numbers([int]$One, [int]$Two) {
+    $One + $Two
 }
 ```
 
@@ -369,8 +369,8 @@ name, as shown in the following example:
 
 ```powershell
 function Switch-Item {
-  param ([switch]$on)
-  if ($on) { "Switch on" }
+  param ([switch]$On)
+  if ($On) { "Switch on" }
   else { "Switch off" }
 }
 ```
@@ -379,7 +379,7 @@ When you type the `On` switch parameter after the function name, the function
 displays `Switch on`. Without the switch parameter, it displays `Switch off`.
 
 ```powershell
-Switch-Item -on
+Switch-Item -On
 ```
 
 ```Output
@@ -398,7 +398,7 @@ You can also assign a **Boolean** value to a switch when you run the function,
 as shown in the following example:
 
 ```powershell
-Switch-Item -on:$true
+Switch-Item -On:$true
 ```
 
 ```Output
@@ -406,7 +406,7 @@ Switch on
 ```
 
 ```powershell
-Switch-Item -on:$false
+Switch-Item -On:$false
 ```
 
 ```Output
