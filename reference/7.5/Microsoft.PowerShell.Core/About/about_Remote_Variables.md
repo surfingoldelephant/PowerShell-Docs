@@ -160,14 +160,14 @@ cmdlet to specify the local variable as the parameter value.
   the local variable as the parameter value.
 
 For example, the following commands define the `$ps` variable in the local
-session and then use it in a remote command. The command uses `$log` as the
+session and then use it in a remote command. The command uses `$Log` as the
 parameter name and the local variable, `$ps`, as its value.
 
 ```powershell
 $ps = "*PowerShell*"
 Invoke-Command -ComputerName S1 -ScriptBlock {
-  param($log)
-  Get-WinEvent -LogName $log
+  param($Log)
+  Get-WinEvent -LogName $Log
 } -ArgumentList $ps
 ```
 

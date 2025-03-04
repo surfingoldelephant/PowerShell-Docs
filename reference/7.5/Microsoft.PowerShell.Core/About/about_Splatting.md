@@ -132,7 +132,7 @@ an array of strings.
 ```powershell
 $array = 'Hello', 'World!'
 Invoke-Command -ScriptBlock {
-  param([string[]]$words) $words -join ' '
+  param([string[]]$Words) $Words -join ' '
   } -ArgumentList $array
 ```
 
@@ -145,7 +145,7 @@ Hello
 ```powershell
 $array = 'Hello', 'World!'
 Invoke-Command -ScriptBlock {
-  param([string[]]$words) $words -join ' '
+  param([string[]]$Words) $Words -join ' '
 } -ArgumentList (,$array)
 ```
 

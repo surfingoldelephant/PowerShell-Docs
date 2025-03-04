@@ -58,10 +58,10 @@ because the return statement exits before that statement can execute.
 ```powershell
 function MultiplyEven
 {
-    param($number)
+    param($Number)
 
-    if ($number % 2) { return "$number is not even" }
-    $number * 2
+    if ($Number % 2) { return "$Number is not even" }
+    $Number * 2
 }
 
 1..10 | ForEach-Object {MultiplyEven -Number $_}
@@ -100,11 +100,11 @@ the function is performing a calculation:
 
 ```powershell
 function calculation {
-    param ($value)
+    param ($Value)
 
     "Please wait. Working on calculation..."
-    $value += 73
-    return $value
+    $Value += 73
+    return $Value
 }
 
 $a = calculation 14
@@ -129,11 +129,11 @@ the above example using the `Write-Information` cmdlet with a
 
 ```powershell
 function calculation {
-    param ($value)
+    param ($Value)
 
     Write-Information "Please wait. Working on calculation..." -InformationAction Continue
-    $value += 73
-    return $value
+    $Value += 73
+    return $Value
 }
 ```
 

@@ -358,7 +358,7 @@ Syntax:
 
 ```Syntax
 function [<scope:>]<name> {
-   param ([type]<$pname1> [, [type]<$pname2>])
+   param ([type]<$PName1> [, [type]<$PName2>])
    dynamicparam {<statement list>}
    begin {<statement list>}
    process {<statement list>}
@@ -372,7 +372,7 @@ statement list after the function name.
 Syntax:
 
 ```Syntax
-function [<scope:>]<name> [([type]<$pname1>, [[type]<$pname2>])] {
+function [<scope:>]<name> [([type]<$PName1>, [[type]<$PName2>])] {
    dynamicparam {<statement list>}
    begin {<statement list>}
    process {<statement list>}
@@ -420,7 +420,7 @@ Syntax:
 
 ```Syntax
 function [<scope:>]<name> {
-   param ([type]<$pname1>[, [[type]<$pname2>]])
+   param ([type]<$PName1>[, [[type]<$PName2>]])
    <statement list>
 }
 ```

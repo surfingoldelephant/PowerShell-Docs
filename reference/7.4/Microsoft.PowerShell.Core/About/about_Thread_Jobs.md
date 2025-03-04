@@ -228,7 +228,7 @@ $msg | Start-ThreadJob { $input | Write-Output } | Wait-Job | Receive-Job
 
 Start-ThreadJob { Write-Output $using:msg } | Wait-Job | Receive-Job
 
-Start-ThreadJob { param ([string] $message) Write-Output $message } -ArgumentList @($msg) |
+Start-ThreadJob { param ([string] $Message) Write-Output $Message } -ArgumentList @($msg) |
   Wait-Job | Receive-Job
 ```
 

@@ -72,8 +72,8 @@ require two generic type parameters and two formal value parameters.
 $result = [System.Linq.Enumerable]::Select[int, float](
     $list,
     [Func[int, float]]{
-        param($item)
-        [math]::Pow($item, 3)
+        param($Item)
+        [math]::Pow($Item, 3)
     }
 )
 $result
