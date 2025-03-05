@@ -48,7 +48,7 @@ This example uses the **NoElement** parameter to omit the members of the group.
 ```powershell
 $files = Get-ChildItem -Path $PSHOME -Recurse
 $files |
-    Group-Object -Property extension -NoElement |
+    Group-Object -Property Extension -NoElement |
     Sort-Object -Property Count -Descending
 ```
 

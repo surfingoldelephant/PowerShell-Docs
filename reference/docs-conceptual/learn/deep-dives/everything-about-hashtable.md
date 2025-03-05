@@ -407,7 +407,7 @@ executed where `$_` is the value of the object on the pipe. Here is that script 
 
 ```powershell
 $drives = Get-PSDrive | where Used
-$drives | Select-Object -Property name, $property
+$drives | Select-Object -Property Name, $property
 
 Name     totalSpaceGB
 ----     ------------
@@ -418,7 +418,7 @@ I placed that in a variable but it could easily be defined inline and you can sh
 and `expression` to `e` while you're at it.
 
 ```powershell
-$drives | Select-Object -Property name, @{n='totalSpaceGB';e={($_.used + $_.free) / 1GB}}
+$drives | Select-Object -Property Name, @{n='totalSpaceGB';e={($_.used + $_.free) / 1GB}}
 ```
 
 I personally don't like how long that makes commands and it often promotes some bad behaviors that I
@@ -968,7 +968,7 @@ One little known feature of `Group-Object` is that it can turn some datasets int
 you.
 
 ```powershell
-Import-Csv $Path | Group-Object -AsHashtable -Property email
+Import-Csv $Path | Group-Object -AsHashtable -Property Email
 ```
 
 This will add each row into a hashtable and use the specified property as the key to access it.
