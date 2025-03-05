@@ -294,7 +294,7 @@ dir e:\PowerShell\Scripts\*statement*.ps1 | ForEach-Object {$_.Length}
 
 dir e:\PowerShell\Scripts\*.ps1 |
     Select-String -List "catch" |
-    Format-Table path,linenumber -AutoSize
+    Format-Table Path, LineNumber -AutoSize
 ```
 
 ## 8.3 The if statement

@@ -245,7 +245,7 @@ classify the files by the content type.
 
 ```powershell
 Get-ChildItem -File |
-  Sort-Object extension |
+  Sort-Object Extension |
     Format-Table Name, Length -GroupBy @{
       name='Type'
       expression={
@@ -334,7 +334,7 @@ of files of each content type.
 
 ```powershell
 Get-ChildItem -File |
-  Sort-Object extension |
+  Sort-Object Extension |
     Group-Object -NoElement -Property @{
       expression={
         switch ($_.extension) {

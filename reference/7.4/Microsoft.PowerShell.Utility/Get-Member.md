@@ -249,7 +249,7 @@ This example shows how to determine which properties of an object can be changed
 
 ```powershell
 $File = Get-Item c:\test\textFile.txt
-$File.PSObject.Properties | Where-Object isSettable | Select-Object -Property Name
+$File.PSObject.Properties | Where-Object IsSettable | Select-Object -Property Name
 ```
 
 ```Output

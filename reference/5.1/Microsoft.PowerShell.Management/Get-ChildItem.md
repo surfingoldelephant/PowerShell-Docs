@@ -395,7 +395,7 @@ object returned by `Get-ChildItem`.
 
 ```powershell
 PS D:\> New-Item -ItemType Junction -Name tmp -Target $Env:TEMP
-PS D:\> Get-ChildItem | Select-Object name,*target
+PS D:\> Get-ChildItem | Select-Object Name, *Target
 
 Name     Target
 ----     ------

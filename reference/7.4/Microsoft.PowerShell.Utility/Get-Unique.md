@@ -97,7 +97,7 @@ directs `Get-Unique` to return only one object of each type.
 This command gets the names of processes running on the computer with duplicates eliminated.
 
 ```powershell
-Get-Process | Sort-Object | Select-Object processname | Get-Unique -AsString
+Get-Process | Sort-Object | Select-Object ProcessName | Get-Unique -AsString
 ```
 
 The `Get-Process` command gets all of the processes on the computer. The pipeline operator (`|`)

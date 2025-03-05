@@ -467,7 +467,7 @@ PS> $a[2, 1, 0]
 ```
 
 ```powershell
-(Get-HotFix | Sort-Object installedOn)[-1]
+(Get-HotFix | Sort-Object InstalledOn)[-1]
 ```
 
 ```powershell

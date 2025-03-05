@@ -52,12 +52,12 @@ This example uses the `Invoke-WebRequest` cmdlet to send a web request to the Bi
 ```powershell
 $Response = Invoke-WebRequest -UseBasicParsing -Uri https://www.bing.com?q=how+many+feet+in+a+mile
 $Response.InputFields |
-    Where-Object name -Like "* Value" |
-    Select-Object name, value
+    Where-Object Name -Like "* Value" |
+    Select-Object Name, Value
 ```
 
 ```Output
-name       value
+Name       Value
 ----       -----
 From Value 1
 To Value   5280
@@ -65,8 +65,8 @@ To Value   5280
 
 The data returned by `Invoke-WebRequest` is stored in the `$Response` variable. The **InputFields**
 property of the response contains the form fields. `Where-Object` is used to filter the form fields
-to those where the **name** property is like "* Value". The filtered results are piped to
-`Select-Object` to select the **name** and **value** properties.
+to those where the **Name** property is like "* Value". The filtered results are piped to
+`Select-Object` to select the **Name** and **Value** properties.
 
 ### Example 2: Use a stateful web service
 

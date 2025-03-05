@@ -45,7 +45,7 @@ Get-PSSnapin
 To get the snap-in for each  Windows PowerShell provider, type:
 
 ```powershell
-Get-PSProvider | Format-List name, pssnapin
+Get-PSProvider | Format-List Name, PSSnapIn
 ```
 
 To get all the registered snap-ins on your system or to verify that a snap-in

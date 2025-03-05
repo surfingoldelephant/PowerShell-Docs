@@ -565,7 +565,7 @@ For example, the following commands enumerate the keys and values in the hash
 table in the `$p` variable and then sort the keys in alphabetical order.
 
 ```powershell
-PS> $p.GetEnumerator() | Sort-Object -Property key
+PS> $p.GetEnumerator() | Sort-Object -Property Key
 
 Name                           Value
 ----                           -----

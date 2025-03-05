@@ -437,7 +437,7 @@ filesystem object returned by `Get-ChildItem` and is displayed in the default ou
 
 ```powershell
 PS D:\> New-Item -ItemType Junction -Name tmp -Target $Env:TEMP
-PS D:\> Get-ChildItem | Select-Object name,LinkTarget
+PS D:\> Get-ChildItem | Select-Object Name, LinkTarget
 
 Name     LinkTarget
 ----     ----------

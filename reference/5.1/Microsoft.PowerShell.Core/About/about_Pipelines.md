@@ -61,8 +61,8 @@ displays the name and length of each file in a table.
 ```powershell
 Get-ChildItem -Path *.txt |
   Where-Object {$_.length -gt 10000} |
-    Sort-Object -Property length |
-      Format-Table -Property name, length
+    Sort-Object -Property Length |
+      Format-Table -Property Name, Length
 ```
 
 This pipeline consists of four commands in the specified order. The following
@@ -82,7 +82,7 @@ Sort-Object -Property Length
 | (      Length > 10000      )
 | (     Sorted by length     )
 V
-Format-Table -Property name, length
+Format-Table -Property Name, Length
 | (FileInfo objects for *.txt)
 | (      Length > 10000      )
 | (     Sorted by length     )
@@ -126,7 +126,7 @@ how to sort all the processes on the computer by the number of open handles in
 each process.
 
 ```powershell
-Get-Process | Sort-Object -Property handles
+Get-Process | Sort-Object -Property Handles
 ```
 
 You can pipe objects to the formatting, export, and output cmdlets, such as

@@ -319,7 +319,7 @@ derivation. This example will test the sample navigation provider.
    available database tables. For each table, this cmdlet also retrieves the number of table rows.
 
    ```powershell
-   Get-ChildItem | Format-Table rowcount,name -AutoSize
+   Get-ChildItem | Format-Table RowCount, Name -AutoSize
    ```
 
    ```Output
@@ -366,7 +366,7 @@ derivation. This example will test the sample navigation provider.
    specified by the `Format-Table` cmdlet.
 
    ```powershell
-   Get-ChildItem | Format-Table rownumber,psiscontainer,data -AutoSize
+   Get-ChildItem | Format-Table RowNumber, PSIsContainer, Data -AutoSize
    ```
 
    ```Output
