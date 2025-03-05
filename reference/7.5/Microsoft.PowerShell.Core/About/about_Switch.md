@@ -445,7 +445,7 @@ switch -File $fileEscaped { foo { 'Foo' } }
 
 ## See also
 
-- [about_break][03]
+- [about_Break][03]
 - [about_Continue][05]
 - [about_If][06]
 - [about_Script_Blocks][07]

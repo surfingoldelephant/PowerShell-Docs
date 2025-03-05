@@ -37,12 +37,12 @@ about topic for the keyword and the information that follows the table.
 | `filter`       | [about_Functions][14]                                              |
 | `finally`      | [about_Try_Catch_Finally][22]                                      |
 | `for`          | [about_For][09]                                                    |
-| `foreach`      | [about_ForEach][10]                                                |
+| `foreach`      | [about_Foreach][10]                                                |
 | `from`         | Reserved for future use                                            |
 | `function`     | [about_Functions][14], [about_Functions_Advanced][13]              |
 | `hidden`       | [about_Hidden][15]                                                 |
 | `if`           | [about_If][16]                                                     |
-| `in`           | [about_ForEach][10]                                                |
+| `in`           | [about_Foreach][10]                                                |
 | `param`        | [about_Functions][14]                                              |
 | `process`      | [about_Functions][14], [about_Functions_Advanced][13]              |
 | `return`       | [about_Return][17]                                                 |
@@ -622,7 +622,7 @@ do {<statement list>} while (<condition>)
 [07]: about_Do.md
 [08]: about_Enum.md
 [09]: about_For.md
-[10]: about_ForEach.md
+[10]: about_Foreach.md
 [11]: about_Functions_Advanced_Methods.md
 [12]: about_Functions_Advanced_Parameters.md
 [13]: about_Functions_Advanced.md

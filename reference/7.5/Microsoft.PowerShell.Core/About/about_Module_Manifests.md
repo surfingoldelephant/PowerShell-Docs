@@ -1562,7 +1562,7 @@ imported as `Get-ExampleItem`.
 [06]: about_Experimental_Features.md#declaring-experimental-features-in-modules-written-in-powershell
 [07]: about_Format.ps1xml.md
 [08]: about_Language_Modes.md
-[09]: about_Powershell_Editions.md
+[09]: about_PowerShell_Editions.md
 [10]: about_Types.ps1xml.md
 [11]: about_Updatable_Help.md
 [13]: xref:Microsoft.PowerShell.Core.New-ModuleManifest

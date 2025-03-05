@@ -54,8 +54,8 @@ To run a Parallel script block on items in a collection, use the ForEach or ForE
 
 ## See Also
 
-- [about_ForEach](../../Microsoft.PowerShell.Core/About/about_Foreach.md)
-- [about_ForEach-Parallel](about_ForEach-Parallel.md)
+- [about_Foreach](../../Microsoft.PowerShell.Core/About/about_Foreach.md)
+- [about_Foreach-Parallel](about_Foreach-Parallel.md)
 - [about_Language_Keywords](../../Microsoft.PowerShell.Core/About/about_Language_Keywords.md)
 - [about_Sequence](about_Sequence.md)
 - [about_Workflows](about_workflows.md)

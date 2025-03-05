@@ -203,7 +203,7 @@ Beginning in PowerShell 4.0, collection filtering using a method syntax is
 supported. This allows use of two new methods when dealing with collections
 `ForEach` and `Where`.
 
-You can read more about these methods in [about_arrays](about_arrays.md)
+You can read more about these methods in [about_Arrays](about_arrays.md)
 
 ## Calling a specific method when multiple overloads exist
 

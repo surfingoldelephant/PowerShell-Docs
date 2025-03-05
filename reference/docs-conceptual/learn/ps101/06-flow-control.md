@@ -314,7 +314,7 @@ In this chapter, you've learned about the different types of loops that exist in
 ## Recommended Reading
 
 - [ForEach-Object][ForEach-Object]
-- [about_ForEach][about_ForEach]
+- [about_Foreach][about_Foreach]
 - [about_For][about_For]
 - [about_Do][about_Do]
 - [about_While][about_While]
@@ -324,7 +324,7 @@ In this chapter, you've learned about the different types of loops that exist in
 
 <!-- link references -->
 [ForEach-Object]: /powershell/module/microsoft.powershell.core/foreach-object
-[about_ForEach]: /powershell/module/microsoft.powershell.core/about/about_foreach
+[about_Foreach]: /powershell/module/microsoft.powershell.core/about/about_foreach
 [about_For]: /powershell/module/microsoft.powershell.core/about/about_for
 [about_Do]: /powershell/module/microsoft.powershell.core/about/about_do
 [about_While]: /powershell/module/microsoft.powershell.core/about/about_while

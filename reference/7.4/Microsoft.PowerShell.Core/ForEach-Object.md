@@ -55,7 +55,7 @@ command.
   `Get-Process | ForEach-Object {$_.ProcessName}`
 
   `ForEach-Object` supports the `begin`, `process`, and `end` blocks as described in
-  [about_functions](about/about_functions.md#piping-objects-to-functions).
+  [about_Functions](about/about_functions.md#piping-objects-to-functions).
 
   > [!NOTE]
   > The script blocks run in the caller's scope. Therefore, the blocks have access to variables in
@@ -833,7 +833,7 @@ input to a **Foreach** statement. For more information about the **Foreach** sta
 [about_Foreach](./About/about_Foreach.md).
 
 Starting in PowerShell 4.0, `Where` and `ForEach` methods were added for use with collections. You
-can read more about these new methods here [about_arrays](./About/about_Arrays.md)
+can read more about these new methods here [about_Arrays](./About/about_Arrays.md)
 
 Using `ForEach-Object -Parallel`:
 

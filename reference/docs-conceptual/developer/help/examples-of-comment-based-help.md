@@ -105,7 +105,7 @@ PARAMETERS
         This cmdlet supports the common parameters: -Verbose, -Debug,
         -ErrorAction, -ErrorVariable, -WarningAction, -WarningVariable,
         -OutBuffer and -OutVariable. For more information, type
-        "Get-Help about_commonparameters".
+        "Get-Help about_CommonParameters".
 
 INPUTS
     None. You can't pipe objects to Add-Extension.
@@ -228,7 +228,7 @@ PARAMETERS
         This cmdlet supports the common parameters: -Verbose, -Debug,
         -ErrorAction, -ErrorVariable, -WarningAction, -WarningVariable,
         -OutBuffer and -OutVariable. For more information, type,
-        "Get-Help about_commonparameters".
+        "Get-Help about_CommonParameters".
 
 INPUTS
         None. You can't pipe objects to Update-Month.ps1.

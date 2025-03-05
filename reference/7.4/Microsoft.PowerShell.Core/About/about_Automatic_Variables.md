@@ -1133,7 +1133,7 @@ Default (Current): End
 [53]: about_CommonParameters.md
 [54]: about_comparison_operators.md
 [55]: about_Continue.md
-[56]: about_ForEach.md
+[56]: about_Foreach.md
 [57]: about_Functions_Advanced_Methods.md
 [58]: about_Functions_Advanced_Parameters.md
 [59]: about_Functions_Advanced.md

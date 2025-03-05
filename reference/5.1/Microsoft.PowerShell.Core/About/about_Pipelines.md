@@ -564,7 +564,7 @@ enhances readability.
 - [about_Objects][05]
 - [about_Parameters][06]
 - [about_Command_Syntax][03]
-- [about_ForEach][04]
+- [about_Foreach][04]
 
 <!-- link references -->
 [02]: #investigating-pipeline-errors

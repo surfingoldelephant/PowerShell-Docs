@@ -48,7 +48,7 @@ to the following default commands (and aliases):
 
 No PowerShell providers are available, nor are any external programs (executables or scripts).
 
-For more information about language modes, see [about_Language_modes][01].
+For more information about language modes, see [about_Language_Modes][01].
 
 ### Choose the JEA identity
 

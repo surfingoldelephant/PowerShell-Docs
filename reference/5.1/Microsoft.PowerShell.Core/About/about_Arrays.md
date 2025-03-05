@@ -1093,7 +1093,7 @@ LastWriteTimeUtc  Property   datetime LastWriteTimeUtc {get;set;}
 ## See also
 
 - [about_For][05]
-- [about_ForEach][06]
+- [about_Foreach][06]
 - [about_Hash_Tables][07]
 - [about_Member-Access_Enumeration][09]
 - [about_Operators][11]
@@ -1106,7 +1106,7 @@ LastWriteTimeUtc  Property   datetime LastWriteTimeUtc {get;set;}
 [03]: about_Assignment_Operators.md
 [04]: about_Booleans.md
 [05]: about_For.md
-[06]: about_ForEach.md
+[06]: about_Foreach.md
 [07]: about_Hash_Tables.md
 [08]: about_Intrinsic_Members.md
 [09]: about_Member-Access_Enumeration.md

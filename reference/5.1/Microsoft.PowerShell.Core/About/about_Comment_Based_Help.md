@@ -511,7 +511,7 @@ Accept wildcard characters?
 This cmdlet supports the common parameters: -Verbose, -Debug,
 -ErrorAction, -ErrorVariable, -WarningAction, -WarningVariable,
 -OutBuffer and -OutVariable. For more information, type
-"Get-Help about_commonparameters".
+"Get-Help about_CommonParameters".
 
 INPUTS
 None. You can't pipe objects to Add-Extension.
@@ -720,7 +720,7 @@ Accept wildcard characters?
 This cmdlet supports the common parameters: -Verbose, -Debug,
 -ErrorAction, -ErrorVariable, -WarningAction, -WarningVariable,
 -OutBuffer and -OutVariable. For more information, type,
-"Get-Help about_commonparameters".
+"Get-Help about_CommonParameters".
 
 # INPUTS
 

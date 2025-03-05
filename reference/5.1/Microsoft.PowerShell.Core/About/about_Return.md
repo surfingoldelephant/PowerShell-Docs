@@ -152,7 +152,7 @@ PS> $a
 When you return a collection from your script block or function, PowerShell
 automatically unrolls the members and passes them one at a time through the
 pipeline. This is due to PowerShell's one-at-a-time processing. For more
-information, see [about_pipelines](about_pipelines.md).
+information, see [about_Pipelines](about_pipelines.md).
 
 This concept is illustrated by the following sample function that returns an
 array of numbers. The output from the function is piped to the `Measure-Object`

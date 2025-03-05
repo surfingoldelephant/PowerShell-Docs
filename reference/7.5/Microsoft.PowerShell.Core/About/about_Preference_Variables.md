@@ -599,7 +599,7 @@ ObjectNotFound: (C:\nofile.txt:String) [Get-ChildItem], ItemNotFoundException
 This example demonstrates that the value of `$ErrorView` only affects the error
 display. It doesn't change the structure of the error object that's stored in
 the `$Error` automatic variable. For information about the `$Error` automatic
-variable, see [about_automatic_variables][28].
+variable, see [about_Automatic_Variables][28].
 
 The following command takes the **ErrorRecord** object associated with the most
 recent error in the error array, **element 0**, and formats the properties of
@@ -1687,7 +1687,7 @@ At line:1 char:1
 
 ## See also
 
-- [about_automatic_variables][28]
+- [about_Automatic_Variables][28]
 - [about_CommonParameters][29]
 - [about_Environment_Variables][30]
 - [about_Profiles][36]

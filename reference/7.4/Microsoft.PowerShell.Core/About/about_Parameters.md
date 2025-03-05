@@ -237,7 +237,7 @@ information about common parameters, see
 
 ## See also
 
-- [about_Command_syntax](about_Command_syntax.md)
+- [about_Command_Syntax](about_Command_Syntax.md)
 - [about_Comment_Based_Help](about_Comment_Based_Help.md)
 - [about_Functions_Advanced](about_Functions_Advanced.md)
 - [about_Parameters_Default_Values](about_Parameters_Default_Values.md)

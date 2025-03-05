@@ -1188,7 +1188,7 @@ PowerShell includes the following aliases for `Where-Object`:
 Starting in Windows PowerShell 4.0, `Where` and `ForEach` methods were added for use with
 collections.
 
-You can read more about these methods here [about_arrays](./About/about_Arrays.md)
+You can read more about these methods here [about_Arrays](./About/about_Arrays.md)
 
 ## RELATED LINKS
 

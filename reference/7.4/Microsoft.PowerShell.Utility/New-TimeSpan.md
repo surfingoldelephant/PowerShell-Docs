@@ -86,7 +86,7 @@ These commands return the date that is 90 days after the current date.
 ### Example 4: Discover the TimeSpan since a file was updated
 
 This command tells you how long it has been since the
-[about_remote](../Microsoft.PowerShell.Core/About/about_Remote.md) help file was last updated. You
+[about_Remote](../Microsoft.PowerShell.Core/About/about_Remote.md) help file was last updated. You
 can use this command format on any file, or any other object that has a **LastWriteTime** property.
 
 This command works because the **Start** parameter of `New-TimeSpan` has an alias of
