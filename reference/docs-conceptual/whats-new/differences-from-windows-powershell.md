@@ -899,11 +899,11 @@ Previously, the `Import-Csv` cmdlet cannot be used to directly import the log fi
 log format and additional action would be required. With this change, W3C extended log format is
 supported.
 
-### `Import-Csv` applies `PSTypeNames` upon import when type information is present in the CSV
+### `Import-Csv` applies `pstypenames` upon import when type information is present in the CSV
 
 Previously, objects exported using `Export-Csv` with `TypeInformation` imported with
 `ConvertFrom-Csv` were not retaining the type information. This change adds the type information to
-`PSTypeNames` member if available from the CSV file.
+`pstypenames` member if available from the CSV file.
 
 ### `-NoTypeInformation` is the default on `Export-Csv`
 

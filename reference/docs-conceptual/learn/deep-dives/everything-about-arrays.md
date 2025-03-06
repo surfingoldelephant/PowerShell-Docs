@@ -811,7 +811,7 @@ if ( $array.Count -gt 0 )
 }
 ```
 
-There is one more trap to watch out for here. You can use the `count` even if you have a single
+There is one more trap to watch out for here. You can use the `Count` even if you have a single
 object, unless that object is a `PSCustomObject`. This is a bug that is fixed in PowerShell 6.1.
 That's good news, but a lot of people are still on 5.1 and need to watch out for it.
 

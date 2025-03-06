@@ -285,7 +285,7 @@ code defines the **OutputType** attribute for the cmdlet.
 ### Example 15: Get cmdlets that take a specific object type as input
 
 ```powershell
-Get-Command -ParameterType (((Get-NetAdapter)[0]).PSTypeNames)
+Get-Command -ParameterType (((Get-NetAdapter)[0]).pstypenames)
 ```
 
 ```Output
@@ -301,9 +301,9 @@ Function        Set-NetAdapter                                     NetAdapter
 This command finds cmdlets that take net adapter objects as input. You can use this command format
 to find the cmdlets that accept the type of objects that any command returns.
 
-The command uses the **PSTypeNames** intrinsic property of all objects, which gets the types that
-describe the object. To get the **PSTypeNames** property of a net adapter, and not the
-**PSTypeNames** property of a collection of net adapters, the command uses array notation to get the
+The command uses the **pstypenames** intrinsic property of all objects, which gets the types that
+describe the object. To get the **pstypenames** property of a net adapter, and not the
+**pstypenames** property of a collection of net adapters, the command uses array notation to get the
 first net adapter that the cmdlet returns.
 
 ### Example 16: Get commands using a fuzzy match

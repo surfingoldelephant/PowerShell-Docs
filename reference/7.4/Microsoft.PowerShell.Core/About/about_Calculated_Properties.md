@@ -212,7 +212,7 @@ the output from `Get-ChildItem`.
 
 ```powershell
 Get-ChildItem *.json -File |
-  Format-List Fullname,
+  Format-List FullName,
               @{
                  name='Modified'
                  expression={$_.LastWriteTime}

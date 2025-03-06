@@ -1181,7 +1181,7 @@ generic type as long as the type parameter is already defined at parse time.
 ```powershell
 class ExampleStringList : System.Collections.Generic.List[string] {}
 
-$List = [ExampleStringList]::New()
+$List = [ExampleStringList]::new()
 $List.AddRange([string[]]@('a','b','c'))
 $List.GetType() | Format-List -Property Name, BaseType
 $List
@@ -1239,7 +1239,7 @@ This time, PowerShell doesn't raise any errors. Both classes are now defined.
 Run the following code block to view the behavior of the new class.
 
 ```powershell
-$List = [ExampleItemList]::New()
+$List = [ExampleItemList]::new()
 $List.AddRange([ExampleItem[]]@(
     [ExampleItem]@{ Name = 'Foo' }
     [ExampleItem]@{ Name = 'Bar' }

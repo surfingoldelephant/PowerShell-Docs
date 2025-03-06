@@ -269,7 +269,7 @@ It's little bugs like these that are hard to spot and make me aggressively check
 
 ## $null.Count
 
-If you try to access a property on a `$null` value, that the property is also `$null`. The `count`
+If you try to access a property on a `$null` value, that the property is also `$null`. The `Count`
 property is the exception to this rule.
 
 ```powershell
@@ -278,7 +278,7 @@ PS> $value.Count
 0
 ```
 
-When you have a `$null` value, then the `count` is `0`. This special property is added by
+When you have a `$null` value, then the `Count` is `0`. This special property is added by
 PowerShell.
 
 ### [PSCustomObject] Count
@@ -330,7 +330,7 @@ PS> $containnull.Count
 1
 ```
 
-You can have an array that contains one `$null` value and its `count` is `1`. But if you place
+You can have an array that contains one `$null` value and its `Count` is `1`. But if you place
 an empty array inside an array then it's not counted as an item. The count is `0`.
 
 If you treat the enumerable null like a collection, then it's empty.

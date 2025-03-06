@@ -140,7 +140,7 @@ It has the type properties and methods. For simple types, such as
 imperfect. For example, rehydrated certificate objects do not include the
 private key.
 
-Instances of all other types are **PSObject** instances. The **PSTypeNames**
+Instances of all other types are **PSObject** instances. The **pstypenames**
 property contains the original type name prefixed with **Deserialized**, for
 example, **Deserialized.System.Data.DataTable**
 

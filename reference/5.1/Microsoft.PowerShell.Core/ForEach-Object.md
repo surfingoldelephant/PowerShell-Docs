@@ -88,7 +88,7 @@ Get-ChildItem $PSHOME |
 
 If the object isn't a directory, the script block gets the name of the file, divides the value of
 its **Length** property by 1024, and adds a space (" ") to separate it from the next entry. The
-cmdlet uses the **PSISContainer** property to determine whether an object is a directory.
+cmdlet uses the **PSIsContainer** property to determine whether an object is a directory.
 
 ### Example 3: Operate on the most recent System events
 

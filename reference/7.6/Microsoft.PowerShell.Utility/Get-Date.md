@@ -160,7 +160,7 @@ The Gregorian calendar has 365 days, except for leap years that have 366 days. F
 ```
 
 `Get-Date` uses three parameters to specify the date: **Year**, **Month**, and **Day**. The command
-is wrapped with parentheses so that the result is evaluated by the **DayofYear** property.
+is wrapped with parentheses so that the result is evaluated by the **DayOfYear** property.
 
 ### Example 6: Check if a date is adjusted for daylight saving time
 

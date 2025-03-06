@@ -408,7 +408,7 @@ Multidimensional arrays are stored in [row-major order][14]. The following
 example shows how to create a truly multidimensional array.
 
 ```powershell
-[string[,]]$rank2 = [string[,]]::New(3,2)
+[string[,]]$rank2 = [string[,]]::new(3,2)
 $rank2.rank
 $rank2.Length
 $rank2[0,0] = 'a'

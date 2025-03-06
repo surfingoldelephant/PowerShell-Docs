@@ -148,7 +148,7 @@ happens or not. A `finally` script does exactly that.
 Take a look at this example:
 
 ```powershell
-$command = [System.Data.SqlClient.SqlCommand]::New(queryString, connection)
+$command = [System.Data.SqlClient.SqlCommand]::new(queryString, connection)
 $command.Connection.Open()
 $command.ExecuteNonQuery()
 $command.Connection.Close()
@@ -158,7 +158,7 @@ Anytime you open or connect to a resource, you should close it. If the `ExecuteN
 exception, the connection isn't closed. Here is the same code inside a `try/finally` block.
 
 ```powershell
-$command = [System.Data.SqlClient.SqlCommand]::New(queryString, connection)
+$command = [System.Data.SqlClient.SqlCommand]::new(queryString, connection)
 try
 {
     $command.Connection.Open()
