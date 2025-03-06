@@ -81,7 +81,7 @@ $commandDetails | ForEach-Object -Process {
 
     # Add the decoded command back to the object
     $commandDetails |
-        Where-Object -FilterScript { $_.ProcessId -eq $currentProcess.processId } |
+        Where-Object -FilterScript { $_.ProcessId -eq $currentProcess.ProcessId } |
         Add-Member -MemberType NoteProperty -Name DecodedCommand -Value $decodedCommand
 }
 $commandDetails[0] | Format-List -Property *

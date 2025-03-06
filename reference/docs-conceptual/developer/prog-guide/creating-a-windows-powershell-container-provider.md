@@ -616,7 +616,7 @@ uses a fictitious Access database.
 2. Run the `Get-ChildItem` cmdlet again to retrieve the data of a table.
 
    ```powershell
-   (Get-ChildItem mydb:customers).data
+   (Get-ChildItem mydb:customers).Data
    ```
 
    The following output appears.
@@ -649,7 +649,7 @@ uses a fictitious Access database.
 4. Reuse `Get-Item` to retrieve the data for the items in row 0.
 
    ```powershell
-   (Get-Item mydb:\customers\0).data
+   (Get-Item mydb:\customers\0).Data
    ```
 
    The following output appears.
@@ -681,7 +681,7 @@ uses a fictitious Access database.
 
    ```none
    PS mydb:\> cd Customers
-   PS mydb:\Customers> (Get-Item 3).data
+   PS mydb:\Customers> (Get-Item 3).Data
    ```
 
    The following output appears.

@@ -391,7 +391,7 @@ use that to count the number of processes running on the computer.
 For example,
 
 ```powershell
-(Get-Process).count
+(Get-Process).Count
 ```
 
 It's important to remember that objects sent down the pipeline are delivered

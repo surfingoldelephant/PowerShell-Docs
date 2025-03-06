@@ -140,10 +140,10 @@ Calling a method on a `$null` object throws a `RuntimeException`.
 
 ```powershell
 PS> $value = $null
-PS> $value.toString()
+PS> $value.ToString()
 You cannot call a method on a null-valued expression.
 At line:1 char:1
-+ $value.tostring()
++ $value.ToString()
 + ~~~~~~~~~~~~~~~~~
     + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
     + FullyQualifiedErrorId : InvokeMethodOnNull
@@ -274,7 +274,7 @@ property is the exception to this rule.
 
 ```powershell
 PS> $value = $null
-PS> $value.count
+PS> $value.Count
 0
 ```
 
@@ -292,7 +292,7 @@ Running this example on Windows PowerShell 5.1 and PowerShell 6.0 gives you diff
 
 ```powershell
 $value = [PSCustomObject]@{Name='MyObject'}
-if ( $value.count -eq 1 )
+if ( $value.Count -eq 1 )
 {
     "We have a value"
 }
@@ -322,11 +322,11 @@ PS> $containempty = @( @() )
 PS> $containnothing = @($nothing)
 PS> $containnull = @($null)
 
-PS> $containempty.count
+PS> $containempty.Count
 0
-PS> $containnothing.count
+PS> $containnothing.Count
 0
-PS> $containnull.count
+PS> $containnull.Count
 1
 ```
 

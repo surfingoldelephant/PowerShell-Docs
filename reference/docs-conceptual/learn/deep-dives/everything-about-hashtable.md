@@ -70,9 +70,9 @@ using a key like this:
 ```powershell
 $key = 'Kevin'
 $value = 36
-$ageList.add( $key, $value )
+$ageList.Add( $key, $value )
 
-$ageList.add( 'Alex', 9 )
+$ageList.Add( 'Alex', 9 )
 ```
 
 The person's name is the key and their age is the value that I want to save.
@@ -168,10 +168,10 @@ PS> $ageList | Measure-Object
 count : 1
 ```
 
-Even though the `.count` property tells you how many values it contains.
+Even though the `.Count` property tells you how many values it contains.
 
 ```powershell
-PS> $ageList.count
+PS> $ageList.Count
 2
 ```
 
@@ -341,7 +341,7 @@ knowing the key or iterating the whole collection.
 You can remove keys with the `.Remove()` function.
 
 ```powershell
-$person.remove('age')
+$person.Remove('age')
 ```
 
 Assigning them a `$null` value just leaves you with a key that has a `$null` value.
@@ -397,8 +397,8 @@ special syntax that looks like this when fully expanded.
 
 ```powershell
 $property = @{
-    name = 'totalSpaceGB'
-    expression = { ($_.used + $_.free) / 1GB }
+    name = 'TotalSpaceGB'
+    expression = { ($_.Used + $_.Free) / 1GB }
 }
 ```
 
@@ -409,7 +409,7 @@ executed where `$_` is the value of the object on the pipe. Here is that script 
 $drives = Get-PSDrive | where Used
 $drives | Select-Object -Property Name, $property
 
-Name     totalSpaceGB
+Name     TotalSpaceGB
 ----     ------------
 C    238.472652435303
 ```
@@ -418,7 +418,7 @@ I placed that in a variable but it could easily be defined inline and you can sh
 and `expression` to `e` while you're at it.
 
 ```powershell
-$drives | Select-Object -Property Name, @{n='totalSpaceGB';e={($_.used + $_.free) / 1GB}}
+$drives | Select-Object -Property Name, @{n='TotalSpaceGB';e={($_.Used + $_.Free) / 1GB}}
 ```
 
 I personally don't like how long that makes commands and it often promotes some bad behaviors that I

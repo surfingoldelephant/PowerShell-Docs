@@ -110,7 +110,7 @@ with `Serv`.
 ### Example 4: Close sessions connected to a port
 
 ```powershell
-Get-PSSession | where {$_.port -eq 90} | Remove-PSSession
+Get-PSSession | where {$_.Port -eq 90} | Remove-PSSession
 ```
 
 This command closes the **PSSessions** that are connected to port 90. You can use this command

@@ -97,7 +97,7 @@ function Get-ContentWithoutHeader {
         }
     }
     if ($end -gt $start) {
-        Write-Output ($doc[$end..$($doc.count)] -join ([Environment]::Newline))
+        Write-Output ($doc[$end..$($doc.Count)] -join ([Environment]::Newline))
     }
     else {
         Write-Output ($doc -join "`r`n")

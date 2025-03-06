@@ -110,13 +110,13 @@ The following example gets the read-only text files from the local directory
 and saves them in the `$read_only` variable.
 
 ```powershell
-$read_only = Get-ChildItem *.txt | Where-Object {$_.isReadOnly}
+$read_only = Get-ChildItem *.txt | Where-Object {$_.IsReadOnly}
 ```
 
 It is equivalent to the following example.
 
 ```powershell
-$read_only = ( Get-ChildItem *.txt | Where-Object {$_.isReadOnly} )
+$read_only = ( Get-ChildItem *.txt | Where-Object {$_.IsReadOnly} )
 ```
 
 Because the pipeline operator (`|`) has a higher precedence than the assignment

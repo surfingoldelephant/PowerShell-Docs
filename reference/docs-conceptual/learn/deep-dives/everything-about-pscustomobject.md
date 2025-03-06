@@ -108,7 +108,7 @@ $myObject.ID
 You can also remove properties off of an object.
 
 ```powershell
-$myObject.psobject.properties.remove('ID')
+$myObject.psobject.Properties.Remove('ID')
 ```
 
 The `.psobject` is an intrinsic member that gives you access to base object metadata. For more
@@ -126,7 +126,7 @@ $myObject | Get-Member -MemberType NoteProperty | select -ExpandProperty Name
 We can get this same list off of the `psobject` property too.
 
 ```powershell
-$myobject.psobject.properties.Name
+$myobject.psobject.Properties.Name
 ```
 
 > [!NOTE]
@@ -163,7 +163,7 @@ from them.
 
 ```powershell
 $hashtable = @{}
-foreach( $property in $myobject.psobject.properties.Name )
+foreach( $property in $myobject.psobject.Properties.Name )
 {
     $hashtable[$property] = $myObject.$property
 }
@@ -178,10 +178,10 @@ if( $null -ne $myObject.ID )
 ```
 
 But if the value could be `$null` you can check to see if it exists by checking the
-`psobject.properties` for it.
+`psobject.Properties` for it.
 
 ```powershell
-if( $myobject.psobject.properties.match('ID').Count )
+if( $myobject.psobject.Properties.Match('ID').Count )
 ```
 
 ## Adding object methods
@@ -193,7 +193,7 @@ If you need to add a script method to an object, you can do it with `Add-Member`
 ```powershell
 $ScriptBlock = {
     $hashtable = @{}
-    foreach( $property in $this.psobject.properties.Name )
+    foreach( $property in $this.psobject.Properties.Name )
     {
         $hashtable[$property] = $this.$property
     }
@@ -244,13 +244,13 @@ $fourth.Key = 4
 Because `$third` and `$fourth` reference the same instance of an object, both `$third.key` and
 `$fourth.Key` are 4.
 
-### psobject.copy()
+### psobject.Copy()
 
 If you need a true copy of an object, you can clone it.
 
 ```powershell
 $third = [PSCustomObject]@{Key=3}
-$fourth = $third.psobject.copy()
+$fourth = $third.psobject.Copy()
 $fourth.Key = 4
 ```
 
@@ -267,7 +267,7 @@ obvious. First thing we need to do is give it a `PSTypeName`. This is the most c
 people do it:
 
 ```powershell
-$myObject.PSObject.TypeNames.Insert(0,"My.Object")
+$myObject.psobject.TypeNames.Insert(0,"My.Object")
 ```
 
 I recently discovered another way to do this from Redditor `u/markekraus`. He talks about this
@@ -337,7 +337,7 @@ $TypeData = @{
     TypeName = 'My.Object'
     MemberType = 'ScriptProperty'
     MemberName = 'UpperCaseName'
-    Value = {$this.Name.toUpper()}
+    Value = {$this.Name.ToUpper()}
 }
 Update-TypeData @TypeData
 ```

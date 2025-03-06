@@ -766,7 +766,7 @@ value is **4096** and that should be enough for most uses. You can adjust
 To count the aliases on your system, type:
 
 ```powershell
-(Get-Alias).count
+(Get-Alias).Count
 ```
 
 ## $MaximumDriveCount
@@ -782,7 +782,7 @@ providers and appear as drives, such as the `Alias:` and `HKLM:` drives.
 To count the aliases on your system, type:
 
 ```powershell
-(Get-PSDrive).count
+(Get-PSDrive).Count
 ```
 
 ## $MaximumErrorCount
@@ -801,7 +801,7 @@ To count the errors on your system, use the `$Error` array's **Count**
 property.
 
 ```powershell
-$Error.count
+$Error.Count
 ```
 
 To display a specific error, use the `[0]` array notation to see the most

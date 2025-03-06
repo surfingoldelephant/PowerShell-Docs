@@ -582,7 +582,7 @@ To see the current content of the transacted string in `$t`, use the `ToString`
 method of the **TransactedString** object.
 
 ```powershell
-$t.tostring()
+$t.ToString()
 ```
 
 The output shows that only the non-transacted changes are effective.
@@ -595,7 +595,7 @@ To see the current content of the transacted string in $t from within the
 transaction, embed the expression in a `Use-Transaction` command.
 
 ```powershell
-Use-Transaction {$t.tostring()} -usetx
+Use-Transaction {$t.ToString()} -usetx
 ```
 
 The output shows the transaction view.
@@ -613,7 +613,7 @@ Complete-Transaction
 To see the final string:
 
 ```
-$t.tostring()
+$t.ToString()
 PowerShell
 ```
 

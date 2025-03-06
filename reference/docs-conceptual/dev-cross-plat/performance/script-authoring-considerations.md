@@ -810,7 +810,7 @@ $tests = @{
         foreach ($i in 1..$Iterations) {
             $obj = [psobject]::new()
             foreach ($prop in $Props) {
-                $obj.PSObject.Properties.Add(
+                $obj.psobject.Properties.Add(
                     [psnoteproperty]::new($prop, $i))
             }
             $obj

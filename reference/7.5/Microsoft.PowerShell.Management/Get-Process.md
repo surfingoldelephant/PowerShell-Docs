@@ -227,13 +227,13 @@ The second command gets the PowerShell process that's hosting the current sessio
 ### Example 10: Get all processes that have a main window title and display them in a table
 
 ```powershell
-Get-Process | Where-Object {$_.mainWindowTitle} | Format-Table Id, Name, mainWindowTitle -AutoSize
+Get-Process | Where-Object {$_.MainWindowTitle} | Format-Table Id, Name, MainWindowTitle -AutoSize
 ```
 
 This command gets all the processes that have a main window title, and it displays them in a table
 with the process ID and the process name.
 
-The **mainWindowTitle** property is just one of many useful properties of the **Process** object
+The **MainWindowTitle** property is just one of many useful properties of the **Process** object
 that `Get-Process` returns. To view all the properties, pipe the results of a `Get-Process`
 command to the `Get-Member` cmdlet `Get-Process | Get-Member`.
 

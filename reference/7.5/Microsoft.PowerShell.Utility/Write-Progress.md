@@ -136,7 +136,7 @@ $Events | ForEach-Object -Begin {
     # Increment the $i counter variable which is used to create the progress bar.
     $i = $i+1
     # Determine the completion percentage
-    $Completed = ($i/$Events.count) * 100
+    $Completed = ($i/$Events.Count) * 100
     # Use Write-Progress to output a progress bar.
     # The Activity and Status parameters create the first and second lines of the progress bar
     # heading, respectively.
@@ -150,7 +150,7 @@ $Events | ForEach-Object -Begin {
 This command displays the progress of a command to find the string "bios" in the System event log.
 
 The **PercentComplete** parameter value is calculated by dividing the number of events that have
-been processed `$i` by the total number of events retrieved `$Events.count` and then multiplying
+been processed `$i` by the total number of events retrieved `$Events.Count` and then multiplying
 that result by 100.
 
 ### Example 4: Display progress for each level of a nested process

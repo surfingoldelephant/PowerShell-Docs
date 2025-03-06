@@ -404,7 +404,7 @@ derivation. This example will test the sample navigation provider.
 7. Use the `Get-Item` cmdlet again to retrieve the employee data for the items in row 0.
 
    ```powershell
-   (Get-Item 0).data
+   (Get-Item 0).Data
    ```
 
    ```Output

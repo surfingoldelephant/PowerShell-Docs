@@ -227,7 +227,7 @@ following example, the negative value can't be cast to an unsigned integer, and
 the unsigned integer is too large to be cast to `Int32`:
 
 ```powershell
-([int32]::minvalue + [uint32]::maxvalue).GetType().FullName
+([int32]::MinValue + [uint32]::MaxValue).GetType().FullName
 ```
 
 ```Output
@@ -241,10 +241,10 @@ The `System.Decimal` type is an exception. If either operand has the
 **Decimal** value is an error.
 
 ```powershell
-PS> [Decimal]::maxvalue
+PS> [Decimal]::MaxValue
 79228162514264337593543950335
 
-PS> [Decimal]::maxvalue + 1
+PS> [Decimal]::MaxValue + 1
 RuntimeException: Value was either too large or too small for a Decimal.
 ```
 
@@ -459,7 +459,7 @@ examples use the `+=` assignment operator to add items to an array:
 
 ```powershell
 $array = @()
-(0..2).foreach{ $array += $_ }
+(0..2).ForEach{ $array += $_ }
 $array
 ```
 

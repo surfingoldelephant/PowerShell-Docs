@@ -217,7 +217,7 @@ Hello       ScriptMethod System.Object Hello();
 ```
 
 ```powershell
-$m.goodbye("Jane")
+$m.Goodbye("Jane")
 ```
 
 ```Output
@@ -225,7 +225,7 @@ Goodbye, Jane
 ```
 
 ```powershell
-$m.hello("Manoj")
+$m.Hello("Manoj")
 ```
 
 ```Output

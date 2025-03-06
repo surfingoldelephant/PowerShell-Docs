@@ -193,7 +193,7 @@ event is 0. The index of the last event is the number of items in `$a` minus 1.
 
 ```powershell
 $a = Get-WinEvent -LogName "Windows PowerShell"
-$a | Select-Object -Index 0, ($a.count - 1)
+$a | Select-Object -Index 0, ($a.Count - 1)
 ```
 
 ### Example 8: Select all but the first object

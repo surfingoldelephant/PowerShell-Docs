@@ -43,9 +43,9 @@ These commands find the number of unique words in a text file.
 
 ```powershell
 $A = $( foreach ($line in Get-Content C:\Test1\File1.txt) {
-    $line.tolower().split(" ")
+    $line.ToLower().Split(" ")
   }) | Sort-Object | Get-Unique
-$A.count
+$A.Count
 ```
 
 The first command gets the content of the `File.txt` file. It converts each line of text to

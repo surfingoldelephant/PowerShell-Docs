@@ -186,7 +186,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
 5. Get the start time of this process.
 
     ```powershell
-    $p[6].starttime
+    $p[6].StartTime
     ```
 
     The following output appears.
@@ -196,7 +196,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
     ```
 
     ```powershell
-    $p[6].starttime.dayofyear
+    $p[6].StartTime.DayOfYear
     ```
 
     ```output

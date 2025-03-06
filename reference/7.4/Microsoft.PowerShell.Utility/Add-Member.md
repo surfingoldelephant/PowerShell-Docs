@@ -190,7 +190,7 @@ System      NoteProperty string System=Server Core
 ```
 
 ```powershell
-$Asset.PSObject.Properties | Format-Table Name, MemberType, TypeNameOfValue, Value
+$Asset.psobject.Properties | Format-Table Name, MemberType, TypeNameOfValue, Value
 ```
 
 ```Output

@@ -227,7 +227,7 @@ This example is useful for setting the value of the `$PSSessionConfigurationName
 variable, which takes a resource URI.
 
 ```powershell
-(Get-PSSessionConfiguration -Name CustomShell).resourceURI
+(Get-PSSessionConfiguration -Name CustomShell).ResourceUri
 ```
 
 ```Output

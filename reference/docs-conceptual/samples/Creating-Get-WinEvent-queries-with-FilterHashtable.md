@@ -225,7 +225,7 @@ $C = [System.Diagnostics.Eventing.Reader.StandardEventKeywords]::EventLogClassic
 Get-WinEvent -FilterHashtable @{
    LogName='Application'
    ProviderName='.NET Runtime'
-   Keywords=$C.Value__
+   Keywords=$C.value__
 }
 ```
 
@@ -315,7 +315,7 @@ Get-WinEvent -FilterHashtable @{
    ProviderName='.NET Runtime'
    Keywords=36028797018963968
    ID=1023
-   Level=$C.Value__
+   Level=$C.value__
 }
 ```
 

@@ -113,7 +113,7 @@ class FileResource
 
     [void] Set() {
         $fileExists = $this.TestFilePath($this.Path)
-        if ($this.ensure -eq [Ensure]::Present) {
+        if ($this.Ensure -eq [Ensure]::Present) {
             if (! $fileExists) {
                $this.CopyFile()
             }

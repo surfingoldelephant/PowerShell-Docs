@@ -245,7 +245,7 @@ This example shows how to determine which properties of an object can be changed
 
 ```powershell
 $File = Get-Item c:\test\textFile.txt
-$File.PSObject.Properties | Where-Object IsSettable | Select-Object -Property Name
+$File.psobject.Properties | Where-Object IsSettable | Select-Object -Property Name
 ```
 
 ```Output
@@ -277,7 +277,7 @@ the **PSObject** intrinsic member.
 $Asset = New-Object -TypeName PSObject
 $d = [ordered]@{Name="Server30";System="Server Core";PSVersion="4.0"}
 $Asset | Add-Member -NotePropertyMembers $d -TypeName Asset
-$Asset.PSObject.Properties | Select-Object Name, Value
+$Asset.psobject.Properties | Select-Object Name, Value
 ```
 
 ```Output

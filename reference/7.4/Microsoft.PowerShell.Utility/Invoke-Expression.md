@@ -86,7 +86,7 @@ The second uses a pipeline operator (`|`) to send the command string to `Invoke-
 ### Example 3: Run a command in a variable
 
 ```powershell
-$Command = 'Get-Process | where {$_.cpu -gt 1000}'
+$Command = 'Get-Process | where {$_.CPU -gt 1000}'
 Invoke-Expression $Command
 ```
 

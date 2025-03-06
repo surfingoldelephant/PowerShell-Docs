@@ -78,9 +78,9 @@ Import-IseSnippet -Module SnippetModule -ListAvailable
 This example gets snippets in all installed modules in the **PSModulePath** environment variable.
 
 ```powershell
-($Env:PSModulePath).split(";") |
+($Env:PSModulePath).Split(";") |
   ForEach-Object {dir $_\*\Snippets\*.Snippets.ps1xml -ErrorAction SilentlyContinue} |
-    ForEach-Object {$_.Fullname}
+    ForEach-Object {$_.FullName}
 ```
 
 ### Example 4: Import all module snippets
@@ -90,7 +90,7 @@ you don't need to run a command like this because modules that have snippets wil
 `Import-IseSnippet` cmdlet to import them for you when the module is imported.
 
 ```powershell
-($Env:PSModulePath).split(";") |
+($Env:PSModulePath).Split(";") |
   ForEach-Object {dir $_\*\Snippets\*.Snippets.ps1xml -ErrorAction SilentlyContinue} |
     ForEach-Object {$psISE.CurrentPowerShellTab.Snippets.Load($_)}
 ```
@@ -102,7 +102,7 @@ the current user. Unlike imported snippets, which affect only the current sessio
 are available in every Windows PowerShell ISE session.
 
 ```powershell
-($Env:PSModulePath).split(";") |
+($Env:PSModulePath).Split(";") |
   ForEach-Object {dir $_\*\Snippets\*.Snippets.ps1xml -ErrorAction SilentlyContinue} |
     Copy-Item -Destination $HOME\Documents\WindowsPowerShell\Snippets
 ```

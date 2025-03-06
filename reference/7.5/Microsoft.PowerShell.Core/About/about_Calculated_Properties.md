@@ -250,7 +250,7 @@ Get-ChildItem -File |
     Format-Table Name, Length -GroupBy @{
       name='Type'
       expression={
-        switch ($_.extension) {
+        switch ($_.Extension) {
           '.md'   {'Content'}
           ''      {'Metacontent'}
           '.ps1'  {'Automation'}
@@ -338,7 +338,7 @@ Get-ChildItem -File |
   Sort-Object Extension |
     Group-Object -NoElement -Property @{
       expression={
-        switch ($_.extension) {
+        switch ($_.Extension) {
           '.md'   {'Content'}
           ''      {'Metacontent'}
           '.ps1'  {'Automation'}

@@ -493,11 +493,11 @@ You can use the static method on the **System.Enum** base class type or a
 specific enumeration type.
 
 ```Syntax
-[System.Enum]::format([<enum-name>], <value>, <format-string>)
+[System.Enum]::Format([<enum-name>], <value>, <format-string>)
 ```
 
 ```Syntax
-[<enum-name>]::format([<enum-name>], <value>, <format-string>)
+[<enum-name>]::Format([<enum-name>], <value>, <format-string>)
 ```
 
 The valid format strings are `G` or `g`, `D` or `d`, `X` or `x`, and `F` or
