@@ -126,7 +126,7 @@ $myObject | Get-Member -MemberType NoteProperty | select -ExpandProperty Name
 We can get this same list off of the `psobject` property too.
 
 ```powershell
-$myobject.psobject.properties.name
+$myobject.psobject.properties.Name
 ```
 
 > [!NOTE]
@@ -163,7 +163,7 @@ from them.
 
 ```powershell
 $hashtable = @{}
-foreach( $property in $myobject.psobject.properties.name )
+foreach( $property in $myobject.psobject.properties.Name )
 {
     $hashtable[$property] = $myObject.$property
 }
@@ -193,7 +193,7 @@ If you need to add a script method to an object, you can do it with `Add-Member`
 ```powershell
 $ScriptBlock = {
     $hashtable = @{}
-    foreach( $property in $this.psobject.properties.name )
+    foreach( $property in $this.psobject.properties.Name )
     {
         $hashtable[$property] = $this.$property
     }

@@ -93,7 +93,7 @@ restore point's **CreationTime** property to a log file.
 ```powershell
 $p = Get-ComputerRestorePoint
 foreach ($point in $p) {
-  if ($point.description -like "*PowerShell*") {
+  if ($point.Description -like "*PowerShell*") {
     Add-Content -Path C:\TechDocs\RestoreLog.txt "$($point.CreationTime)"
   }
 }

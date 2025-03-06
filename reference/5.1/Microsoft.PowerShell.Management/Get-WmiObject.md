@@ -114,7 +114,7 @@ parameter.
 
 ```powershell
 Get-WmiObject -Query "select * from win32_service where name='WinRM'" -ComputerName Server01, Server02 |
-  Format-List -Property PSComputerName, Name, ExitCode, Name, ProcessID, StartMode, State, Status
+  Format-List -Property PSComputerName, Name, ExitCode, Name, ProcessId, StartMode, State, Status
 ```
 
 ```Output
@@ -122,7 +122,7 @@ PSComputerName : SERVER01
 Name           : WinRM
 ExitCode       : 0
 Name           : WinRM
-ProcessID      : 844
+ProcessId      : 844
 StartMode      : Auto
 State          : Running
 Status         : OK
@@ -131,7 +131,7 @@ PSComputerName : SERVER02
 Name           : WinRM
 ExitCode       : 0
 Name           : WinRM
-ProcessID      : 932
+ProcessId      : 932
 StartMode      : Auto
 State          : Running
 Status         : OK

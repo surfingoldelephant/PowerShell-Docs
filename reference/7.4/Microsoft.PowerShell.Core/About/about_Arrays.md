@@ -305,7 +305,7 @@ value in an array, type:
 
 ```powershell
 $a = 0..9
-for ($i = 0; $i -le ($a.length - 1); $i += 2) {
+for ($i = 0; $i -le ($a.Length - 1); $i += 2) {
   $a[$i]
 }
 ```
@@ -876,7 +876,7 @@ create the `$t` array with all the elements in the `$a` array except for the
 value at index position 2, type:
 
 ```powershell
-$t = $a[0,1 + 3..($a.length - 1)]
+$t = $a[0,1 + 3..($a.Length - 1)]
 ```
 
 To combine two arrays into a single array, use the plus operator (`+`). The

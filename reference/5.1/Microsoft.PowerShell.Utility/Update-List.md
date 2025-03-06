@@ -75,13 +75,13 @@ class Cards {
         Write-Host
         Write-Host $this.name ": " $this.cards[0..12]
         if ($this.cards.count -gt 13) {
-            Write-Host (' ' * ($this.name.length+3)) $this.cards[13..25]
+            Write-Host (' ' * ($this.name.Length+3)) $this.cards[13..25]
         }
         if ($this.cards.count -gt 26) {
-            Write-Host (' ' * ($this.name.length+3)) $this.cards[26..38]
+            Write-Host (' ' * ($this.name.Length+3)) $this.cards[26..38]
         }
         if ($this.cards.count -gt 39) {
-            Write-Host (' ' * ($this.name.length+3)) $this.cards[39..51]
+            Write-Host (' ' * ($this.name.Length+3)) $this.cards[39..51]
         }
     }
 

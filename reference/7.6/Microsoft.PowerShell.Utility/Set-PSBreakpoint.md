@@ -161,7 +161,7 @@ Action   :
 
 function CheckLog {
 >> Get-EventLog -Log Application |
->> where {($_.source -like "TestApp") -and ($_.Message -like "*failed*")}
+>> where {($_.Source -like "TestApp") -and ($_.Message -like "*failed*")}
 >>}
 >>
 PS> CheckLog

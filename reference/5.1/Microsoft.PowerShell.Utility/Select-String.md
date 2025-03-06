@@ -171,7 +171,7 @@ object in the pipeline. For more information, see [about_Automatic_Variables](..
 
 ```powershell
 $Events = Get-WinEvent -LogName Application -MaxEvents 50
-$Events | Select-String -InputObject {$_.message} -Pattern 'Failed'
+$Events | Select-String -InputObject {$_.Message} -Pattern 'Failed'
 ```
 
 The `Get-WinEvent` cmdlet uses the **LogName** parameter to specify the Application log. The
@@ -179,9 +179,9 @@ The `Get-WinEvent` cmdlet uses the **LogName** parameter to specify the Applicat
 the variable named `$Events`.
 
 The `$Events` variable is sent down the pipeline to the `Select-String` cmdlet. `Select-String` uses
-the **InputObject** parameter. The `$_` variable represents the current object and `message` is a
+the **InputObject** parameter. The `$_` variable represents the current object and `Message` is a
 property of the event. The **Pattern** parameter specifies the string **Failed** and searches for
-matches in `$_.message`. `Select-String` displays the output in the PowerShell console.
+matches in `$_.Message`. `Select-String` displays the output in the PowerShell console.
 
 ### Example 6: Find a string in subdirectories
 

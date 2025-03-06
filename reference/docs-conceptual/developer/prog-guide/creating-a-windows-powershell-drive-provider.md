@@ -203,7 +203,7 @@ derivation. Let's test the sample drive provider.
    > functionality for that interaction. For more information, see
    > [Creating a Windows PowerShell Container Provider](./creating-a-windows-powershell-container-provider.md).
 
-   **PS> (Get-PSDrive mydb).connection**
+   **PS> (Get-PSDrive mydb).Connection**
 
    The following output appears:
 

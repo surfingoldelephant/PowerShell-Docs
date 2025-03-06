@@ -128,7 +128,7 @@ $Events | ForEach-Object -Begin {
     $out = ""
 } -Process {
     # In the Process script block search the message property of each incoming object for "bios".
-    if($_.message -like "*bios*")
+    if($_.Message -like "*bios*")
     {
         # Append the matching message to the out variable.
         $out=$out + $_.Message

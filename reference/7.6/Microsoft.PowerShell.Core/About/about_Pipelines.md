@@ -60,7 +60,7 @@ displays the name and length of each file in a table.
 
 ```powershell
 Get-ChildItem -Path *.txt |
-  Where-Object {$_.length -gt 10000} |
+  Where-Object {$_.Length -gt 10000} |
     Sort-Object -Property Length |
       Format-Table -Property Name, Length
 ```
@@ -73,7 +73,7 @@ command in the pipeline.
 Get-ChildItem -Path *.txt
 | (FileInfo objects for *.txt)
 V
-Where-Object {$_.length -gt 10000}
+Where-Object {$_.Length -gt 10000}
 | (FileInfo objects for *.txt)
 | (      Length > 10000      )
 V

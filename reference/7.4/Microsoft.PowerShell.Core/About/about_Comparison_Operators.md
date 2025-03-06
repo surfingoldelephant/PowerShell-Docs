@@ -505,7 +505,7 @@ such as renaming files. For example, the following command changes the file
 name extensions of all `.txt` files to `.log`:
 
 ```powershell
-Get-ChildItem *.txt | Rename-Item -NewName { $_.name -replace '\.txt$','.log' }
+Get-ChildItem *.txt | Rename-Item -NewName { $_.Name -replace '\.txt$','.log' }
 ```
 
 By default, the `-replace` operator is case-insensitive. To make it case

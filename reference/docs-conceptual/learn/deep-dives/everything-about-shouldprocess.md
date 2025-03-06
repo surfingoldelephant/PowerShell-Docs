@@ -181,7 +181,7 @@ function Test-ShouldProcess {
 }
 ```
 
-The call to `$PSCmdlet.ShouldProcess($file.name)` checks for the `-WhatIf` (and `-Confirm`
+The call to `$PSCmdlet.ShouldProcess($file.Name)` checks for the `-WhatIf` (and `-Confirm`
 parameter) then handles it accordingly. The `-WhatIf` causes `ShouldProcess` to output a
 description of the change and return `$false`:
 

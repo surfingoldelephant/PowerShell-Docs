@@ -372,24 +372,24 @@ The WQL operators can also be used in the value of the **Filter** parameter of
 the `Get-WmiObject` or `Get-CimInstance` cmdlets, as well as in the value of
 the **Query** parameters of these cmdlets.
 
-For example, the following command gets the **Name** and **ProcessID**
-properties of the last five processes that have **ProcessID** values greater
+For example, the following command gets the **Name** and **ProcessId**
+properties of the last five processes that have **ProcessId** values greater
 than 1004. The command uses the **Filter** parameter to specify the
-**ProcessID** condition.
+**ProcessId** condition.
 
 ```powershell
 $getWmiObjectSplat = @{
     Class = 'Win32_Process'
-    Property = 'Name', 'ProcessID'
-    Filter = "ProcessID >= 1004"
+    Property = 'Name', 'ProcessId'
+    Filter = "ProcessId >= 1004"
 }
 Get-WmiObject @getWmiObjectSplat |
-    Sort-Object ProcessID |
-    Select-Object Name, ProcessID -Last 5
+    Sort-Object ProcessId |
+    Select-Object Name, ProcessId -Last 5
 ```
 
 ```output
-Name                                 ProcessID
+Name                                 ProcessId
 ----                                 ---------
 SROSVC.exe                                4220
 WINWORD.EXE                               4664
@@ -444,11 +444,11 @@ The query should return any process from `Hotepad.exe` through `Notepad.exe`.
 ```powershell
 Notepad   # Starts Notepad
 $query = "SELECT * FROM Win32_Process WHERE Name LIKE '[H-N]otepad.exe'"
-Get-WmiObject -Query $query | select Name, ProcessID
+Get-WmiObject -Query $query | select Name, ProcessId
 ```
 
 ```output
-Name                                ProcessID
+Name                                ProcessId
 ----                                ---------
 notepad.exe                              1740
 ```
@@ -460,13 +460,13 @@ letter between A and P (case-insensitive) followed by zero or more letters in
 any combination.
 
 The `Get-WmiObject` cmdlet runs the query, the `Select-Object` cmdlet gets the
-**Name** and **ProcessID** properties, and the `Sort-Object` cmdlet sorts the
+**Name** and **ProcessId** properties, and the `Sort-Object` cmdlet sorts the
 results in alphabetical order by name.
 
 ```powershell
 $query = "SELECT * FROM Win32_Process WHERE name LIKE '[A-P]%'"
 Get-WmiObject -Query $query |
-    Select-Object -Property Name, ProcessID |
+    Select-Object -Property Name, ProcessId |
     Sort-Object -Property Name
 ```
 
@@ -480,7 +480,7 @@ and followed zero or more letters.
 ```powershell
 $query = "SELECT * FROM Win32_Process WHERE name LIKE '[^ASWPRCUN]%'"
 Get-WmiObject -Query $query |
-    Select-Object -Property Name, ProcessID |
+    Select-Object -Property Name, ProcessId |
     Sort-Object -Property Name
 ```
 
@@ -492,11 +492,11 @@ asterisk (`*`) wildcard in PowerShell.
 
 ```powershell
 $query = "SELECT * FROM Win32_Process WHERE Name LIKE 'calc%'"
-Get-WmiObject -Query $query | Select-Object -Property Name, ProcessID
+Get-WmiObject -Query $query | Select-Object -Property Name, ProcessId
 ```
 
 ```output
-Name                               ProcessID
+Name                               ProcessId
 ----                               ---------
 calc.exe                                4424
 ```
@@ -511,11 +511,11 @@ more than one character.
 
 ```powershell
 $query = "SELECT * FROM Win32_Process WHERE Name LIKE 'c_lc.exe'"
-Get-WmiObject -Query $query | Select-Object -Property Name, ProcessID
+Get-WmiObject -Query $query | Select-Object -Property Name, ProcessId
 ```
 
 ```output
-Name                                 ProcessID
+Name                                 ProcessId
 ----                                 ---------
 calc.exe                                  4424
 ```
@@ -528,11 +528,11 @@ include any wildcard characters.
 
 ```powershell
 $query = "SELECT * FROM Win32_Process WHERE name LIKE 'WLIDSVC.exe'"
-Get-WmiObject -Query $query | Select-Object -Property Name, ProcessID
+Get-WmiObject -Query $query | Select-Object -Property Name, ProcessId
 ```powershell
 
 ```output
-Name                                 ProcessID
+Name                                 ProcessId
 ----                                 ---------
 WLIDSVC.exe                                84
 ```
@@ -586,7 +586,7 @@ Note that the commands use the `Get-CimInstance` cmdlet.
 
 ```powershell
 $q = "SELECT * FROM Win32_Process WHERE Name = 'winword.exe' " +
-  "AND ProcessID =6512"
+  "AND ProcessId =6512"
 Get-CimInstance -Query $q
 ```
 

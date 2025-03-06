@@ -160,7 +160,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
 3. Get the number of processes.
 
     ```powershell
-    $p.length
+    $p.Length
     ```
 
     The following output appears.

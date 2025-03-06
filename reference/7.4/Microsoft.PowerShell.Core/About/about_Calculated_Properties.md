@@ -312,7 +312,7 @@ value.
 
 ```powershell
 Get-ChildItem -File |
-  Format-Wide -Property @{e={'{0} ({1:N2}kb)' -f $_.name,($_.length/1kb)}}
+  Format-Wide -Property @{e={'{0} ({1:N2}kb)' -f $_.Name,($_.Length/1kb)}}
 ```
 
 ```Output

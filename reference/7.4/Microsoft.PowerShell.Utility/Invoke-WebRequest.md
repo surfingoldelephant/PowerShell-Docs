@@ -112,12 +112,12 @@ This example uses the `Invoke-WebRequest` cmdlet to send a web request to the Bi
 ```powershell
 $Response = Invoke-WebRequest -Uri https://www.bing.com/search?q=how+many+feet+in+a+mile
 $Response.InputFields | Where-Object {
-    $_.name -like "* Value*"
+    $_.Name -like "* Value*"
 } | Select-Object Name, Value
 ```
 
 ```Output
-name       value
+Name       Value
 ----       -----
 From Value 1
 To Value   5280
