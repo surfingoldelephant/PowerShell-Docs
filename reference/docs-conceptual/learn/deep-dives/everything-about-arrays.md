@@ -231,14 +231,14 @@ So make sure your arrays are not `$null` before you try to access elements insid
 
 #### Count
 
-Arrays and other collections have a count property that tells you how many items are in the array.
+Arrays and other collections have a `Count` property that tells you how many items are in the array.
 
 ```powershell
 PS> $data.Count
 4
 ```
 
-PowerShell 3.0 added a count property to most objects. you can have a single object and it should
+PowerShell 3.0 added a `Count` property to most objects. you can have a single object and it should
 give you a count of `1`.
 
 ```powershell
@@ -247,7 +247,7 @@ PS> $date.Count
 1
 ```
 
-Even `$null` has a count property except it returns `0`.
+Even `$null` has a `Count` property except it returns `0`.
 
 ```powershell
 PS> $null.Count

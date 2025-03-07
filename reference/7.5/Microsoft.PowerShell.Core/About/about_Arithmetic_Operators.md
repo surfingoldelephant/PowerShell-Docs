@@ -505,7 +505,7 @@ evaluation of the `New-TimeSpan -Day 1` cmdlet expression, in that order. Both
 results are then added using the `+` operator.
 
 ```powershell
-Get-Process | Where-Object { ($_.ws * 2) -gt 50mb }
+Get-Process | Where-Object { ($_.WS * 2) -gt 50mb }
 ```
 
 ```Output

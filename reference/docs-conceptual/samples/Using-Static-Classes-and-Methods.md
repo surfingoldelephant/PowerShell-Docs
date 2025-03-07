@@ -128,7 +128,7 @@ method or property. To see the command that was used to launch Windows PowerShel
 "C:\Program Files\Windows PowerShell\v1.0\powershell.exe"
 ```
 
-To check the operating system version, display the OSVersion property by typing:
+To check the operating system version, display the **OSVersion** property by typing:
 
 ```powershell
 [System.Environment]::OSVersion

@@ -221,7 +221,7 @@ Mode                LastWriteTime         Length Name
 ### Example 9: Use the -Force parameter to overwrite existing files
 
 This example creates a file with a value and then recreates the file using `-Force`. This overwrites
-the existing file, as you can see by the length property.
+the existing file, as you can see by the **Length** property.
 
 ```powershell
 PS> New-Item ./TestFile.txt -ItemType File -Value 'This is just a test file'

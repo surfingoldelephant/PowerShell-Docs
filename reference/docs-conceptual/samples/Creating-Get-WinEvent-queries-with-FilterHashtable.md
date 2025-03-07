@@ -216,9 +216,9 @@ Get-WinEvent -FilterHashtable @{
 
 The **Keywords** key is enumerated, but you can use a static property name in the hash table query.
 Rather than using the returned string, the property name must be converted to a value with the
-**Value__** property.
+**value__** property.
 
-For example, the following script uses the **Value__** property.
+For example, the following script uses the **value__** property.
 
 ```powershell
 $C = [System.Diagnostics.Eventing.Reader.StandardEventKeywords]::EventLogClassic
@@ -304,9 +304,9 @@ Get-WinEvent -FilterHashtable @{
 
 The **Level** key is enumerated, but you can use a static property name in the hash table query.
 Rather than using the returned string, the property name must be converted to a value with the
-**Value__** property.
+**value__** property.
 
-For example, the following script uses the **Value__** property.
+For example, the following script uses the **value__** property.
 
 ```powershell
 $C = [System.Diagnostics.Eventing.Reader.StandardEventLevel]::Informational

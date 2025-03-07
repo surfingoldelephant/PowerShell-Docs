@@ -226,7 +226,7 @@ value of the `"$Env:USERPROFILE"` Windows environment variable, typically
 
 Contains an object that represents the current host application for PowerShell.
 You can use this variable to represent the current host in commands or to
-display or change the properties of the host, such as `$Host.version` or
+display or change the properties of the host, such as `$Host.Version` or
 `$Host.CurrentCulture`, or `$Host.UI.RawUI.BackGroundColor = "Red"`.
 
 ### $input

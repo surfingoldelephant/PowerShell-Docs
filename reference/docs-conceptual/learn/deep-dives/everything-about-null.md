@@ -283,9 +283,9 @@ PowerShell.
 
 ### [PSCustomObject] Count
 
-Almost all objects in PowerShell have that count property. One important exception is the
+Almost all objects in PowerShell have that `Count` property. One important exception is the
 `[PSCustomObject]` in Windows PowerShell 5.1 (This is fixed in PowerShell 6.0). It doesn't have a
-count property so you get a `$null` value if you try to use it. I call this out here so that you
+`Count` property so you get a `$null` value if you try to use it. I call this out here so that you
 don't try to use `.Count` instead of a `$null` check.
 
 Running this example on Windows PowerShell 5.1 and PowerShell 6.0 gives you different results.
