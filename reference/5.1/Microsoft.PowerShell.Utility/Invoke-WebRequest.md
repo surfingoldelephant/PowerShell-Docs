@@ -77,8 +77,8 @@ Facebook.
 $R = Invoke-WebRequest https://www.facebook.com/login.php -SessionVariable fb
 # This command stores the first form in the Forms property of the $R variable in the $Form variable.
 $Form = $R.Forms[0]
-# This command shows the fields available in the Form.
-$Form.fields
+# This command shows the fields available in the form.
+$Form.Fields
 ```
 
 ```Output
@@ -91,7 +91,7 @@ pass
 ```
 
 ```powershell
-# These commands populate the username and password of the respective Form fields.
+# These commands populate the username and password of the respective form fields.
 $Form.Fields["email"]="User01@Fabrikam.com"
 $Form.Fields["pass"]="P@ssw0rd"
 # This command creates the Uri that will be used to log in to facebook.

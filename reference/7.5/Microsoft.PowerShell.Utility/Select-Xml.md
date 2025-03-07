@@ -124,10 +124,10 @@ information about Updatable Help, see
 The `Select-Xml` cmdlet searches the XML files for cmdlet names by finding `Command:Name` element
 anywhere in the files. The results are stored in the `$Xml` variable. `Select-Xml` returns a
 **SelectXmlInfo** object that has a **Node** property, which is a **System.Xml.XmlElement** object.
-The **Node** property has an **InnerXML** property that contains the actual XML that is retrieved.
+The **Node** property has an **InnerXml** property that contains the actual XML that is retrieved.
 
 The `$Xml` variable is piped to the `Format-Table` cmdlet. The `Format-Table` command uses a
-calculated property to get the **Node.InnerXML** property of each object in the `$Xml` variable,
+calculated property to get the **Node.InnerXml** property of each object in the `$Xml` variable,
 trim the white space before and after the text, and display it in the table, along with the **Path**
 to the source file.
 
@@ -140,7 +140,7 @@ $Namespace = @{
 
 $Path = "$PSHOME\en-us\*dll-Help.xml"
 $Xml = Select-Xml -Path $Path -Namespace $Namespace -XPath "//command:name"
-$Xml | Format-Table @{Label="Name"; Expression= {($_.Node.InnerXml).trim()}}, Path -AutoSize
+$Xml | Format-Table @{Label="Name"; Expression= {($_.Node.InnerXml).Trim()}}, Path -AutoSize
 ```
 
 ```Output
@@ -186,14 +186,14 @@ $Xml = @"
 </Book>
 "@
 
-Select-Xml -Content $Xml -XPath "//edition" | foreach {$_.node.InnerXML}
+Select-Xml -Content $Xml -XPath "//edition" | foreach {$_.Node.InnerXml}
 
 En.Book1.com
 Ge.Book1.Com
 Fr.Book1.com
 Pl.Book1.com
 
-$Xml | Select-Xml -XPath "//edition" | foreach {$_.node.InnerXML}
+$Xml | Select-Xml -XPath "//edition" | foreach {$_.Node.InnerXml}
 
 En.Book1.com
 Ge.Book1.Com

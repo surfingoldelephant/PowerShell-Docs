@@ -108,7 +108,7 @@ verbs are determined by the filename extension of the file that runs in the proc
 
 ```powershell
 $startExe = New-Object System.Diagnostics.ProcessStartInfo -Args powershell.exe
-$startExe.verbs
+$startExe.Verbs
 ```
 
 ```Output

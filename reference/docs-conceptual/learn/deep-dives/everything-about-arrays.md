@@ -361,7 +361,7 @@ foreach ( $node in $data )
 #### ForEach method
 
 I tend to forget about this one but it works well for simple operations. PowerShell allows you to
-call `.ForEach()` on a collection.
+call `ForEach()` on a collection.
 
 ```powershell
 PS> $data.ForEach({"Item [$PSItem]"})
@@ -371,7 +371,7 @@ Item [Two]
 Item [Three]
 ```
 
-The `.ForEach()` takes a parameter that is a script block. You can drop the parentheses and just
+The `ForEach()` takes a parameter that is a script block. You can drop the parentheses and just
 provide the script block.
 
 ```powershell

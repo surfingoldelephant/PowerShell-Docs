@@ -88,7 +88,7 @@ $ageList['Alex']
 ```
 
 When I want Kevin's age, I use his name to access it. We can use this approach to add or update
-values into the hashtable too. This is just like using the `add()` function above.
+values into the hashtable too. This is just like using the `Add()` method above.
 
 ```powershell
 $ageList = @{}
@@ -168,17 +168,17 @@ PS> $ageList | Measure-Object
 count : 1
 ```
 
-Even though the `.Count` property tells you how many values it contains.
+Even though the `Count` property tells you how many values it contains.
 
 ```powershell
 PS> $ageList.Count
 2
 ```
 
-You get around this issue by using the `.values` property if all you need is just the values.
+You get around this issue by using the `Values` property if all you need is just the values.
 
 ```powershell
-PS> $ageList.values | Measure-Object -Average
+PS> $ageList.Values | Measure-Object -Average
 Count   : 2
 Average : 22.5
 ```
@@ -186,7 +186,7 @@ Average : 22.5
 It's often more useful to enumerate the keys and use them to access the values.
 
 ```powershell
-PS> $ageList.keys | ForEach-Object{
+PS> $ageList.Keys | ForEach-Object{
     $message = '{0} is {1} years old!' -f $_, $ageList[$_]
     Write-Output $message
 }
@@ -197,7 +197,7 @@ Alex is 9 years old
 Here is the same example with a `foreach(){...}` loop.
 
 ```powershell
-foreach($key in $ageList.keys)
+foreach($key in $ageList.Keys)
 {
     $message = '{0} is {1} years old' -f $key, $ageList[$key]
     Write-Output $message
@@ -213,7 +213,7 @@ That brings us to `GetEnumerator()` for iterating over our hashtable.
 
 ```powershell
 $ageList.GetEnumerator() | ForEach-Object{
-    $message = '{0} is {1} years old!' -f $_.key, $_.value
+    $message = '{0} is {1} years old!' -f $_.Key, $_.Value
     Write-Output $message
 }
 ```
@@ -252,7 +252,7 @@ enumeration operation may not execute.
 This will also fail even though it looks like it should also be fine:
 
 ```powershell
-foreach($key in $environments.keys) {
+foreach($key in $environments.Keys) {
     $environments[$key] = 'SrvDev03'
 }
 
@@ -327,7 +327,7 @@ if( $person.age -ne $null ){...}
 ```
 
 This works around that issue for zero values but not $null vs non-existent keys. Most of the time
-you don't need to make that distinction but there are functions for when you do.
+you don't need to make that distinction but there are methods for when you do.
 
 ```powershell
 if( $person.ContainsKey('age') ){...}
@@ -338,7 +338,7 @@ knowing the key or iterating the whole collection.
 
 ### Removing and clearing keys
 
-You can remove keys with the `.Remove()` function.
+You can remove keys with the `Remove()` method.
 
 ```powershell
 $person.Remove('age')
@@ -352,13 +352,13 @@ A common way to clear a hashtable is to just initialize it to an empty hashtable
 $person = @{}
 ```
 
-While that does work, try to use the `clear()` function instead.
+While that does work, try to use the `Clear()` method instead.
 
 ```powershell
-$person.clear()
+$person.Clear()
 ```
 
-This is one of those instances where using the function creates self-documenting code and it makes
+This is one of those instances where using the method creates self-documenting code and it makes
 the intentions of the code very clean.
 
 ## All the fun stuff
@@ -648,7 +648,7 @@ defined statically in my code and I know them off the top of my head. If I need 
 programmatically access the keys, I use the brackets to provide the key name.
 
 ```powershell
-foreach($name in $people.keys)
+foreach($name in $people.Keys)
 {
     $person = $people[$name]
     '{0}, age {1}, is in {2}' -f $name, $person.age, $person.city
@@ -872,7 +872,7 @@ Name                           Value
 Accessing a value in the hashtable by its key doesn't always work. For example:
 
 ```powershell
-$key = $ht.keys[0]
+$key = $ht.Keys[0]
 $ht.$($key)
 a
 $ht[$key]
@@ -1000,7 +1000,7 @@ make changes to that hashtable, your original is also altered.
 
 ### Shallow copies, single level
 
-If we have a simple hashtable like our example above, we can use `.Clone()` to make a shallow copy.
+If we have a simple hashtable like our example above, we can use `Clone()` to make a shallow copy.
 
 ```powershell
 PS> $orig = @{name='orig'}
@@ -1055,7 +1055,7 @@ function Get-DeepClone
     {
         if($InputObject -is [hashtable]) {
             $clone = @{}
-            foreach($key in $InputObject.keys)
+            foreach($key in $InputObject.Keys)
             {
                 $clone[$key] = Get-DeepClone $InputObject[$key]
             }

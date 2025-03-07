@@ -203,8 +203,8 @@ class BookList {
     # Static method to initialize the list of books. Called in the other
     # static methods to avoid needing to explicit initialize the value.
     static [void] Initialize()             { [BookList]::Initialize($false) }
-    static [bool] Initialize([bool]$force) {
-        if ([BookList]::Books.Count -gt 0 -and -not $force) {
+    static [bool] Initialize([bool]$Force) {
+        if ([BookList]::Books.Count -gt 0 -and -not $Force) {
             return $false
         }
 

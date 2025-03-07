@@ -566,7 +566,7 @@ to add text to the string. Because the command isn't part of the transaction,
 the change is effective immediately.
 
 ```powershell
-$t.append("Windows")
+$t.Append("Windows")
 ```
 
 The following command uses the same Append method to add text, but it adds the
@@ -575,7 +575,7 @@ set as the value of the **ScriptBlock** parameter of `Use-Transaction`. The
 **UseTransaction** parameter (**usetx**) is required.
 
 ```powershell
-Use-Transaction {$t.append(" PowerShell")} -usetx
+Use-Transaction {$t.Append(" PowerShell")} -usetx
 ```
 
 To see the current content of the transacted string in `$t`, use the `ToString`

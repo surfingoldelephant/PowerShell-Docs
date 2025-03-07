@@ -69,7 +69,7 @@ HelpInfoShort   {help , TableControl}
 ```
 
 ```powershell
-$F.FormatViewDefinition[0].control
+$F.FormatViewDefinition[0].Control
 ```
 
 ```Output
@@ -85,7 +85,7 @@ OutOfBand        : False
 ```
 
 ```powershell
-$F.FormatViewDefinition[0].control.Headers
+$F.FormatViewDefinition[0].Control.Headers
 ```
 
 ```Output

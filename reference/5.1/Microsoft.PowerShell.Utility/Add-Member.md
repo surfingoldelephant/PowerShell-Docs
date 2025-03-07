@@ -216,14 +216,14 @@ PS> $obj = [pscustomobject]@{
       Name = 'Doris'
       Age = '20'
 }
-PS> $obj | Add-Member -MemberType AliasProperty -Name 'intAge' -Value age -SecondValue uint32
+PS> $obj | Add-Member -MemberType AliasProperty -Name 'IntAge' -Value Age -SecondValue uint32
 PS> $obj | Get-Member
 
    TypeName: System.Management.Automation.PSCustomObject
 
 Name        MemberType    Definition
 ----        ----------    ----------
-intAge      AliasProperty intAge = (System.UInt32)age
+IntAge      AliasProperty IntAge = (System.UInt32)Age
 Equals      Method        bool Equals(System.Object obj)
 GetHashCode Method        int GetHashCode()
 GetType     Method        type GetType()
@@ -235,18 +235,18 @@ PS> $obj
 
 Name   : Doris
 Age    : 20
-intAge : 20
+IntAge : 20
 
 PS> $obj.Age + 1
 
 201
 
-PS> $obj.intAge + 1
+PS> $obj.IntAge + 1
 
 21
 ```
 
-The **intAge** property is an **AliasProperty** for the **Age** property, but the type is guaranteed
+The **IntAge** property is an **AliasProperty** for the **Age** property, but the type is guaranteed
 to be **uint32**.
 
 ### Example 7: Add get and set methods to a custom object

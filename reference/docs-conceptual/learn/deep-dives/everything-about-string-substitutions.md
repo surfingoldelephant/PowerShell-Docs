@@ -296,7 +296,7 @@ $name = 'Kevin Marquette'
 $string = $ExecutionContext.InvokeCommand.ExpandString($message)
 ```
 
-The call to `.InvokeCommand.ExpandString` on the current execution context uses the variables in
+The call to `InvokeCommand.ExpandString` on the current execution context uses the variables in
 the current scope for substitution. The key thing here is that the `$message` can be defined very
 early before the variables even exist.
 

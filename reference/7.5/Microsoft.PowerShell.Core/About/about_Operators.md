@@ -706,7 +706,7 @@ Accesses the properties and methods of an object. The member name may be an
 expression.
 
 ```powershell
-$myProcess.peakWorkingSet
+$myProcess.PeakWorkingSet
 (Get-Process PowerShell).Kill()
 'OS', 'Platform' | ForEach-Object { $PSVersionTable. $_ }
 ```

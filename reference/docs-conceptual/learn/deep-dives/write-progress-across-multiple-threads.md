@@ -113,7 +113,7 @@ and allows us to know when all the processes have finished later on.
 
 When using the `using:` statement to reference a parent scope variable in PowerShell, you can't use
 expressions to make it dynamic. For example, if you tried to create the `$process` variable like
-this, `$process = $using:sync.$($PSItem.id)`, you would get an error stating you can't use
+this, `$process = $using:sync.$($PSItem.Id)`, you would get an error stating you can't use
 expressions there. So, we create the `$syncCopy` variable to be able to reference and modify the
 `$sync` variable without the risk of it failing.
 

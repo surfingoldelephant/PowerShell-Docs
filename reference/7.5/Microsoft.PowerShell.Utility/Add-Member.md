@@ -217,7 +217,7 @@ $user = [pscustomobject]@{
 }
 $addMemberSplat = @{
     MemberType = 'AliasProperty'
-    Name = 'intAge'
+    Name = 'IntAge'
     Value = 'Age'
     SecondValue = 'UInt32'
 }
@@ -230,7 +230,7 @@ $user | Get-Member
 
 Name        MemberType    Definition
 ----        ----------    ----------
-intAge      AliasProperty intAge = (System.UInt32)Age
+IntAge      AliasProperty IntAge = (System.UInt32)Age
 Equals      Method        bool Equals(System.Object obj)
 GetHashCode Method        int GetHashCode()
 GetType     Method        type GetType()
@@ -242,7 +242,7 @@ Name        NoteProperty  string Name=Doris
 ```powershell
 PS> $obj
 
-Name  Age intAge
+Name  Age IntAge
 ----  --- ------
 Doris 20      20
 
@@ -250,12 +250,12 @@ PS> $obj.Age + 1
 
 201
 
-PS> $obj.intAge + 1
+PS> $obj.IntAge + 1
 
 21
 ```
 
-The **intAge** property is an **AliasProperty** for the **Age** property, but the type is guaranteed
+The **IntAge** property is an **AliasProperty** for the **Age** property, but the type is guaranteed
 to be **uint32**.
 
 ### Example 7: Add get and set methods to a custom object

@@ -79,7 +79,7 @@ object includes the start mode and the service description.
 ```powershell
 sc.exe delete TestService
 # - or -
-(Get-CimInstance -Class Win32_Service -Filter "name='TestService'").delete()
+(Get-CimInstance -Class Win32_Service -Filter "name='TestService'").Delete()
 ```
 
 This example shows two ways to delete the TestService service. The first command uses the delete

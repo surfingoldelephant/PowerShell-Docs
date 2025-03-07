@@ -204,8 +204,8 @@ class BookList {
     # Static method to initialize the list of books. Called in the other
     # static methods to avoid needing to explicit initialize the value.
     static [void] Initialize()             { [BookList]::Initialize($false) }
-    static [bool] Initialize([bool]$force) {
-        if ([BookList]::Books.Count -gt 0 -and -not $force) {
+    static [bool] Initialize([bool]$Force) {
+        if ([BookList]::Books.Count -gt 0 -and -not $Force) {
             return $false
         }
 
@@ -369,7 +369,7 @@ an error, such as `Global scope cannot be removed`.
 ```powershell
 # Class definition with Runspace affinity (default behavior)
 class UnsafeClass {
-    static [object] ShowRunspaceId($val) {
+    static [object] ShowRunspaceId($Val) {
         return [PSCustomObject]@{
             ThreadId   = [Threading.Thread]::CurrentThread.ManagedThreadId
             RunspaceId = [runspace]::DefaultRunspace.Id
@@ -398,7 +398,7 @@ Runspace ids.
 # Class definition with NoRunspaceAffinity attribute
 [NoRunspaceAffinity()]
 class SafeClass {
-    static [object] ShowRunspaceId($val) {
+    static [object] ShowRunspaceId($Val) {
         return [PSCustomObject]@{
             ThreadId   = [Threading.Thread]::CurrentThread.ManagedThreadId
             RunspaceId = [runspace]::DefaultRunspace.Id

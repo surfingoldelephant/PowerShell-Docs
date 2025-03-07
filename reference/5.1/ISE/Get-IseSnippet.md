@@ -71,7 +71,7 @@ function Parse-Snippet {
   foreach ($SnippetFile in $SnippetFiles) {
      Write-Host ""
      $Title = Select-Xml -Path $SnippetFile.FullName -Namespace $SnippetNamespace -XPath "//x:Title" |
-       ForEach-Object {$_.Node.InnerXML}
+       ForEach-Object {$_.Node.InnerXml}
      $Text = Select-Xml -Path $SnippetFile.FullName -Namespace $SnippetNamespace -XPath "//x:Script" |
        ForEach-Object {$_.Node.InnerText}
      Write-Host "Title: $Title"

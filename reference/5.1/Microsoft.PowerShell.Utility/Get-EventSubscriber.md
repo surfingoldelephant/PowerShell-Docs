@@ -141,7 +141,7 @@ ChildJobs     : {}
 ```
 
 ```powershell
-& $Subscriber.Action.module {$Random}
+& $Subscriber.Action.Module {$Random}
 ```
 
 The third command uses the `Register-ObjectEvent` cmdlet to register the Elapsed event of the timer

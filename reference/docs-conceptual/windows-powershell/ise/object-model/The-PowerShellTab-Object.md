@@ -174,7 +174,7 @@ The read-only property that gets the Output pane of the current [editor](The-ISE
 
 ```powershell
 # Clears the text in the Output pane.
-$psISE.CurrentPowerShellTab.output.clear()
+$psISE.CurrentPowerShellTab.Output.Clear()
 ```
 
 ### Prompt

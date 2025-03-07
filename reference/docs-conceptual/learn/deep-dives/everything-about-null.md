@@ -126,11 +126,11 @@ property, you get a `$null` value like you would for an undefined variable. It d
 variable is `$null` or an actual object in this case.
 
 ```powershell
-PS> $null -eq $undefined.some.fake.property
+PS> $null -eq $undefined.Some.Fake.Property
 True
 
 PS> $date = Get-Date
-PS> $null -eq $date.some.fake.property
+PS> $null -eq $date.Some.Fake.Property
 True
 ```
 
@@ -246,9 +246,9 @@ I ran into this issue when refactoring some code a few days ago. It had a basic 
 this.
 
 ```powershell
-if ( $object.property )
+if ( $object.Property )
 {
-    $object.property = $value
+    $object.Property = $value
 }
 ```
 
@@ -259,9 +259,9 @@ the property but it was a blank string value. This prevented it from ever gettin
 previous logic. So I added a proper `$null` check and everything worked.
 
 ```powershell
-if ( $null -ne $object.property )
+if ( $null -ne $object.Property )
 {
-    $object.property = $value
+    $object.Property = $value
 }
 ```
 
@@ -286,7 +286,7 @@ PowerShell.
 Almost all objects in PowerShell have that `Count` property. One important exception is the
 `[PSCustomObject]` in Windows PowerShell 5.1 (This is fixed in PowerShell 6.0). It doesn't have a
 `Count` property so you get a `$null` value if you try to use it. I call this out here so that you
-don't try to use `.Count` instead of a `$null` check.
+don't try to use `Count` instead of a `$null` check.
 
 Running this example on Windows PowerShell 5.1 and PowerShell 6.0 gives you different results.
 
