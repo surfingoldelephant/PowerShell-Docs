@@ -51,9 +51,9 @@ each argument follows this example.
     PositionalBinding=<Boolean>)]
 
     Param ($Parameter1)
-    Begin{}
+    begin {}
     Process{}
-    End{}
+    end {}
 }
 ```
 
@@ -67,9 +67,9 @@ value to `$true` or just list the argument by name. For example, the following
     [CmdletBinding(SupportsPaging=$true)]
 
     Param ($Parameter1)
-    Begin{}
+    begin {}
     Process{}
-    End{}
+    end {}
 }
 
 # Boolean arguments can be defined using this shorthand syntax
@@ -78,9 +78,9 @@ value to `$true` or just list the argument by name. For example, the following
     [CmdletBinding(SupportsPaging)]
 
     Param ($Parameter1)
-    Begin{}
+    begin {}
     Process{}
-    End{}
+    end {}
 }
 ```
 

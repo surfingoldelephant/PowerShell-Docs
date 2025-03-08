@@ -145,7 +145,7 @@ Get-Help C:\admin\scripts\ServicesLog.ps1
 
 A script can contain any valid PowerShell commands, including single commands,
 commands that use the pipeline, functions, and control structures such as If
-statements and For loops.
+statements and `for` loops.
 
 To write a script, open a new file in a text editor, type the commands, and
 save them in a file with a valid filename with the `.ps1` file extension.

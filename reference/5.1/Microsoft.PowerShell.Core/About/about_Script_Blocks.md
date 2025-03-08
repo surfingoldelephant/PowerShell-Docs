@@ -50,8 +50,8 @@ keyword to assign named parameters, as shown in the following syntax:
 > In a script block, unlike a function, you can't specify parameters outside
 > the braces.
 
-Like functions, script blocks can include the `DynamicParam`, `Begin`,
-`Process`, and `End` keywords. For more information, see [about_Functions][02]
+Like functions, script blocks can include the `dynamicparam`, `begin`,
+`process`, and `end` keywords. For more information, see [about_Functions][02]
 and [about_Functions_Advanced][01].
 
 ## Using Script Blocks

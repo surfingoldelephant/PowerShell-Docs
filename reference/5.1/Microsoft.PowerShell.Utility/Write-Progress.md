@@ -29,7 +29,7 @@ text that appears above and below the progress bar.
 
 ## EXAMPLES
 
-### Example 1: Display the progress of a For loop
+### Example 1: Display the progress of a `for` loop
 
 ```powershell
 for ($i = 1; $i -le 100; $i++ ) {
@@ -44,7 +44,7 @@ The `Write-Progress` cmdlet includes a status bar heading `Activity`, a status l
 variable `$i` (the counter in the `for` loop), which indicates the relative completeness of the
 task.
 
-### Example 2: Display the progress of nested For loops
+### Example 2: Display the progress of nested `for` loops
 
 ```powershell
 for($I = 0; $I -lt 10; $I++ ) {
@@ -80,7 +80,7 @@ Progress
 InnerLoop
 ```
 
-This example displays the progress of two nested For loops, each of which is represented by a
+This example displays the progress of two nested `for` loops, each of which is represented by a
 progress bar.
 
 The `Write-Progress` command for the second progress bar includes the **Id** parameter that

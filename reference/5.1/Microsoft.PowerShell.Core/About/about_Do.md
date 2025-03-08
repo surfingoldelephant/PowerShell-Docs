@@ -14,9 +14,9 @@ condition.
 
 ## Long description
 
-The `Do` keyword works with the `While` keyword or the `Until` keyword to run
+The `do` keyword works with the `While` keyword or the `Until` keyword to run
 the statements in a script block, subject to a condition. Unlike the related
-`While` loop, the script block in a `Do` loop always runs at least once.
+`While` loop, the script block in a `do` loop always runs at least once.
 
 A **Do-While** loop is a variety of the `While` loop. In a **Do-While** loop,
 the condition is evaluated after the script block has run. As in a While loop,
@@ -26,7 +26,7 @@ Like a **Do-While** loop, a **Do-Until** loop always runs at least once
 before the condition is evaluated. However, the script block runs only
 while the condition is false.
 
-The `Continue` and `Break` flow control keywords can be used in a **Do-While**
+The `continue` and `break` flow control keywords can be used in a **Do-While**
 loop or in a **Do-Until** loop.
 
 ### Syntax
@@ -52,7 +52,7 @@ information about how booleans are evaluated, see
 
 ### Example
 
-The following example of a `Do` statement counts the items in an array until it
+The following example of a `do` statement counts the items in an array until it
 reaches an item with a value of 0.
 
 ```powershell

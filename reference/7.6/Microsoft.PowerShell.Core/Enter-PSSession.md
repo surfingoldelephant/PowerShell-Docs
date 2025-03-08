@@ -134,7 +134,7 @@ remote computer. When the session starts, the command prompt changes to include 
 The second command gets the PowerShell process and redirects the output to the `Process.txt` file.
 The command is submitted to the remote computer, and the file is saved on the remote computer.
 
-The third command uses the **Exit** keyword to end the interactive session and close the connection.
+The third command uses the `exit` keyword to end the interactive session and close the connection.
 The fourth command confirms that the Process.txt file is on the remote computer. A `Get-ChildItem`
 ("dir") command on the local computer can't find the file.
 
@@ -186,7 +186,7 @@ This example shows how to start and stop an interactive session. The first comma
 `Enter-PSSession` cmdlet to start an interactive session with the Server01 computer.
 
 The second command uses the `Exit-PSSession` cmdlet to end the session. You can also use the
-**Exit** keyword to end the interactive session. `Exit-PSSession` and **Exit** have the same effect.
+`exit` keyword to end the interactive session. `Exit-PSSession` and `exit` have the same effect.
 
 ### Example 6: Start an interactive session using SSH
 
@@ -733,7 +733,7 @@ such as a `New-PSSession` or `Get-PSSession` command. You can also pipe a sessio
 `Enter-PSSession`. You can submit only one **PSSession** by using this parameter. If you enter a
 variable that contains more than one **PSSession**, the command fails.
 
-When you use `Exit-PSSession` or the **EXIT** keyword, the interactive session ends, but the
+When you use `Exit-PSSession` or the `exit` keyword, the interactive session ends, but the
 **PSSession** that you created remains open and available for use.
 
 ```yaml

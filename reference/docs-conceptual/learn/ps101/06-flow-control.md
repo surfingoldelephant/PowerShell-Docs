@@ -215,7 +215,7 @@ What's your guess?: 4
 
 The same results are achieved with a `Do While` loop by reversing the test condition to not equals.
 
-`Do` loops always run at least once because the condition is evaluated at the end of the loop.
+`do` loops always run at least once because the condition is evaluated at the end of the loop.
 
 ### While
 

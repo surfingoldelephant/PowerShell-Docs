@@ -68,7 +68,7 @@ evaluates to true, and the statement list runs. However, if `$a` is less than
 or equal to `2` or isn't an existing variable, the `if` statement doesn't
 display a message.
 
-By adding an Else statement, a message is displayed when $a is less than or
+By adding an `else` statement, a message is displayed when $a is less than or
 equal to 2. As the next example shows:
 
 ```powershell

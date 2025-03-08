@@ -236,7 +236,7 @@ To free resources used by a script, add a `finally` block after the `try` and
 before the script terminates or before the current block goes out of scope.
 
 A `finally` block runs even if you use <kbd>CTRL</kbd>+<kbd>C</kbd> to stop the
-script. A `finally` block also runs if an Exit keyword stops the script from
+script. A `finally` block also runs if an `exit` keyword stops the script from
 within a `catch` block.
 
 In the following example, the `try` block attempts to download a file to the

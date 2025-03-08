@@ -1096,13 +1096,13 @@ more information, see [about_Tab_Expansion][18].
 
 #### Dynamic ValidateSet values using classes
 
-You can use a **Class** to dynamically generate the values for **ValidateSet**
+You can use a `class` to dynamically generate the values for **ValidateSet**
 at runtime. In the following example, the valid values for the variable
-`$Sound` are generated via a **Class** named **SoundNames** that checks three
+`$Sound` are generated via a `class` named **SoundNames** that checks three
 filesystem paths for available sound files:
 
 ```powershell
-Class SoundNames : System.Management.Automation.IValidateSetValuesGenerator {
+class SoundNames : System.Management.Automation.IValidateSetValuesGenerator {
     [string[]] GetValidValues() {
         $SoundPaths = '/System/Library/Sounds/',
             '/Library/Sounds','~/Library/Sounds'

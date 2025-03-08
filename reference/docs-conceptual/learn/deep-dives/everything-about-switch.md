@@ -768,7 +768,7 @@ If I'm only using a `switch` as a lookup, I often use a `hashtable` instead.
 
 ### Enum
 
-PowerShell 5.0 introduced the `Enum` and it's also an option in this case.
+PowerShell 5.0 introduced the `enum` and it's also an option in this case.
 
 ``` powershell
 $day = 3

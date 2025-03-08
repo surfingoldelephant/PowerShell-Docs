@@ -55,7 +55,7 @@ you aren't limited to storing string data and don't have to use the data for
 localized output.
 
 The data in the file isn't limited to hashtables. It can be in any format
-supported by the PowerShell syntax, such as `DATA` sections.
+supported by the PowerShell syntax, such as `data` sections.
 
 For more information, see [about_Data_Sections][01].
 
