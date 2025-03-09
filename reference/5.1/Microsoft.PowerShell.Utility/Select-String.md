@@ -148,7 +148,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\en-US\about_ActivityCommonParameters.
 C:\Windows\System32\WindowsPowerShell\v1.0\en-US\about_ActivityCommonParameters.help.txt:33:  about_CommonParameters.
 ```
 
-The function is created on the PowerShell command line. The `Function` command uses the name
+The function is created on the PowerShell command line. The `function` keyword uses the name
 `Search-Help`. Press **Enter** to begin adding statements to the function. From the `>>` prompt,
 add each statement and press **Enter** as shown in the example. After the closing bracket is added,
 you're returned to a PowerShell prompt.

@@ -828,8 +828,8 @@ PowerShell includes the following aliases for `ForEach-Object`:
   - `%`
   - `foreach`
 
-The `ForEach-Object` cmdlet works much like the **Foreach** statement, except that you can't pipe
-input to a **Foreach** statement. For more information about the **Foreach** statement, see
+The `ForEach-Object` cmdlet works much like the `foreach` statement, except that you can't pipe
+input to a `foreach` statement. For more information about the `foreach` statement, see
 [about_Foreach](./About/about_Foreach.md).
 
 Starting in PowerShell 4.0, `Where` and `ForEach` methods were added for use with collections. You

@@ -372,7 +372,7 @@ foreach ( $node in $null )
 This saves me from having to `$null` check the collection before I enumerate it. If you have a
 collection of `$null` values, the `$node` can still be `$null`.
 
-The foreach started working this way with PowerShell 3.0. If you happen to be on an older version,
+The `foreach` started working this way with PowerShell 3.0. If you happen to be on an older version,
 then this is not the case. This is one of the important changes to be aware of when back-porting
 code for 2.0 compatibility.
 
@@ -485,8 +485,8 @@ commands you use deal with the no results and error scenarios.
 ## Initializing to $null
 
 One habit that I have picked up is initializing all my variables before I use them. You are required
-to do this in other languages. At the top of my function or as I enter a foreach loop, I define all
-the values that I'm using.
+to do this in other languages. At the top of my function or as I enter a `foreach loop`, I define
+all the values that I'm using.
 
 Here is a scenario that I want you to take a close look at. It's an example of a bug I had to chase
 down before.
@@ -521,7 +521,7 @@ to `$result`. It fails before the assignment so we don't even assign `$null` to 
 variable. `$result` still contains the previous valid `$result` from other iterations.
 `Update-Something` to execute multiple times on the same object in this example.
 
-I set `$result` to `$null` right inside the foreach loop before I use it to mitigate this issue.
+I set `$result` to `$null` right inside the `foreach` loop before I use it to mitigate this issue.
 
 ```powershell
 foreach ( $node in 1..6 )

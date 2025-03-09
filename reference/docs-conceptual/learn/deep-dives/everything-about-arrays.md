@@ -348,7 +348,7 @@ one because they both represent the current object in the pipeline.
 
 #### ForEach loop
 
-The `ForEach` loop works well with collections. Using the syntax:
+The `foreach` loop works well with collections. Using the syntax:
 `foreach ( <variable> in <collection> )`
 
 ```powershell

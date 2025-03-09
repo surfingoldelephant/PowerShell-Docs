@@ -230,12 +230,12 @@ is a property of the object with a non-null value.
 ### Example 5: Get event logs from multiple servers
 
 This example gets objects that represent the **Application** event logs on three computers:
-Server01, Server02, and Server03. The **ForEach** keyword is used because the **ComputerName**
+Server01, Server02, and Server03. The `foreach` keyword is used because the **ComputerName**
 parameter accepts only one value. For more information, see [about_Foreach](../Microsoft.PowerShell.Core/about/about_Foreach.md).
 
 ```powershell
 $S = 'Server01', 'Server02', 'Server03'
-ForEach ($Server in $S) {
+foreach ($Server in $S) {
   Get-WinEvent -ListLog Application -ComputerName $Server |
     Select-Object LogMode, MaximumSizeInBytes, RecordCount, LogName,
       @{name='ComputerName'; expression={$Server}} |
@@ -252,7 +252,7 @@ Circular           15532032        5309 Application Server03
 ```
 
 The variable `$S` stores the names three servers: **Server01**, **Server02**, and **Server03**. The
-**ForEach** statement uses a loop to process each server, `($Server in $S)`. The script block in the
+`foreach` statement uses a loop to process each server, `($Server in $S)`. The script block in the
 curly braces (`{ }`) runs the `Get-WinEvent` command. The **ListLog** parameter specifies the
 **Application** log. The **ComputerName** parameter uses the variable `$Server` to get log
 information from each server.

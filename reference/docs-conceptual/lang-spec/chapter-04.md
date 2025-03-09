@@ -39,7 +39,7 @@ supports arithmetic operations on those values. The set of numerical types inclu
 A **collection** is a group of one or more related items, which need not have the same type.
 Examples of collection types are arrays, stacks, queues, lists, and hash tables. A program can
 _enumerate_ (or _iterate_) over the elements in a collection, getting access to each element one at
-a time. Common ways to do this are with the foreach statement ([§8.4.4][§8.4.4]) and the
+a time. Common ways to do this are with the `foreach` statement ([§8.4.4][§8.4.4]) and the
 [ForEach-Object](xref:Microsoft.PowerShell.Core.ForEach-Object) cmdlet. The type of an object that
 represents an enumerator is described in [§4.5.16][§4.5.16].
 

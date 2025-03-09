@@ -307,9 +307,9 @@ In this chapter, you've learned about the different types of loops that exist in
 
 ## Review
 
-1. What is the difference in the `ForEach-Object` cmdlet and the foreach scripting construct?
-1. What is the primary advantage of using a While loop instead of a Do While or Do Until loop.
-1. How do the break and continue statements differ?
+1. What is the difference between the `ForEach-Object` cmdlet and the `foreach` statement?
+1. What is the primary advantage of using a `while` loop instead of **Do-While** or **Do-Until**?
+1. How do the `break` and `continue` statements differ?
 
 ## Recommended Reading
 

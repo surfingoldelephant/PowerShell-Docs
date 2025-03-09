@@ -145,7 +145,7 @@ piping objects to the activity one at a time.
 #### MergeErrorToOutput \<Boolean\>
 
 A value of `$true` adds errors to the output stream. A value of `$false` has
-no effect. Use this parameter with the **Parallel** and `ForEach -Parallel`
+no effect. Use this parameter with the **Parallel** and `foreach -Parallel`
 keywords to collect errors and output from multiple parallel commands
 in a single collection.
 
@@ -445,7 +445,7 @@ also included in the command, the progress bar content appears in
 `<DisplayName>:<PSProgressMessage>` format.
 
 This parameter is particularly useful for identifying activities in a
-`ForEach -Parallel` script block. Without this message, activities in all
+`foreach -Parallel` script block. Without this message, activities in all
 parallel branches are identified by the same name.
 
 #### PSRemotingBehavior \<RemotingBehavior\>

@@ -170,7 +170,7 @@ two cases for that meet this criteria.
 7.1975
 ```
 
-The first example above shows a foreach loop that creates 1000 thread jobs to
+The first example above shows a `foreach` loop that creates 1000 thread jobs to
 do a simple string write. Due to job overhead, it takes over 36 seconds to
 complete.
 

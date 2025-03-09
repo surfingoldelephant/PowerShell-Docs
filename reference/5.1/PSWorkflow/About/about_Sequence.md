@@ -102,7 +102,7 @@ workflow Test-Workflow
     Sequence
     {
         $Hotfix = Get-Content 'D:\HotFixes\Required.txt'
-        Foreach ($h in $Hotfix) {'D:\Scripts\Verify-Hotfix' -Hotfix $h}
+        foreach ($h in $Hotfix) {'D:\Scripts\Verify-Hotfix' -Hotfix $h}
         }
     }
 }

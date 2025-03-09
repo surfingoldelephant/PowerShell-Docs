@@ -298,7 +298,7 @@ if ($PSCmdlet.ShouldProcess('TARGET','OPERATION')){
 ```
 
 If I'm processing a collection of items, I call it for each item. So the call gets placed inside
-the foreach loop.
+the `foreach` loop.
 
 ```powershell
 foreach ($node in $collection){

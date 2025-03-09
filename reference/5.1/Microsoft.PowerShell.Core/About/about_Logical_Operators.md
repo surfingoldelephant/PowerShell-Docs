@@ -72,7 +72,7 @@ determine the truth value of the statement. If the left operand in a statement
 that contains the and operator is FALSE, the right operand isn't evaluated. If
 the left operand in a statement that contains the or statement is TRUE, the
 right operand isn't evaluated. As a result, you can use these statements in
-the same way that you would use the `If` statement.
+the same way that you would use the `if` statement.
 
 ## See also
 

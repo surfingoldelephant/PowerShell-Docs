@@ -21,7 +21,7 @@ specified condition evaluates to `$true`.
 
 A typical use of the `for` loop is to iterate an array of values and to operate
 on a subset of these values. In most cases, if you want to iterate all the
-values in an array, consider using a `Foreach` statement.
+values in an array, consider using a `foreach` statement.
 
 ### Syntax
 
@@ -210,7 +210,7 @@ and at the PowerShell command prompt. However, it is easier to use the `for`
 statement syntax with semicolons when you enter interactive commands at the
 command prompt.
 
-The `for` loop is more flexible than the `Foreach` loop because it allows you
+The `for` loop is more flexible than the `foreach` loop because it allows you
 to increment values in an array or collection by using patterns. In the
 following example, the `$i` variable is incremented by 2 in the **Repeat**
 portion of the `for` statement.
