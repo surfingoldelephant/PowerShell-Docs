@@ -150,7 +150,7 @@ Provides a brief introduction to the PowerShell Desired State Configuration
 
 ### [about_Do](about_Do.md)
 
-Runs a statement list one or more times, subject to a `While` or `Until`
+Runs a statement list one or more times, subject to a `while` or `until`
 condition.
 
 ### [about_Enum](about_Enum.md)

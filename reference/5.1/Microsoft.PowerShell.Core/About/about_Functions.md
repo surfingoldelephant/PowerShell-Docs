@@ -239,7 +239,7 @@ function <name> {
 }
 ```
 
-You can also define parameters outside the braces without the `Param` keyword,
+You can also define parameters outside the braces without the `param` keyword,
 as shown in the following sample syntax:
 
 ```Syntax

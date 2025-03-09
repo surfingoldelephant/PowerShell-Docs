@@ -219,8 +219,8 @@ The same results are achieved with a `Do While` loop by reversing the test condi
 
 ### While
 
-Similar to the `Do While` loop, a `While` loop runs as long as the specified condition is true. The
-difference however, is that a `While` loop evaluates the condition at the top of the loop before any
+Similar to the `Do While` loop, a `while` loop runs as long as the specified condition is true. The
+difference however, is that a `while` loop evaluates the condition at the top of the loop before any
 code is run. So it doesn't run if the condition evaluates to false.
 
 ```powershell

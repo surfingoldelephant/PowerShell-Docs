@@ -137,8 +137,8 @@ RELATED LINKS
 
 The following sample function includes comment-based Help.
 
-Notice the blank lines between the closing `#>` and the `Param` statement. In a script that doesn't
-have a `Param` statement, there must be at least two blank lines between the final comment in the
+Notice the blank lines between the closing `#>` and the `param` statement. In a script that doesn't
+have a `param` statement, there must be at least two blank lines between the final comment in the
 Help topic and the first function declaration. Without these blank lines, `Get-Help` associates the
 Help topic with the function, instead of the script.
 
@@ -252,9 +252,9 @@ C:\Reports\2009\January.csv
 RELATED LINKS
 ```
 
-## Example 3: Parameter Descriptions in a Param Statement
+## Example 3: Parameter Descriptions in a `param` Statement
 
-This example shows how to insert parameter descriptions in the `Param` statement of a function or
+This example shows how to insert parameter descriptions in the `param` statement of a function or
 script. This format is most useful when the parameter descriptions are brief.
 
 ```powershell

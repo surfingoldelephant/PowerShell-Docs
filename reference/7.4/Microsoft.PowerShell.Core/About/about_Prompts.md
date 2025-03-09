@@ -254,7 +254,7 @@ function prompt {
 The following prompt uses the `Write-Host` and `Get-Random` cmdlets to create a
 prompt that changes color randomly. Because `Write-Host` writes to the current
 host application but doesn't return an object, this function includes a
-`Return` statement. Without it, PowerShell uses the default prompt, `PS>`.
+`return` statement. Without it, PowerShell uses the default prompt, `PS>`.
 
 ```powershell
 function prompt {

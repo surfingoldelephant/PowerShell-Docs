@@ -51,7 +51,7 @@ each argument follows this example.
 
     Param ($Parameter1)
     begin {}
-    Process{}
+    Process {}
     end {}
 }
 ```
@@ -67,7 +67,7 @@ value to `$true` or just list the argument by name. For example, the following
 
     Param ($Parameter1)
     begin {}
-    Process{}
+    Process {}
     end {}
 }
 
@@ -78,7 +78,7 @@ value to `$true` or just list the argument by name. For example, the following
 
     Param ($Parameter1)
     begin {}
-    Process{}
+    Process {}
     end {}
 }
 ```

@@ -288,7 +288,7 @@ Sets a command breakpoint. Enter cmdlet names, such as `Get-Process`, or functio
 are permitted.
 
 Execution stops just before each instance of each command is executed. If the command is a function,
-execution stops each time the function is called and at each BEGIN, PROCESS, and END section.
+execution stops each time the function is called and at each `begin`, `process`, and `end` block.
 
 ```yaml
 Type: System.String[]

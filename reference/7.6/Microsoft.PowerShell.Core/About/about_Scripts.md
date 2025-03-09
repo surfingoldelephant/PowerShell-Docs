@@ -164,8 +164,8 @@ commands, and then save them in a file named `ServiceLog.ps1`.
 
 ### Parameters in scripts
 
-To define parameters in a script, use a Param statement. The `Param` statement
-must be the first statement in a script, except for comments and any
+To define parameters in a script, use a `param` statement. The `param`
+statement must be the first statement in a script, except for comments and any
 `#Require` statements.
 
 Script parameters work like function parameters. The parameter values are
@@ -214,8 +214,8 @@ Ping succeeded: Server01
 Remote test failed: Server01
 ```
 
-For more information about the Param statement and the function parameters, see
-[about_Functions][04] and [about_Functions_Advanced_Parameters][05].
+For more information about the `param` statement and the function parameters,
+see [about_Functions][04] and [about_Functions_Advanced_Parameters][05].
 
 ### Writing help for scripts
 

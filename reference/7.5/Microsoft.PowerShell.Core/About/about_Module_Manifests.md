@@ -1428,7 +1428,7 @@ Function Get-Stale {
     } catch {
         # The date was set in the manifest, set to an invalid value, or
         # the script module was directly imported without the manifest.
-        Throw "Unable to determine published date. Check the module manifest."
+        throw "Unable to determine published date. Check the module manifest."
     }
 
     if ($CurrentDate -gt $PublishedDate.AddDays(30)) {

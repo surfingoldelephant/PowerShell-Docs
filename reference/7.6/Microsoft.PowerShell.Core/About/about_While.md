@@ -23,7 +23,7 @@ addition, it is more flexible than the `foreach` statement because you specify
 a conditional test in the `while` statement to control how many times the loop
 runs.
 
-The following shows the While statement syntax:
+The following shows the `while` statement syntax:
 
 ```powershell
 while (<condition>){<statement list>}

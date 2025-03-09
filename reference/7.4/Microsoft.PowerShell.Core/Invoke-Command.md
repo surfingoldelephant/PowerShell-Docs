@@ -450,11 +450,11 @@ the name of the computer on which the command ran. The output of the second comm
 
 ### Example 11: Use the Param keyword in a script block
 
-The `Param` keyword and the **ArgumentList** parameter are used to pass variable values to named
+The `param` keyword and the **ArgumentList** parameter are used to pass variable values to named
 parameters in a script block. This example displays filenames that begin with the letter `a` and
 have the `.pdf` extension.
 
-For more information about the `Param` keyword, see
+For more information about the `param` keyword, see
 [about_Language_Keywords](./about/about_language_keywords.md#param).
 
 ```powershell

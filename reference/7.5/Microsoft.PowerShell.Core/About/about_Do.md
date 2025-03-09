@@ -10,18 +10,18 @@ title: about_Do
 
 ## Short description
 
-Runs a statement list one or more times, subject to a `While` or `Until`
+Runs a statement list one or more times, subject to a `while` or `until`
 condition.
 
 ## Long description
 
-The `do` keyword works with the `While` keyword or the `Until` keyword to run
+The `do` keyword works with the `while` keyword or the `until` keyword to run
 the statements in a script block, subject to a condition. Unlike the related
-`While` loop, the script block in a `do` loop always runs at least once.
+`while` loop, the script block in a `do` loop always runs at least once.
 
-A **Do-While** loop is a variety of the `While` loop. In a **Do-While** loop,
-the condition is evaluated after the script block has run. As in a While loop,
-the script block is repeated as long as the condition evaluates to true.
+A **Do-While** loop is a variety of the `while` loop. In a **Do-While** loop,
+the condition is evaluated after the script block has run. As in a `while`
+loop, the script block is repeated as long as the condition evaluates to true.
 
 Like a **Do-While** loop, a **Do-Until** loop always runs at least once
 before the condition is evaluated. However, the script block runs only
@@ -63,7 +63,7 @@ PS> $count
 3
 ```
 
-The following example uses the `Until` keyword. Notice that the not equal to
+The following example uses the `until` keyword. Notice that the not equal to
 operator (`-ne`) is replaced by the equal to operator (`-eq`).
 
 ```powershell

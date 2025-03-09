@@ -49,7 +49,7 @@ statement. If both `<test1>` and `<test2>` evaluate to false, the
 You can use multiple `elseif` statements to chain a series of conditional
 tests. Each test is run only if all the previous tests are false. If you need
 to create an `if` statement that contains many `elseif` statements, consider
-using a Switch statement instead.
+using a `switch` statement instead.
 
 Examples:
 

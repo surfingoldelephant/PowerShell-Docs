@@ -614,8 +614,8 @@ Set-Item
 ### Comment-based Help for a Script
 
 The following sample script includes comment-based help. Notice the blank lines
-between the closing `#>` and the `Param` statement. In a script that doesn't
-have a `Param` statement, there must be at least two blank lines between the
+between the closing `#>` and the `param` statement. In a script that doesn't
+have a `param` statement, there must be at least two blank lines between the
 final comment in the help topic and the first function declaration. Without
 these blank lines, `Get-Help` associates the help topic with the function, not
 the script.

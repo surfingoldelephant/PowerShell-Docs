@@ -68,7 +68,7 @@ Many thanks to **@MartinGC94** and others for all their work to improve tab comp
 - Fix member completion in attribute argument ([#17902][17902])
 - Exclude redundant parameter aliases from completion results ([#19382][19382])
 - Fix class member completion for classes with base types ([#19179][19179])
-- Add completion for Using keywords ([#16514][18758])
+- Add completion for the `using` keyword ([#16514][18758])
 - Fix TabExpansion2 variable leak when completing variables ([#18763][18763])
 - Enable completion of variables across ScriptBlock scopes ([#19819][19819])
 - Fix completion of the foreach statement variable ([#19814][19814])

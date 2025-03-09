@@ -160,7 +160,7 @@ Get-Item /not-here 2>&1 >> log.txt
 
 $ErrorActionPreference = 'Stop'
 $ErrorActionPreference >> log.txt
-Try {
+try {
     Get-Item /not-here 2>&1 >> log.txt
 }
 catch {

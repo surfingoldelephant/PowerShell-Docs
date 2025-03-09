@@ -22,7 +22,7 @@ Users who are familiar with languages like C or C\# might want to use the
 `return` keyword to make the logic of leaving a scope explicit.
 
 In PowerShell, the results of each statement are returned as output, even
-without a statement that contains the Return keyword. Languages like C or C\#
+without a statement that contains the `return` keyword. Languages like C or C\#
 return only the value or values that are specified by the `return` keyword.
 
 > [!NOTE]

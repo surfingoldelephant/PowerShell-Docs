@@ -56,7 +56,7 @@ parameter sets return different types.
 ```
 
 Place the **OutputType** attribute statements in the attributes list that
-precedes the `Param` statement.
+precedes the `param` statement.
 
 The following example shows the placement of the **OutputType** attribute in a
 simple function.

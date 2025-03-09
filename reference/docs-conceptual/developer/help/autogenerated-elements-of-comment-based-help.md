@@ -23,8 +23,8 @@ its capitalization, change the function definition or the script filename.
 
 ### Syntax
 
-The Syntax section of the Help topic is generated from the parameter list in the Param statement of
-the function or script. To add detail to the Help topic syntax, such as the .NET type of a
+The Syntax section of the Help topic is generated from the parameter list in the `param` statement
+of the function or script. To add detail to the Help topic syntax, such as the .NET type of a
 parameter, add the detail to the parameter list. If you don't specify a parameter type, the
 **Object** type is inserted as the default value.
 

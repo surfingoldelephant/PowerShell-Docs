@@ -33,7 +33,7 @@ The Checkpoint-Workflow activity does not accept any parameters, including commo
 workflow common parameters.
 
 You can place the Checkpoint-Activity checkpoint anywhere in a workflow after the CmdletBinding or
-Param statement. However, when placing checkpoints, consider the performance cost of collecting the
+`param` statement. However, when placing checkpoints, consider the performance cost of collecting the
 data and writing it to disk on the computer that is running the workflow.
 
 Be sure that the time it takes to rerun a section of the workflow if it is interrupted is greater
