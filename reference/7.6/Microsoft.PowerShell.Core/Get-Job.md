@@ -341,7 +341,7 @@ This example shows how to use the **Filter** parameter to get a workflow job. Th
 parameter, introduced in Windows PowerShell 3.0 is valid only on custom job types, such as workflow
 jobs and scheduled jobs.
 
-The first command uses the **Workflow** keyword to create the WFProcess workflow. The second command
+The first command uses the `workflow` keyword to create the WFProcess workflow. The second command
 uses the **AsJob** parameter of the WFProcess workflow to run the workflow as a background job. It
 uses the **JobName** parameter of the workflow to specify a name for the job, and the
 **PSPrivateMetadata** parameter of the workflow to specify a custom ID. The third command uses the
@@ -349,7 +349,7 @@ uses the **JobName** parameter of the workflow to specify a name for the job, an
 **PSPrivateMetadata** parameter.
 
 ```powershell
-PS> Workflow WFProcess {Get-Process}
+PS> workflow WFProcess {Get-Process}
 PS> WFProcess -AsJob -JobName WFProcessJob -PSPrivateMetadata @{MyCustomId = 92107}
 PS> Get-Job -Filter @{MyCustomId = 92107}
 Id     Name            State         HasMoreData     Location             Command

@@ -104,11 +104,11 @@ the checkpoint and then suspends.
 
 ```powershell
 #Sample Workflow
-Workflow Get-SystemLog
+workflow Get-SystemLog
 {
     $Events = Get-WinEvent -LogName System
     CheckPoint-Workflow
-    InlineScript {\\Server01\Scripts\Analyze-SystemEvents.ps1 -Events $Events}
+    inlinescript {\\Server01\Scripts\Analyze-SystemEvents.ps1 -Events $Events}
 }
 Get-SystemLog -AsJob -JobName "LogflowJob"
 Get-Job -Name LogflowJob

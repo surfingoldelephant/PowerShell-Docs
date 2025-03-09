@@ -84,7 +84,7 @@ concurrently.
 workflow Test-Workflow
 {
     #Run commands in parallel.
-    Parallel
+    parallel
     {
         Get-Process
         Get-Service
@@ -96,10 +96,10 @@ workflow Test-Workflow
    foreach -Parallel ($Disk in $Disks)
    {
        # The commands run in parallel on each disk.
-       Parallel
+       parallel
        {
            Initialize-Disk
-           InlineScript {.\Get-DiskInventory}
+           inlinescript {.\Get-DiskInventory}
        }
    }
 }
