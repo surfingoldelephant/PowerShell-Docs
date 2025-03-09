@@ -83,7 +83,7 @@ function Parse-Snippet {
 ```Output
 Title: Mandatory
 Text:
-Param
+param
 (
   [parameter(Mandatory=True)]
   [String[]]

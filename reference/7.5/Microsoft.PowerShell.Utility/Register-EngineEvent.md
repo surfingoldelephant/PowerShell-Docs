@@ -85,7 +85,7 @@ Register-EngineEvent -SourceIdentifier MyEventSource -Action {
 }
 
 Start-Job -Name TestJob -ScriptBlock {
-    While ($true) {
+    while ($true) {
         Register-EngineEvent -SourceIdentifier MyEventSource -Forward
         Start-Sleep -Seconds 2
         "Doing some work..."

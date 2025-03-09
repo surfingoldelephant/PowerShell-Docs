@@ -153,7 +153,7 @@ instance ID.
 ### Example 6: Create a function that deletes all sessions in the current session
 
 ```powershell
-Function EndPSS { Get-PSSession | Remove-PSSession }
+function EndPSS { Get-PSSession | Remove-PSSession }
 ```
 
 This function closes every **PSSession** in the current session. After you add this function to your

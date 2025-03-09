@@ -153,7 +153,7 @@ to history.
 
 ```powershell
 $ScriptBlock = {
-    Param([string]$line)
+    param ([string]$line)
 
     if ($line -match "^git") {
         return $false

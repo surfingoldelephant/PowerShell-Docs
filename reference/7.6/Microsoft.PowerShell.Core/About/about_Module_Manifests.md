@@ -1416,7 +1416,7 @@ For example, this manifest defines the **PublishedDate** key in
 Cmdlets in the module can access this value with the `$MyInvocation` variable.
 
 ```powershell
-Function Get-Stale {
+function Get-Stale {
     [CmdletBinding()]
     param()
 

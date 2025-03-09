@@ -232,7 +232,7 @@ specified in both statements aren't met, the script doesn't run. Each
 ```powershell
 #Requires -Modules PSWorkflow
 #Requires -Version 3
-Param
+param
 (
     [parameter(Mandatory=$true)]
     [String[]]

@@ -36,12 +36,12 @@ keyword doesn't affect or suppress other output returned from your script
 block. However, the `return` keyword exits the script block at that line. For
 more information, see [about_Return][04].
 
-Like functions, a script block can include parameters. Use the Param
+Like functions, a script block can include parameters. Use the `param`
 keyword to assign named parameters, as shown in the following syntax:
 
 ```
 {
-    Param([type]$Parameter1 [,[type]$Parameter2])
+    param ([type]$Parameter1 [,[type]$Parameter2])
     <statement list>
 }
 ```

@@ -50,9 +50,9 @@ each argument follows this example.
     SupportsShouldProcess=<Boolean>,
     PositionalBinding=<Boolean>)]
 
-    Param ($Parameter1)
+    param ($Parameter1)
     begin {}
-    Process {}
+    process {}
     end {}
 }
 ```
@@ -66,9 +66,9 @@ value to `$true` or just list the argument by name. For example, the following
 {
     [CmdletBinding(SupportsPaging=$true)]
 
-    Param ($Parameter1)
+    param ($Parameter1)
     begin {}
-    Process {}
+    process {}
     end {}
 }
 
@@ -77,9 +77,9 @@ value to `$true` or just list the argument by name. For example, the following
 {
     [CmdletBinding(SupportsPaging)]
 
-    Param ($Parameter1)
+    param ($Parameter1)
     begin {}
-    Process {}
+    process {}
     end {}
 }
 ```

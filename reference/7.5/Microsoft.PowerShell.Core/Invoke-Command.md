@@ -448,7 +448,7 @@ process. The output of the first command includes the **PsComputerName** propert
 the name of the computer on which the command ran. The output of the second command, which uses
 **HideComputerName**, doesn't include the **PsComputerName** column.
 
-### Example 11: Use the Param keyword in a script block
+### Example 11: Use the `param` keyword in a script block
 
 The `param` keyword and the **ArgumentList** parameter are used to pass variable values to named
 parameters in a script block. This example displays filenames that begin with the letter `a` and
@@ -461,7 +461,7 @@ For more information about the `param` keyword, see
 $parameters = @{
     ComputerName = 'Server01'
     ScriptBlock  = {
-        Param ($param1, $param2)
+        param ($param1, $param2)
         Get-ChildItem -Name $param1 -Include $param2
     }
     ArgumentList = 'a*', '*.pdf'

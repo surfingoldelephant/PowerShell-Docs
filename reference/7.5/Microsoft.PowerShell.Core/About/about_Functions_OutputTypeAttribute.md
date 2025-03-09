@@ -65,7 +65,7 @@ simple function.
 function SimpleFunction2
 {
   [OutputType([<Type>])]
-  Param ($Parameter1)
+  param ($Parameter1)
 
   <function body>
 }
@@ -78,7 +78,7 @@ advanced functions.
 function AdvancedFunction1
 {
   [OutputType([<Type>])]
-  Param (
+  param (
     [parameter(Mandatory=$true)]
     [String[]]
     $Parameter1
@@ -91,7 +91,7 @@ function AdvancedFunction2
 {
   [CmdletBinding(SupportsShouldProcess=<Boolean>)]
   [OutputType([<Type>])]
-  Param (
+  param (
     [parameter(Mandatory=$true)]
     [String[]]
     $Parameter1
@@ -109,7 +109,7 @@ function AdvancedFunction2
 function Send-Greeting
 {
   [OutputType([String])]
-  Param ($Name)
+  param ($Name)
 
   "Hello, $Name"
 }
@@ -141,7 +141,7 @@ function Get-User
   [OutputType("System.Int32", ParameterSetName="ID")]
   [OutputType([String], ParameterSetName="Name")]
 
-  Param (
+  param (
     [parameter(Mandatory=$true, ParameterSetName="ID")]
     [Int[]]
     $UserID,
@@ -168,7 +168,7 @@ that it returns a **System.DateTime** object.
 function Get-Time
 {
   [OutputType([DateTime])]
-  Param (
+  param (
     [parameter(Mandatory=$true)]
     [Datetime]$DateTime
   )
@@ -210,7 +210,7 @@ but not return anything.
 function Invoke-Notepad
 {
   [OutputType([System.Void])]
-  Param ()
+  param ()
   & notepad.exe | Out-Null
 }
 ```

@@ -37,7 +37,7 @@ example, the value of the **Fruit** parameter can only be **Apple**,
 **Banana**, or **Pear**.
 
 ```powershell
-Param(
+param (
     [Parameter(Mandatory=$true)]
     [ValidateSet('Apple', 'Banana', 'Pear')]
     [string[]]$Fruit
@@ -57,7 +57,7 @@ The validation occurs whenever that variable is assigned even within the
 script.
 
 ```powershell
-Param(
+param (
     [ValidateSet('hello', 'world')]
     [string]$Message
 )
@@ -89,7 +89,7 @@ class SoundNames : System.Management.Automation.IValidateSetValuesGenerator {
                       '/Library/Sounds',
                       '~/Library/Sounds'
         $SoundNames = foreach ($SoundPath in $SoundPaths) {
-            If (Test-Path $SoundPath) {
+            if (Test-Path $SoundPath) {
                 (Get-ChildItem $SoundPath).BaseName
             }
         }
@@ -102,7 +102,7 @@ The `[SoundNames]` class is then implemented as a dynamic **ValidateSet** value
 as follows:
 
 ```powershell
-Param(
+param (
     [ValidateSet([SoundNames])]
     [string]$Sound
 )
@@ -167,7 +167,7 @@ The syntax is as follows:
 
 ```powershell
 function MyArgumentCompleter {
-    Param(
+    param (
         [Parameter(Mandatory)]
         [ArgumentCompleter( {
             param ( $commandName,

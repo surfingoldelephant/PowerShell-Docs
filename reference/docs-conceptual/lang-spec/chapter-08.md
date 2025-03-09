@@ -1464,7 +1464,7 @@ registry drive.
 
 ```powershell
 function Sample {
-    Param ([String]$Name, [String]$Path)
+    param ([String]$Name, [String]$Path)
     dynamicparam {
         if ($Path -match "*HKLM*:") {
             $dynParam1 = New-Object System.Management.Automation.RuntimeDefinedParameter("dp1", [Int32], $attributeCollection)

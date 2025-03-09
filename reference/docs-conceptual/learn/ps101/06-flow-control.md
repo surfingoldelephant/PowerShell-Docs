@@ -242,7 +242,7 @@ at all.
 
 ## Break, Continue, and Return
 
-`Break` is designed to break out of a loop. It's also commonly used with the `switch` statement.
+`break` is designed to break out of a loop. It's also commonly used with the `switch` statement.
 
 ```powershell
 for ($i = 1; $i -lt 5; $i++) {
@@ -282,13 +282,13 @@ the next iteration of the loop. Similar to `break`, `continue` breaks out of the
 for the current iteration. Execution continues with the next iteration instead of breaking out of
 the loop and stopping.
 
-Return is designed to exit out of the existing scope.
+The `return` keyword is designed to exit out of the existing scope.
 
 ```powershell
 $number = 1..10
 foreach ($n in $number) {
   if ($n -ge 4) {
-    Return $n
+    return $n
   }
 }
 ```

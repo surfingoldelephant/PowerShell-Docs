@@ -302,7 +302,7 @@ passed to all instances of `@args`, as shown in the following example.
 ```powershell
 function Get-MyCommand
 {
-    Param ([switch]$P, [switch]$C)
+    param ([switch]$P, [switch]$C)
     if ($P) { Get-Process @args }
     if ($C) { Get-Command @args }
 }

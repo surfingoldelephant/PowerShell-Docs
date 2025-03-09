@@ -256,7 +256,7 @@ PS> $parms = @{
       ConfigurationName = "ITTasks"
     }
 PS> Invoke-Command @parms
-PS> Exit
+PS> exit
 
 
 PS> $s = Get-PSSession -ComputerName Server01, Server02, Server30 -Name BugStatus

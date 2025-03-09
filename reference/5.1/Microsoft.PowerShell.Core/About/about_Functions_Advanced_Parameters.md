@@ -1107,7 +1107,7 @@ class SoundNames : System.Management.Automation.IValidateSetValuesGenerator {
         $SoundPaths = '/System/Library/Sounds/',
             '/Library/Sounds','~/Library/Sounds'
         $SoundNames = foreach ($SoundPath in $SoundPaths) {
-            If (Test-Path $SoundPath) {
+            if (Test-Path $SoundPath) {
                 (Get-ChildItem $SoundPath).BaseName
             }
         }

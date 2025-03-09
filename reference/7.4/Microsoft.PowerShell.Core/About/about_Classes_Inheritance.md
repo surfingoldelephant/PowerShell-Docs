@@ -58,14 +58,14 @@ declaration.
 This example shows the basic PowerShell class inheritance syntax.
 
 ```powershell
-Class Derived : Base {...}
+class Derived : Base {...}
 ```
 
 This example shows inheritance with an interface declaration coming after the
 base class.
 
 ```powershell
-Class Derived : Base, Interface {...}
+class Derived : Base, Interface {...}
 ```
 
 ## Syntax

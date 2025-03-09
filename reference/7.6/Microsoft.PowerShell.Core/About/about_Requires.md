@@ -204,7 +204,7 @@ specified in both statements aren't met, the script doesn't run. Each
 ```powershell
 #Requires -Modules AzureRM.Netcore
 #Requires -Version 6.0
-Param
+param
 (
     [parameter(Mandatory=$true)]
     [String[]]

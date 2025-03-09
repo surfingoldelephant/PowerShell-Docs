@@ -1,5 +1,5 @@
 ---
-description: Runs a statement list one or more times, subject to a While or Until condition.
+description: Runs a statement list one or more times, subject to a `while` or `until` condition.
 Locale: en-US
 ms.date: 06/10/2021
 online version: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_do?view=powershell-7.6&WT.mc_id=ps-gethelp

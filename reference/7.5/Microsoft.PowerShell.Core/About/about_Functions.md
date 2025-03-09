@@ -123,7 +123,7 @@ processing, and an `end` block for one-time post-processing.
 Function Test-ScriptCmdlet
 {
 [CmdletBinding(SupportsShouldProcess=$true)]
-    Param ($Parameter1)
+    param ($Parameter1)
     begin{}
     process{}
     end{}
@@ -296,7 +296,7 @@ the value of the `$Size` parameter, and it excludes directories:
 
 ```powershell
 function Get-SmallFiles {
-  Param($Size)
+  param ($Size)
   Get-ChildItem $HOME | Where-Object {
     $_.Length -lt $Size -and !$_.PSIsContainer
   }
