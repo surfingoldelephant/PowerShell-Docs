@@ -540,7 +540,7 @@ PowerShell supports the following bitwise operators.
 | `-band`  | Bitwise AND            | `10 -band 3` | 2      |
 | `-bor`   | Bitwise OR (inclusive) | `10 -bor 3`  | 11     |
 | `-bxor`  | Bitwise OR (exclusive) | `10 -bxor 3` | 9      |
-| `-bnot`  | Bitwise NOT            | `-bNot 10`   | -11    |
+| `-bnot`  | Bitwise NOT            | `-bnot 10`   | -11    |
 | `-shl`   | Shift-left             | `102 -shl 2` | 408    |
 | `-shr`   | Shift-right            | `102 -shr 1` | 51     |
 
@@ -587,7 +587,7 @@ For example, the binary complement of 0 is -1, the maximum unsigned integer
 (0xFFFFFFFF), and the binary complement of -1 is 0.
 
 ```powershell
--bNot 10
+-bnot 10
 ```
 
 ```Output

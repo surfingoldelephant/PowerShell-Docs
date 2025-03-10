@@ -1185,7 +1185,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
     Pattern      : [0-9]
     ```
 
-6. Use a script block to search the file SelectStrCommandSample.cs for the string "Pos". The **cmatch** function for the script performs a case-insensitive pattern match.
+6. Use a script block to search the file SelectStrCommandSample.cs for the string "Pos". The `-cmatch` operator performs a case-insensitive pattern match.
 
     ```powershell
     Select-Str -Path "SelectStrCommandSample.cs" -Script { if ($args[0] -cmatch "Pos"){ return $true } return $false }

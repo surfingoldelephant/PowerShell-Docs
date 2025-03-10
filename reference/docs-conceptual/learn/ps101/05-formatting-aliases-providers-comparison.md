@@ -368,10 +368,10 @@ comparison operator.
 | `-ge`          | Greater than or equal to                                    |
 | `-lt`          | Less than                                                   |
 | `-le`          | Less than or equal to                                       |
-| `-Like`        | Match using the `*` wildcard character                      |
-| `-NotLike`     | Doesn't match using the `*` wildcard character              |
-| `-Match`       | Matches the specified regular expression                    |
-| `-NotMatch`    | Doesn't match the specified regular expression              |
+| `-like`        | Match using the `*` wildcard character                      |
+| `-notlike`     | Doesn't match using the `*` wildcard character              |
+| `-match`       | Matches the specified regular expression                    |
+| `-notmatch`    | Doesn't match the specified regular expression              |
 | `-Contains`    | Determines if a collection contains a specified value       |
 | `-NotContains` | Determines if a collection doesn't contain a specific value |
 | `-In`          | Determines if a specified value is in a collection          |
@@ -441,7 +441,7 @@ less than or equal to work.
 True
 ```
 
-The `-Like` and `-Match` operators can be confusing, even for experienced PowerShell users. `-Like`
+The `-like` and `-match` operators can be confusing, even for experienced PowerShell users. `-like`
 is used with the wildcard characters `*` and `?` to perform "like" matches.
 
 ```powershell
@@ -452,7 +452,7 @@ is used with the wildcard characters `*` and `?` to perform "like" matches.
 True
 ```
 
-`-Match` uses a regular expression to perform the matching.
+The `-match` operator uses a regular expression to perform the matching.
 
 ```powershell
 'PowerShell' -match '^.*shell$'

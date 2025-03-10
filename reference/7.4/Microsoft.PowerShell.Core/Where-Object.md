@@ -309,20 +309,20 @@ These commands list processes that have a working set greater than 250 megabytes
 filter the processes the same way and return the same output. Only the syntax is different.
 
 ```powershell
-Get-Process | Where-Object { $_.WorkingSet -GT 250MB }
+Get-Process | Where-Object { $_.WorkingSet -gt 250MB }
 Get-Process | Where-Object WorkingSet -GT 250MB
 ```
 
 ### Example 3: Get processes based on process name
 
 These commands get the processes that have a **ProcessName** property value that begins with the
-letter `p`. The **Match** operator lets you use regular expression matches.
+letter `p`. The `-match` operator and **Match** parameter let you use regular expression matches.
 
 The commands filter the processes the same way and return the same output. Only the syntax is
 different.
 
 ```powershell
-Get-Process | Where-Object { $_.ProcessName -Match "^p.*" }
+Get-Process | Where-Object { $_.ProcessName -match "^p.*" }
 Get-Process | Where-Object ProcessName -Match "^p.*"
 ```
 

@@ -24,7 +24,7 @@ log data. For example, the following commands are inefficient to filter the
 ```powershell
 Get-EventLog -LogName Application | Where-Object Source -Match defrag
 
-Get-WinEvent -LogName Application | Where-Object { $_.ProviderName -Match 'defrag' }
+Get-WinEvent -LogName Application | Where-Object { $_.ProviderName -match 'defrag' }
 ```
 
 The following command uses a hash table that improves the performance:

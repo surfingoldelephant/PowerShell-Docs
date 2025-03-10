@@ -87,7 +87,7 @@ Each of the following commands improves the output in a different way:
 
 ```powershell
 Get-Service -ErrorAction SilentlyContinue |
-    Where-Object {$_.Status -eq 'Running' -and $_.Description -Match 'event'} |
+    Where-Object {$_.Status -eq 'Running' -and $_.Description -match 'event'} |
     Select-Object Name, DisplayName |
     Format-List
 ```
