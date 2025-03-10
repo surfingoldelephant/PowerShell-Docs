@@ -189,8 +189,8 @@ differs from the path that is specified in the **Path** parameter, `Rename-Item`
 To rename and move an item, use `Move-Item`.
 
 You can't use wildcard characters in the value of the **NewName** parameter. To specify a name for
-multiple files, use the **Replace** operator in a regular expression. For more information about the
-Replace operator, see [about_Comparison_Operators](../Microsoft.PowerShell.Core/About/about_Comparison_Operators.md).
+multiple files, use the `-replace` operator in a regular expression. For more information about the
+`-replace` operator, see [about_Comparison_Operators](../Microsoft.PowerShell.Core/About/about_Comparison_Operators.md).
 
 ```yaml
 Type: System.String

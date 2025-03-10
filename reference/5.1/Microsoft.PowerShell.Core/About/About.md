@@ -267,8 +267,8 @@ expression in the background without interacting with the current session.
 
 ### [about_Join](about_Join.md)
 
-Describes how the join operator (-join) combines multiple strings into a single
-string.
+Describes how the join operator (`-join`) combines multiple strings into a
+single string.
 
 ### [about_Language_Keywords](about_Language_Keywords.md)
 

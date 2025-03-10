@@ -372,11 +372,11 @@ comparison operator.
 | `-notlike`     | Doesn't match using the `*` wildcard character              |
 | `-match`       | Matches the specified regular expression                    |
 | `-notmatch`    | Doesn't match the specified regular expression              |
-| `-Contains`    | Determines if a collection contains a specified value       |
-| `-NotContains` | Determines if a collection doesn't contain a specific value |
-| `-In`          | Determines if a specified value is in a collection          |
-| `-NotIn`       | Determines if a specified value isn't in a collection       |
-| `-Replace`     | Replaces the specified value                                |
+| `-contains`    | Determines if a collection contains a specified value       |
+| `-notcontains` | Determines if a collection doesn't contain a specific value |
+| `-in`          | Determines if a specified value is in a collection          |
+| `-notin`       | Determines if a specified value isn't in a collection       |
+| `-replace`     | Replaces the specified value                                |
 
 Proper case "PowerShell" is equal to lower case "powershell" using the equals comparison operator.
 
@@ -488,7 +488,8 @@ $Numbers -contains 10
 True
 ```
 
-`-NotContains` reverses the logic to see if the `$Numbers` variable doesn't contain a value.
+The `-notcontains` operator reverses the logic to see if the `$Numbers` variable doesn't contain a
+value.
 
 ```powershell
 $Numbers -notcontains 15
@@ -585,7 +586,7 @@ to replace. SQL Saturday in Baton Rouge is an event I try to speak at every year
 example, the word "Saturday" is replaced with the abbreviation "Sat".
 
 ```powershell
-'SQL Saturday - Baton Rouge' -Replace 'saturday','Sat'
+'SQL Saturday - Baton Rouge' -replace 'saturday','Sat'
 ```
 
 ```Output
@@ -593,7 +594,7 @@ SQL Sat - Baton Rouge
 ```
 
 There are also methods like **Replace()** that can be used to replace things similar to how the
-replace operator works. However, the `-Replace` operator is case-insensitive by default, and the
+replace operator works. However, the `-replace` operator is case-insensitive by default, and the
 **Replace()** method is case-sensitive.
 
 ```powershell

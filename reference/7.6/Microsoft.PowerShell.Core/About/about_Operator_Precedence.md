@@ -66,7 +66,7 @@ and explicitly case-insensitive variants have the same precedence.
 | `-like -notlike`          | [about_Comparison_Operators][compare] |
 | `-match -notmatch`        | [about_Comparison_Operators][compare] |
 | `-in -notIn`              | [about_Comparison_Operators][compare] |
-| `-contains -notContains`  | [about_Comparison_Operators][compare] |
+| `-contains -notcontains`  | [about_Comparison_Operators][compare] |
 | `-replace`                | [about_Comparison_Operators][compare] |
 
 The list resumes here with the following operators in precedence

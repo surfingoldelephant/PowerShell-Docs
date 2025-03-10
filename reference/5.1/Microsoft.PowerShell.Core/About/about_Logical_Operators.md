@@ -60,8 +60,8 @@ of FALSE. All other integers have a value of TRUE.
 The syntax of the logical operators is as follows:
 
 ```Syntax
-<statement> {-AND | -OR | -XOR} <statement>
-{! | -NOT} <statement>
+<statement> {-and | -or | -xor} <statement>
+{! | -not} <statement>
 ```
 
 Statements that use the logical operators return Boolean (TRUE or FALSE)

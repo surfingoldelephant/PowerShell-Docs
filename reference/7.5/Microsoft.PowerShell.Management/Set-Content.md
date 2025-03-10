@@ -125,7 +125,7 @@ The word Warning was replaced.
 
 ```powershell
 (Get-Content -Path .\Notice.txt) |
-    ForEach-Object {$_ -Replace 'Warning', 'Caution'} |
+    ForEach-Object {$_ -replace 'Warning', 'Caution'} |
         Set-Content -Path .\Notice.txt
 Get-Content -Path .\Notice.txt
 ```

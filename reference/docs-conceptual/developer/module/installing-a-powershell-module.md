@@ -215,7 +215,7 @@ of the common files modules subdirectory.
 $m = $Env:ProgramFiles + '\Common Files\Modules'
 $p = [Environment]::GetEnvironmentVariable("PSModulePath")
 $q = $p -split ';'
-if ($q -notContains $m) {
+if ($q -notcontains $m) {
     $q += ";$m"
 }
 $p = $q -join ';'
