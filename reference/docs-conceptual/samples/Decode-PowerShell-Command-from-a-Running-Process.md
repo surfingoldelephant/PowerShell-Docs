@@ -54,8 +54,8 @@ encoded command.
 ```powershell
 $commandDetails = $powerShellProcesses | Select-Object -Property ProcessId,
 @{
-    name       = 'EncodedCommand'
-    expression = {
+    Name       = 'EncodedCommand'
+    Expression = {
         if ( $_.CommandLine -match 'encodedCommand (.*) -inputFormat' )
         {
             return $Matches[1]

@@ -238,7 +238,7 @@ $S = 'Server01', 'Server02', 'Server03'
 foreach ($Server in $S) {
   Get-WinEvent -ListLog Application -ComputerName $Server |
     Select-Object LogMode, MaximumSizeInBytes, RecordCount, LogName,
-      @{name='ComputerName'; expression={$Server}} |
+      @{Name='ComputerName'; Expression={$Server}} |
     Format-Table -AutoSize
 }
 ```

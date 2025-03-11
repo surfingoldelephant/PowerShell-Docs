@@ -478,8 +478,8 @@ use a scriptblock or a hashtable.
 
 Valid keys for a hash table are as follows:
 
-- `expression` - `<string>` or `<script block>`
-- `ascending` or `descending` - `<boolean>`
+- `Expression` - `<string>` or `<script block>`
+- `Ascending` or `Descending` - `<boolean>`
 
 For more information, see
 [about_Calculated_Properties](../Microsoft.PowerShell.Core/About/about_Calculated_Properties.md).

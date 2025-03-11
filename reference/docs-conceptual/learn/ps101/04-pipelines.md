@@ -593,7 +593,7 @@ understanding and retention of the syntax.
 
 ```powershell
 $customObject |
-    Select-Object -Property @{name='Name';expression={$_.Service}} |
+    Select-Object -Property @{Name='Name';Expression={$_.Service}} |
     Stop-Service
 ```
 

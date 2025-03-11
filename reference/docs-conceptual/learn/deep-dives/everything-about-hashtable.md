@@ -397,12 +397,12 @@ special syntax that looks like this when fully expanded.
 
 ```powershell
 $property = @{
-    name = 'TotalSpaceGB'
-    expression = { ($_.Used + $_.Free) / 1GB }
+    Name = 'TotalSpaceGB'
+    Expression = { ($_.Used + $_.Free) / 1GB }
 }
 ```
 
-The `name` is what the cmdlet would label that column. The `expression` is a script block that is
+The `Name` is what the cmdlet would label that column. The `Expression` is a script block that is
 executed where `$_` is the value of the object on the pipe. Here is that script in action:
 
 ```powershell
@@ -414,8 +414,8 @@ Name     TotalSpaceGB
 C    238.472652435303
 ```
 
-I placed that in a variable but it could easily be defined inline and you can shorten `name` to `n`
-and `expression` to `e` while you're at it.
+I placed that in a variable but it could easily be defined inline and you can shorten `Name` to `n`
+and `Expression` to `e` while you're at it.
 
 ```powershell
 $drives | Select-Object -Property Name, @{n='TotalSpaceGB';e={($_.Used + $_.Free) / 1GB}}

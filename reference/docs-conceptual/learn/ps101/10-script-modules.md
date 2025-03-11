@@ -175,7 +175,7 @@ New-Module -Name MyModule -ScriptBlock {
 
     function Return-MrOsVersion {
         Get-CimInstance -ClassName Win32_OperatingSystem |
-        Select-Object -Property @{label='OperatingSystem';expression={$_.Caption}}
+        Select-Object -Property @{Label='OperatingSystem';Expression={$_.Caption}}
     }
 
     Export-ModuleMember -Function Return-MrOsVersion

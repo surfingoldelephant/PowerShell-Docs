@@ -310,7 +310,7 @@ ati2evxx                   Thursday
 # Add a custom property to calculate the size in KiloBytes of each FileInfo
 # object you pass in. Use the pipeline variable to divide each file's length by
 # 1 KiloBytes
-$size = @{label="Size(KB)";expression={$_.Length/1KB}}
+$size = @{Label="Size(KB)";Expression={$_.Length/1KB}}
 # Create an additional calculated property with the number of Days since the
 # file was last accessed. You can also shorten the key names to be 'l', and 'e',
 # or use Name instead of Label.
@@ -337,8 +337,8 @@ value for that key.
 
 ```powershell
 @{ name = 'a' ; weight = 7 } | Select-Object -Property @(
-    @{ label = 'Name' ; expression = { $_.name } }
-    @{ label = 'Weight' ; expression = { $_.weight } }
+    @{ Label = 'Name' ; Expression = { $_.name } }
+    @{ Label = 'Weight' ; Expression = { $_.weight } }
 )
 ```
 
