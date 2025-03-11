@@ -128,14 +128,14 @@ As shown above, cmdlets use culture-sensitive parsing to convert the string.
 # Define an equivalent function.
 function Get-Date_Func {
   param(
-    [DateTime] $Date
+    [datetime] $Date
   )
   process {
     $Date
   }
 }
 
-[CultureInfo]::CurrentCulture = 'de-DE'
+[cultureinfo]::CurrentCulture = 'de-DE'
 
 # This German-format date string doesn't work with the invariant culture.
 # E.g., [datetime] '19-06-2018' breaks.
@@ -295,7 +295,7 @@ function Get-Sample {
       $attributeCollection.Add($parameterAttribute)
 
       $dynParam1 = [System.Management.Automation.RuntimeDefinedParameter]::new(
-        'KeyCount', [Int32], $attributeCollection
+        'KeyCount', [int32], $attributeCollection
       )
 
       $paramDictionary = [System.Management.Automation.RuntimeDefinedParameterDictionary]::new()
@@ -997,7 +997,7 @@ between zero and ten.
 param(
     [Parameter(Mandatory)]
     [ValidateRange(0,10)]
-    [Int]$Attempts
+    [int]$Attempts
 )
 ```
 
@@ -1026,7 +1026,7 @@ greater than or equal to the current date.
 param(
     [Parameter(Mandatory)]
     [ValidateScript({$_ -ge (Get-Date)})]
-    [DateTime]$EventDate
+    [datetime]$EventDate
 )
 ```
 
@@ -1034,7 +1034,7 @@ In the following example, the value of the variable `$date` must be less than
 or equal to the current date and time.
 
 ```powershell
-[ValidateScript({$_ -le (Get-Date)})] [DateTime]$date = (Get-Date)
+[ValidateScript({$_ -le (Get-Date)})] [datetime]$date = (Get-Date)
 ```
 
 > [!NOTE]

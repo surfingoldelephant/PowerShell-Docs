@@ -656,7 +656,7 @@ Kelvin. For any other format, the method should throw a
     }
     # If format provider isn't specified, use the current culture.
     if ($null -eq $FormatProvider) {
-        $FormatProvider = [CultureInfo]::CurrentCulture
+        $FormatProvider = [cultureinfo]::CurrentCulture
     }
     # Format the temperature.
     switch ($Format) {
@@ -747,7 +747,7 @@ class Temperature : System.IFormattable {
         }
         # If format provider isn't specified, use the current culture.
         if ($null -eq $FormatProvider) {
-            $FormatProvider = [CultureInfo]::CurrentCulture
+            $FormatProvider = [cultureinfo]::CurrentCulture
         }
         # Format the temperature.
         switch ($Format) {
@@ -898,7 +898,7 @@ class Temperature : System.IFormattable, System.IEquatable[object] {
         }
         # If format provider isn't specified, use the current culture.
         if ($null -eq $FormatProvider) {
-            $FormatProvider = [CultureInfo]::CurrentCulture
+            $FormatProvider = [cultureinfo]::CurrentCulture
         }
         # Format the temperature.
         switch ($Format) {
@@ -1070,7 +1070,7 @@ class Temperature : System.IFormattable,
         }
         # If format provider isn't specified, use the current culture.
         if ($null -eq $FormatProvider) {
-            $FormatProvider = [CultureInfo]::CurrentCulture
+            $FormatProvider = [cultureinfo]::CurrentCulture
         }
         # Format the temperature.
         switch ($Format) {

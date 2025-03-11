@@ -323,6 +323,6 @@ preserves that order.
 
 [Invoke-RestMethod](Invoke-RestMethod.md)
 
-[DateTime](xref:System.DateTime)
+[datetime](xref:System.DateTime)
 
 [DateTimeOffset](xref:System.DateTimeOffset)

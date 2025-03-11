@@ -190,11 +190,11 @@ have subtle side effects.
 - Wrapped objects match their original type and the `[psobject]` type.
 
   ```powershell
-  PS> 1 -is [Int32]
+  PS> 1 -is [int32]
   True
   PS> 1 -is [psobject]
   False
-  PS> ([psobject] 1) -is [Int32]
+  PS> ([psobject] 1) -is [int32]
   True
   PS> ([psobject] 1) -is [psobject]
   True

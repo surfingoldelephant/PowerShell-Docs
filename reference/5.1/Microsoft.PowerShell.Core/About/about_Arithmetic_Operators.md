@@ -241,10 +241,10 @@ The `System.Decimal` type is an exception. If either operand has the
 **Decimal** value is an error.
 
 ```powershell
-PS> [Decimal]::MaxValue
+PS> [decimal]::MaxValue
 79228162514264337593543950335
 
-PS> [Decimal]::MaxValue + 1
+PS> [decimal]::MaxValue + 1
 RuntimeException: Value was either too large or too small for a Decimal.
 ```
 

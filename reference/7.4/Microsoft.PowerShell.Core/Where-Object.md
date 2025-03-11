@@ -864,7 +864,7 @@ Accept wildcard characters: False
 Indicates that this cmdlet gets objects if the property value is an instance of the specified .NET
 type. Enclose the type name in square brackets.
 
-For example, `Get-Process | Where-Object StartTime -Is [DateTime]`
+For example, `Get-Process | Where-Object StartTime -Is [datetime]`
 
 This parameter was introduced in Windows PowerShell 3.0.
 
@@ -885,7 +885,7 @@ Accept wildcard characters: False
 Indicates that this cmdlet gets objects if the property value isn't an instance of the specified
 .NET type.
 
-For example, `Get-Process | where StartTime -IsNot [DateTime]`
+For example, `Get-Process | where StartTime -IsNot [datetime]`
 
 This parameter was introduced in Windows PowerShell 3.0.
 

@@ -326,7 +326,7 @@ In PowerShell, `string` maps to `System.String`.
 
 ### 4.3.2 Arrays
 
-All array types are derived from the type `Array`. This type has the following accessible members:
+All array types are derived from the type `array`. This type has the following accessible members:
 
 <table>
 <thead>
@@ -372,7 +372,7 @@ Copy(<em>source</em>, <em>sourceIndex</em>, <em>destination</em>, <em>destinatio
 
 For more details on arrays, see [§9.][§9.]
 
-In PowerShell, `Array` maps to `System.Array`.
+In PowerShell, `array` maps to `System.Array`.
 
 ### 4.3.3 Hashtables
 

@@ -143,7 +143,7 @@ function Get-User
 
   param (
     [Parameter(Mandatory=$true, ParameterSetName="ID")]
-    [Int[]]
+    [int]
     $UserID,
 
     [Parameter(Mandatory=$true, ParameterSetName="Name")]
@@ -167,10 +167,10 @@ that it returns a **System.DateTime** object.
 ```powershell
 function Get-Time
 {
-  [OutputType([DateTime])]
+  [OutputType([datetime])]
   param (
     [Parameter(Mandatory=$true)]
-    [Datetime]$DateTime
+    [datetime]$DateTime
   )
 
   $DateTime.ToShortTimeString()

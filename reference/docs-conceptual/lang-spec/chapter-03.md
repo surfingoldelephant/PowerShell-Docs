@@ -564,7 +564,7 @@ to be a way to resolve which overloaded version to call, if any. For example,
 
 ```powershell
 [Math]::Abs([byte]10) # no overload takes type byte
-[Array]::Copy($source, 3, $dest, 5L, 4) # both int and long indexes
+[array]::Copy($source, 3, $dest, 5L, 4) # both int and long indexes
 ```
 
 Other examples include the type **string** (i.e.; **System.String**), which has numerous overloaded

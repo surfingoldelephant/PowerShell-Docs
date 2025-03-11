@@ -346,11 +346,11 @@ In PowerShell, arrays have three properties that indicate the number of items
 contained in the array.
 
 - **Count** - This property is the most commonly used property to determine the
-  number of items in any collection, not just an array. It's an `[Int32]` type
+  number of items in any collection, not just an array. It's an `[int32]` type
   value. In Windows PowerShell 5.1 (and older) **Count** alias property for
   **Length**.
 
-- **Length** - This property is an `[Int32]` type value. This contains the same
+- **Length** - This property is an `[int32]` type value. This contains the same
   value as **Count**.
 
   > [!NOTE]
@@ -359,7 +359,7 @@ contained in the array.
   > string is the number of characters in the string. But the **Count**
   > property is always `1`.
 
-- **Longlength** - This property is an `[Int64]` type value. Use this property
+- **Longlength** - This property is an `[int64]` type value. Use this property
   for arrays containing more than 2,147,483,647 elements.
 
 ```powershell
@@ -487,7 +487,7 @@ True
 In this example, `$intA` is explicitly typed to contain integers.
 
 ```powershell
-[Int[]] $intA = 1, 2, 3
+[int] $intA = 1, 2, 3
 $intA.Clear()
 $intA
 ```
@@ -552,7 +552,7 @@ For more information about the behavior of **ArgumentList**, see
 
 The `ForEach()` method can be used to cast the elements to a different type;
 the following example shows how to convert a list of string dates to
-`[DateTime]` type.
+`[datetime]` type.
 
 ```powershell
 ("1/1/2017", "2/1/2017", "3/1/2017").ForEach([datetime])

@@ -88,7 +88,7 @@ rights returned are for registry.
 ### Example 4: Convert Active Directory access rights SDDL to a PSCustomObject
 
 ```powershell
-$user = [ADSI]"LDAP://CN=username,CN=Users,DC=domain,DC=com"
+$user = [adsi]"LDAP://CN=username,CN=Users,DC=domain,DC=com"
 ConvertFrom-SddlString $user.psbase.ObjectSecurity.Sddl -Type ActiveDirectoryRights
 ```
 

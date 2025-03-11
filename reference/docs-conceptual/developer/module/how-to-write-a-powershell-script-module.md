@@ -43,11 +43,11 @@ The following steps describe how to create a PowerShell module.
    ```powershell
    function Show-Calendar {
    param(
-       [DateTime] $Start = [DateTime]::Today,
-       [DateTime] $End = $Start,
+       [datetime] $Start = [datetime]::Today,
+       [datetime] $End = $Start,
        $FirstDayOfWeek,
        [int[]] $HighlightDay,
-       [string[]] $HighlightDate = [DateTime]::Today.ToString('yyyy-MM-dd')
+       [string[]] $HighlightDate = [datetime]::Today.ToString('yyyy-MM-dd')
        )
 
        #actual code for the function goes here see the end of the topic for the complete code sample
@@ -173,11 +173,11 @@ member.
 #>
 function Show-Calendar {
 param(
-    [DateTime] $Start = [DateTime]::Today,
-    [DateTime] $End = $Start,
+    [datetime] $Start = [datetime]::Today,
+    [datetime] $End = $Start,
     $FirstDayOfWeek,
     [int[]] $HighlightDay,
-    [string[]] $HighlightDate = [DateTime]::Today.ToString('yyyy-MM-dd')
+    [string[]] $HighlightDate = [datetime]::Today.ToString('yyyy-MM-dd')
     )
 
 ## Determine the first day of the start and end months.

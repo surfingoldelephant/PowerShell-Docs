@@ -186,7 +186,7 @@ have the following attributes:
 The **NotAfter** property stores the certificate expiration date.
 
 ```powershell
-[DateTime] $ValidThrough = (Get-Date) + (New-TimeSpan -Days 30)
+[datetime] $ValidThrough = (Get-Date) + (New-TimeSpan -Days 30)
 $getChildItemSplat = @{
     Path = 'Cert:\*'
     Recurse = $true

@@ -133,12 +133,12 @@ PowerShell supports the following type accelerators:
 | ----------- | -------------------- | -------------------------------- |
 | `[byte]`    |                      | Byte (unsigned)                  |
 | `[sbyte]`   |                      | Byte (signed)                    |
-| `[Int16]`   |                      | 16-bit integer                   |
+| `[int16]`   |                      | 16-bit integer                   |
 | `[UInt16]`  |                      | 16-bit integer (unsigned)        |
-| `[Int32]`   |                      | 32-bit integer                   |
+| `[int32]`   |                      | 32-bit integer                   |
 | `[int]`     | alias for `[int32]`  | 32-bit integer                   |
 | `[UInt32]`  |                      | 32-bit integer (unsigned)        |
-| `[Int64]`   |                      | 64-bit integer                   |
+| `[int64]`   |                      | 64-bit integer                   |
 | `[long]`    | alias for `[int64]`  | 64-bit integer                   |
 | `[UInt64]`  |                      | 64-bit integer (unsigned)        |
 | `[bigint]`  |                      | See [BigInteger Struct][bigint]  |

@@ -1016,7 +1016,7 @@ try {
     $buffer = [byte[]]::new(1024)
     $read = $inputStream.Read($buffer, 0, $buffer.Length)
     $actual = [byte[]]::new($read)
-    [Array]::Copy($buffer, $actual, $read)
+    [array]::Copy($buffer, $actual, $read)
     Format-Hex -InputObject $actual
 } finally {
     $inputStream.Dispose()

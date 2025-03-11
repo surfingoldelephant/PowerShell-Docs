@@ -407,7 +407,7 @@ Accept wildcard characters: False
 
 Specifies the number of adjacent objects that `Compare-Object` inspects while looking for a match in
 a collection of objects. `Compare-Object` examines adjacent objects when it doesn't find the object
-in the same position in a collection. The default value is `[Int32]::MaxValue`, which means that
+in the same position in a collection. The default value is `[int32]::MaxValue`, which means that
 `Compare-Object` examines the entire object collection.
 
 When working with large collections, the default value might not be efficient but is accurate.
@@ -421,7 +421,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: [Int32]::MaxValue
+Default value: [int32]::MaxValue
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

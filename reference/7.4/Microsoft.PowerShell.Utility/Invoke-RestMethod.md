@@ -772,7 +772,7 @@ Accept wildcard characters: False
 
 Specifies how many times to follow relation links if **FollowRelLink** is used. A smaller value may
 be needed if the REST api throttles due to too many requests. The default value is
-`[Int32]::MaxValue`. A value of 0 (zero) prevents following relation links.
+`[int32]::MaxValue`. A value of 0 (zero) prevents following relation links.
 
 ```yaml
 Type: System.Int32

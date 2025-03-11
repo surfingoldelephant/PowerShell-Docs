@@ -205,7 +205,7 @@ When you're working with large collections, array addition is dramatically slowe
 a **`List<T>`**.
 
 When using a `[List<T>]` object, you need to create the list with a specific type, like `[String]`
-or `[Int]`. When you add objects of a different type to the list, they are cast to the specified
+or `[int]`. When you add objects of a different type to the list, they are cast to the specified
 type. If they can't be cast to the specified type, the method raises an exception.
 
 ```powershell
@@ -869,7 +869,7 @@ Iterations Test                                 TotalMilliseconds RelativeSpeed
 - [`List<T>`][06]
 - [`Add(T)` method][07]
 - [`[String]`][08]
-- [`[Int]`][09]
+- [`[int]`][09]
 - [`[Object]`][10]
 - [`ToArray()` method][11]
 - [`[ArrayList]`][12]

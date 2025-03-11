@@ -1467,7 +1467,7 @@ function Sample {
     param ([String]$Name, [String]$Path)
     dynamicparam {
         if ($Path -match "*HKLM*:") {
-            $dynParam1 = New-Object System.Management.Automation.RuntimeDefinedParameter("dp1", [Int32], $attributeCollection)
+            $dynParam1 = New-Object System.Management.Automation.RuntimeDefinedParameter("dp1", [int32], $attributeCollection)
 
             $attributes = New-Object System.Management.Automation.ParameterAttribute
             $attributes.ParameterSetName = 'pset1'
