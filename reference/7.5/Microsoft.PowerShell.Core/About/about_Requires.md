@@ -206,7 +206,7 @@ specified in both statements aren't met, the script doesn't run. Each
 #Requires -Version 6.0
 param
 (
-    [parameter(Mandatory=$true)]
+    [Parameter(Mandatory=$true)]
     [String[]]
     $Path
 )

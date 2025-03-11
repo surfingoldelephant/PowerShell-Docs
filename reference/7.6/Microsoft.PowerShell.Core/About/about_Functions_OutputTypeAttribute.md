@@ -79,7 +79,7 @@ function AdvancedFunction1
 {
   [OutputType([<Type>])]
   param (
-    [parameter(Mandatory=$true)]
+    [Parameter(Mandatory=$true)]
     [String[]]
     $Parameter1
   )
@@ -92,7 +92,7 @@ function AdvancedFunction2
   [CmdletBinding(SupportsShouldProcess=<Boolean>)]
   [OutputType([<Type>])]
   param (
-    [parameter(Mandatory=$true)]
+    [Parameter(Mandatory=$true)]
     [String[]]
     $Parameter1
   )
@@ -142,11 +142,11 @@ function Get-User
   [OutputType([String], ParameterSetName="Name")]
 
   param (
-    [parameter(Mandatory=$true, ParameterSetName="ID")]
+    [Parameter(Mandatory=$true, ParameterSetName="ID")]
     [Int[]]
     $UserID,
 
-    [parameter(Mandatory=$true, ParameterSetName="Name")]
+    [Parameter(Mandatory=$true, ParameterSetName="Name")]
     [String[]]
     $UserName
   )
@@ -169,7 +169,7 @@ function Get-Time
 {
   [OutputType([DateTime])]
   param (
-    [parameter(Mandatory=$true)]
+    [Parameter(Mandatory=$true)]
     [Datetime]$DateTime
   )
 

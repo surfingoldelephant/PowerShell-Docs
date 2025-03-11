@@ -234,7 +234,7 @@ specified in both statements aren't met, the script doesn't run. Each
 #Requires -Version 3
 param
 (
-    [parameter(Mandatory=$true)]
+    [Parameter(Mandatory=$true)]
     [String[]]
     $Path
 )

@@ -124,7 +124,7 @@ Consider a function call `Test` that has the following param block, and which is
 
 ```powershell
 param (
-    [parameter(Mandatory = $true)]
+    [Parameter(Mandatory = $true)]
     [AllowEmptyCollection()]
     [string[]] $ComputerName
 )
@@ -143,7 +143,7 @@ Consider a function call `Test` that has the following param block, and which is
 
 ```powershell
 param (
-    [parameter(Mandatory = $true)]
+    [Parameter(Mandatory = $true)]
     [AllowEmptyString()]
     [string] $ComputerName
 )
@@ -162,7 +162,7 @@ Consider a function call Test that has the following param block, and which is c
 
 ```powershell
 param (
-    [parameter(Mandatory = $true)]
+    [Parameter(Mandatory = $true)]
     [AllowNull()]
     [int[]] $Values
 )
@@ -363,7 +363,7 @@ ValueFromPipeline=$true)]<br />
 <p>Specify $true if the following conditions are true: the parameter accesses a property of the piped object, and the property has the same name as the parameter, or the property has the same alias as the parameter.</p>
 <p>A parameter having ValueFromPipelineByPropertyName set to $true need not have a parameter in the same set with ValueFromPipeline set to $true.</p>
 <p>If a function has a parameter $ComputerName, and the piped object has a ComputerName property, the value of the ComputerName property is assigned to the $ComputerName parameter of the Function:</p>
-<p>param ( [parameter(Mandatory = $true,<br />
+<p>param ( [Parameter(Mandatory = $true,<br />
 ValueFromPipelineByPropertyName = $true)]<br />
 [string[]] $ComputerName )</p>
 <p>Multiple parameters in a parameter set can define the ValueFromPipelineByPropertyName as $true. Although, a single input object cannot be bound to multiple parameters, different properties in that input object may be bound to different parameters.</p>
@@ -388,9 +388,9 @@ Get-Date | Process-Date</p></td>
 <td><p>Type: bool; Default value: $false</p>
 <p>This argument specifies whether the parameter accepts all of the remaining arguments that are not bound to the parameters of the function. A value of $true indicates that it does. A value of $false indicates that it does not.</p>
 <p>The following example shows a parameter $Others that accepts all the remaining arguments of the input object that is passed to the function Test:</p>
-<p>param ( [parameter(Mandatory = $true)][int] $p1,<br />
-[parameter(Mandatory = $true)][int] $p2,<br />
-[parameter(ValueFromRemainingArguments = $true)]<br />
+<p>param ( [Parameter(Mandatory = $true)][int] $p1,<br />
+[Parameter(Mandatory = $true)][int] $p2,<br />
+[Parameter(ValueFromRemainingArguments = $true)]<br />
 [string[]] $Others )</p>
 <p>Test 10 20 # $Others has Length 0<br />
 Test 10 20 30 40 # $Others has Length 2, value 30,40</p></td>
@@ -523,7 +523,7 @@ In the absence of this attribute, the parameter's corresponding argument can be 
 Consider a function call Test that has the following param block, and which is called as shown:
 
 ```powershell
-param ( [parameter(Mandatory = $true)]
+param ( [Parameter(Mandatory = $true)]
 [ValidateLength(3,6)]
 [string[]] $ComputerName )
 
@@ -669,7 +669,7 @@ Consider a function call `Test1` that has the following param block, and which i
 
 ```powershell
 param (
-    [parameter(Mandatory = $true)]
+    [Parameter(Mandatory = $true)]
     [ValidateRange(1, 10)]
     [int] $StartValue
 )
@@ -684,7 +684,7 @@ Consider a function call Test2 that has the following param block and calls:
 
 ```powershell
 param (
-    [parameter(Mandatory = $true)]
+    [Parameter(Mandatory = $true)]
     [ValidateRange("b", "f")]
     [string] $Name
 )
@@ -698,7 +698,7 @@ Consider a function call `Test3` that has the following param block, and which i
 
 ```powershell
 param (
-    [parameter(Mandatory = $true)]
+    [Parameter(Mandatory = $true)]
     [ValidateRange(0.002, 0.003)]
     [double] $Distance
 )

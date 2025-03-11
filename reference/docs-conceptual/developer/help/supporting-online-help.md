@@ -102,7 +102,7 @@ The following code shows the **HelpUri** attribute of the `New-Calendar` functio
 ```powershell
 function New-Calendar {
     [CmdletBinding(SupportsShouldProcess=$true,
-    HelpURI="https://go.microsoft.com/fwlink/?LinkID=01122")]
+    HelpUri="https://go.microsoft.com/fwlink/?LinkID=01122")]
 ```
 
 ### Adding a HelpUri attribute to a cim command

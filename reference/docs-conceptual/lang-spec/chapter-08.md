@@ -1654,10 +1654,10 @@ Positional parameters prefer to be bound without type conversion, if possible. F
 
 ```powershell
 function Test {
-    [CmdletBinding(DefaultParameterSetname = "SetB")]
-    param([Parameter(Position = 0, ParameterSetname = "SetA")]
+    [CmdletBinding(DefaultParameterSetName = "SetB")]
+    param([Parameter(Position = 0, ParameterSetName = "SetA")]
         [decimal]$Dec,
-        [Parameter(Position = 0, ParameterSetname = "SetB")]
+        [Parameter(Position = 0, ParameterSetName = "SetB")]
         [int]$In
     )
     $PSCmdlet.ParameterSetName

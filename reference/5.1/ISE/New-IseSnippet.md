@@ -68,7 +68,7 @@ This command creates a Comment-BasedHelp snippet for Windows PowerShell ISE. It 
 $M = @'
 param
 (
-  [parameter(Mandatory=$true)]
+  [Parameter(Mandatory=$true)]
   [String[]]
   $<ParameterName>
 )

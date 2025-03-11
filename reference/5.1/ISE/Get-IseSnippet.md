@@ -85,7 +85,7 @@ Title: Mandatory
 Text:
 param
 (
-  [parameter(Mandatory=True)]
+  [Parameter(Mandatory=True)]
   [String[]]
   $<ParameterName>
 )

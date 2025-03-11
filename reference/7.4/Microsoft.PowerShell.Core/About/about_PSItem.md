@@ -190,7 +190,7 @@ parameters that take input from the pipeline.
 function Write-JsonLog {
     [CmdletBinding()]
     param(
-        [parameter(ValueFromPipelineByPropertyName)]
+        [Parameter(ValueFromPipelineByPropertyName)]
         [string]$Message
     )
     begin {

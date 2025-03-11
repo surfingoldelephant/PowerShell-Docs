@@ -241,7 +241,7 @@ To use this script, copy the following text into a text file, and name it
 
 ```powershell
 ## Signs a file
-[cmdletbinding()]
+[CmdletBinding()]
 param(
     [Parameter(Mandatory=$true)]
     [string] $File
