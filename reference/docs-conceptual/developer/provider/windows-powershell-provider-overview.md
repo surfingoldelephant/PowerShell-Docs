@@ -97,9 +97,9 @@ to use wildcards, filter items, and support transactions. To specify capabilitie
 add a list of values of the
 [System.Management.Automation.Provider.Providercapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
 enumeration, combined with a logical `OR` operation, as the
-[System.Management.Automation.Provider.Cmdletproviderattribute.Providercapabilities*](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute.ProviderCapabilities)
+[System.Management.Automation.Provider.CmdletProviderAttribute.Providercapabilities*](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute.ProviderCapabilities)
 property (the second parameter of the attribute) of the
-[System.Management.Automation.Provider.Cmdletproviderattribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
+[System.Management.Automation.Provider.CmdletProviderAttribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
 attribute for your provider class. For example, the following attribute specifies that the provider
 supports the
 [System.Management.Automation.Provider.Providercapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)

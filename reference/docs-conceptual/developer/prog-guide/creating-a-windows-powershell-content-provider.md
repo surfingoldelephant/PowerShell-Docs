@@ -22,13 +22,13 @@ contents of items is referred to as a Windows PowerShell content provider.
 ## Define the Windows PowerShell Content Provider Class
 
 A Windows PowerShell content provider must create a .NET class that supports the
-[System.Management.Automation.Provider.Icontentcmdletprovider](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider)
+[System.Management.Automation.Provider.IContentCmdletProvider](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider)
 interface. Here is the class definition for the item provider described in this section.
 
 :::code language="csharp" source="~/../powershell-sdk-samples/SDK-2.0/csharp/AccessDBProviderSample06/AccessDBProviderSample06.cs" range="32-33":::
 
 Note that in this class definition, the
-[System.Management.Automation.Provider.Cmdletproviderattribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
+[System.Management.Automation.Provider.CmdletProviderAttribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
 attribute includes two parameters. The first parameter specifies a user-friendly name for the
 provider that is used by Windows PowerShell. The second parameter specifies the Windows PowerShell
 specific capabilities that the provider exposes to the Windows PowerShell runtime during command
@@ -69,7 +69,7 @@ To support recursive commands, nested containers, and relative paths, the provid
 the
 [System.Management.Automation.Provider.Navigationcmdletprovider](/dotnet/api/System.Management.Automation.Provider.NavigationCmdletProvider)
 base class. In addition, this Windows PowerShell content provider can attaches
-[System.Management.Automation.Provider.Icontentcmdletprovider](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider)
+[System.Management.Automation.Provider.IContentCmdletProvider](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider)
 interface to the
 [System.Management.Automation.Provider.Navigationcmdletprovider](/dotnet/api/System.Management.Automation.Provider.NavigationCmdletProvider)
 base class, and must therefore implement the methods provided by that class. For more information,
@@ -100,12 +100,12 @@ and a **Dispose** method.
 ## Retrieving the Content Reader
 
 To get content from an item, the provider must implement the
-[System.Management.Automation.Provider.Icontentcmdletprovider.Getcontentreader*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReader)
+[System.Management.Automation.Provider.IContentCmdletProvider.Getcontentreader*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReader)
 to support the `Get-Content` cmdlet. This method returns the content reader for the item located at
 the specified path. The reader object can then be opened to read the content.
 
 Here is the implementation of
-[System.Management.Automation.Provider.Icontentcmdletprovider.Getcontentreader*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReader)
+[System.Management.Automation.Provider.IContentCmdletProvider.Getcontentreader*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReader)
 for this method for this provider.
 
 ```csharp
@@ -134,13 +134,13 @@ public IContentReader GetContentReader(string path)
 #### Things to Remember About Implementing GetContentReader
 
 The following conditions may apply to an implementation of
-[System.Management.Automation.Provider.Icontentcmdletprovider.Getcontentreader*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReader):
+[System.Management.Automation.Provider.IContentCmdletProvider.Getcontentreader*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReader):
 
 - When defining the provider class, a Windows PowerShell content provider might declare provider
   capabilities of ExpandWildcards, Filter, Include, or Exclude, from the
   [System.Management.Automation.Provider.Providercapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
   enumeration. In these cases, the implementation of the
-  [System.Management.Automation.Provider.Icontentcmdletprovider.Getcontentreader*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReader)
+  [System.Management.Automation.Provider.IContentCmdletProvider.Getcontentreader*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReader)
   method must ensure that the path passed to the method meets the requirements of the specified
   capabilities. To do this, the method should access the appropriate property, for example, the
   [System.Management.Automation.Provider.Cmdletprovider.Exclude*](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.Exclude)
@@ -161,7 +161,7 @@ The following conditions may apply to an implementation of
 The `Get-Content` cmdlet might require additional parameters that are specified dynamically at
 runtime. To provide these dynamic parameters, the Windows PowerShell content provider must implement
 the
-[System.Management.Automation.Provider.Icontentcmdletprovider.Getcontentreaderdynamicparameters*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReaderDynamicParameters)
+[System.Management.Automation.Provider.IContentCmdletProvider.Getcontentreaderdynamicparameters*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReaderDynamicParameters)
 method. This method retrieves dynamic parameters for the item at the indicated path and returns an
 object that has properties and fields with parsing attributes similar to a cmdlet class or a
 [System.Management.Automation.Runtimedefinedparameterdictionary](/dotnet/api/System.Management.Automation.RuntimeDefinedParameterDictionary)
@@ -182,12 +182,12 @@ public object GetContentReaderDynamicParameters(string path)
 ## Retrieving the Content Writer
 
 To write content to an item, the provider must implement the
-[System.Management.Automation.Provider.Icontentcmdletprovider.Getcontentwriter*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentWriter)
+[System.Management.Automation.Provider.IContentCmdletProvider.Getcontentwriter*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentWriter)
 to support the `Set-Content` and `Add-Content` cmdlets. This method returns the content writer for
 the item located at the specified path.
 
 Here is the implementation of
-[System.Management.Automation.Provider.Icontentcmdletprovider.Getcontentwriter*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentWriter)
+[System.Management.Automation.Provider.IContentCmdletProvider.Getcontentwriter*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentWriter)
 for this method.
 
 ```csharp
@@ -216,13 +216,13 @@ public IContentWriter GetContentWriter(string path)
 #### Things to Remember About Implementing GetContentWriter
 
 The following conditions may apply to your implementation of
-[System.Management.Automation.Provider.Icontentcmdletprovider.Getcontentwriter*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentWriter):
+[System.Management.Automation.Provider.IContentCmdletProvider.Getcontentwriter*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentWriter):
 
 - When defining the provider class, a Windows PowerShell content provider might declare provider
   capabilities of ExpandWildcards, Filter, Include, or Exclude, from the
   [System.Management.Automation.Provider.Providercapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
   enumeration. In these cases, the implementation of the
-  [System.Management.Automation.Provider.Icontentcmdletprovider.Getcontentwriter*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentWriter)
+  [System.Management.Automation.Provider.IContentCmdletProvider.Getcontentwriter*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentWriter)
   method must ensure that the path passed to the method meets the requirements of the specified
   capabilities. To do this, the method should access the appropriate property, for example, the
   [System.Management.Automation.Provider.Cmdletprovider.Exclude*](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.Exclude)
@@ -243,7 +243,7 @@ The following conditions may apply to your implementation of
 The `Add-Content` and `Set-Content` cmdlets might require additional dynamic parameters that are
 added a runtime. To provide these dynamic parameters, the Windows PowerShell content provider must
 implement the
-[System.Management.Automation.Provider.Icontentcmdletprovider.Getcontentwriterdynamicparameters*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentWriterDynamicParameters)
+[System.Management.Automation.Provider.IContentCmdletProvider.Getcontentwriterdynamicparameters*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentWriterDynamicParameters)
 method to handle these parameters. This method retrieves dynamic parameters for the item at the
 indicated path and returns an object that has properties and fields with parsing attributes similar
 to a cmdlet class or a
@@ -259,12 +259,12 @@ code is the default implementation of this method.
 ## Clearing Content
 
 Your content provider implements the
-[System.Management.Automation.Provider.Icontentcmdletprovider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
+[System.Management.Automation.Provider.IContentCmdletProvider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
 method in support of the `Clear-Content` cmdlet. This method removes the contents of the item at the
 specified path, but leaves the item intact.
 
 Here is the implementation of the
-[System.Management.Automation.Provider.Icontentcmdletprovider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
+[System.Management.Automation.Provider.IContentCmdletProvider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
 method for this provider.
 
 :::code language="csharp" source="~/../powershell-sdk-samples/SDK-2.0/csharp/AccessDBProviderSample06/AccessDBProviderSample06.cs" range="1775-1812":::
@@ -272,13 +272,13 @@ method for this provider.
 #### Things to Remember About Implementing ClearContent
 
 The following conditions may apply to an implementation of
-[System.Management.Automation.Provider.Icontentcmdletprovider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent):
+[System.Management.Automation.Provider.IContentCmdletProvider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent):
 
 - When defining the provider class, a Windows PowerShell content provider might declare provider
   capabilities of ExpandWildcards, Filter, Include, or Exclude, from the
   [System.Management.Automation.Provider.Providercapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
   enumeration. In these cases, the implementation of the
-  [System.Management.Automation.Provider.Icontentcmdletprovider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
+  [System.Management.Automation.Provider.IContentCmdletProvider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
   method must ensure that the path passed to the method meets the requirements of the specified
   capabilities. To do this, the method should access the appropriate property, for example, the
   [System.Management.Automation.Provider.Cmdletprovider.Exclude*](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.Exclude)
@@ -295,7 +295,7 @@ The following conditions may apply to an implementation of
   is set to `false`.
 
 - Your implementation of the
-  [System.Management.Automation.Provider.Icontentcmdletprovider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
+  [System.Management.Automation.Provider.IContentCmdletProvider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
   method should call
   [System.Management.Automation.Provider.Cmdletprovider.ShouldProcess](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.ShouldProcess)
   and verify its return value before making any changes to the data store. This method is used to
@@ -309,7 +309,7 @@ The following conditions may apply to an implementation of
   After the call to
   [System.Management.Automation.Provider.Cmdletprovider.ShouldProcess](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.ShouldProcess)
   returns `true`, the
-  [System.Management.Automation.Provider.Icontentcmdletprovider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
+  [System.Management.Automation.Provider.IContentCmdletProvider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
   method should call the
   [System.Management.Automation.Provider.Cmdletprovider.ShouldContinue](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.ShouldContinue)
   method. This method sends a message to the user to allow feedback to verify if the operation
@@ -321,7 +321,7 @@ The following conditions may apply to an implementation of
 
 The `Clear-Content` cmdlet might require additional dynamic parameters that are added at runtime. To
 provide these dynamic parameters, the Windows PowerShell content provider must implement the
-[System.Management.Automation.Provider.Icontentcmdletprovider.Clearcontentdynamicparameters*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContentDynamicParameters)
+[System.Management.Automation.Provider.IContentCmdletProvider.Clearcontentdynamicparameters*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContentDynamicParameters)
 method to handle these parameters. This method retrieves the parameters for the item at the
 indicated path. This method retrieves dynamic parameters for the item at the indicated path and
 returns an object that has properties and fields with parsing attributes similar to a cmdlet class

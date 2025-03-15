@@ -18,7 +18,7 @@ This sample demonstrates the following:
 
 - Restricting the language by setting the [System.Management.Automation.Runspaces.Initialsessionstate.Languagemode](/dotnet/api/System.Management.Automation.Runspaces.InitialSessionState.LanguageMode) property.
 
-- Adding aliases to the initial session state by using a [System.Management.Automation.Runspaces.Sessionstatealiasentry?Displayproperty=Fullname](/dotnet/api/System.Management.Automation.Runspaces.SessionStateAliasEntry) object.
+- Adding aliases to the initial session state by using a [System.Management.Automation.Runspaces.Sessionstatealiasentry](/dotnet/api/System.Management.Automation.Runspaces.SessionStateAliasEntry) object.
 
 - Marking commands as private.
 

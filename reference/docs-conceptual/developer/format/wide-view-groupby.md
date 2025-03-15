@@ -6,7 +6,7 @@ title: Wide View (GroupBy)
 ---
 # Wide View (GroupBy)
 
-This example shows how to implement a wide view that displays groups of [System.Serviceprocess.Servicecontroller?Displayproperty=Fullname](/dotnet/api/System.ServiceProcess.ServiceController)
+This example shows how to implement a wide view that displays groups of [System.Serviceprocess.Servicecontroller](/dotnet/api/System.ServiceProcess.ServiceController)
 objects returned by the `Get-Service` cmdlet. For more information about the components of a wide
 view, see [Creating a Wide View](./creating-a-wide-view.md).
 
@@ -71,7 +71,7 @@ property changes.
 </Configuration>
 ```
 
-The following example shows how Windows PowerShell displays the [System.Serviceprocess.Servicecontroller?Displayproperty=Fullname](/dotnet/api/System.ServiceProcess.ServiceController)
+The following example shows how Windows PowerShell displays the [System.Serviceprocess.Servicecontroller](/dotnet/api/System.ServiceProcess.ServiceController)
 objects after this format file is loaded.
 
 ```powershell

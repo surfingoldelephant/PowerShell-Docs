@@ -152,7 +152,7 @@ The last command uses dot notation to call the new **SizeInMB** script method on
 
 ```powershell
 $A = Get-ChildItem C:\Temp\test.txt
-$S = {[math]::Round(($this.Length / 1MB), 2)}
+$S = {[Math]::Round(($this.Length / 1MB), 2)}
 $A | Add-Member -MemberType ScriptMethod -Name "SizeInMB" -Value $S
 $A.SizeInMB()
 ```

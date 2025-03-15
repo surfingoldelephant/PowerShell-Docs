@@ -47,7 +47,7 @@ defines a property that represents the `Name` parameter as described in
 However, when a cmdlet needs to process pipeline input, it must have its parameters bound to input
 values by the Windows PowerShell runtime. To do this, you must add the `ValueFromPipeline` keyword
 or add the `ValueFromPipelineByProperty` keyword to the
-[System.Management.Automation.Parameterattribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
+[System.Management.Automation.ParameterAttribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
 attribute declaration. Specify the `ValueFromPipeline` keyword if the cmdlet accesses the complete
 input object. Specify the `ValueFromPipelineByProperty` if the cmdlet accesses only a property of
 the object.

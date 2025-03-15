@@ -25,7 +25,7 @@ base class. Here is the class definition for this drive provider:
 :::code language="csharp" source="~/../powershell-sdk-samples/SDK-2.0/csharp/AccessDBProviderSample02/AccessDBProviderSample02.cs" range="29-30":::
 
 Notice that in this example, the
-[System.Management.Automation.Provider.Cmdletproviderattribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
+[System.Management.Automation.Provider.CmdletProviderAttribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
 attribute specifies a user-friendly name for the provider and the Windows PowerShell specific
 capabilities that the provider exposes to the Windows PowerShell runtime during command processing.
 The possible values for the provider capabilities are defined by the

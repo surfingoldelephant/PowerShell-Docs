@@ -62,7 +62,7 @@ $tests = @{
         [pscustomobject]@{
             Iterations        = $_
             Test              = $test.Key
-            TotalMilliseconds = [math]::Round($ms, 2)
+            TotalMilliseconds = [Math]::Round($ms, 2)
         }
 
         [GC]::Collect()
@@ -74,7 +74,7 @@ $tests = @{
         Name       = 'RelativeSpeed'
         Expression = {
             $relativeSpeed = $_.TotalMilliseconds / $groupResult[0].TotalMilliseconds
-            [math]::Round($relativeSpeed, 2).ToString() + 'x'
+            [Math]::Round($relativeSpeed, 2).ToString() + 'x'
         }
     }
 }
@@ -122,7 +122,7 @@ There are a couple of alternatives. If you don't actually require an array, inst
 a typed generic list (`[List<T>]`):
 
 ```powershell
-$results = [System.Collections.Generic.List[object]]::new()
+$results = [System.Collections.Generic.List[Object]]::new()
 $results.AddRange((Get-Something))
 $results.AddRange((Get-SomethingElse))
 $results
@@ -167,7 +167,7 @@ $tests = @{
         [pscustomobject]@{
             CollectionSize    = $_
             Test              = $test.Key
-            TotalMilliseconds = [math]::Round($ms, 2)
+            TotalMilliseconds = [Math]::Round($ms, 2)
         }
 
         [GC]::Collect()
@@ -179,7 +179,7 @@ $tests = @{
         Name       = 'RelativeSpeed'
         Expression = {
             $relativeSpeed = $_.TotalMilliseconds / $groupResult[0].TotalMilliseconds
-            [math]::Round($relativeSpeed, 2).ToString() + 'x'
+            [Math]::Round($relativeSpeed, 2).ToString() + 'x'
         }
     }
 }
@@ -235,7 +235,7 @@ When you need the list to be a collection of different types of objects, create 
 as the list type. You can enumerate the collection inspect the types of the objects in it.
 
 ```powershell
-$objectList = [System.Collections.Generic.List[object]]::new()
+$objectList = [System.Collections.Generic.List[Object]]::new()
 $objectList.Add(1)
 $objectList.Add('2')
 $objectList.Add(3.0)
@@ -309,7 +309,7 @@ $tests = @{
         [pscustomobject]@{
             Iterations        = $_
             Test              = $test.Key
-            TotalMilliseconds = [math]::Round($ms, 2)
+            TotalMilliseconds = [Math]::Round($ms, 2)
         }
 
         [GC]::Collect()
@@ -321,7 +321,7 @@ $tests = @{
         Name       = 'RelativeSpeed'
         Expression = {
             $relativeSpeed = $_.TotalMilliseconds / $groupResult[0].TotalMilliseconds
-            [math]::Round($relativeSpeed, 2).ToString() + 'x'
+            [Math]::Round($relativeSpeed, 2).ToString() + 'x'
         }
     }
 }
@@ -533,7 +533,7 @@ $tests = @{
         [pscustomobject]@{
             CollectionSize    = $_
             Test              = $test.Key
-            TotalMilliseconds = [math]::Round($ms.TotalMilliseconds,2)
+            TotalMilliseconds = [Math]::Round($ms.TotalMilliseconds,2)
         }
 
         [GC]::Collect()
@@ -545,7 +545,7 @@ $tests = @{
         Name       = 'RelativeSpeed'
         Expression = {
             $relativeSpeed = $_.TotalMilliseconds / $groupResult[0].TotalMilliseconds
-            [math]::Round($relativeSpeed, 2).ToString() + 'x'
+            [Math]::Round($relativeSpeed, 2).ToString() + 'x'
         }
     }
 }
@@ -827,7 +827,7 @@ $properties = 'Prop1', 'Prop2', 'Prop3', 'Prop4', 'Prop5'
         [pscustomobject]@{
             Iterations        = $_
             Test              = $test.Key
-            TotalMilliseconds = [math]::Round($ms.TotalMilliseconds, 2)
+            TotalMilliseconds = [Math]::Round($ms.TotalMilliseconds, 2)
         }
 
         [GC]::Collect()
@@ -839,7 +839,7 @@ $properties = 'Prop1', 'Prop2', 'Prop3', 'Prop4', 'Prop5'
         Name       = 'RelativeSpeed'
         Expression = {
             $relativeSpeed = $_.TotalMilliseconds / $groupResult[0].TotalMilliseconds
-            [math]::Round($relativeSpeed, 2).ToString() + 'x'
+            [Math]::Round($relativeSpeed, 2).ToString() + 'x'
         }
     }
 }

@@ -47,7 +47,7 @@ This example registers for a PowerShell engine event on two remote computers.
 ```powershell
 $S = New-PSSession -ComputerName "Server01, Server02"
 Invoke-Command -Session $S {
-  Register-EngineEvent -SourceIdentifier ([System.Management.Automation.PsEngineEvent]::Exiting) -Forward
+  Register-EngineEvent -SourceIdentifier ([System.Management.Automation.PSEngineEvent]::Exiting) -Forward
 }
 ```
 

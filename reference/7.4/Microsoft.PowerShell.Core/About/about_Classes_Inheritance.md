@@ -814,7 +814,7 @@ To implement the interface, the class needs to inherit from
 method needs to have the following signature:
 
 ```powershell
-[bool] Equals([object]$Other) {
+[bool] Equals([Object]$Other) {
     # Implementation
 }
 ```
@@ -829,7 +829,7 @@ values to Kelvin, since temperatures can be equivalent even with different
 scales.
 
 ```powershell
-[bool] Equals([object]$Other) {
+[bool] Equals([Object]$Other) {
     # If the other object is null, we can't compare it.
     if ($null -eq $Other) {
         return $false
@@ -850,7 +850,7 @@ With the interface method implemented, the updated definition for
 **Temperature** is:
 
 ```powershell
-class Temperature : System.IFormattable, System.IEquatable[object] {
+class Temperature : System.IFormattable, System.IEquatable[Object] {
     [float]            $Degrees
     [TemperatureScale] $Scale
 
@@ -926,7 +926,7 @@ class Temperature : System.IFormattable, System.IEquatable[object] {
         return $this.ToString($null, $null)
     }
 
-    [bool] Equals([object]$Other) {
+    [bool] Equals([Object]$Other) {
         # If the other object is null, we can't compare it.
         if ($null -eq $Other) {
             return $false
@@ -998,7 +998,7 @@ converted to a different scale, is a floating point number, the method can rely
 on the underlying type for the actual comparison.
 
 ```powershell
-[int] CompareTo([object]$Other) {
+[int] CompareTo([Object]$Other) {
     # If the other object's null, consider this instance "greater than" it
     if ($null -eq $Other) {
         return 1
@@ -1020,7 +1020,7 @@ The final definition for the **Temperature** class is:
 ```powershell
 class Temperature : System.IFormattable,
                     System.IComparable,
-                    System.IEquatable[object] {
+                    System.IEquatable[Object] {
     # Instance properties
     [float]            $Degrees
     [TemperatureScale] $Scale
@@ -1098,7 +1098,7 @@ class Temperature : System.IFormattable,
         return $this.ToString($null, $null)
     }
 
-    [bool] Equals([object]$Other) {
+    [bool] Equals([Object]$Other) {
         # If the other object is null, we can't compare it.
         if ($null -eq $Other) {
             return $false
@@ -1111,7 +1111,7 @@ class Temperature : System.IFormattable,
         # Compare the temperatures as Kelvin.
         return $this.ToKelvin() -eq $OtherTemperature.ToKelvin()
     }
-    [int] CompareTo([object]$Other) {
+    [int] CompareTo([Object]$Other) {
         # If the other object's null, consider this instance "greater than" it
         if ($null -eq $Other) {
             return 1

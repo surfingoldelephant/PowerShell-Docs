@@ -369,7 +369,7 @@ an error, such as `Global scope cannot be removed`.
 ```powershell
 # Class definition with Runspace affinity (default behavior)
 class UnsafeClass {
-    static [object] ShowRunspaceId($Val) {
+    static [Object] ShowRunspaceId($Val) {
         return [pscustomobject]@{
             ThreadId   = [Threading.Thread]::CurrentThread.ManagedThreadId
             RunspaceId = [runspace]::DefaultRunspace.Id
@@ -398,7 +398,7 @@ Runspace ids.
 # Class definition with NoRunspaceAffinity attribute
 [NoRunspaceAffinity()]
 class SafeClass {
-    static [object] ShowRunspaceId($Val) {
+    static [Object] ShowRunspaceId($Val) {
         return [pscustomobject]@{
             ThreadId   = [Threading.Thread]::CurrentThread.ManagedThreadId
             RunspaceId = [runspace]::DefaultRunspace.Id

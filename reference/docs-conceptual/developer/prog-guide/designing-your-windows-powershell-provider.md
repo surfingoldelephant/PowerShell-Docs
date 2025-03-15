@@ -174,7 +174,7 @@ available online using the `Get-Command` and `Get-Help` cmdlets.
 ### IContentCmdletProvider
 
 The
-[System.Management.Automation.Provider.Icontentcmdletprovider](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider)
+[System.Management.Automation.Provider.IContentCmdletProvider](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider)
 interface defines a content provider that performs operations on the content of a data item. The
 following table lists the cmdlets exposed by this interface.
 

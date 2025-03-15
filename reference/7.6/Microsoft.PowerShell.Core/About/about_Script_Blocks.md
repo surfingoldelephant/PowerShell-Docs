@@ -174,7 +174,7 @@ Notes on delay-bind script blocks as parameters:
 - You must explicitly specify any parameter names you use with delay-bind
   script blocks.
 - The parameter must not be untyped, and the parameter's type can't be
-  `[scriptblock]` or `[object]`.
+  `[scriptblock]` or `[Object]`.
 - You receive an error if you use a delay-bind script block without providing
   pipeline input.
 

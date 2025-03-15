@@ -118,7 +118,7 @@ $OnRemoveScript = {
 $ExecutionContext.SessionState.Module.OnRemove += $OnRemoveScript
 
 $registerEngineEventSplat = @{
-    SourceIdentifier = ([System.Management.Automation.PsEngineEvent]::Exiting)
+    SourceIdentifier = ([System.Management.Automation.PSEngineEvent]::Exiting)
     Action = $OnRemoveScript
 }
 Register-EngineEvent @registerEngineEventSplat

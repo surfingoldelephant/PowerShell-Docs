@@ -73,7 +73,7 @@ $result = [System.Linq.Enumerable]::Select[int, float](
     $list,
     [Func[int, float]]{
         param($Item)
-        [math]::Pow($Item, 3)
+        [Math]::Pow($Item, 3)
     }
 )
 $result

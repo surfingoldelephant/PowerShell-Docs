@@ -636,7 +636,7 @@ You can convert a `PSMethod` into a delegate. This allows you to do things like 
 class M {
     static [int] DoubleStrLen([string] $value) { return 2 * $value.Length }
 
-    static [long] AggregateString([string[]] $values, [func[string, int]] $selector) {
+    static [long] AggregateString([string[]] $values, [Func[string, int]] $selector) {
         [long] $res = 0
         foreach($s in $values){
             $res += $selector.Invoke($s)

@@ -22,8 +22,8 @@ When ValidatePattern is invoked within a cmdlet, the Windows PowerShell runtime 
 `RegexString` ([System.String](/dotnet/api/System.String))
 Required. Specifies a regular expression that validates the parameter argument.
 
-Options ([System.Text.Regularexpressions.Regexoptions](/dotnet/api/System.Text.RegularExpressions.RegexOptions))
-Optional named parameter. Specifies a bitwise combination of [System.Text.Regularexpressions.Regexoptions](/dotnet/api/System.Text.RegularExpressions.RegexOptions) flags that specify regular expression options.
+Options ([System.Text.RegularExpressions.RegexOptions](/dotnet/api/System.Text.RegularExpressions.RegexOptions))
+Optional named parameter. Specifies a bitwise combination of [System.Text.RegularExpressions.RegexOptions](/dotnet/api/System.Text.RegularExpressions.RegexOptions) flags that specify regular expression options.
 
 ## Remarks
 

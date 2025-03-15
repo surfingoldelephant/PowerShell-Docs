@@ -71,7 +71,7 @@ last two parameters, see
 
 This input parameter allows the user to specify the names of the processes to be stopped. Note that
 the `ParameterSetName` attribute keyword of the
-[System.Management.Automation.Parameterattribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
+[System.Management.Automation.ParameterAttribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
 attribute specifies the `ProcessName` parameter set for this parameter.
 
 :::code language="csharp" source="~/../powershell-sdk-samples/SDK-2.0/csharp/StopProcessSample04/StopProcessSample04.cs" range="44-58":::
@@ -100,7 +100,7 @@ Note also that the alias "ProcessName" is given to this parameter.
 
 This input parameter allows the user to specify the identifiers of the processes to be stopped. Note
 that the `ParameterSetName` attribute keyword of the
-[System.Management.Automation.Parameterattribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
+[System.Management.Automation.ParameterAttribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
 attribute specifies the `ProcessId` parameter set.
 
 ```csharp
@@ -141,7 +141,7 @@ Note also that the alias "ProcessId" is given to this parameter.
 
 This input parameter allows the user to specify an input object that contains information about the
 processes to be stopped. Note that the `ParameterSetName` attribute keyword of the
-[System.Management.Automation.Parameterattribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
+[System.Management.Automation.ParameterAttribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
 attribute specifies the `InputObject` parameter set for this parameter.
 
 ```csharp
@@ -177,7 +177,7 @@ Note also that this parameter has no alias.
 
 Although there must be a unique parameter for each parameter set, parameters can belong to more than
 one parameter set. In these cases, give the shared parameter a
-[System.Management.Automation.Parameterattribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
+[System.Management.Automation.ParameterAttribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
 attribute declaration for each set to which that the parameter belongs. If a parameter is in all
 parameter sets, you only have to declare the parameter attribute once and do not need to specify the
 parameter set name.

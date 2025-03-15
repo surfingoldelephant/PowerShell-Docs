@@ -45,7 +45,7 @@ list of these methods, see
 Declare the provider to derive from the
 [System.Management.Automation.Provider.Containercmdletprovider](/dotnet/api/System.Management.Automation.Provider.ContainerCmdletProvider)
 class, and decorate it with the
-[System.Management.Automation.Provider.Cmdletproviderattribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute).
+[System.Management.Automation.Provider.CmdletProviderAttribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute).
 
 ```csharp
 [CmdletProvider("AccessDB", ProviderCapabilities.None)]

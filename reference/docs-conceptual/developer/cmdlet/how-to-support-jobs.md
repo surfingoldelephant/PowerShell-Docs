@@ -30,7 +30,7 @@ information about background jobs, see [Background Jobs](./background-jobs.md).
 1. Create an object that derives from the
    [System.Management.Automation.Job](/dotnet/api/System.Management.Automation.Job) class. This
    object can be a custom job object or one of the job objects provided by Windows PowerShell, such
-   a [System.Management.Automation.Pseventjob](/dotnet/api/System.Management.Automation.PSEventJob)
+   a [System.Management.Automation.PSEventJob](/dotnet/api/System.Management.Automation.PSEventJob)
    object.
 
     The following example shows a custom job object.

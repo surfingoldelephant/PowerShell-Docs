@@ -81,7 +81,7 @@ End Property
 ```
 
 To inform the Windows PowerShell runtime that this property is the `Name` parameter, a
-[System.Management.Automation.Parameterattribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
+[System.Management.Automation.ParameterAttribute](/dotnet/api/System.Management.Automation.ParameterAttribute)
 attribute is added to the property definition. The basic syntax for declaring this attribute is
 `[Parameter()]`.
 

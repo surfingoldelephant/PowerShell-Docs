@@ -12,7 +12,7 @@ manage the content of the items in the data store. The provider class in this sa
 the
 [System.Management.Automation.Provider.Navigationcmdletprovider](/dotnet/api/System.Management.Automation.Provider.NavigationCmdletProvider)
 class, and it implements the
-[System.Management.Automation.Provider.Icontentcmdletprovider](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider)
+[System.Management.Automation.Provider.IContentCmdletProvider](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider)
 interface.
 
 ## Demonstrates
@@ -34,15 +34,15 @@ This sample demonstrates the following:
 - Defining a provider class that derives from the
   [System.Management.Automation.Provider.Navigationcmdletprovider](/dotnet/api/System.Management.Automation.Provider.NavigationCmdletProvider)
   class and that declares the
-  [System.Management.Automation.Provider.Icontentcmdletprovider](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider)
+  [System.Management.Automation.Provider.IContentCmdletProvider](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider)
   interface.
 - Overwriting the
-  [System.Management.Automation.Provider.Icontentcmdletprovider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
+  [System.Management.Automation.Provider.IContentCmdletProvider.Clearcontent*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.ClearContent)
   method to change the behavior of the `Clear-Content` cmdlet, allowing the user to remove the
   content from an item. (This sample does not show how to add dynamic parameters to the
   `Clear-Content` cmdlet.)
 - Overwriting the
-  [System.Management.Automation.Provider.Icontentcmdletprovider.Getcontentreader*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReader)
+  [System.Management.Automation.Provider.IContentCmdletProvider.Getcontentreader*](/dotnet/api/System.Management.Automation.Provider.IContentCmdletProvider.GetContentReader)
   method to change the behavior of the `Get-Content` cmdlet, allowing the user to retrieve the
   content of an item. (This sample does not show how to add dynamic parameters to the `Get-Content`
   cmdlet.).

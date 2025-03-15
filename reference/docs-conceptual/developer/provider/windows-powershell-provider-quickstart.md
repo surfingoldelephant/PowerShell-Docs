@@ -26,13 +26,13 @@ In Visual Studio, create a Class Library project named AccessDBProviderSample. C
 
 2. Click **Project > AccessDBProviderSample Properties > Debug**. In **Start project**, click **Start external program**, and navigate to the Windows PowerShell executable (typically c:\Windows\System32\WindowsPowerShell\v1.0\\.powershell.exe).
 
-3. Under **Start Options**, enter the following into the **Command line arguments** box: `-NoExit -Command "[reflection.assembly]::LoadFrom(AccessDBProviderSample.dll' ) | Import-Module"`
+3. Under **Start Options**, enter the following into the **Command line arguments** box: `-NoExit -Command "[Reflection.Assembly]::LoadFrom(AccessDBProviderSample.dll' ) | Import-Module"`
 
 ### Declaring the provider class
 
 Our provider derives from the [System.Management.Automation.Provider.Drivecmdletprovider](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider) class. Most providers that provide real functionality (accessing and manipulating items, navigating the data store, and getting and setting content of items) derive from the [System.Management.Automation.Provider.Navigationcmdletprovider](/dotnet/api/System.Management.Automation.Provider.NavigationCmdletProvider) class.
 
-In addition to specifying that the class derives from [System.Management.Automation.Provider.Drivecmdletprovider](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider), you must decorate it with the [System.Management.Automation.Provider.Cmdletproviderattribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute) as shown in the example.
+In addition to specifying that the class derives from [System.Management.Automation.Provider.Drivecmdletprovider](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider), you must decorate it with the [System.Management.Automation.Provider.CmdletProviderAttribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute) as shown in the example.
 
 ```csharp
 namespace Microsoft.Samples.PowerShell.Providers

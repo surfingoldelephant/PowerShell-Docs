@@ -196,7 +196,7 @@ $tests = @{
         [pscustomobject]@{
             CollectionSize    = $_
             Test              = $test.Key
-            TotalMilliseconds = [math]::Round($ms, 2)
+            TotalMilliseconds = [Math]::Round($ms, 2)
         }
 
         [GC]::Collect()
@@ -208,7 +208,7 @@ $tests = @{
             Name       = 'RelativeSpeed'
             Expression = {
                 $relativeSpeed = $_.TotalMilliseconds / $groupResult[0].TotalMilliseconds
-                $speed = [math]::Round($relativeSpeed, 2).ToString() + 'x'
+                $speed = [Math]::Round($relativeSpeed, 2).ToString() + 'x'
                 if ($speed -eq '1x') { $speed } else { $speed + ' slower' }
             }
         } | Format-Table -AutoSize

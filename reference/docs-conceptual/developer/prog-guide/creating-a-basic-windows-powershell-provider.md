@@ -40,11 +40,11 @@ Here is the class definition for this basic provider:
 :::code language="csharp" source="~/../powershell-sdk-samples/SDK-2.0/csharp/AccessDBProviderSample01/AccessDBProviderSample01.cs" range="23-24":::
 
 Right before the class definition, you must declare the
-[System.Management.Automation.Provider.Cmdletproviderattribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
+[System.Management.Automation.Provider.CmdletProviderAttribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
 attribute, with the syntax [CmdletProvider()].
 
 You can set attribute keywords to further declare the class if necessary. Notice that the
-[System.Management.Automation.Provider.Cmdletproviderattribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
+[System.Management.Automation.Provider.CmdletProviderAttribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
 attribute declared here includes two parameters. The first attribute parameter specifies the
 default-friendly name for the provider, which the user can modify later. The second parameter
 specifies the Windows PowerShell-defined capabilities that the provider exposes to the Windows

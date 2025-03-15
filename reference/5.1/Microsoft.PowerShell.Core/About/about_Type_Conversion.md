@@ -229,7 +229,7 @@ These contexts include:
 PowerShell attempts to convert values passed to parameters to match the
 parameter type. Type conversion of parameter values occurs in cmdlets,
 functions, scripts, scriptblocks, or .NET methods where the parameter is
-declared with a specific type. Declaring a parameter with the type `[object]`
+declared with a specific type. Declaring a parameter with the type `[Object]`
 or not defining a specific type allows any value type to be passed to a
 parameter. Parameters can also have custom conversions defined by decorating
 parameters with [ArgumentTransformationAttribute][17] attribute.
@@ -314,7 +314,7 @@ PS> New-Object -TypeName System.Guid -ArgumentList $bytes
 New-Object: Cannot find an overload for "Guid" and the argument count: "16".
 ```
 
-Given that the type of **ArgumentList** is `[object[]]`, a single argument that
+Given that the type of **ArgumentList** is `[Object[]]`, a single argument that
 happens to be an array (of any type) binds to it _element by element_. The
 workaround is to wrap `$bytes` in an outer array so that PowerShell looks for a
 constructor with parameters that match the contents of the outer array.

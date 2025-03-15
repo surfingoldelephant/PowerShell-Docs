@@ -90,7 +90,7 @@ if `ConfirmImpact` is set to
 
 Similarly, some operations are unlikely to be destructive, although they do in theory modify the
 running state of a system outside Windows PowerShell. Such cmdlets can set `ConfirmImpact` to
-[System.Management.Automation.Confirmimpact.Low](/dotnet/api/system.management.automation.confirmimpact).
+[System.Management.Automation.ConfirmImpact.Low](/dotnet/api/system.management.automation.confirmimpact).
 This will bypass confirmation requests where the user has asked to confirm only medium-impact and
 high-impact operations.
 

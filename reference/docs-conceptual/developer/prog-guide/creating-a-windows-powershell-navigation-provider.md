@@ -38,7 +38,7 @@ base class. Here is the class definition for the navigation provider described i
 :::code language="csharp" source="~/../powershell-sdk-samples/SDK-2.0/csharp/AccessDBProviderSample05/AccessDBProviderSample05.cs" range="31-32":::
 
 Note that in this provider, the
-[System.Management.Automation.Provider.Cmdletproviderattribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
+[System.Management.Automation.Provider.CmdletProviderAttribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
 attribute includes two parameters. The first parameter specifies a user-friendly name for the
 provider that is used by Windows PowerShell. The second parameter specifies the Windows PowerShell
 specific capabilities that the provider exposes to the Windows PowerShell runtime during command

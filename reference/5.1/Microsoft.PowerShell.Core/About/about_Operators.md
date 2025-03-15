@@ -414,7 +414,7 @@ Enter the composite format string on the left side of the operator and the
 objects to be formatted on the right side of the operator.
 
 ```powershell
-"{0} {1,-10} {2:N}" -f 1,"hello",[math]::PI
+"{0} {1,-10} {2:N}" -f 1,"hello",[Math]::PI
 ```
 
 ```Output

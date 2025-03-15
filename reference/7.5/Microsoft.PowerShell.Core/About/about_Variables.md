@@ -163,7 +163,7 @@ The next example assigns multiple values to multiple variables.
 
 ```powershell
 $i,$j,$k = 10, "red", $true    # $i is 10, $j is "red", $k is True
-$i,$j = 10, "red", $true       # $i is 10, $j is [object[]], Length 2
+$i,$j = 10, "red", $true       # $i is 10, $j is [Object[]], Length 2
 ```
 
 For more detailed information, see the **Assigning multiple variables** section

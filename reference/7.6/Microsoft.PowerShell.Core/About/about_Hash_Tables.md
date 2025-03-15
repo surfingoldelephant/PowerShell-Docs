@@ -297,7 +297,7 @@ member notation or array index notation.
   two
   PS> ([array]$dictionary.Values)[1]
   two
-  PS> $dictionary[[object]1]
+  PS> $dictionary[[Object]1]
   one
   PS> $dictionary['three']
   3
@@ -305,7 +305,7 @@ member notation or array index notation.
 
   In this example, the array value `[1]` is an index into the collection of
   values using the `Item(int index)` parameterized property overload. The array
-  value `[[object]1]` isn't an index but a key value using the
+  value `[[Object]1]` isn't an index but a key value using the
   `Item(System.Object key)` overload.
 
   > [!NOTE]

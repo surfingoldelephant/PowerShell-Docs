@@ -69,7 +69,7 @@ between the user and Windows PowerShell.
 
 [System.Management.Automation.Internal](/dotnet/api/System.Management.Automation.Internal) This
 namespace contains the base classes used by other namespace classes. For example, the
-[System.Management.Automation.Internal.Cmdletmetadataattribute](/dotnet/api/System.Management.Automation.Internal.CmdletMetadataAttribute)
+[System.Management.Automation.Internal.CmdletMetadataAttribute](/dotnet/api/System.Management.Automation.Internal.CmdletMetadataAttribute)
 class is the base class for the
 [System.Management.Automation.CmdletAttribute](/dotnet/api/System.Management.Automation.CmdletAttribute)
 class.
