@@ -214,7 +214,7 @@ repetition duration of the job trigger to zero (`0`).
 This example creates a repeating job trigger that runs indefinitely.
 
 ```powershell
-New-JobTrigger -Once -At "9/21/2012 0am" -RepetitionInterval (New-TimeSpan -Hour 12) -RepetitionDuration ([TimeSpan]::MaxValue)
+New-JobTrigger -Once -At "9/21/2012 0am" -RepetitionInterval (New-TimeSpan -Hour 12) -RepetitionDuration ([timespan]::MaxValue)
 ```
 
 The following command creates a job trigger that runs a scheduled job once every 12 hours for an

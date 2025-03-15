@@ -60,7 +60,7 @@ is limited to the following elements:
   "PowerShell 2.0"
   @( "red", "green", "blue" )
   @{ a = 0x1; b = "great"; c ="script" }
-  [XML] @'
+  [xml] @'
   <p> Hello, World </p>
   '@
   ```

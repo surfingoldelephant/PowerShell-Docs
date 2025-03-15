@@ -232,7 +232,7 @@ In this example, we are comparing a string to a **TimeSpan** object. In the firs
 is converted to a **TimeSpan** so the objects are equal.
 
 ```powershell
-Compare-Object ([TimeSpan]"0:0:1") "0:0:1" -IncludeEqual
+Compare-Object ([timespan]"0:0:1") "0:0:1" -IncludeEqual
 ```
 
 ```Output
@@ -242,7 +242,7 @@ InputObject SideIndicator
 ```
 
 ```powershell
-Compare-Object "0:0:1" ([TimeSpan]"0:0:1")
+Compare-Object "0:0:1" ([timespan]"0:0:1")
 ```
 
 ```Output

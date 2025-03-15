@@ -342,7 +342,7 @@ statement conditions.
 
 ```powershell
 switch ("Test") {
-    { $_ -is [String] } { "Found a string" }
+    { $_ -is [string] } { "Found a string" }
     "Test"              { "This $_ executes as well" }
 }
 ```

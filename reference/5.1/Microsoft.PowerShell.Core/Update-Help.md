@@ -246,7 +246,7 @@ The script uses the **PSCustomObject** class and a hash table to create a custom
 # Get-UpdateHelpVersion.ps1
 param (
     [Parameter(Mandatory=$false)]
-    [String[]]
+    [string[]]
     $Module
 )
 $HelpInfoNamespace = @{helpInfo='http://schemas.microsoft.com/powershell/help/2010/05'}
@@ -268,7 +268,7 @@ foreach ($mModule in $Modules)
             $mCulture=$mNode.Node.UICultureName
             $mVer=$mNode.Node.UICultureVersion
 
-            [PSCustomObject]@{"ModuleName"=$mName; "Culture"=$mCulture; "Version"=$mVer}
+            [pscustomobject]@{"ModuleName"=$mName; "Culture"=$mCulture; "Version"=$mVer}
         }
     }
 }

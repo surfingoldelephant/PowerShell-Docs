@@ -308,9 +308,9 @@ This example shows how to use the **Force** and **Append** parameters. When thes
 combined, mismatched object properties can be written to a CSV file.
 
 ```powershell
-$Content = [PSCustomObject]@{Name = 'PowerShell'; Version = '7.0'}
+$Content = [pscustomobject]@{Name = 'PowerShell'; Version = '7.0'}
 $Content | Export-Csv -Path .\ParmFile.csv -NoTypeInformation
-$AdditionalContent = [PSCustomObject]@{Name = 'Windows PowerShell'; Edition = 'Desktop'}
+$AdditionalContent = [pscustomobject]@{Name = 'Windows PowerShell'; Edition = 'Desktop'}
 $AdditionalContent | Export-Csv -Path .\ParmFile.csv -NoTypeInformation -Append
 ```
 

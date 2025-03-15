@@ -396,7 +396,7 @@ Converts or limits objects to the specified type. If the objects can't be
 converted, PowerShell generates an error.
 
 ```powershell
-[datetime] '2/20/88' - [datetime] '1/20/88' -eq [TimeSpan] '31'
+[datetime] '2/20/88' - [datetime] '1/20/88' -eq [timespan] '31'
 ```
 
 A cast can also be performed when a variable is assigned to using

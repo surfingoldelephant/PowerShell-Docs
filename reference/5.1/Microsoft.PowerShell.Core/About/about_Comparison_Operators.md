@@ -162,7 +162,7 @@ The following example demonstrates the issue.
 
 ```powershell
 class MyFileInfoSet {
-    [String]$File
+    [string]$File
     [int64]$Size
 }
 $a = [MyFileInfoSet]@{File = "C:\Windows\explorer.exe"; Size = 4651032}
@@ -184,7 +184,7 @@ the File and Size properties of two **MyFileInfoSet** objects are the same.
 
 ```powershell
 class MyFileInfoSet : System.IEquatable[Object] {
-    [String]$File
+    [string]$File
     [int64]$Size
 
     [bool] Equals([Object] $obj) {

@@ -68,8 +68,8 @@ later to identify all members that you have hidden.
 class Car
 {
    # Properties
-   [String] $Color
-   [String] $ModelYear
+   [string] $Color
+   [string] $ModelYear
    [int] $Distance
 
    # Method

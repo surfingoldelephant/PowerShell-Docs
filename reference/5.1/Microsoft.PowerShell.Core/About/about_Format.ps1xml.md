@@ -541,14 +541,14 @@ Update-FormatData -PrependPath $PSHOME\Format\MyFileSystem.Format.ps1xml
                         </TableColumnItem>
                         <TableColumnItem>
                             <ScriptBlock>
-                                [String]::Format("{0,10}  {1,8}",
+                                [string]::Format("{0,10}  {1,8}",
                                     $_.LastWriteTime.ToString("d"),
                                     $_.LastWriteTime.ToString("t"))
                             </ScriptBlock>
                         </TableColumnItem>
                         <TableColumnItem>
                             <ScriptBlock>
-                                [String]::Format("{0,10}  {1,8}",
+                                [string]::Format("{0,10}  {1,8}",
                                     $_.CreationTime.ToString("d"),
                                     $_.LastWriteTime.ToString("t"))
                             </ScriptBlock>

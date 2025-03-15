@@ -370,7 +370,7 @@ an error, such as `Global scope cannot be removed`.
 # Class definition with Runspace affinity (default behavior)
 class UnsafeClass {
     static [object] ShowRunspaceId($Val) {
-        return [PSCustomObject]@{
+        return [pscustomobject]@{
             ThreadId   = [Threading.Thread]::CurrentThread.ManagedThreadId
             RunspaceId = [runspace]::DefaultRunspace.Id
         }
@@ -399,7 +399,7 @@ Runspace ids.
 [NoRunspaceAffinity()]
 class SafeClass {
     static [object] ShowRunspaceId($Val) {
-        return [PSCustomObject]@{
+        return [pscustomobject]@{
             ThreadId   = [Threading.Thread]::CurrentThread.ManagedThreadId
             RunspaceId = [runspace]::DefaultRunspace.Id
         }

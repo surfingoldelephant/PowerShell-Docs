@@ -283,7 +283,7 @@ formatting parameters, the script can call that method to format the output valu
 ```xml
 <WideItem>
   <ScriptBlock>
-    [String]::Format("{0,-10} {1,-8}", $_.LastWriteTime.ToString("d"), $_.LastWriteTime.ToString("t"))
+    [string]::Format("{0,-10} {1,-8}", $_.LastWriteTime.ToString("d"), $_.LastWriteTime.ToString("t"))
   </ScriptBlock>
 </WideItem>
 ```

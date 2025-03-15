@@ -235,7 +235,7 @@ specified in both statements aren't met, the script doesn't run. Each
 param
 (
     [Parameter(Mandatory=$true)]
-    [String[]]
+    [string[]]
     $Path
 )
 ...

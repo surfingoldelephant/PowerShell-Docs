@@ -284,14 +284,14 @@ PowerShell.
 ### [PSCustomObject] Count
 
 Almost all objects in PowerShell have that `Count` property. One important exception is the
-`[PSCustomObject]` in Windows PowerShell 5.1 (This is fixed in PowerShell 6.0). It doesn't have a
+`[pscustomobject]` in Windows PowerShell 5.1 (This is fixed in PowerShell 6.0). It doesn't have a
 `Count` property so you get a `$null` value if you try to use it. I call this out here so that you
 don't try to use `Count` instead of a `$null` check.
 
 Running this example on Windows PowerShell 5.1 and PowerShell 6.0 gives you different results.
 
 ```powershell
-$value = [PSCustomObject]@{Name='MyObject'}
+$value = [pscustomobject]@{Name='MyObject'}
 if ( $value.Count -eq 1 )
 {
     "We have a value"
@@ -420,7 +420,7 @@ it.
 function Do-Something
 {
     param(
-        [String] $Value
+        [string] $Value
     )
 }
 ```

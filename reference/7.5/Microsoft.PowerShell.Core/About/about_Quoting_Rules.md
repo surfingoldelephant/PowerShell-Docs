@@ -347,7 +347,7 @@ Here-strings are typically used to assign multiple lines to a variable. For
 example, the following here-string assigns a page of XML to the $page variable.
 
 ```powershell
-$page = [XML] @"
+$page = [xml] @"
 <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10"
 xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10"
 xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">

@@ -204,7 +204,7 @@ CollectionSize Test                           TotalMilliseconds RelativeSpeed
 When you're working with large collections, array addition is dramatically slower than adding to
 a **`List<T>`**.
 
-When using a `[List<T>]` object, you need to create the list with a specific type, like `[String]`
+When using a `[List<T>]` object, you need to create the list with a specific type, like `[string]`
 or `[int]`. When you add objects of a different type to the list, they are cast to the specified
 type. If they can't be cast to the specified type, the method raises an exception.
 
@@ -397,14 +397,14 @@ Given two collections, one with an **ID** and **Name**, the other with **Name** 
 
 ```powershell
 $Employees = 1..10000 | ForEach-Object {
-    [PSCustomObject]@{
+    [pscustomobject]@{
         Id   = $_
         Name = "Name$_"
     }
 }
 
 $Accounts = 2500..7500 | ForEach-Object {
-    [PSCustomObject]@{
+    [pscustomobject]@{
         Name  = "Name$_"
         Email = "Name$_@fabrikam.com"
     }
@@ -589,7 +589,7 @@ iteration of the `ForEach-Object` loop.
 ```powershell
 $measure = Measure-Command -Expression {
     Import-Csv .\Input.csv | ForEach-Object -Begin { $Id = 1 } -Process {
-        [PSCustomObject]@{
+        [pscustomobject]@{
             Id   = $Id
             Name = $_.opened_by
         } | Export-Csv .\Output1.csv -Append
@@ -610,7 +610,7 @@ In this case, `Export-Csv` is invoked only once, but still processes all objects
 ```powershell
 $measure = Measure-Command -Expression {
     Import-Csv .\Input.csv | ForEach-Object -Begin { $Id = 2 } -Process {
-        [PSCustomObject]@{
+        [pscustomobject]@{
             Id   = $Id
             Name = $_.opened_by
         }
@@ -637,7 +637,7 @@ accelerator.
 Measure-Command {
     $test = 'PSCustomObject'
     for ($i = 0; $i -lt 100000; $i++) {
-        $resultObject = [PSCustomObject]@{
+        $resultObject = [pscustomobject]@{
             Name = 'Name'
             Path = 'FullName'
         }
@@ -868,7 +868,7 @@ Iterations Test                                 TotalMilliseconds RelativeSpeed
 - [Out-Null][05]
 - [`List<T>`][06]
 - [`Add(T)` method][07]
-- [`[String]`][08]
+- [`[string]`][08]
 - [`[int]`][09]
 - [`[Object]`][10]
 - [`ToArray()` method][11]

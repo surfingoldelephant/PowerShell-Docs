@@ -816,7 +816,7 @@ object, unless that object is a `PSCustomObject`. This is a bug that is fixed in
 That's good news, but a lot of people are still on 5.1 and need to watch out for it.
 
 ```powershell
-PS> $object = [PSCustomObject]@{Name='TestObject'}
+PS> $object = [pscustomobject]@{Name='TestObject'}
 PS> $object.Count
 $null
 ```
@@ -1027,13 +1027,13 @@ PS> $myList[-1]
 10
 ```
 
-#### List[PSObject]
+#### List[psobject]
 
 You can have a list of any type, but when you don't know the type of objects, you can use
-`[List[PSObject]]` to contain them.
+`[List[psobject]]` to contain them.
 
 ```powershell
-$list = [List[PSObject]]::new()
+$list = [List[psobject]]::new()
 ```
 
 #### Remove()

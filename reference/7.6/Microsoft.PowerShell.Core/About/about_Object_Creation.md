@@ -172,7 +172,7 @@ function Test-Object {
   $ModuleName = "PSScheduledJob"
   $HelpCulture = "en-us"
   $HelpVersion = "3.1.0.0"
-  [PSCustomObject]@{
+  [pscustomobject]@{
     "ModuleName"=$ModuleName
     "UICulture"=$HelpCulture
     "Version"=$HelpVersion
@@ -180,7 +180,7 @@ function Test-Object {
   $ModuleName = "PSWorkflow"
   $HelpCulture = "en-us"
   $HelpVersion = "3.0.0.0"
-  [PSCustomObject]@{
+  [pscustomobject]@{
     "ModuleName"=$ModuleName
     "UICulture"=$HelpCulture
     "Version"=$HelpVersion

@@ -160,7 +160,7 @@ True
 PS> "12/31/2007" -is [datetime]
 False
 
-PS> "12/31/2007" -is [String]
+PS> "12/31/2007" -is [string]
 True
 
 PS> (Get-Process PowerShell)[0] -is [System.Diagnostics.Process]

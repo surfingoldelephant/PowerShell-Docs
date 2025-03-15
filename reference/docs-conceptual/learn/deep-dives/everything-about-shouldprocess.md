@@ -567,7 +567,7 @@ This is the correct way to implement `-Force` with `ShouldContinue`.
 function Test-ShouldContinue {
     [CmdletBinding()]
     param(
-        [Switch]$Force
+        [switch]$Force
     )
 
     if($Force -or $PSCmdlet.ShouldContinue('TARGET','OPERATION')){

@@ -18,12 +18,12 @@ better idea of what that means.
 
 ## Creating a PSCustomObject
 
-I love using `[PSCustomObject]` in PowerShell. Creating a usable object has never been easier.
+I love using `[pscustomobject]` in PowerShell. Creating a usable object has never been easier.
 Because of that, I'm going to skip over all the other ways you can create an object but I need
 to mention that most of these examples are PowerShell v3.0 and newer.
 
 ```powershell
-$myObject = [PSCustomObject]@{
+$myObject = [pscustomobject]@{
     Name     = 'Kevin'
     Language = 'PowerShell'
     State    = 'Texas'
@@ -81,7 +81,7 @@ This way is quite a bit slower but it may be your best option on early versions 
 ### Saving to a file
 
 I find the best way to save a hashtable to a file is to save it as JSON. You can import it back into
-a `[PSCustomObject]`
+a `[pscustomobject]`
 
 ```powershell
 $myObject | ConvertTo-Json -Depth 1 | Set-Content -Path $Path
@@ -236,7 +236,7 @@ Object variables hold a reference to the actual object. When you assign one obje
 variable, they still reference the same object.
 
 ```powershell
-$third = [PSCustomObject]@{Key=3}
+$third = [pscustomobject]@{Key=3}
 $fourth = $third
 $fourth.Key = 4
 ```
@@ -249,7 +249,7 @@ Because `$third` and `$fourth` reference the same instance of an object, both `$
 If you need a true copy of an object, you can clone it.
 
 ```powershell
-$third = [PSCustomObject]@{Key=3}
+$third = [pscustomobject]@{Key=3}
 $fourth = $third.psobject.Copy()
 $fourth.Key = 4
 ```
@@ -274,7 +274,7 @@ I recently discovered another way to do this from Redditor `u/markekraus`. He ta
 approach that allows you to define it inline.
 
 ```powershell
-$myObject = [PSCustomObject]@{
+$myObject = [pscustomobject]@{
     PSTypeName = 'My.Object'
     Name       = 'Kevin'
     Language   = 'PowerShell'
@@ -388,7 +388,7 @@ to the pipe when they shouldn't.
 
 ## Closing thoughts
 
-The context of this was all about `[PSCustomObject]`, but a lot of this information applies to
+The context of this was all about `[pscustomobject]`, but a lot of this information applies to
 objects in general.
 
 I have seen most of these features in passing before but never saw them presented as a collection of

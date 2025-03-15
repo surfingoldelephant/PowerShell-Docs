@@ -355,9 +355,9 @@ This example demonstrates the side-effect of using the **ExpandProperty** parame
 **NoteProperty** members.
 
 ```powershell
-PS> $object = [PSCustomObject]@{
+PS> $object = [pscustomobject]@{
     name = 'USA'
-    children = [PSCustomObject]@{
+    children = [pscustomobject]@{
         name = 'Southwest'
     }
 }
@@ -391,9 +391,9 @@ You can avoid the side-effect of using the **ExpandProperty** parameter by creat
 copying the properties from the input object.
 
 ```powershell
-PS> $object = [PSCustomObject]@{
+PS> $object = [pscustomobject]@{
     name = 'USA'
-    children = [PSCustomObject]@{
+    children = [pscustomobject]@{
         name = 'Southwest'
     }
 }
@@ -404,7 +404,7 @@ name children
 USA  @{name=Southwest}
 
 # Create a new object with selected properties
-PS> $newobject = [PSCustomObject]@{
+PS> $newobject = [pscustomobject]@{
     country = $object.name
     children = $object.children
 }

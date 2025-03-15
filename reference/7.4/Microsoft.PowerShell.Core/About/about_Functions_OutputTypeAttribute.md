@@ -79,7 +79,7 @@ function AdvancedFunction1
   [OutputType([<Type>])]
   param (
     [Parameter(Mandatory=$true)]
-    [String[]]
+    [string[]]
     $Parameter1
   )
 
@@ -92,7 +92,7 @@ function AdvancedFunction2
   [OutputType([<Type>])]
   param (
     [Parameter(Mandatory=$true)]
-    [String[]]
+    [string[]]
     $Parameter1
   )
 
@@ -107,7 +107,7 @@ function AdvancedFunction2
 ```powershell
 function Send-Greeting
 {
-  [OutputType([String])]
+  [OutputType([string])]
   param ($Name)
 
   "Hello, $Name"
@@ -138,7 +138,7 @@ function Get-User
   [CmdletBinding(DefaultParameterSetName="ID")]
 
   [OutputType("System.Int32", ParameterSetName="ID")]
-  [OutputType([String], ParameterSetName="Name")]
+  [OutputType([string], ParameterSetName="Name")]
 
   param (
     [Parameter(Mandatory=$true, ParameterSetName="ID")]
@@ -146,7 +146,7 @@ function Get-User
     $UserID,
 
     [Parameter(Mandatory=$true, ParameterSetName="Name")]
-    [String[]]
+    [string[]]
     $UserName
   )
 

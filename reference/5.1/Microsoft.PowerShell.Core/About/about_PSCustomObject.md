@@ -248,7 +248,7 @@ When that hashtable is cast to a `[pscustomobject]`, the case of the name of
 first key is used, but that value of the last matching key name is used.
 
 ```powershell
-[PSCustomObject]$OrderedHashTable
+[pscustomobject]$OrderedHashTable
 ```
 
 ```Output
@@ -266,7 +266,7 @@ Attempting to access these members returns `$null`.
 For example:
 
 ```powershell
-PS> $object = [PSCustomObject]@{key = 'value'}
+PS> $object = [pscustomobject]@{key = 'value'}
 PS> $object
 
 key

@@ -187,7 +187,7 @@ Remove                         {43}
 ```
 
 ```powershell
-([PSListModifier]($changeInstructions)).ApplyTo($list)
+([pslistmodifier]($changeInstructions)).ApplyTo($list)
 $list
 ```
 
