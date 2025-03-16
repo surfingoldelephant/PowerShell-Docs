@@ -6,7 +6,7 @@ title: Creating multiple runspaces
 ---
 # Creating multiple runspaces
 
-If you create a large number of runspaces, you might consider creating a runspace pool. Using a [System.Management.Automation.Runspaces.Runspacepool](/dotnet/api/System.Management.Automation.Runspaces.RunspacePool) object, rather than creating a large number of individual runspaces with the same characteristics, can improve performance.
+If you create a large number of runspaces, you might consider creating a runspace pool. Using a [System.Management.Automation.Runspaces.RunspacePool](/dotnet/api/System.Management.Automation.Runspaces.RunspacePool) object, rather than creating a large number of individual runspaces with the same characteristics, can improve performance.
 
 ## Creating and using a runspace pool.
 

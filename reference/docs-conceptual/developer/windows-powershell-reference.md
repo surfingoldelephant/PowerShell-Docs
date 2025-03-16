@@ -56,7 +56,7 @@ base class from which all cmdlet classes must be derived. For more information a
 [System.Management.Automation.Provider](/dotnet/api/System.Management.Automation.Provider) This
 namespace contains the classes, enumerations, and interfaces required to implement a Windows
 PowerShell provider. In particular, the
-[System.Management.Automation.Provider.Cmdletprovider](/dotnet/api/System.Management.Automation.Provider.CmdletProvider)
+[System.Management.Automation.Provider.CmdletProvider](/dotnet/api/System.Management.Automation.Provider.CmdletProvider)
 class is the base class from which all Windows PowerShell provider classes must be derived.
 
 [Microsoft.PowerShell.Commands](/dotnet/api/Microsoft.PowerShell.Commands) This namespace contains

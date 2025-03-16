@@ -142,7 +142,7 @@ not set in the attribute declaration.
 ## Supporting Parameter Validation
 
 The sample `Get-Proc` cmdlet adds an input validation attribute,
-[System.Management.Automation.Validatenotnulloremptyattribute](/dotnet/api/System.Management.Automation.ValidateNotNullOrEmptyAttribute),
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute](/dotnet/api/System.Management.Automation.ValidateNotNullOrEmptyAttribute),
 to the `Name` parameter to enable validation that the input is neither `null` nor empty. This
 attribute is one of several validation attributes provided by Windows PowerShell. For examples of
 other validation attributes, see [Validating Parameter Input](./validating-parameter-input.md).
@@ -166,7 +166,7 @@ processes for each requested process name, or all for processes if no name is pr
 in
 [System.Management.Automation.Cmdlet.ProcessRecord](/dotnet/api/System.Management.Automation.Cmdlet.ProcessRecord),
 the call to
-[System.Management.Automation.Cmdlet.WriteObject%28System.Object%2CSystem.Boolean%29](/dotnet/api/system.management.automation.cmdlet.writeobject#System_Management_Automation_Cmdlet_WriteObject_System_Object_System_Boolean_)
+[System.Management.Automation.Cmdlet.WriteObject](/dotnet/api/System.Management.Automation.Cmdlet.WriteObject)
 is the output mechanism for sending output objects to the pipeline. The second parameter of this
 call, `enumerateCollection`, is set to `true` to inform the Windows PowerShell runtime to enumerate
 the output array of process objects and write one process at a time to the command line.

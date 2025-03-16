@@ -23,9 +23,9 @@ host application also supports calls to remote computers by using the
 - Creating a custom host whose classes derive from the
   [System.Management.Automation.Host.PSHost](/dotnet/api/System.Management.Automation.Host.PSHost)
   class, the
-  [System.Management.Automation.Host.Pshostuserinterface](/dotnet/api/System.Management.Automation.Host.PSHostUserInterface)
+  [System.Management.Automation.Host.PSHostUserInterface](/dotnet/api/System.Management.Automation.Host.PSHostUserInterface)
   class, and the
-  [System.Management.Automation.Host.Pshostrawuserinterface](/dotnet/api/System.Management.Automation.Host.PSHostRawUserInterface)
+  [System.Management.Automation.Host.PSHostRawUserInterface](/dotnet/api/System.Management.Automation.Host.PSHostRawUserInterface)
   class.
 
 - Building a console application that uses these host classes to build an interactive Windows PowerShell shell.
@@ -643,7 +643,7 @@ namespace Microsoft.Samples.PowerShell.Host
 ## Example 3
 
 The following code is the implementation of the
-[System.Management.Automation.Host.Pshostuserinterface](/dotnet/api/System.Management.Automation.Host.PSHostUserInterface)
+[System.Management.Automation.Host.PSHostUserInterface](/dotnet/api/System.Management.Automation.Host.PSHostUserInterface)
 class that is used by this host application.
 
 ```csharp
@@ -1164,7 +1164,7 @@ namespace Microsoft.Samples.PowerShell.Host
 ## Example 4
 
 The following code is the implementation of the
-[System.Management.Automation.Host.Pshostrawuserinterface](/dotnet/api/System.Management.Automation.Host.PSHostRawUserInterface)
+[System.Management.Automation.Host.PSHostRawUserInterface](/dotnet/api/System.Management.Automation.Host.PSHostRawUserInterface)
 class that is used by this host application. Those elements that are not implemented throw an
 exception or return nothing.
 
@@ -1380,6 +1380,6 @@ namespace Microsoft.Samples.PowerShell.Host
 
  [System.Management.Automation.Host.PSHost](/dotnet/api/System.Management.Automation.Host.PSHost)
 
- [System.Management.Automation.Host.Pshostuserinterface](/dotnet/api/System.Management.Automation.Host.PSHostUserInterface)
+ [System.Management.Automation.Host.PSHostUserInterface](/dotnet/api/System.Management.Automation.Host.PSHostUserInterface)
 
- [System.Management.Automation.Host.Pshostrawuserinterface](/dotnet/api/System.Management.Automation.Host.PSHostRawUserInterface)
+ [System.Management.Automation.Host.PSHostRawUserInterface](/dotnet/api/System.Management.Automation.Host.PSHostRawUserInterface)

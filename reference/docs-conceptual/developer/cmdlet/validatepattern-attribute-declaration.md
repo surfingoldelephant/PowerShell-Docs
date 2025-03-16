@@ -33,10 +33,10 @@ Optional named parameter. Specifies a bitwise combination of [System.Text.Regula
 
 - If this attribute is applied to a collection, each element in the collection must match the pattern.
 
-- The ValidatePattern attribute is defined by the [System.Management.Automation.Validatepatternattribute](/dotnet/api/System.Management.Automation.ValidatePatternAttribute) class.
+- The ValidatePattern attribute is defined by the [System.Management.Automation.ValidatePatternAttribute](/dotnet/api/System.Management.Automation.ValidatePatternAttribute) class.
 
 ## See Also
 
-[System.Management.Automation.Validatepatternattribute](/dotnet/api/System.Management.Automation.ValidatePatternAttribute)
+[System.Management.Automation.ValidatePatternAttribute](/dotnet/api/System.Management.Automation.ValidatePatternAttribute)
 
 [Writing a Windows PowerShell Cmdlet](./writing-a-windows-powershell-cmdlet.md)

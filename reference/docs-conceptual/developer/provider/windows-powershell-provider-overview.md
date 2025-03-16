@@ -91,18 +91,18 @@ dynamic parameter, and the methods used to implement them, see
 ## Provider capabilities
 
 The
-[System.Management.Automation.Provider.Providercapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
+[System.Management.Automation.Provider.ProviderCapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
 enumeration defines a number of capabilities that providers can support. These include the ability
 to use wildcards, filter items, and support transactions. To specify capabilities for a provider,
 add a list of values of the
-[System.Management.Automation.Provider.Providercapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
+[System.Management.Automation.Provider.ProviderCapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
 enumeration, combined with a logical `OR` operation, as the
-[System.Management.Automation.Provider.CmdletProviderAttribute.Providercapabilities*](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute.ProviderCapabilities)
+[System.Management.Automation.Provider.CmdletProviderAttribute.ProviderCapabilities*](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute.ProviderCapabilities)
 property (the second parameter of the attribute) of the
 [System.Management.Automation.Provider.CmdletProviderAttribute](/dotnet/api/System.Management.Automation.Provider.CmdletProviderAttribute)
 attribute for your provider class. For example, the following attribute specifies that the provider
 supports the
-[System.Management.Automation.Provider.Providercapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
+[System.Management.Automation.Provider.ProviderCapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
 **ShouldProcess** and
 [System.Management.Automation.Provider.ProviderCapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
 **Transactions** capabilities.
@@ -118,11 +118,11 @@ When writing a provider, you can implement your own Help for the provider cmdlet
 This includes a single help topic for each provider cmdlet or multiple versions of a help topic for
 cases where the provider cmdlet acts differently based on the use of dynamic parameters. To support
 provider cmdlet-specific help, your provider must implement the
-[System.Management.Automation.Provider.Icmdletprovidersupportshelp](/dotnet/api/System.Management.Automation.Provider.ICmdletProviderSupportsHelp)
+[System.Management.Automation.Provider.ICmdletProviderSupportsHelp](/dotnet/api/System.Management.Automation.Provider.ICmdletProviderSupportsHelp)
 interface.
 
 The Windows PowerShell engine calls the
-[System.Management.Automation.Provider.Icmdletprovidersupportshelp.Gethelpmaml*](/dotnet/api/System.Management.Automation.Provider.ICmdletProviderSupportsHelp.GetHelpMaml)
+[System.Management.Automation.Provider.ICmdletProviderSupportsHelp.GetHelpMaml*](/dotnet/api/System.Management.Automation.Provider.ICmdletProviderSupportsHelp.GetHelpMaml)
 method to display the Help topic for your provider cmdlets. The engine provides the name of the
 cmdlet that the user specified when running the `Get-Help` cmdlet and the current path of the user.
 The current path is required if your provider implements different versions of the same provider

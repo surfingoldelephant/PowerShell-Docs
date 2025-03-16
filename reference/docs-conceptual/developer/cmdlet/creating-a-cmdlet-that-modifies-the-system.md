@@ -54,7 +54,7 @@ The first step in cmdlet creation is always naming the cmdlet and declaring the 
 implements the cmdlet. Because you are writing a cmdlet to change the system, it should be named
 accordingly. This cmdlet stops system processes, so the verb name chosen here is "Stop", defined by
 the
-[System.Management.Automation.Verbslifecycle](/dotnet/api/System.Management.Automation.VerbsLifeCycle)
+[System.Management.Automation.VerbsLifecycle](/dotnet/api/System.Management.Automation.VerbsLifecycle)
 class, with the noun "Proc" to indicate that the cmdlet stops processes. For more information about
 approved cmdlet verbs, see
 [Cmdlet Verb Names](./approved-verbs-for-windows-powershell-commands.md).

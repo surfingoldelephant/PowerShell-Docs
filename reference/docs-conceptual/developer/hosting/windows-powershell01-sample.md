@@ -6,7 +6,7 @@ title: Windows PowerShell01 Sample
 ---
 # Windows PowerShell01 Sample
 
-This sample shows how to use a [System.Management.Automation.Runspaces.Initialsessionstate](/dotnet/api/System.Management.Automation.Runspaces.InitialSessionState) object to limit the functionality of a runspace. The output of this sample demonstrates how to restrict the language mode of the runspace, how to mark a cmdlet as private, how to add and remove cmdlets and providers, how to add a proxy command, and more. This sample concentrates on how to restrict the runspace programmatically. Scripting alternatives to restricting the runspace include the $ExecutionContext.SessionState.LanguageMode and PSSessionConfiguration commands.
+This sample shows how to use a [System.Management.Automation.Runspaces.InitialSessionState](/dotnet/api/System.Management.Automation.Runspaces.InitialSessionState) object to limit the functionality of a runspace. The output of this sample demonstrates how to restrict the language mode of the runspace, how to mark a cmdlet as private, how to add and remove cmdlets and providers, how to add a proxy command, and more. This sample concentrates on how to restrict the runspace programmatically. Scripting alternatives to restricting the runspace include the $ExecutionContext.SessionState.LanguageMode and PSSessionConfiguration commands.
 
 ## Requirements
 
@@ -16,17 +16,17 @@ This sample requires Windows PowerShell 2.0.
 
 This sample demonstrates the following:
 
-- Restricting the language by setting the [System.Management.Automation.Runspaces.Initialsessionstate.Languagemode](/dotnet/api/System.Management.Automation.Runspaces.InitialSessionState.LanguageMode) property.
+- Restricting the language by setting the [System.Management.Automation.Runspaces.InitialSessionState.LanguageMode](/dotnet/api/System.Management.Automation.Runspaces.InitialSessionState.LanguageMode) property.
 
-- Adding aliases to the initial session state by using a [System.Management.Automation.Runspaces.Sessionstatealiasentry](/dotnet/api/System.Management.Automation.Runspaces.SessionStateAliasEntry) object.
+- Adding aliases to the initial session state by using a [System.Management.Automation.Runspaces.SessionStateAliasEntry](/dotnet/api/System.Management.Automation.Runspaces.SessionStateAliasEntry) object.
 
 - Marking commands as private.
 
-- Removing providers from the initial session state by using the [System.Management.Automation.Runspaces.Initialsessionstate.Providers](/dotnet/api/System.Management.Automation.Runspaces.InitialSessionState.Providers) property.
+- Removing providers from the initial session state by using the [System.Management.Automation.Runspaces.InitialSessionState.Providers](/dotnet/api/System.Management.Automation.Runspaces.InitialSessionState.Providers) property.
 
-- Removing commands from the initial session state by using the [System.Management.Automation.Runspaces.Initialsessionstate.Commands](/dotnet/api/System.Management.Automation.Runspaces.InitialSessionState.Commands) property.
+- Removing commands from the initial session state by using the [System.Management.Automation.Runspaces.InitialSessionState.Commands](/dotnet/api/System.Management.Automation.Runspaces.InitialSessionState.Commands) property.
 
-- Adding commands and providers to the [System.Management.Automation.Runspaces.Initialsessionstate](/dotnet/api/System.Management.Automation.Runspaces.InitialSessionState) object.
+- Adding commands and providers to the [System.Management.Automation.Runspaces.InitialSessionState](/dotnet/api/System.Management.Automation.Runspaces.InitialSessionState) object.
 
 ## Example
 

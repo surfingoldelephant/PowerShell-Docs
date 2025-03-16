@@ -6,7 +6,7 @@ title: Runspace07 Sample
 ---
 # Runspace07 Sample
 
-This sample shows how to create a runspace, and then use that runspace to run two cmdlets synchronously by using a [System.Management.Automation.Powershell](/dotnet/api/system.management.automation.powershell) object.
+This sample shows how to create a runspace, and then use that runspace to run two cmdlets synchronously by using a [System.Management.Automation.PowerShell](/dotnet/api/system.management.automation.powershell) object.
 
 ## Requirements
 
@@ -16,11 +16,11 @@ This sample requires Windows PowerShell 2.0.
 
 This sample demonstrates the following.
 
-- Creating a [System.Management.Automation.Runspaces.Runspace](/dotnet/api/System.Management.Automation.Runspaces.Runspace) object by using the [System.Management.Automation.Runspaces.Runspacefactory](/dotnet/api/System.Management.Automation.Runspaces.RunspaceFactory) class.
+- Creating a [System.Management.Automation.Runspaces.Runspace](/dotnet/api/System.Management.Automation.Runspaces.Runspace) object by using the [System.Management.Automation.Runspaces.RunspaceFactory](/dotnet/api/System.Management.Automation.Runspaces.RunspaceFactory) class.
 
-- Creating a [System.Management.Automation.Powershell](/dotnet/api/system.management.automation.powershell) object that uses the runspace.
+- Creating a [System.Management.Automation.PowerShell](/dotnet/api/system.management.automation.powershell) object that uses the runspace.
 
-- Adding cmdlets to the pipeline of the [System.Management.Automation.Powershell](/dotnet/api/system.management.automation.powershell) object.
+- Adding cmdlets to the pipeline of the [System.Management.Automation.PowerShell](/dotnet/api/system.management.automation.powershell) object.
 
 - Running the cmdlets synchronously.
 

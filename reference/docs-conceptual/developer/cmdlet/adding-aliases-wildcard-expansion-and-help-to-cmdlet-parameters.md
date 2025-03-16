@@ -18,7 +18,7 @@ This `Stop-Proc` cmdlet attempts to stop processes that are retrieved using the 
 The first step in cmdlet creation is always naming the cmdlet and declaring the .NET class that
 implements the cmdlet. Because you are writing a cmdlet to change the system, it should be named
 accordingly. Because this cmdlet stops system processes, it uses the verb **Stop**, defined by the
-[System.Management.Automation.Verbslifecycle](/dotnet/api/System.Management.Automation.VerbsLifeCycle)
+[System.Management.Automation.VerbsLifecycle](/dotnet/api/System.Management.Automation.VerbsLifecycle)
 class, with the noun **Proc** to indicate process. For more information about approved cmdlet verbs,
 see [Cmdlet Verb Names](./approved-verbs-for-windows-powershell-commands.md).
 

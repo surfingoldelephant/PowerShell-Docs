@@ -192,7 +192,7 @@ verbs.
 ## Lifecycle Verbs
 
 PowerShell uses the
-[System.Management.Automation.VerbsLifeCycle](/dotnet/api/System.Management.Automation.VerbsLifeCycle)
+[System.Management.Automation.VerbsLifecycle](/dotnet/api/System.Management.Automation.VerbsLifecycle)
 class to define actions that apply to the lifecycle of a resource. The following table lists most of
 the defined verbs.
 
@@ -253,7 +253,7 @@ common, communications, data, lifecycle, or security verb names verbs.
 - [System.Management.Automation.VerbsCommunications](/dotnet/api/System.Management.Automation.VerbsCommunications)
 - [System.Management.Automation.VerbsData](/dotnet/api/System.Management.Automation.VerbsData)
 - [System.Management.Automation.VerbsDiagnostic](/dotnet/api/System.Management.Automation.VerbsDiagnostic)
-- [System.Management.Automation.VerbsLifeCycle](/dotnet/api/System.Management.Automation.VerbsLifeCycle)
+- [System.Management.Automation.VerbsLifecycle](/dotnet/api/System.Management.Automation.VerbsLifecycle)
 - [System.Management.Automation.VerbsSecurity](/dotnet/api/System.Management.Automation.VerbsSecurity)
 - [System.Management.Automation.VerbsOther](/dotnet/api/System.Management.Automation.VerbsOther)
 - [Cmdlet Declaration](./cmdlet-class-declaration.md)

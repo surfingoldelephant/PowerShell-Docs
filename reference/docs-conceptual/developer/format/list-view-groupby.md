@@ -7,7 +7,7 @@ title: List View (GroupBy)
 # List View (GroupBy)
 
 This example shows how to implement a list view that separates the rows of the list into groups.
-This list view displays the properties of the [System.Serviceprocess.Servicecontroller](/dotnet/api/System.ServiceProcess.ServiceController)
+This list view displays the properties of the [System.ServiceProcess.ServiceController](/dotnet/api/System.ServiceProcess.ServiceController)
 objects returned by the [Get-Service](/powershell/module/Microsoft.PowerShell.Management/Get-Service)
 cmdlet. For more information about the components of a list view, see [Creating a List View](./creating-a-list-view.md).
 
@@ -49,7 +49,7 @@ This formatting file demonstrates the following XML elements:
 
 ## Example
 
-The following XML defines a list view that starts a new group whenever the value of the [System.Serviceprocess.Servicecontroller.Status](/dotnet/api/System.ServiceProcess.ServiceController.Status)
+The following XML defines a list view that starts a new group whenever the value of the [System.ServiceProcess.ServiceController.Status](/dotnet/api/System.ServiceProcess.ServiceController.Status)
 property changes. When each group is started, a custom label is displayed that includes the new
 value of the property.
 
@@ -87,7 +87,7 @@ value of the property.
 </Configuration>
 ```
 
-The following example shows how Windows PowerShell displays the [System.Serviceprocess.Servicecontroller](/dotnet/api/System.ServiceProcess.ServiceController)
+The following example shows how Windows PowerShell displays the [System.ServiceProcess.ServiceController](/dotnet/api/System.ServiceProcess.ServiceController)
 objects after this format file is loaded. The blank lines added before and after the group label are
 automatically added by Windows PowerShell.
 

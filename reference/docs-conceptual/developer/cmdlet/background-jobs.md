@@ -43,16 +43,16 @@ The following APIs are provided by Windows PowerShell to manage background jobs.
 [System.Management.Automation.Job](/dotnet/api/System.Management.Automation.Job)
 Derives custom job objects. This is an abstract class.
 
-[System.Management.Automation.Jobrepository](/dotnet/api/System.Management.Automation.JobRepository)
+[System.Management.Automation.JobRepository](/dotnet/api/System.Management.Automation.JobRepository)
 Manages and provides information about the current active background jobs.
 
-[System.Management.Automation.Jobstate](/dotnet/api/System.Management.Automation.JobState)
+[System.Management.Automation.JobState](/dotnet/api/System.Management.Automation.JobState)
 Defines the state of the background job. States include Started, Running, and Stopped.
 
-[System.Management.Automation.Jobstateinfo](/dotnet/api/System.Management.Automation.JobStateInfo)
+[System.Management.Automation.JobStateInfo](/dotnet/api/System.Management.Automation.JobStateInfo)
 Provides information about the state of a background job and, if the last state change was caused by an error, the reason the job entered its current state.
 
-[System.Management.Automation.Jobstateeventargs](/dotnet/api/System.Management.Automation.JobStateEventArgs)
+[System.Management.Automation.JobStateEventArgs](/dotnet/api/System.Management.Automation.JobStateEventArgs)
 Provides the arguments for an event that is raised when a background job changes state.
 
 ## Windows PowerShell Job Cmdlets

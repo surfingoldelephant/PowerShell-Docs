@@ -19,7 +19,7 @@ the database, and the items of the containers represent the rows in the tables.
 ## Defining the Windows PowerShell Provider Class
 
 Your drive provider must define a .NET class that derives from the
-[System.Management.Automation.Provider.Drivecmdletprovider](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider)
+[System.Management.Automation.Provider.DriveCmdletProvider](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider)
 base class. Here is the class definition for this drive provider:
 
 :::code language="csharp" source="~/../powershell-sdk-samples/SDK-2.0/csharp/AccessDBProviderSample02/AccessDBProviderSample02.cs" range="29-30":::
@@ -29,16 +29,16 @@ Notice that in this example, the
 attribute specifies a user-friendly name for the provider and the Windows PowerShell specific
 capabilities that the provider exposes to the Windows PowerShell runtime during command processing.
 The possible values for the provider capabilities are defined by the
-[System.Management.Automation.Provider.Providercapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
+[System.Management.Automation.Provider.ProviderCapabilities](/dotnet/api/System.Management.Automation.Provider.ProviderCapabilities)
 enumeration. This drive provider does not support any of these capabilities.
 
 ## Defining Base Functionality
 
 As described in
 [Design Your Windows PowerShell Provider](./designing-your-windows-powershell-provider.md), the
-[System.Management.Automation.Provider.Drivecmdletprovider](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider)
+[System.Management.Automation.Provider.DriveCmdletProvider](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider)
 class derives from the
-[System.Management.Automation.Provider.Cmdletprovider](/dotnet/api/System.Management.Automation.Provider.CmdletProvider)
+[System.Management.Automation.Provider.CmdletProvider](/dotnet/api/System.Management.Automation.Provider.CmdletProvider)
 base class that defines the methods needed for initializing and uninitializing the provider. To
 implement functionality for adding session-specific initialization information and for releasing
 resources that are used by the provider, see
@@ -62,9 +62,9 @@ object that describes the drive:
 ## Creating a Drive
 
 To allow the Windows PowerShell runtime to create a drive, the drive provider must implement the
-[System.Management.Automation.Provider.Drivecmdletprovider.Newdrive*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.NewDrive)
+[System.Management.Automation.Provider.DriveCmdletProvider.NewDrive*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.NewDrive)
 method. The following code shows the implementation of the
-[System.Management.Automation.Provider.Drivecmdletprovider.Newdrive*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.NewDrive)
+[System.Management.Automation.Provider.DriveCmdletProvider.NewDrive*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.NewDrive)
 method for this drive provider:
 
 :::code language="csharp" source="~/../powershell-sdk-samples/SDK-2.0/csharp/AccessDBProviderSample02/AccessDBProviderSample02.cs" range="42-84":::
@@ -83,7 +83,7 @@ Your override of this method should do the following:
   object that describes the drive with any required performance or reliability information, or
   provide extra data for callers using the drive.
 - Handle failures using the
-  [System.Management.Automation.Provider.Cmdletprovider.WriteError](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.WriteError)
+  [System.Management.Automation.Provider.CmdletProvider.WriteError](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.WriteError)
   method and then return `null`.
 
   This method returns either the drive information that was passed to the method or a
@@ -93,10 +93,10 @@ Your override of this method should do the following:
 
 The `New-PSDrive` cmdlet supported by your drive provider might require additional parameters. To
 attach these dynamic parameters to the cmdlet, the provider implements the
-[System.Management.Automation.Provider.Drivecmdletprovider.Newdrivedynamicparameters*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.NewDriveDynamicParameters)
+[System.Management.Automation.Provider.DriveCmdletProvider.NewDriveDynamicParameters*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.NewDriveDynamicParameters)
 method. This method returns an object that has properties and fields with parsing attributes similar
 to a cmdlet class or a
-[System.Management.Automation.Runtimedefinedparameterdictionary](/dotnet/api/System.Management.Automation.RuntimeDefinedParameterDictionary)
+[System.Management.Automation.RuntimeDefinedParameterDictionary](/dotnet/api/System.Management.Automation.RuntimeDefinedParameterDictionary)
 object.
 
 This drive provider does not override this method. However, the following code shows the default
@@ -107,12 +107,12 @@ implementation of this method:
 ## Removing a Drive
 
 To close the database connection, the drive provider must implement the
-[System.Management.Automation.Provider.Drivecmdletprovider.Removedrive*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.RemoveDrive)
+[System.Management.Automation.Provider.DriveCmdletProvider.RemoveDrive*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.RemoveDrive)
 method. This method closes the connection to the drive after cleaning up any provider-specific
 information.
 
 The following code shows the implementation of the
-[System.Management.Automation.Provider.Drivecmdletprovider.Removedrive*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.RemoveDrive)
+[System.Management.Automation.Provider.DriveCmdletProvider.RemoveDrive*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.RemoveDrive)
 method for this drive provider:
 
 :::code language="csharp" source="~/../powershell-sdk-samples/SDK-2.0/csharp/AccessDBProviderSample02/AccessDBProviderSample02.cs" range="91-116":::
@@ -125,17 +125,17 @@ method just returns the drive information passed as input.
 ## Initializing Default Drives
 
 Your drive provider implements the
-[System.Management.Automation.Provider.Drivecmdletprovider.Initializedefaultdrives*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.InitializeDefaultDrives)
+[System.Management.Automation.Provider.DriveCmdletProvider.InitializeDefaultDrives*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.InitializeDefaultDrives)
 method to mount drives. For example, the Active Directory provider might mount a drive for the
 default naming context if the computer is joined to a domain.
 
 This method returns a collection of drive information about the initialized drives, or an empty
 collection. The call to this method is made after the Windows PowerShell runtime calls the
-[System.Management.Automation.Provider.Cmdletprovider.Start*](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.Start)
+[System.Management.Automation.Provider.CmdletProvider.Start*](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.Start)
 method to initialize the provider.
 
 This drive provider does not override the
-[System.Management.Automation.Provider.Drivecmdletprovider.Initializedefaultdrives*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.InitializeDefaultDrives)
+[System.Management.Automation.Provider.DriveCmdletProvider.InitializeDefaultDrives*](/dotnet/api/System.Management.Automation.Provider.DriveCmdletProvider.InitializeDefaultDrives)
 method. However, the following code shows the default implementation, which returns an empty drive
 collection:
 
