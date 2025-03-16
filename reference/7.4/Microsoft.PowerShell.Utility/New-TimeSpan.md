@@ -217,8 +217,8 @@ Specifies the start of a time span. Enter a string that represents the date and 
 current date and time.
 
 You can use **Start** or its alias, **LastWriteTime**. The **LastWriteTime** alias lets you pipe
-objects that have a **LastWriteTime** property, such as files in the file system
-`[System.Io.FileIO]`, to the **Start** parameter of `New-TimeSpan`.
+objects that have a **LastWriteTime** property, such as files in the file system (`[IO.FileInfo]`),
+to the **Start** parameter of `New-TimeSpan`.
 
 ```yaml
 Type: System.DateTime

@@ -142,7 +142,7 @@ Display
 
 This example adds the **SizeInMB** script method to a **FileInfo** object that calculates the file
 size to the nearest MegaByte. The second command creates a **ScriptBlock** that uses the **Round**
-static method from the `[math]` type to round the file size to the second decimal place.
+static method from the `[Math]` type to round the file size to the second decimal place.
 
 The **Value** parameter also uses the `$this` automatic variable, which represents the current
 object. The `$this` variable is valid only in script blocks that define new properties and methods.

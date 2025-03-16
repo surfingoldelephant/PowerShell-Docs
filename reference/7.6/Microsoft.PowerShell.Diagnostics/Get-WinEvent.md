@@ -692,7 +692,7 @@ Hash table queries have the following rules:
 - The **Path** value takes paths to `.etl`, `.evt`, and `.evtx` log files.
 - The **LogName**, **Path**, and **ProviderName** keys can be used in the same query.
 - The **UserID** key can take a valid security identifier (SID) or a domain account name that can be
-  used to construct a valid **System.Security.Principal.NTAccount object**.
+  used to construct a valid **System.Security.Principal.NTAccount** object.
 - The **Data** value takes event data in an unnamed field. For example, events in classic event
   logs.
 - `<named-data>` key represents a named event data field.

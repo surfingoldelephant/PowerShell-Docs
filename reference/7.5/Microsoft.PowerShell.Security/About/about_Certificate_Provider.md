@@ -544,7 +544,7 @@ This parameter was reintroduced in PowerShell 7.1
 
 ## Script properties
 
-New script properties have been added to the **x509Certificate2** object that
+New script properties have been added to the **X509Certificate2** object that
 represents the certificates to make it easy to search and manage the
 certificates.
 

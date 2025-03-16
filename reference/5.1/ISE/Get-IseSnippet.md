@@ -86,7 +86,7 @@ Text:
 param
 (
   [Parameter(Mandatory=True)]
-  [String[]]
+  [string[]]
   $<ParameterName>
 )
 

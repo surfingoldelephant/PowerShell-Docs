@@ -69,7 +69,7 @@ $M = @'
 param
 (
   [Parameter(Mandatory=$true)]
-  [String[]]
+  [string[]]
   $<ParameterName>
 )
 '@

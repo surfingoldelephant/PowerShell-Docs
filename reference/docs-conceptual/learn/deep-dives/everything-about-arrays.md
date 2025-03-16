@@ -1054,7 +1054,7 @@ again to keep removing that value. If you have reference types, you have to prov
 you want removed.
 
 ```powershell
-[list[System.Management.Automation.PSDriveInfo]]$drives = Get-PSDrive
+[List[System.Management.Automation.PSDriveInfo]]$drives = Get-PSDrive
 $drives.Remove($drives[2])
 ```
 

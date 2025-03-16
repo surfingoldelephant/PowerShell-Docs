@@ -54,7 +54,7 @@ Enumerations use the following syntaxes:
 ### Flag enumeration definition syntax
 
 ```Syntax
-[[<attribute>]...] [Flag()] enum <enum-name>[ : <underlying-type-name>] {
+[[<attribute>]...] [Flags()] enum <enum-name>[ : <underlying-type-name>] {
     <label 0> [= 1]
     <label 1> [= 2]
     <label 2> [= 4]
