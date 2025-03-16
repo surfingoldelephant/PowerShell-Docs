@@ -128,10 +128,10 @@ If you place the ordered attribute before the variable name, the command fails
 with the following error message.
 
 ```powershell
-[ordered]$orderedhash = @{}
+[ordered]$orderedHash = @{}
 ParserError:
 Line |
-   1 |  [ordered]$orderedhash = @{}
+   1 |  [ordered]$orderedHash = @{}
      |  ~~~~~~~~~~~~~~
      | The ordered attribute can be specified only on a hash literal node.
 ```
@@ -139,19 +139,19 @@ Line |
 To correct the expression, move the [ordered] attribute.
 
 ```powershell
-$orderedhash = [ordered]@{}
+$orderedHash = [ordered]@{}
 ```
 
 You can cast an ordered dictionary to a hashtable, but you can't guarantee the
 order of the members.
 
 ```powershell
-[hashtable]$newhash = [ordered]@{
+[hashtable]$newHash = [ordered]@{
     Number = 1
     Shape = "Square"
     Color = "Blue"
 }
-$newhash
+$newHash
 ```
 
 ```Output

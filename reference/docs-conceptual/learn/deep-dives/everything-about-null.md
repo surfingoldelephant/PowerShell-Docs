@@ -318,15 +318,15 @@ required, the value is always `$null`. But if you place it inside an array, it's
 an empty array.
 
 ```powershell
-PS> $containempty = @( @() )
-PS> $containnothing = @($nothing)
-PS> $containnull = @($null)
+PS> $containEmpty = @( @() )
+PS> $containNothing = @($nothing)
+PS> $containNull = @($null)
 
-PS> $containempty.Count
+PS> $containEmpty.Count
 0
-PS> $containnothing.Count
+PS> $containNothing.Count
 0
-PS> $containnull.Count
+PS> $containNull.Count
 1
 ```
 

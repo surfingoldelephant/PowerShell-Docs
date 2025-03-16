@@ -423,12 +423,12 @@ name children
 USA  @{name=Southwest}
 
 # Create a new object with selected properties
-PS> $newobject = [pscustomobject]@{
+PS> $newObject = [pscustomobject]@{
     country = $object.name
     children = $object.children
 }
 
-PS> $newobject
+PS> $newObject
 
 country children
 ------- --------

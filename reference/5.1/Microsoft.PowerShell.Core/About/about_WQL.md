@@ -274,8 +274,8 @@ This command format works on any query. The following command gets the value
 of the **Name** property of the **Win32_Bios** WMI class.
 
 ```powershell
-$biosname = [wmisearcher]"Select Name from Win32_Bios"
-$biosname.Get()
+$biosName = [wmisearcher]"Select Name from Win32_Bios"
+$biosName.Get()
 ```
 
 ```output
