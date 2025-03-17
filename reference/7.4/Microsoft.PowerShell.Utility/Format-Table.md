@@ -177,7 +177,7 @@ local computer. You can use `Get-CimInstance` with the **ComputerName** paramete
 from remote computers.
 
 ```powershell
-$Processes = Get-CimInstance -Class win32_process -Filter "name='notepad.exe'"
+$Processes = Get-CimInstance -Class Win32_Process -Filter "name='notepad.exe'"
 $Processes | Format-Table ProcessName, @{
     Label = "Total Running Time"
     Expression={(Get-Date) - $_.CreationDate}

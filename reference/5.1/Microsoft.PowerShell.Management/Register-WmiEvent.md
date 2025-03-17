@@ -71,7 +71,7 @@ This command uses a query to subscribe to Win32_process instance creation events
 
 ```powershell
 $wmiParameters = @{
-  Query = "select * from __instancecreationevent within 5 where targetinstance isa 'win32_process'"
+  Query = "select * from __instancecreationevent within 5 where targetinstance isa 'Win32_Process'"
   SourceIdentifier = "WMIProcess"
   MessageData = "Test 01"
   TimeOut = 500

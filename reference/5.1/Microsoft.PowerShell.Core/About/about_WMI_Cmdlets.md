@@ -58,14 +58,14 @@ The following WMI cmdlets are included.
 The following command displays the BIOS information for the local computer.
 
 ```powershell
-C:\PS> Get-WmiObject win32_bios | Format-List *
+C:\PS> Get-WmiObject Win32_BIOS | Format-List *
 ```
 
 The following command displays information about the WinRM service for three
 remote computers.
 
 ```powershell
-$wql = "select * from win32_service where name='WinRM'"
+$wql = "select * from Win32_Service where name='WinRM'"
 Get-WmiObject -Query $wql -ComputerName server01, server01, server03
 ```
 
@@ -73,7 +73,7 @@ The following more complex command exits all instances of a program.
 
 ```powershell
 C:\PS> notepad.exe
-C:\PS> $wql = "select * from win32_process where name='notepad.exe'"
+C:\PS> $wql = "select * from Win32_Process where name='notepad.exe'"
 C:\PS> $np = Get-WmiObject -Query $wql
 C:\PS> $np | Remove-WmiObject
 ```
@@ -128,7 +128,7 @@ an object that is bound to that class.
 For example:
 
 ```powershell
-PS> $c = [wmiclass]"root\cimv2:WIn32_Process"
+PS> $c = [wmiclass]"root\CIMV2:Win32_Process"
 PS> $c |fl *
 Name             : Win32_Process
 __GENUS          : 1
@@ -151,7 +151,7 @@ returns an object that is bound to that instance.
 For example:
 
 ```powershell
-PS> $p = [wmi]'\\SERVER01\root\cimv2:Win32_Process.Handle="1204"'
+PS> $p = [wmi]'\\SERVER01\root\CIMV2:Win32_Process.Handle="1204"'
 PS> $p.Name
 OUTLOOK.EXE
 ```

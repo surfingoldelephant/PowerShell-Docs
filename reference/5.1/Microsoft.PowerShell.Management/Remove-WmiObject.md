@@ -77,7 +77,7 @@ The `Remove-WmiObject` cmdlet deletes an instance of an existing Windows Managem
 
 ```powershell
 notepad
-$np = Get-WmiObject -Query "select * from win32_process where name='notepad.exe'"
+$np = Get-WmiObject -Query "select * from Win32_Process where name='notepad.exe'"
 $np | Remove-WmiObject
 ```
 

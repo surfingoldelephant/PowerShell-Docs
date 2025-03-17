@@ -47,7 +47,7 @@ This cmdlet uses the WSMan connection/transport layer to run the action.
 ### Example 1: Invoke a method
 
 ```powershell
-Invoke-WSManAction -Action StartService -ResourceURI wmicimv2/win32_service  -SelectorSet @{name="spooler"} -Authentication default
+Invoke-WSManAction -Action StartService -ResourceURI wmicimv2/Win32_Service -SelectorSet @{name="spooler"} -Authentication default
 ```
 
 ```Output
@@ -58,8 +58,8 @@ lang        : en-US
 ReturnValue : 0
 ```
 
-This command calls the StartService method of the Win32_Service WMI class instance that corresponds
-to the Spooler service.
+This command calls the StartService method of the **Win32_Service** WMI class instance that
+corresponds to the Spooler service.
 
 The return value indicates whether the action was successful. In this case, a return value of 0
 indicates success. A return value of 5 indicates that the service is already started.
@@ -86,7 +86,7 @@ The file, `Input.xml`, contains the following content:
 ### Example 3: Invoke a method with specified parameter values
 
 ```powershell
-Invoke-WSManAction -Action create -ResourceURI wmicimv2/win32_process -ValueSet @{CommandLine="notepad.exe";CurrentDirectory="C:\"}
+Invoke-WSManAction -Action create -ResourceURI wmicimv2/Win32_Process -ValueSet @{CommandLine="notepad.exe";CurrentDirectory="C:\"}
 ```
 
 ```Output
@@ -98,14 +98,14 @@ ProcessId   : 6356
 ReturnValue : 0
 ```
 
-This command calls the **Create** method of the Win32_Process class. It passes the method two
+This command calls the **Create** method of the **Win32_Process** class. It passes the method two
 parameter values, `Notepad.exe` and `C:\`. As a result, a new process is created to run Notepad, and
 the current directory of the new process is set to `C:\`.
 
 ### Example 4: Invoke a method on a remote computer
 
 ```powershell
-Invoke-WSManAction -Action StartService -ResourceURI wmicimv2/win32_service  -SelectorSet @{name="spooler"} -ComputerName server01 -Authentication default
+Invoke-WSManAction -Action StartService -ResourceURI wmicimv2/Win32_Service -SelectorSet @{name="spooler"} -ComputerName server01 -Authentication default
 ```
 
 ```Output
@@ -116,9 +116,9 @@ lang        : en-US
 ReturnValue : 0
 ```
 
-This command calls the StartService method of the Win32_Service WMI class instance that corresponds
-to the Spooler service. Because the ComputerName parameter is specified, the command runs against
-the remote server01 computer.
+This command calls the StartService method of the **Win32_Service** WMI class instance that
+corresponds to the Spooler service. Because the ComputerName parameter is specified, the command
+runs against the remote server01 computer.
 
 The return value indicates whether the action was successful. In this case, a return value of 0
 indicates success. A return value of 5 indicates that the service is already started.

@@ -113,7 +113,7 @@ Get-CimInstance -ClassName Win32_Process
 
 ### Example 2: Get a list of namespaces from a WMI server
 
-This example retrieves a list of namespaces under the **Root** namespace on a WMI server.
+This example retrieves a list of namespaces under the **root** namespace on a WMI server.
 
 ```powershell
 Get-CimInstance -Namespace root -ClassName __Namespace
@@ -146,7 +146,7 @@ a CIM instance to the `Get-CimInstance` cmdlet to get a particular instance.
 ```powershell
 $instance = @{
     ClassName = 'Win32_Process'
-    Namespace = 'root\cimv2'
+    Namespace = 'root/cimv2'
     Properties = @{
         Handle = 0
     }
@@ -351,7 +351,7 @@ Accept wildcard characters: False
 
 Specifies the namespace of CIM class.
 
-The default namespace is **root/cimv2**. You can use tab completion to browse the list of
+The default namespace is **root/CIMV2**. You can use tab completion to browse the list of
 namespaces, because PowerShell gets a list of namespaces from the local WMI server to provide the
 list of namespaces.
 

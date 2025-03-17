@@ -59,7 +59,7 @@ $disk = Get-CimInstance -ClassName Win32_LogicalDisk -KeyOnly
 Get-CimAssociatedInstance -InputObject $disk[1]
 ```
 
-This set of commands retrieves the instances of the class named Win32_LogicalDisk and stores the
+This set of commands retrieves the instances of the class named **Win32_LogicalDisk** and stores the
 information in a variable named `$disk` using the `Get-CimInstance` cmdlet. The first logical disk
 instance in the variable is then used as the input object for the `Get-CimAssociatedInstance` cmdlet
 to get all the associated CIM instances of the specified CIM instance.
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 
 ### -Namespace
 
-Specifies the namespace for the CIM operation. The default namespace is root/cimv2.
+Specifies the namespace for the CIM operation. The default namespace is **root/CIMV2**.
 
 > [!NOTE]
 > You can use tab completion to browse the list of namespaces, because PowerShell gets a list of

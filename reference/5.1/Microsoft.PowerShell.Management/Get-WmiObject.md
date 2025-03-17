@@ -104,7 +104,7 @@ Get-WmiObject -Class Win32_Service -ComputerName 10.1.4.62
 This example gets the WMI classes in the root or default namespace of the local computer.
 
 ```powershell
-Get-WmiObject -Namespace "root/default" -List
+Get-WmiObject -Namespace "root/DEFAULT" -List
 ```
 
 ### Example 4: Get a named service on multiple computers
@@ -113,7 +113,7 @@ This example gets the WinRM service on the computers specified by the value of t
 parameter.
 
 ```powershell
-Get-WmiObject -Query "select * from win32_service where name='WinRM'" -ComputerName Server01, Server02 |
+Get-WmiObject -Query "select * from Win32_Service where name='WinRM'" -ComputerName Server01, Server02 |
   Format-List -Property PSComputerName, Name, ExitCode, Name, ProcessId, StartMode, State, Status
 ```
 
@@ -434,7 +434,7 @@ Specifies a **Where** clause to use as a filter. Uses the syntax of the WMI Quer
 
 `Get-WmiObject Win32_LogicalDisk -Filter "DeviceID = 'c:' "`
 
-`Get-WmiObject win32_service -Filter "name='WinRM'"`
+`Get-WmiObject Win32_Service -Filter "name='WinRM'"`
 
 ```yaml
 Type: System.String
@@ -480,7 +480,7 @@ Gets the names of the WMI classes in the WMI repository namespace that is specif
 **Namespace** parameter.
 
 If you specify the **List** parameter, but not the **Namespace** parameter, `Get-WmiObject` uses
-the **Root\Cimv2** namespace by default. This cmdlet does not use the **Default Namespace** registry
+the **root/CIMV2** namespace by default. This cmdlet does not use the **Default Namespace** registry
 entry in the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\Scripting` registry key to determine the
 default namespace.
 

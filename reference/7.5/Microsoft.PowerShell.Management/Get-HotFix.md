@@ -201,7 +201,7 @@ You can pipe a string containing a computer name to this cmdlet.
 
 ## OUTPUTS
 
-### System.Management.ManagementObject#root\CIMV2\Win32_QuickFixEngineering
+### System.Management.ManagementObject#root\cimv2\Win32_QuickFixEngineering
 
 This cmdlet returns objects representing the hotfixes on the computer.
 

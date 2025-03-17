@@ -75,8 +75,8 @@ instance on the local computer.
 
 ### Example 1: Create an instance of a CIM class
 
-This example creates an instance of a CIM Class named win32_environment in the root/cimv2 namespace
-on the computer.
+This example creates an instance of a CIM Class named **Win32_Environment** in the **root/CIMV2**
+namespace on the computer.
 
 ```powershell
 $prop = @{
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 
 ### -Namespace
 
-Specifies the namespace of the class for the new instance. The default namespace is **root/cimv2**.
+Specifies the namespace of the class for the new instance. The default namespace is **root/CIMV2**.
 You can use tab completion to browse the list of namespaces, because PowerShell gets a list of
 namespaces from the local WMI server to provide the list of namespaces.
 
