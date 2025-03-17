@@ -118,14 +118,14 @@ The following code shows the HelpUri attribute of the `Start-Debug` CIM command
 
 ### Adding a HelpUri attribute to a workflow
 
-For workflows that are written in the PowerShell language, add an `.ExternalHelp` comment directive
-to the workflow code. The value of the directive must be a URI that begins with `http` or `https`.
+For workflows that are written in the PowerShell language, add an `.EXTERNALHELP` comment keyword
+to the workflow code. The value of the keyword must be a URI that begins with `http` or `https`.
 
 > [!NOTE]
 > The HelpUri property isn't supported for XAML-based workflows in PowerShell.
 
-The following code shows the .ExternalHelp directive in a workflow file.
+The following code shows the `.EXTERNALHELP` keyword in a workflow file.
 
 ```powershell
-# .ExternalHelp "https://go.microsoft.com/fwlink/?LinkID=138338"
+# .EXTERNALHELP "https://go.microsoft.com/fwlink/?LinkID=138338"
 ```

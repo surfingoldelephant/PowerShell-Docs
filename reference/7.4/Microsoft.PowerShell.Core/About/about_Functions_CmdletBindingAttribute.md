@@ -115,7 +115,7 @@ function.
 
 However, when help files are installed on the computer and the value of the
 first link in the **RelatedLinks** section of the help file is a URI, or the
-value of the first `.Link` directive in comment-based help is a URI, the URI in
+value of the first `.LINK` keyword in comment-based help is a URI, the URI in
 the help file is used as the value of the **HelpUri** property of the function.
 
 The `Get-Help` cmdlet uses the value of the **HelpUri** property to locate the

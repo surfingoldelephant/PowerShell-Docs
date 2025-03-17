@@ -235,11 +235,11 @@ methods:
   for cmdlets. XML-based Help is required if you are translating Help topics
   into multiple languages.
 
-To associate the script with the XML-based Help topic, use the .ExternalHelp
-Help comment keyword. For more information about the ExternalHelp keyword, see
-[about_Comment_Based_Help][06]. For more information about XML-based help, see
-[How to Write Cmdlet Help][07].
-[How to Write Cmdlet Help](/powershell/scripting/developer/help/writing-help-for-windows-powershell-cmdlets).
+To associate the script with the XML-based Help topic, use the `.EXTERNALHELP`
+Help comment keyword. For more information, see:
+
+- [about_Comment_Based_Help][06]
+- [How to Write Cmdlet Help][07]
 
 ### Returning an exit value
 

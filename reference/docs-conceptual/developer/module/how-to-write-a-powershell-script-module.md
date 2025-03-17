@@ -135,39 +135,39 @@ member.
 
 ```powershell
 <#
- .Synopsis
+ .SYNOPSIS
   Displays a visual representation of a calendar.
 
- .Description
+ .DESCRIPTION
   Displays a visual representation of a calendar. This function supports multiple months
   and lets you highlight specific date ranges or days.
 
- .Parameter Start
+ .PARAMETER Start
   The first month to display.
 
- .Parameter End
+ .PARAMETER End
   The last month to display.
 
- .Parameter FirstDayOfWeek
+ .PARAMETER FirstDayOfWeek
   The day of the month on which the week begins.
 
- .Parameter HighlightDay
+ .PARAMETER HighlightDay
   Specific days (numbered) to highlight. Used for date ranges like (25..31).
   Date ranges are specified by the Windows PowerShell range syntax. These dates are
   enclosed in square brackets.
 
- .Parameter HighlightDate
+ .PARAMETER HighlightDate
   Specific days (named) to highlight. These dates are surrounded by asterisks.
 
- .Example
+ .EXAMPLE
    # Show a default display of this month.
    Show-Calendar
 
- .Example
+ .EXAMPLE
    # Display a date range.
    Show-Calendar -Start "March, 2010" -End "May, 2010"
 
- .Example
+ .EXAMPLE
    # Highlight a range of days.
    Show-Calendar -HighlightDay (1..10 + 22) -HighlightDate "2008-12-25"
 #>

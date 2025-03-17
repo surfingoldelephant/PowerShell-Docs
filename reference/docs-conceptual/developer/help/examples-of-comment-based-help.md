@@ -282,25 +282,25 @@ function Add-Extension
 ```
 
 The results are the same as the results for Example 1. `Get-Help` interprets the parameter
-descriptions as though they were accompanied by the `.Parameter` keyword.
+descriptions as though they were accompanied by the `.PARAMETER` keyword.
 
 ## Example 4:  Redirecting to an XML File
 
 You can write XML-based Help topics for functions and scripts. Although comment-based Help is easier
 to implement, XML-based Help is required if you want more precise control over Help content or if
 you are translating Help topics into multiple languages.The following example shows the first few
-lines of the `Update-Month.ps1` script. The script uses the `.ExternalHelp` keyword to specify the
+lines of the `Update-Month.ps1` script. The script uses the `.EXTERNALHELP` keyword to specify the
 path to an XML-based Help topic for the script.
 
 ```powershell
-# .ExternalHelp C:\MyScripts\Update-Month-Help.xml
+# .EXTERNALHELP C:\MyScripts\Update-Month-Help.xml
 
     param ([string]$InputPath, [string]$OutputPath)
 
     function Get-Data { }
 ```
 
-The following example shows the use of the `.ExternalHelp` keyword in a function.
+The following example shows the use of the `.EXTERNALHELP` keyword in a function.
 
 ```powershell
 function Add-Extension
@@ -309,7 +309,7 @@ function Add-Extension
     $Name = $Name + "." + $Extension
     $Name
 
-    # .ExternalHelp C:\ps-test\Add-Extension.xml
+    # .EXTERNALHELP C:\ps-test\Add-Extension.xml
 }
 ```
 
@@ -317,8 +317,8 @@ function Add-Extension
 
 The following code is an excerpt from the beginning of the built-in `help` function in PowerShell,
 which displays one screen of Help text at a time. Because the Help topic for the Get-Help cmdlet
-describes the Help function, the Help function uses the `.ForwardHelpTargetName` and
-`.ForwardHelpCategory` keywords to redirect the user to the Get-Help cmdlet Help topic.
+describes the Help function, the Help function uses the `.FORWARDHELPTARGETNAME` and
+`.FORWARDHELPCATEGORY` keywords to redirect the user to the Get-Help cmdlet Help topic.
 
 ```powershell
 function help

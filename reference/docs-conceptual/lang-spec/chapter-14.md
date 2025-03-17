@@ -140,7 +140,7 @@ Examples:
 
 ```powershell
 <#
-.ExternalHelp C:\MyScripts\Update-Month-Help.xml
+.EXTERNALHELP C:\MyScripts\Update-Month-Help.xml
 #>
 ```
 
@@ -275,7 +275,7 @@ Examples:
 
 ```powershell
 <#
-.Notes
+.NOTES
 *arbitrary text goes here*
 #>
 ```

@@ -70,12 +70,12 @@ Keywords define each section of comment-based help. Each comment-based help
 keyword is preceded by a dot `.`. The keywords can appear in any order. The
 keyword names aren't case-sensitive.
 
-For example, the `.Description` keyword precedes a description of a function or
+For example, the `.DESCRIPTION` keyword precedes a description of a function or
 script.
 
 ```powershell
 <#
-.Description
+.DESCRIPTION
 Get-Function displays the name and syntax of all functions in the session.
 #>
 ```
@@ -220,7 +220,7 @@ ignored.
 function Verb-Noun {
     [CmdletBinding()]
     param (
-        # This is the same as .Parameter
+        # This is the same as .PARAMETER
         [string]$ComputerName
     )
     # Verb the Noun on the computer
@@ -256,7 +256,7 @@ Repeat the `.LINK` keyword for each related topic.
 
 This content appears in the Related Links section of the help topic.
 
-The `.Link` keyword content can also include a Uniform Resource Identifier
+The `.LINK` keyword content can also include a Uniform Resource Identifier
 (URI) to an online version of the same help topic. The online version opens
 when you use the **Online** parameter of `Get-Help`. The URI must begin with
 "http" or "https".
@@ -290,7 +290,7 @@ provider.
 
 ### .FORWARDHELPCATEGORY
 
-Specifies the help category of the item in `.ForwardHelpTargetName`. Valid
+Specifies the help category of the item in `.FORWARDHELPTARGETNAME`. Valid
 values are `Alias`, `Cmdlet`, `HelpFile`, `Function`, `Provider`, `General`,
 `FAQ`, `Glossary`, `ScriptCommand`, `ExternalScript`, `Filter`, or `All`. Use
 this keyword to avoid conflicts when there are commands with the same name.
@@ -369,11 +369,11 @@ type, the **Object** type is inserted as the default value.
 ### Parameter List
 
 The parameter list in the help topic is generated from the function or script
-syntax and from the descriptions that you add by using the `.Parameter`
+syntax and from the descriptions that you add by using the `.PARAMETER`
 keyword. The function parameters appear in the **Parameters** section of the
 help topic in the same order that they appear in the function or script syntax.
 The spelling and capitalization of parameter names is also taken from the
-syntax. It isn't affected by the parameter name specified by the `.Parameter`
+syntax. It isn't affected by the parameter name specified by the `.PARAMETER`
 keyword.
 
 ### Common Parameters
@@ -804,7 +804,7 @@ function Add-Extension {
 The following code is an excerpt from the beginning of the built-in help
 function in PowerShell, which displays one screen of help text at a time.
 Because the help topic for the `Get-Help` cmdlet describes the help function,
-the help function uses the `.ForwardHelpTargetName` and `.ForwardHelpCategory`
+the help function uses the `.FORWARDHELPTARGETNAME` and `.FORWARDHELPCATEGORY`
 keywords to redirect the user to the `Get-Help` cmdlet help topic.
 
 ```powershell
