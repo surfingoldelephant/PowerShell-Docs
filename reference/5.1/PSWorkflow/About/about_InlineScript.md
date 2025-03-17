@@ -50,13 +50,13 @@ see [about_ActivityCommonParameters](about_ActivityCommonParameters.md).
 
 By default, the variables that are defined in a workflow aren't visible to the
 commands in the `inlinescript` script block. To make workflow variables visible
-to the `inlinescript`, use the `$Using` scope modifier. The `$Using` scope
+to the `inlinescript`, use the `Using:` scope modifier. The `Using:` scope
 modifier is required only once for each variable in the `inlinescript`.
 
-For more information about the `$Using` scope modifier, see
+For more information about the `Using:` scope modifier, see
 [about_Remote_Variables](../../Microsoft.PowerShell.Core/About/about_Remote_Variables.md).
 
-The following example shows that the `$Using` scope modifier makes the value of
+The following example shows that the `Using:` scope modifier makes the value of
 the `$a` top-level workflow variable available to the commands in the
 `inlinescript` script block.
 
@@ -115,7 +115,7 @@ Workflow New A = 4
 ```
 
 > [!NOTE]
-> A statement with the `$Using` scope modifier should appear before any use of
+> A statement with the `Using:` scope modifier should appear before any use of
 > the variable in the `inlinescript` script block.
 
 ## Running in-process

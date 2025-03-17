@@ -382,7 +382,7 @@ $unsafe = [UnsafeClass]::new()
 while ($true) {
     1..10 | ForEach-Object -Parallel {
         Start-Sleep -ms 100
-        ($using:unsafe)::ShowRunspaceId($_)
+        ($Using:unsafe)::ShowRunspaceId($_)
     }
 }
 ```
@@ -411,7 +411,7 @@ $safe = [SafeClass]::new()
 while ($true) {
     1..10 | ForEach-Object -Parallel {
         Start-Sleep -ms 100
-        ($using:safe)::ShowRunspaceId($_)
+        ($Using:safe)::ShowRunspaceId($_)
     }
 }
 ```

@@ -653,7 +653,7 @@ You can specify the scope of a function. For example, the function is added to
 the global scope in the following example:
 
 ```powershell
-function global:Get-DependentSvs {
+function Global:Get-DependentSvs {
   Get-Service | Where-Object {$_.DependentServices}
 }
 ```

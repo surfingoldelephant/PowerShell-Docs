@@ -145,9 +145,9 @@ The third command uses `Invoke-Command` cmdlet to run `Start-Job` in each of the
 The `Start-Job` command starts a job that runs the `Get-EventLog` command in the `$c`
 variable.
 
-The command uses the **Using** scope modifier to indicate that the `$c` variable was defined on the
-local computer. The **Using** scope modifier is introduced in Windows PowerShell 3.0. For more
-information about the **Using** scope modifier, see
+The command uses the `Using:` scope modifier to indicate that the `$c` variable was defined on the
+local computer. The `Using:` scope modifier is introduced in Windows PowerShell 3.0. For more
+information about the `Using:` scope modifier, see
 [about_Remote_Variables](About/about_Remote_Variables.md).
 
 The fourth command uses `Invoke-Command` to run a `Wait-Job` command in the sessions. It uses the

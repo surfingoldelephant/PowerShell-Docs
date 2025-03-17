@@ -803,8 +803,8 @@ name.
 The new **ThrottleLimit** parameter limits the number of script blocks running in parallel at a
 given time. The default is 5.
 
-Use the `$_` variable to represent the current input object in the script block. Use the `$using:`
-scope to pass variable references to the running script block.
+Use the `$_` variable to represent the current input object in the script block. Use the `Using:`
+scope modifier to pass variable references to the running script block.
 
 For more information, see [ForEach-Object][12].
 

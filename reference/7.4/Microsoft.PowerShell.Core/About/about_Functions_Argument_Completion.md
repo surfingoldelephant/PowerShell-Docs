@@ -301,8 +301,8 @@ class NumberCompleter : IArgumentCompleter {
         [IDictionary] $fakeBoundParameters) {
 
         $resultList = [List[CompletionResult]]::new()
-        $local:to = $this.To
-        $local:step = $this.Step
+        $Local:to = $this.To
+        $Local:step = $this.Step
         for ($i = $this.From; $i -lt $to; $i += $step) {
             $resultList.Add([CompletionResult]::new($i.ToString()))
         }

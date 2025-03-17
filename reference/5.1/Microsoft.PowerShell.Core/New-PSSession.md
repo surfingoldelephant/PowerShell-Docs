@@ -148,7 +148,7 @@ the `$s` variable. It uses the credentials of the `Domain1\Admin01` user to comp
 ### Example 6: Create a session with a global scope in a different domain
 
 ```powershell
-$global:s = New-PSSession -ComputerName Server1.Domain44.Corpnet.Fabrikam.com -Credential Domain01\Admin01
+$Global:s = New-PSSession -ComputerName Server1.Domain44.Corpnet.Fabrikam.com -Credential Domain01\Admin01
 ```
 
 This example shows how to create a **PSSession** with a global scope on a computer in a different

@@ -400,7 +400,7 @@ global scope, even when it's created in a script or function.
 $Global:Computers = "Server01"
 ```
 
-For any script or command that executes out of session, you need the `Using`
+For any script or command that executes out of session, you need the `Using:`
 scope modifier to embed variable values from the calling session scope, so that
 out of session code can access them.
 

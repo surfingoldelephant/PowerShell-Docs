@@ -98,8 +98,8 @@ stored in the `$j` variable.
 
 The third command stops the job. It uses the `Invoke-Command` cmdlet to run a `Stop-Job` command in
 the **PSSession** on Server01. Because the job objects are stored in `$j`, which is a variable on
-the local computer, the command uses the **Using** scope modifier to identify `$j` as a local
-variable. For more information about the **Using** scope modifier, see
+the local computer, the command uses the `Using:` scope modifier to identify `$j` as a local
+variable. For more information about the `Using:` scope modifier, see
 [about_Remote_Variables](About/about_Remote_Variables.md).
 
 When the command finishes, the job is stopped and the **PSSession** in `$s` is available for use.

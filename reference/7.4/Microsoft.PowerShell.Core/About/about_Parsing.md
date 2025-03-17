@@ -59,7 +59,7 @@ Variable expressions carry the value of the variable they reference:
 
 ```powershell
 $x
-$script:path
+$Script:path
 ```
 
 Operators combine other expressions for evaluation:

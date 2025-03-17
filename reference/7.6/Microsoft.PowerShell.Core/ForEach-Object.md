@@ -73,8 +73,8 @@ command.
 - **Parallel running script block**. Beginning with PowerShell 7.0, a third parameter set is
   available that runs each script block in parallel. The **ThrottleLimit** parameter limits the
   number of parallel scripts running at a time. As before, use the `$_` variable to represent the
-  current input object in the script block. Use the `$using:` keyword to pass variable references to
-  the running script.
+  current input object in the script block. Use the `Using:` scope modifier to pass variable
+  references to the running script.
 
   In PowerShell 7, a new runspace is created for each loop iteration to ensure maximum isolation.
   This can be a large performance and resource hit if the work you are doing is small compared to
@@ -300,7 +300,7 @@ This example runs a script block that evaluates a string and sleeps for one seco
 $Message = "Output:"
 
 1..8 | ForEach-Object -Parallel {
-    "$using:Message $_"
+    "$Using:Message $_"
     Start-Sleep 1
 } -ThrottleLimit 4
 ```
@@ -317,7 +317,7 @@ Output: 8
 ```
 
 The **ThrottleLimit** parameter value is set to 4 so that the input is processed in batches of four.
-The `$using:` keyword is used to pass the `$Message` variable into each parallel script block.
+The `Using:` scope modifier is used to pass the `$Message` variable into each parallel script block.
 
 ### Example 12: Retrieve log entries in parallel
 
@@ -386,7 +386,7 @@ This example invokes script blocks in parallel to collect uniquely named Process
 ```powershell
 $threadSafeDictionary = [System.Collections.Concurrent.ConcurrentDictionary[string,object]]::new()
 Get-Process | ForEach-Object -Parallel {
-    $dict = $using:threadSafeDictionary
+    $dict = $Using:threadSafeDictionary
     $dict.TryAdd($_.ProcessName, $_)
 }
 
@@ -453,17 +453,17 @@ Output: 5
 
 > [!NOTE]
 > [PipelineVariable](About/about_CommonParameters.md) common parameter variables are _not_
-> supported in `ForEach-Object -Parallel` scenarios even with the `$using:` keyword.
+> supported in `ForEach-Object -Parallel` scenarios even with the `Using:` scope modifier.
 
 ### Example 17: Passing variables in nested parallel script ScriptBlockSet
 
 You can create a variable outside a `ForEach-Object -Parallel` scoped scriptblock and use
-it inside the scriptblock with the `$using` keyword.
+it inside the scriptblock with the `Using:` scope modifier.
 
 ```powershell
 $test1 = 'TestA'
 1..2 | ForEach-Object -Parallel {
-    $using:test1
+    $Using:test1
 }
 ```
 
@@ -477,10 +477,10 @@ TestA
 # to be used in a nested foreach parallel scriptblock.
 $test1 = 'TestA'
 1..2 | ForEach-Object -Parallel {
-    $using:test1
+    $Using:test1
     $test2 = 'TestB'
     1..2 | ForEach-Object -Parallel {
-        $using:test2
+        $Using:test2
     }
 }
 ```
@@ -489,7 +489,7 @@ $test1 = 'TestA'
 Line |
    2 |  1..2 | ForEach-Object -Parallel {
      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | The value of the using variable '$using:test2' can't be retrieved because it has
+     | The value of the using variable '$Using:test2' can't be retrieved because it has
      | not been set in the local session.
 ```
 
@@ -876,11 +876,11 @@ Using `ForEach-Object -Parallel`:
   `trap` blocks.
 
 - [PipelineVariable](About/about_CommonParameters.md) common parameter variables are _not_ supported
-  in parallel scenarios even with the `$using:` keyword.
+  in parallel scenarios even with the `Using:` scope modifier.
 
   > [!IMPORTANT]
   > The `ForEach-Object -Parallel` parameter set runs script blocks in parallel on separate process
-  > threads. The `$using:` keyword allows passing variable references from the cmdlet invocation
+  > threads. The `Using:` modifier allows passing variable references from the cmdlet invocation
   > thread to each running script block thread. Since the script blocks run in different threads,
   > the object variables passed by reference must be used safely. Generally it's safe to read from
   > referenced objects that don't change. If you need to modify the object state then you must

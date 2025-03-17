@@ -224,7 +224,7 @@ following example:
 function Get-NextID ([int]$StartValue = 1) {
     $nextID = $StartValue
     {
-        ($script:nextID++)
+        ($Script:nextID++)
     }.GetNewClosure()
 }
 
@@ -245,7 +245,7 @@ specified. However, multiple sequences must be supported, each with its own `$St
 Each time a new closure is created by `GetNewClosure`, a new dynamic module is created, and the
 variables in the caller's scope (in this case, the script block containing the increment) are copied
 into this new module. To ensure that the nextId defined inside the parent function (but outside the
-script block) is incremented, the explicit script: scope prefix is needed.
+script block) is incremented, the explicit Script: scope prefix is needed.
 
 Of course, the script block need not be a named function; for example:
 
@@ -254,7 +254,7 @@ $v3 = & {      # get a scriptblock with $StartValue of 200
     param ([int]$StartValue = 1)
     $nextID = $StartValue
     {
-        ($script:nextID++)
+        ($Script:nextID++)
     }.GetNewClosure()
 } 200
 

@@ -23,7 +23,7 @@ module. No uncommented statement can precede it, including parameters.
 
 The `using` statement must not contain any variables.
 
-The `using` statement isn't the same as the `using:` scope modifier for
+The `using` statement isn't the same as the `Using:` scope modifier for
 variables. For more information, see
 [about_Remote_Variables](about_Remote_Variables.md).
 

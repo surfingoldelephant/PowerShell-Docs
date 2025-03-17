@@ -429,12 +429,12 @@ scopes:
 
 ```Syntax
 variable-scope:
-    global:
-    local:
-    private:
-    script:
-    using:
-    workflow:
+    Global:
+    Local:
+    Private:
+    Script:
+    Using:
+    Workflow:
     variable-namespace
 ```
 
@@ -443,28 +443,29 @@ also shows the scope when no scope is specified explicitly:
 
 | **Scope Modifier** |                                  **Within a Script File**                                  |                                 **Within a Script Block**                                  |                                   **Within a Function**                                    |
 | ------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| global             | Global scope                                                                               | Global scope                                                                               | Global scope                                                                               |
-| script             | Nearest ancestor script file's scope or Global if there is no nearest ancestor script file | Nearest ancestor script file's scope or Global if there is no nearest ancestor script file | Nearest ancestor script file's scope or Global if there is no nearest ancestor script file |
-| private            | Global/Script/Local scope                                                                  | Local scope                                                                                | Local scope                                                                                |
-| local              | Global/Script/Local scope                                                                  | Local scope                                                                                | Local scope                                                                                |
-| using              | Implementation defined                                                                     | Implementation defined                                                                     | Implementation defined                                                                     |
-| workflow           | Implementation defined                                                                     | Implementation defined                                                                     | Implementation defined                                                                     |
-| none               | Global/Script/Local scope                                                                  | Local scope                                                                                | Local scope                                                                                |
+| Global             | Global scope                                                                               | Global scope                                                                               | Global scope                                                                               |
+| Script             | Nearest ancestor script file's scope or Global if there is no nearest ancestor script file | Nearest ancestor script file's scope or Global if there is no nearest ancestor script file | Nearest ancestor script file's scope or Global if there is no nearest ancestor script file |
+| Private            | Global/Script/Local scope                                                                  | Local scope                                                                                | Local scope                                                                                |
+| Local              | Global/Script/Local scope                                                                  | Local scope                                                                                | Local scope                                                                                |
+| Using              | Implementation defined                                                                     | Implementation defined                                                                     | Implementation defined                                                                     |
+| Workflow           | Implementation defined                                                                     | Implementation defined                                                                     | Implementation defined                                                                     |
+| None               | Global/Script/Local scope                                                                  | Local scope                                                                                | Local scope                                                                                |
 
 Variable scope information can also be specified when using the family of cmdlets listed in
 ([§3.1.5][§3.1.5]). In particular, refer to the parameter `Scope`, and the parameters `Option Private` and
 `Option AllScope` for more information.
 
-The scope `using` is used to access variables defined in another scope while running scripts via
-cmdlets like `Start-Job`, `Invoke-Command`, or within an *inlinescript-statement*. For example:
+The `Using:` scope modifier is used to access variables defined in another scope while running
+scripts via cmdlets like `Start-Job`, `Invoke-Command`, or within an *inlinescript-statement*. For
+example:
 
 ```powershell
 $a = 42
-Invoke-Command --ComputerName RemoteServer { $using:a } # returns 42
+Invoke-Command --ComputerName RemoteServer { $Using:a } # returns 42
 workflow foo
 {
     $b = "Hello"
-    inlinescript { $using:b }
+    inlinescript { $Using:b }
 }
 foo # returns "Hello"
 ```

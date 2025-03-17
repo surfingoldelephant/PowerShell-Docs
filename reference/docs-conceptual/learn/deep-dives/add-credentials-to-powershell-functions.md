@@ -125,7 +125,7 @@ function Set-RemoteRegistryValue {
         $Credential = [System.Management.Automation.PSCredential]::Empty
     )
         $null = Invoke-Command -ComputerName $ComputerName -ScriptBlock {
-            Set-ItemProperty -Path $using:Path -Name $using:Name -Value $using:Value
+            Set-ItemProperty -Path $Using:Path -Name $Using:Name -Value $Using:Value
         } -Credential $Credential
 }
 ```
@@ -247,11 +247,11 @@ function Set-RemoteRegistryValue {
 
     if($Credential -ne [System.Management.Automation.PSCredential]::Empty) {
         Invoke-Command -ComputerName:$ComputerName -Credential:$Credential  {
-            Set-ItemProperty -Path $using:Path -Name $using:Name -Value $using:Value
+            Set-ItemProperty -Path $Using:Path -Name $Using:Name -Value $Using:Value
         }
     } else {
         Invoke-Command -ComputerName:$ComputerName {
-            Set-ItemProperty -Path $using:Path -Name $using:Name -Value $using:Value
+            Set-ItemProperty -Path $Using:Path -Name $Using:Name -Value $Using:Value
         }
     }
 }
@@ -286,7 +286,7 @@ function Set-RemoteRegistryValue {
         }
 
         $null = Invoke-Command -ScriptBlock {
-            Set-ItemProperty -Path $using:Path -Name $using:Name -Value $using:Value
+            Set-ItemProperty -Path $Using:Path -Name $Using:Name -Value $Using:Value
         } @splat
 }
 ```

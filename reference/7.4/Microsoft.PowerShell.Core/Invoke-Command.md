@@ -394,9 +394,9 @@ the results in the `$results` variable.
 ### Example 9: Include local variables in a command run on a remote computer
 
 This example shows how to include the values of local variables in a command run on a remote
-computer. The command uses the `Using` scope modifier to identify a local variable in a remote
-command. By default, all variables are assumed to be defined in the remote session. The `Using`
-scope modifier was introduced in PowerShell 3.0. For more information about the `Using` scope
+computer. The command uses the `Using:` scope modifier to identify a local variable in a remote
+command. By default, all variables are assumed to be defined in the remote session. The `Using:`
+scope modifier was introduced in PowerShell 3.0. For more information about the `Using:` scope
 modifier, see [about_Remote_Variables](./About/about_Remote_Variables.md) and
 [about_Scopes](./about/about_scopes.md).
 
@@ -409,7 +409,7 @@ Invoke-Command -ComputerName Server01 -ScriptBlock {
 
 The `$Log` variable stores the name of the event log, PowerShellCore/Operational. The
 `Invoke-Command` cmdlet runs `Get-WinEvent` on Server01 to get the ten newest events from the event
-log. The value of the **LogName** parameter is the `$Log` variable that is prefixed by the `Using`
+log. The value of the **LogName** parameter is the `$Log` variable that is prefixed by the `Using:`
 scope modifier to indicate that it was created in the local session, not in the remote session.
 
 ### Example 10: Hide the computer name

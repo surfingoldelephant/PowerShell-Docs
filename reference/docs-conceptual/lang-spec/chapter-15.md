@@ -161,12 +161,12 @@ braced-variable:
     ${   variable-scope~opt~   braced-variable-characters   }
 
 variable-scope:
-    global:
-    local:
-    private:
-    script:
-    using:
-    workflow:
+    Global:
+    Local:
+    Private:
+    Script:
+    Using:
+    Workflow:
     variable-namespace
 
 variable-namespace:

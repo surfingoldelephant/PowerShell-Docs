@@ -160,7 +160,7 @@ two cases for that meet this criteria.
 
 ```powershell
 (Measure-Command {
-    1..1000 | foreach { Start-ThreadJob { Write-Output "Hello $using:_" } } | Receive-Job -Wait
+    1..1000 | foreach { Start-ThreadJob { Write-Output "Hello $Using:_" } } | Receive-Job -Wait
 }).TotalMilliseconds
 36860.8226
 
@@ -203,7 +203,7 @@ The script completes in half the time when the jobs are run in parallel.
 Measure-Command {
     $logs = $logNames | foreach {
         Start-ThreadJob {
-            Get-WinEvent -LogName $using:_ -MaxEvents 5000 2>$null
+            Get-WinEvent -LogName $Using:_ -MaxEvents 5000 2>$null
         } -ThrottleLimit 10
     } | Wait-Job | Receive-Job
 }
@@ -218,7 +218,7 @@ $logs.Count
 There are multiple ways to pass values into the thread-based jobs.
 
 `Start-ThreadJob` can accept variables that are piped to the cmdlet, passed in
-to the script block via the `$using` keyword, or passed in via the
+to the script block via the `Using:` scope modifier, or passed in via the
 **ArgumentList** parameter.
 
 ```powershell
@@ -226,21 +226,21 @@ $msg = "Hello"
 
 $msg | Start-ThreadJob { $input | Write-Output } | Wait-Job | Receive-Job
 
-Start-ThreadJob { Write-Output $using:msg } | Wait-Job | Receive-Job
+Start-ThreadJob { Write-Output $Using:msg } | Wait-Job | Receive-Job
 
 Start-ThreadJob { param ([string] $Message) Write-Output $Message } -ArgumentList @($msg) |
   Wait-Job | Receive-Job
 ```
 
 `ForEach-Object -Parallel` accepts piped in variables, and variables passed
-directly to the script block via the `$using` keyword.
+directly to the script block via the `Using:` scope modifier.
 
 ```powershell
 $msg = "Hello"
 
 $msg | ForEach-Object -Parallel { Write-Output $_ } -AsJob | Wait-Job | Receive-Job
 
-1..1 | ForEach-Object -Parallel { Write-Output $using:msg } -AsJob | Wait-Job | Receive-Job
+1..1 | ForEach-Object -Parallel { Write-Output $Using:msg } -AsJob | Wait-Job | Receive-Job
 ```
 
 Since thread jobs run in the same process, any variable reference type passed
@@ -257,8 +257,8 @@ the process.
 $threadSafeDictionary = [System.Collections.Concurrent.ConcurrentDictionary[string,object]]::new()
 $jobs = Get-Process | foreach {
     Start-ThreadJob {
-        $proc = $using:_
-        $dict = $using:threadSafeDictionary
+        $proc = $Using:_
+        $dict = $Using:threadSafeDictionary
         $dict.TryAdd($proc.ProcessName, $proc)
     }
 }

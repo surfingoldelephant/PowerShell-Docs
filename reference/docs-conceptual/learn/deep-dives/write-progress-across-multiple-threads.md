@@ -80,7 +80,7 @@ progress.
 
 ```powershell
 $job = $dataset | ForEach-Object -ThrottleLimit 3 -AsJob -Parallel {
-    $syncCopy = $using:sync
+    $syncCopy = $Using:sync
     $process = $syncCopy.$($PSItem.Id)
 
     $process.Id = $PSItem.Id
@@ -111,9 +111,9 @@ The mock processes are sent to `ForEach-Object` and started as jobs. The **Throt
 **3** to highlight running multiple processes in a queue. The jobs are stored in the `$job` variable
 and allows us to know when all the processes have finished later on.
 
-When using the `using:` statement to reference a parent scope variable in PowerShell, you can't use
+When using the `Using:` statement to reference a parent scope variable in PowerShell, you can't use
 expressions to make it dynamic. For example, if you tried to create the `$process` variable like
-this, `$process = $using:sync.$($PSItem.Id)`, you would get an error stating you can't use
+this, `$process = $Using:sync.$($PSItem.Id)`, you would get an error stating you can't use
 expressions there. So, we create the `$syncCopy` variable to be able to reference and modify the
 `$sync` variable without the risk of it failing.
 
@@ -201,7 +201,7 @@ $dataset | ForEach-Object {$origin.($_.Id) = @{}}
 $sync = [System.Collections.Hashtable]::Synchronized($origin)
 
 $job = $dataset | ForEach-Object -ThrottleLimit 3 -AsJob -Parallel {
-    $syncCopy = $using:sync
+    $syncCopy = $Using:sync
     $process = $syncCopy.$($PSItem.Id)
 
     $process.Id = $PSItem.Id
