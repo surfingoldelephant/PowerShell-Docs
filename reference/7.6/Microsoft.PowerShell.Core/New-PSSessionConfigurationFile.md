@@ -475,7 +475,7 @@ Accept wildcard characters: False
 
 ### -FormatsToProcess
 
-Specifies the formatting files (.ps1xml) that run in sessions that use the session configuration.
+Specifies the formatting files (`.ps1xml`) that run in sessions that use the session configuration.
 The value of this parameter must be a full or absolute path of the formatting files.
 
 ```yaml
@@ -1073,7 +1073,7 @@ This cmdlet returns no output.
   value of the **VisibleProviders** parameter is the Certificate provider, but the
   **ModulesToImport** parameter does not specify the **Microsoft.PowerShell.Security** module that
   contains the Certificate provider, the Certificate provider is not visible in the session.
-- `New-PSSessionConfigurationFile` creates a session configuration file that has a .pssc file name
+- `New-PSSessionConfigurationFile` creates a session configuration file that has a `.pssc` file name
   extension in the path that you specify in the **Path** parameter. When you use the session
   configuration file to create a session configuration, the `Register-PSSessionConfiguration` cmdlet
   copies the configuration file and saves an active copy of the file in the **SessionConfig**

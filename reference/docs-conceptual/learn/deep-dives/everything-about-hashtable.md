@@ -831,7 +831,7 @@ $hashtable = ( & $scriptBlock )
 It imports the contents of the file into a `scriptblock`, then checks to make sure it doesn't have
 any other PowerShell commands in it before it executes it.
 
-On that note, did you know that a module manifest (the psd1 file) is just a hashtable?
+On that note, did you know that a module manifest (the `.psd1` file) is just a hashtable?
 
 ## Keys can be any object
 

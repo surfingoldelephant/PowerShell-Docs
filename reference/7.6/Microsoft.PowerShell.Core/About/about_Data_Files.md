@@ -1,5 +1,5 @@
 ---
-description: Describes how to use PowerShell data (.psd1) files.
+description: Describes how to use PowerShell data (`.psd1`) files.
 Locale: en-US
 ms.date: 01/19/2023
 online version: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_data_files?view=powershell-7.6&WT.mc_id=ps-gethelp

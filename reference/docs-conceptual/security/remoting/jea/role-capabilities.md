@@ -1,6 +1,6 @@
 ---
 description: >-
-  A role capability is a PowerShell data file with the .psrc extension that lists all the cmdlets,
+  A role capability is a PowerShell data file with the `.psrc` extension that lists all the cmdlets,
   functions, providers, and external programs that are made available to connecting users.
 ms.date: 02/02/2023
 title: JEA Role Capabilities

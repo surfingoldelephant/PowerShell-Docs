@@ -362,7 +362,7 @@ get code from trusted sources.
 
 You can include scripts in your modules, or you can create a script module,
 which is a module that consists entirely or primarily of a script and
-supporting resources. A script module is just a script with a .psm1 file
+supporting resources. A script module is just a script with a `.psm1` file
 extension.
 
 For more information about modules, see [about_Modules][09].

@@ -199,7 +199,7 @@ function into the current session.
 
 The `Import-PSSession` cmdlet returns a **PSModuleInfo** object that represents the temporary
 module. The value of the **Path** property shows that `Import-PSSession` created a script module
-(.psm1) file in a temporary location. The **ExportedFunctions** property shows that the `Get-Date`
+(`.psm1`) file in a temporary location. The **ExportedFunctions** property shows that the `Get-Date`
 cmdlet and the SearchHelp function were both imported as functions.
 
 ### Example 7: Run a command that is hidden by an imported command
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 ### -Certificate
 
 Specifies the client certificate that is used to sign the format files (*.Format.ps1xml) or script
-module files (.psm1) in the temporary module that `Import-PSSession` creates.
+module files (`.psm1`) in the temporary module that `Import-PSSession` creates.
 
 Enter a variable that contains a certificate or a command or expression that gets the certificate.
 
@@ -401,7 +401,7 @@ alias, **Type**. The acceptable values for this parameter are:
   the Path environment variable (`$Env:path`) in the remote session, including .txt, .exe, and .dll
   files.
 - `Cmdlet`: The cmdlets in the remote session. "Cmdlet" is the default.
-- `ExternalScript`: The .ps1 files in the paths listed in the Path environment variable
+- `ExternalScript`: The `.ps1` files in the paths listed in the Path environment variable
   (`$Env:path`) in the remote session.
 - `Filter` and `Function`: The Windows PowerShell functions in the remote session.
 - `Script`: The script blocks in the remote session.

@@ -79,7 +79,7 @@ Invoke-Expression -Command "C:\ps-test\testscript.ps1"
 "C:\ps-test\testscript.ps1" | Invoke-Expression
 ```
 
-These commands use `Invoke-Expression` to run a script, TestScript.ps1, on the local computer. The
+These commands use `Invoke-Expression` to run a script, `TestScript.ps1`, on the local computer. The
 two commands are equivalent. The first uses the **Command** parameter to specify the command to run.
 The second uses a pipeline operator (`|`) to send the command string to `Invoke-Expression`.
 

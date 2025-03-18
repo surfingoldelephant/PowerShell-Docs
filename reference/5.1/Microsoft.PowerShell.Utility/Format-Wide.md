@@ -309,7 +309,7 @@ Windows PowerShell includes the following aliases for `Format-Wide`:
 - `fw`
 
 The **View** parameter lets you specify an alternate format for the table. You can use the views
-defined in the `*.format.PS1XML` files in the PowerShell directory or you can create your own views
+defined in the `*.format.ps1xml` files in the PowerShell directory or you can create your own views
 in new PS1XML files and use the `Update-FormatData` cmdlet to include them in PowerShell.
 
 The alternate view for the **View** parameter must use table format; if it does not, the command

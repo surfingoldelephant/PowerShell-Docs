@@ -11,7 +11,7 @@ title: Flow control
 
 When you move from writing PowerShell one-liners to writing scripts, it sounds a lot more
 complicated than it really is. A script is nothing more than the same or similar commands that you
-would run interactively in the PowerShell console, except they're saved as a `.PS1` file. There are
+would run interactively in the PowerShell console, except they're saved as a `.ps1` file. There are
 some scripting constructs that you may use such as a `foreach` loop instead of the `ForEach-Object`
 cmdlet. To beginners, the differences can be confusing especially when you consider that `foreach`
 is both a scripting construct and an alias for the `ForEach-Object` cmdlet.

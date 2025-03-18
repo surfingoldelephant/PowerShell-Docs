@@ -138,7 +138,7 @@ This cmdlet returns a file object representing the snippet file.
 
 ## NOTES
 
-- The `New-IseSnippet` cmdlet stores new user-created snippets in unsigned .ps1xml files. As such,
+- The `New-IseSnippet` cmdlet stores new user-created snippets in unsigned `.ps1xml` files. As such,
   Windows PowerShell cannot add them to a session in which the execution policy is **AllSigned** or
   **Restricted**. In a **Restricted** or **AllSigned** session, you can create, get, and import
   unsigned user-created snippets, but you cannot use them in the session.

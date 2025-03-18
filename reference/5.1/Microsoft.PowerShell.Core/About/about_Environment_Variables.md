@@ -437,7 +437,7 @@ The environment variables that store preferences include:
   documentation for the [ftype][02] command.
 
   PowerShell scripts always start in the current console session. You don't
-  need to add the `.PS1` extension.
+  need to add the `.ps1` extension.
 
 ## See also
 

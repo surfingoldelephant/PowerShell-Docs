@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ### -Certificate
 
 Specifies the client certificate that is used to sign the format files (*.Format.ps1xml) or script
-module files (.psm1) in the module that `Export-PSSession` creates. Enter a variable that contains
+module files (`.psm1`) in the module that `Export-PSSession` creates. Enter a variable that contains
 a certificate or a command or expression that gets the certificate.
 
 To find a certificate, use the `Get-PfxCertificate` cmdlet or use the `Get-ChildItem` cmdlet in the
@@ -260,7 +260,7 @@ The acceptable values for this parameter are as follows:
 - `Cmdlet`: The cmdlets in the current session. Cmdlet is the default.
 - `Configuration`: A PowerShell configuration. For more information, see
   [about_Session_Configurations](../Microsoft.PowerShell.Core/About/about_Session_Configurations.md).
-- `ExternalScript`: All .ps1 files in the paths listed in the Path environment variable
+- `ExternalScript`: All `.ps1` files in the paths listed in the Path environment variable
   (`$Env:path`).
 - `Filter` and `Function`: All PowerShell functions.
 - `Script` Script blocks in the current session.
