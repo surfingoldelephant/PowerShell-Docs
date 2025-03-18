@@ -46,7 +46,7 @@ output. The **Column** parameter specifies the number of columns.
 This command displays the names of registry keys in the `HKEY_CURRENT_USER\Software\Microsoft` key.
 
 ```powershell
-Get-ChildItem HKCU:\software\microsoft | Format-Wide -Property PSChildName -AutoSize
+Get-ChildItem HKCU:\software\Microsoft | Format-Wide -Property PSChildName -AutoSize
 ```
 
 The `Get-ChildItem` cmdlet gets objects representing the keys. The path is specified as `HKCU:`, one

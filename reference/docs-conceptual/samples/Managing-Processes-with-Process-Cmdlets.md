@@ -195,7 +195,7 @@ command on a remote computer, you need to use the `Invoke-Command` cmdlet. For e
 PowerShell process on the Server01 remote computer, type:
 
 ```powershell
-Invoke-Command -ComputerName Server01 {Stop-Process Powershell}
+Invoke-Command -ComputerName Server01 {Stop-Process PowerShell}
 ```
 
 ## Stopping All Other PowerShell Sessions

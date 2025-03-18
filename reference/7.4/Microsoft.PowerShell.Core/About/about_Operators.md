@@ -314,7 +314,7 @@ For more about script blocks, see [about_Script_Blocks][20].
 ### Background operator `&`
 
 Runs the pipeline before it in the background, in a PowerShell job. This
-operator acts similarly to the UNIX control operator ampersand (`&`), which
+operator acts similarly to the Unix control operator ampersand (`&`), which
 runs the command before it asynchronously in subshell as a job.
 
 This operator is functionally equivalent to `Start-Job`. By default, the
@@ -355,7 +355,7 @@ Receive-Job $job -Wait
 Remove-Job $job
 ```
 
-The `&` background operator is also a statement terminator, just like the UNIX
+The `&` background operator is also a statement terminator, just like the Unix
 control operator ampersand (`&`). This allows you to invoke additional commands
 after the `&` background operator. The following example demonstrates the
 invocation of additional commands after the `&` background operator.

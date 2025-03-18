@@ -38,7 +38,7 @@ Snippets** or press <kbd>Ctrl</kbd>+<kbd>J</kbd>.
 Imported snippets are available only in the current session. To import the snippets into all Windows
 PowerShell ISE sessions, add an `Import-IseSnippet` command to your Windows PowerShell profile or
 copy the snippet files to your local snippets directory
-`$HOME\Documents\WindowsPowershell\Snippets`.
+`$HOME\Documents\WindowsPowerShell\Snippets`.
 
 To import snippets, they must be properly formatted in the snippet XML for Windows PowerShell ISE
 snippets and saved in Snippet.ps1xml files. To create eligible snippets, use the `New-IseSnippet`

@@ -180,7 +180,7 @@ Accept wildcard characters: False
 
 Specifies the activities that are permitted to run in the session.
 
-Enter namespace-qualified activity names, such as `Microsoft.Powershell.HyperV.Activities.*`.
+Enter namespace-qualified activity names, such as `Microsoft.PowerShell.HyperV.Activities.*`.
 Wildcard characters are supported. The default value, **PSDefaultActivities**, includes the built-in
 Windows Workflow Foundation activities and the activities that represent the core Windows PowerShell
 cmdlets.

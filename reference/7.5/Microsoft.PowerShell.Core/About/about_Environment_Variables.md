@@ -56,7 +56,7 @@ _User_ scopes.
 
 When you change environment variables in PowerShell, the change affects only
 the current session. This behavior resembles the behavior of the `set` command
-in the Windows Command Shell and the `setenv` command in UNIX-based
+in the Windows Command Shell and the `setenv` command in Unix-based
 environments. To change values in the Machine or User scopes, you must use the
 methods of the **System.Environment** class.
 

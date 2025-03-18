@@ -151,7 +151,7 @@ cmdlet with the PowerShell Registry provider to get registry keys and subkeys, b
 `Get-ItemProperty` cmdlet to get the registry values and data.
 
 ```powershell
-Get-Item HKLM:\Software\Microsoft\Powershell\1\Shellids\Microsoft.Powershell\
+Get-Item HKLM:\Software\Microsoft\PowerShell\1\Shellids\Microsoft.PowerShell\
 ```
 
 ### Example 7: Get items in a directory that have an exclusion

@@ -151,7 +151,7 @@ For the complete C# sample code, see [GetProcessSample03 Sample](./getprocesssam
 
 ## Defining Object Types and Formatting
 
-Windows PowerShell passes information between cmdlets using .Net objects. Consequently, a cmdlet may
+Windows PowerShell passes information between cmdlets using .NET objects. Consequently, a cmdlet may
 need to define its own type, or the cmdlet may need to extend an existing type provided by another
 cmdlet. For more information about defining new types or extending existing types, see
 [Extending Object Types and Formatting](/previous-versions//ms714665(v=vs.85)).

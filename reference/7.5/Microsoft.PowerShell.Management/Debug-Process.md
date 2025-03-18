@@ -47,7 +47,7 @@ verify that a debugger is installed and configured.
 ### Example 1: Attach a debugger to a process on the computer
 
 ```powershell
-Debug-Process -Name Powershell
+Debug-Process -Name PowerShell
 ```
 
 This command attaches a debugger to the PowerShell process on the computer.

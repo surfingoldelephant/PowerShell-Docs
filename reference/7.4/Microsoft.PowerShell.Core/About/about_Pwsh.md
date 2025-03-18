@@ -320,7 +320,7 @@ On Windows, this switch does nothing.
 > This parameter must come first to start PowerShell as a login shell. This
 > parameter is ignored if it is passed in another position.
 
-To set up `pwsh` as the login shell on UNIX-like operating systems:
+To set up `pwsh` as the login shell on Unix-like operating systems:
 
 - Verify that the full absolute path to `pwsh` is listed under `/etc/shells`
   - This path is usually something like `/usr/bin/pwsh` on Linux or

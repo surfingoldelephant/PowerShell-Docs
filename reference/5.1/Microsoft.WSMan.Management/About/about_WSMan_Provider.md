@@ -99,7 +99,7 @@ WSMan:\localhost
 --------- InitializationParameters
 --------- Resources
 ------------ Security
------- Microsoft.Powershell
+------ Microsoft.PowerShell
 --------- InitializationParameters
 --------- Resources
 ------------ Security

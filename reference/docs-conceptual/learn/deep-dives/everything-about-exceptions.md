@@ -304,7 +304,7 @@ at CallSite.Target(Closure , CallSite , Type , String )
 ```
 
 You only get this stack trace when the event is thrown from managed code. I'm calling a .NET
-framework function directly so that is all we can see in this example. Generally when you're looking
+Framework function directly so that is all we can see in this example. Generally when you're looking
 at a stack trace, you're looking for where your code stops and the system calls begin.
 
 ## Working with exceptions

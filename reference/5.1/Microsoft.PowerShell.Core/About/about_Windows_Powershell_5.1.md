@@ -7,7 +7,7 @@ schema: 2.0.0
 title: about_Windows_Powershell_5.1
 ---
 
-# about_Windows_Powershell_5.1
+# about_Windows_PowerShell_5.1
 
 ## Short description
 

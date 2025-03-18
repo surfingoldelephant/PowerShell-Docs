@@ -68,11 +68,11 @@ Set-Alias -Name cmpo  -Value Compare-Object
 
 ## Compatibility aliases in Windows
 
-PowerShell has several aliases that allow **UNIX** and `cmd.exe` users to use familiar commands in
+PowerShell has several aliases that allow **Unix** and `cmd.exe` users to use familiar commands in
 Windows. The following table show common commands, the related PowerShell cmdlet, and the PowerShell
 alias:
 
-|     Windows Command Shell     | UNIX command | PowerShell cmdlet |             PowerShell alias              |
+|     Windows Command Shell     | Unix command | PowerShell cmdlet |             PowerShell alias              |
 | ----------------------------- | ------------ | ----------------- | ----------------------------------------- |
 | `cd`, `chdir`                 | `cd`         | `Set-Location`    | `sl`, `cd`, `chdir`                       |
 | `cls`                         | `clear`      | `Clear-Host`      | `cls` `clear`                             |

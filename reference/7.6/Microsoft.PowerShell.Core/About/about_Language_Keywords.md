@@ -567,7 +567,7 @@ include classes from modules.
 Namespace syntax:
 
 ```Syntax
-using namespace <.Net-namespace>
+using namespace <.NET-namespace>
 ```
 
 Module syntax:

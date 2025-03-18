@@ -66,7 +66,7 @@ Select-String [-Culture <String>] [-Pattern] <String[]> -LiteralPath <String[]> 
 ## DESCRIPTION
 
 The `Select-String` cmdlet uses regular expression matching to search for text patterns in input
-strings and files. You can use `Select-String` similar to `grep` in UNIX or `findstr.exe` in
+strings and files. You can use `Select-String` similar to `grep` in Unix or `findstr.exe` in
 Windows.
 
 `Select-String` is based on lines of text. By default, `Select-String` finds the first match in each
@@ -819,7 +819,7 @@ PowerShell includes the following aliases for `Select-String`:
 - All platforms:
   - `sls`
 
-`Select-String` is similar to `grep` in UNIX or `findstr.exe` in Windows.
+`Select-String` is similar to `grep` in Unix or `findstr.exe` in Windows.
 
 The `sls` alias for the `Select-String` cmdlet was introduced in PowerShell 3.0.
 

@@ -554,7 +554,7 @@ include classes from modules.
 Namespace syntax:
 
 ```Syntax
-using namespace <.Net-framework-namespace>
+using namespace <.NET-Framework-namespace>
 ```
 
 Module syntax:
@@ -567,7 +567,7 @@ Assembly syntax:
 
 ```Syntax
 using assembly <.NET-assembly-path>
-using assembly <.NET-framework-namespace>
+using assembly <.NET-Framework-namespace>
 ```
 
 For more information, see [about_Using][27].

@@ -32,7 +32,7 @@ PowerShell 7.3 includes the following features, updates, and breaking changes.
 
 ## Tab completion improvements
 
-- PowerShell 7.3 includes PSReadline 2.2.6, which enables Predictive IntelliSense by default. For
+- PowerShell 7.3 includes PSReadLine 2.2.6, which enables Predictive IntelliSense by default. For
   more information, see [about_PSReadLine][12].
 - Fix tab completion within the script block specified for the `ValidateScriptAttribute`.
   ([#14550][14550]) (Thanks @MartinGC94!)

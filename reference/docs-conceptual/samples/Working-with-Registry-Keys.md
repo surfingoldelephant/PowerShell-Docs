@@ -64,7 +64,7 @@ Get-ChildItem HKCU:
 ```
 
 These commands list only the directly contained items, much like using `DIR` in `cmd.exe` or `ls`
-in a UNIX shell. To show contained items, you need to specify the **Recurse** parameter. To list all
+in a Unix shell. To show contained items, you need to specify the **Recurse** parameter. To list all
 registry keys in `HKCU:`, use the following command.
 
 ```powershell

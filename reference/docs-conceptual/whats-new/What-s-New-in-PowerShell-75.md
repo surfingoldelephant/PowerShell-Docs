@@ -150,7 +150,7 @@ PowerShell 7.5-rc.1:
 The following experimental features are included in PowerShell 7.5-rc.1:
 
 - [PSRedirectToVariable][05] - Allow redirecting to a variable ([#20381][20381])
-- [PSNativeWindowsTildeExpansion][01] - Add tilde expansion for windows native executables
+- [PSNativeWindowsTildeExpansion][01] - Add tilde expansion for Windows-native executables
   ([#20402][20402]) (Thanks @domsleee!)
 - [PSSerializeJSONLongEnumAsNumber][06] - `ConvertTo-Json` now treats large enums as numbers
   ([#20999][20999]) (Thanks @jborean93!)

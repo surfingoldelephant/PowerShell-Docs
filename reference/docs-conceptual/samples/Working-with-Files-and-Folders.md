@@ -20,7 +20,7 @@ Get-ChildItem -Path C:\ -Force
 ```
 
 The command lists only the directly contained items, much like using the `dir` command in `cmd.exe`
-or `ls` in a UNIX shell. To show items in subfolder, you need to specify the **Recurse** parameter.
+or `ls` in a Unix shell. To show items in subfolder, you need to specify the **Recurse** parameter.
 The following command lists everything on the `C:` drive:
 
 ```powershell

@@ -34,7 +34,7 @@ Mode                LastWriteTime     Length Name
 ```
 
 The listing looks similar to what you would see when you enter the `dir` command in `cmd.exe`, or
-the `ls` command in a UNIX command shell.
+the `ls` command in a Unix command shell.
 
 You can perform complex listings using parameters of the `Get-ChildItem` cmdlet. You can see the
 syntax the `Get-ChildItem` cmdlet by typing:

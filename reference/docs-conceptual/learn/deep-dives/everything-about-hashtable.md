@@ -1069,7 +1069,7 @@ function Get-DeepClone
 
 It doesn't handle any other reference types or arrays, but it's a good starting point.
 
-Another way is to use .Net to deserialize it using **CliXml** like in this function:
+Another way is to use .NET to deserialize it using **CliXml** like in this function:
 
 ```powershell
 function Get-DeepClone
