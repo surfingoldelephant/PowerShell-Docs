@@ -116,8 +116,8 @@ Microsoft.BackgroundIntelligentTransfer.Management.BitsJob =>
 ```
 
 ```powershell
-Get-FormatData *bits* | Export-FormatData -FilePath c:\test\bits.format.ps1xml
-Get-Content c:\test\bits.format.ps1xml
+Get-FormatData *bits* | Export-FormatData -FilePath c:\test\Bits.format.ps1xml
+Get-Content c:\test\Bits.format.ps1xml
 ```
 
 ```Output
@@ -132,7 +132,7 @@ identify the format type that the **BitsTransfer** module adds to the session.
 The fifth command uses the `Get-FormatData` cmdlet to get the format type that the **BitsTransfer**
 module adds. It uses a pipeline operator (`|`) to send the format type object to the
 `Export-FormatData` cmdlet, which converts it back to XML and saves it in the specified
-`format.ps1xml` file.
+`Bits.format.ps1xml` file.
 
 The final command shows an excerpt of the `format.ps1xml` file content.
 
