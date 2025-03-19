@@ -122,7 +122,7 @@ expression, or parsed by the PowerShell host as a literal script block enclosed
 in curly braces (`{}`), before being passed to `powershell.exe`.
 
 ```powershell
-powershell -Command {Get-WinEvent -LogName security}
+powershell -Command {Get-WinEvent -LogName Security}
 ```
 
 In `cmd.exe`, there is no such thing as a script block (or **ScriptBlock**
@@ -137,7 +137,7 @@ running from `cmd.exe`. To execute an inline script block defined inside a
 string, the [call operator][05] `&` can be used:
 
 ```cmd
-powershell.exe -Command "& {Get-WinEvent -LogName security}"
+powershell.exe -Command "& {Get-WinEvent -LogName Security}"
 ```
 
 If the value of **Command** is a string, **Command** must be the last parameter
@@ -299,13 +299,13 @@ PowerShell -PSConsoleFile sqlsnapin.psc1
 PowerShell -Version 2.0 -NoLogo -InputFormat text -OutputFormat XML
 
 # Execute a PowerShell Command in a session
-PowerShell -Command "Get-EventLog -LogName security"
+PowerShell -Command "Get-EventLog -LogName Security"
 
 # Run a script block in a session
-PowerShell -Command {Get-EventLog -LogName security}
+PowerShell -Command {Get-EventLog -LogName Security}
 
 # An alternate way to run a command in a new session
-PowerShell -Command "& {Get-EventLog -LogName security}"
+PowerShell -Command "& {Get-EventLog -LogName Security}"
 
 # To use the -EncodedCommand parameter:
 $command = "dir 'c:\program files' "

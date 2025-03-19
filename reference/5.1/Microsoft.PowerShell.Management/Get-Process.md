@@ -110,7 +110,7 @@ though the default display lists them in kilobytes and megabytes.
 
 ```powershell
 $A = Get-Process
-$A | Get-Process | Format-Table -View priority
+$A | Get-Process | Format-Table -View Priority
 ```
 
 These commands list the processes on the computer in groups based on their priority class. The first

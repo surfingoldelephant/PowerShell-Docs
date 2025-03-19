@@ -104,7 +104,7 @@ more information about views and the code used to create this example's view, se
 [about_Format.ps1xml](../Microsoft.PowerShell.Core/About/about_Format.ps1xml.md#sample-xml-for-a-format-table-custom-view).
 
 ```powershell
-Get-ChildItem  -Path C:\Test | Format-Table -View mygciview
+Get-ChildItem  -Path C:\Test | Format-Table -View MyGciView
 ```
 
 ```Output
@@ -122,7 +122,7 @@ d-----       10/23/2019     09:38       2/25/2019     09:38                Files
 
 `Get-ChildItem` gets the contents of the current directory, `C:\Test`. The
 **System.IO.DirectoryInfo** and **System.IO.FileInfo** objects are sent down the pipeline.
-`Format-Table` uses the **View** parameter to specify the custom view **mygciview** that includes
+`Format-Table` uses the **View** parameter to specify the custom view **MyGciView** that includes
 the **CreationTime** column.
 
 The default `Format-Table` output for `Get-ChildItem` doesn't include the **CreationTime** column.

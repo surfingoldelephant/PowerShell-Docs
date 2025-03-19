@@ -132,7 +132,7 @@ attribute in the tag contains the name of the style sheet.
 ### Example 6: Create a web page to display service objects
 
 ```powershell
-Get-Service | ConvertTo-Html -As LIST | Out-File services.htm
+Get-Service | ConvertTo-Html -As List | Out-File services.htm
 ```
 
 This command creates an HTML page of the service objects that the `Get-Service` cmdlet returns. The

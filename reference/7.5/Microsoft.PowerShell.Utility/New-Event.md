@@ -43,7 +43,7 @@ must change the program conditions or close the PowerShell session.
 ### Example 1: Create a new event in the event queue
 
 ```
-PS C:\> New-Event -SourceIdentifier Timer -Sender windows.timer -MessageData "Test"
+PS C:\> New-Event -SourceIdentifier Timer -Sender Windows.Timer -MessageData "Test"
 ```
 
 This command creates a new event in the PowerShell event queue. It uses a **Windows.Timer** object

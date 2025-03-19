@@ -138,7 +138,7 @@ expression, or parsed by the PowerShell host as a literal script block enclosed
 in curly braces (`{}`), before being passed to `pwsh`.
 
 ```powershell
-pwsh -Command {Get-WinEvent -LogName security}
+pwsh -Command {Get-WinEvent -LogName Security}
 ```
 
 In `cmd.exe`, there is no such thing as a script block (or **ScriptBlock**
@@ -153,7 +153,7 @@ running from `cmd.exe`. To execute an inline script block defined inside a
 string, the [call operator][03] `&` can be used:
 
 ```powershell
-pwsh -Command "& {Get-WinEvent -LogName security}"
+pwsh -Command "& {Get-WinEvent -LogName Security}"
 ```
 
 If the value of **Command** is a string, **Command** must be the last parameter

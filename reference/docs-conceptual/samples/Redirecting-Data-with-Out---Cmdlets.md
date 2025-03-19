@@ -139,7 +139,7 @@ ASCII files, don't work correctly with the default output format. You can change
 format to ASCII using the **Encoding** parameter:
 
 ```powershell
-Get-Process | Out-File -FilePath C:\temp\processlist.txt -Encoding ASCII
+Get-Process | Out-File -FilePath C:\temp\processlist.txt -Encoding ascii
 ```
 
 `Out-File` formats file contents to look like console output. This causes the output to be truncated

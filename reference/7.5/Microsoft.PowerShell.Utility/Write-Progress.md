@@ -117,7 +117,7 @@ being displayed one below the other.
 
 ```powershell
 # Use Get-WinEvent to get the events in the System log and store them in the $Events variable.
-$Events = Get-WinEvent -LogName system
+$Events = Get-WinEvent -LogName System
 # Pipe the events to the ForEach-Object cmdlet.
 $Events | ForEach-Object -Begin {
     # In the Begin block, use Clear-Host to clear the screen.

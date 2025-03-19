@@ -135,11 +135,11 @@ $Variable:HOME
 
 ### Get variables using wildcards
 
-This command gets the variables with names that begin with "max". You can use
+This command gets the variables with names that begin with "Max". You can use
 this command from any PowerShell drive.
 
 ```powershell
-Get-ChildItem -Path Variable:max*
+Get-ChildItem -Path Variable:Max*
 ```
 
 ### Get the value of the ? variable

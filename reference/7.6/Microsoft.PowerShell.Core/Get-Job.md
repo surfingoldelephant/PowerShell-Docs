@@ -330,7 +330,7 @@ Debug         : {}
 Warning       : {}
 StateChanged  :
 
-PS> (Get-Job -Name job2).JobStateInfo.Reason
+PS> (Get-Job -Name Job2).JobStateInfo.Reason
 Connecting to remote server using WSManCreateShellEx api failed. The async callback gave the
 following error message: Access is denied.
 ```

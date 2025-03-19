@@ -173,7 +173,7 @@ the example section of the `Update-Help` cmdlet help topic.
 ```powershell
 function Test-Object {
   $ModuleName = "PSScheduledJob"
-  $HelpCulture = "en-us"
+  $HelpCulture = "en-US"
   $HelpVersion = "3.1.0.0"
   [pscustomobject]@{
     "ModuleName"=$ModuleName
@@ -181,7 +181,7 @@ function Test-Object {
     "Version"=$HelpVersion
   }
   $ModuleName = "PSWorkflow"
-  $HelpCulture = "en-us"
+  $HelpCulture = "en-US"
   $HelpVersion = "3.0.0.0"
   [pscustomobject]@{
     "ModuleName"=$ModuleName
@@ -198,8 +198,8 @@ table by default.
 ```Output
 ModuleName        UICulture      Version
 ---------         ---------      -------
-PSScheduledJob    en-us          3.1.0.0
-PSWorkflow        en-us          3.0.0.0
+PSScheduledJob    en-US          3.1.0.0
+PSWorkflow        en-US          3.0.0.0
 ```
 
 Users can manage the properties of the custom objects just as they do with

@@ -102,7 +102,7 @@ $sessionConfiguration = @{
 Register-PSSessionConfiguration @sessionConfiguration
 ```
 
-To use this configuration, type `New-PSSession -ConfigurationName newshell`.
+To use this configuration, type `New-PSSession -ConfigurationName NewShell`.
 
 ### Example 2: Register a MaintenanceShell session configuration
 

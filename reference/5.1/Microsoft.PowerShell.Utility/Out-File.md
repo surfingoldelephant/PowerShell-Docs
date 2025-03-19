@@ -91,7 +91,7 @@ This example shows how to encode output with a specific encoding type.
 
 ```powershell
 $Procs = Get-Process
-Out-File -FilePath .\Process.txt -InputObject $Procs -Encoding ASCII -Width 50
+Out-File -FilePath .\Process.txt -InputObject $Procs -Encoding ascii -Width 50
 ```
 
 The `Get-Process` cmdlet gets the list of processes running on the local computer. The **Process**

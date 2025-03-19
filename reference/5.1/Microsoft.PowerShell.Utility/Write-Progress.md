@@ -93,7 +93,7 @@ displayed one below the other.
 
 ```powershell
 # Use Get-EventLog to get the events in the System log and store them in the $Events variable.
-$Events = Get-EventLog -LogName system
+$Events = Get-EventLog -LogName System
 # Pipe the events to the ForEach-Object cmdlet.
 $Events | ForEach-Object -Begin {
     # In the Begin block, use Clear-Host to clear the screen.

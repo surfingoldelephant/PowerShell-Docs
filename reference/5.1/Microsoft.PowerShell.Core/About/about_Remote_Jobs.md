@@ -190,7 +190,7 @@ requirements for remoting.
 
    ```powershell
    Invoke-Command -ComputerName Server01 -ScriptBlock {
-     Get-EventLog system} -AsJob
+     Get-EventLog System} -AsJob
    ```
 
    The results of the command resemble the following sample output.
@@ -198,7 +198,7 @@ requirements for remoting.
    ```Output
    SessionId   Name   State    HasMoreData   Location   Command
    ---------   ----   -----    -----------   --------   -------
-   1           Job1   Running  True          Server01   Get-EventLog system
+   1           Job1   Running  True          Server01   Get-EventLog System
    ```
 
    When the **AsJob** parameter is used, `Invoke-Command` returns the same type
@@ -228,7 +228,7 @@ requirements for remoting.
    ```Output
    SessionId   Name   State      HasMoreData   Location   Command
    ---------   ----   -----      -----------   --------   -------
-   1           Job1   Completed  True          Server01   Get-EventLog system
+   1           Job1   Completed  True          Server01   Get-EventLog System
    ```
 
 1. To get the results of the job, use the `Receive-Job` cmdlet. Because the job
@@ -279,7 +279,7 @@ commands remotely to manage a local job on the remote computer.
 
    ```powershell
    Invoke-Command -Session $s -ScriptBlock {
-     Start-Job -ScriptBlock {Get-EventLog system}}
+     Start-Job -ScriptBlock {Get-EventLog System}}
    ```
 
    The results resemble the following sample output.
@@ -287,7 +287,7 @@ commands remotely to manage a local job on the remote computer.
    ```Output
    Id       Name    State      HasMoreData     Location   Command
    --       ----    -----      -----------     --------   -------
-   2        Job2    Running    True            Localhost  Get-EventLog system
+   2        Job2    Running    True            Localhost  Get-EventLog System
    ```
 
    When you run a `Start-Job` command remotely, `Invoke-Command` returns the
@@ -318,7 +318,7 @@ commands remotely to manage a local job on the remote computer.
    ```Output
    SessionId   Name  State      HasMoreData   Location   Command
    ---------   ----  -----      -----------   --------   -------
-   2           Job2  Completed  True          LocalHost   Get-EventLog system
+   2           Job2  Completed  True          LocalHost   Get-EventLog System
    ```
 
 1. To get the results of the job, use the `Invoke-Command` cmdlet to run a

@@ -138,7 +138,7 @@ $Namespace = @{
     dev = "http://schemas.microsoft.com/maml/dev/2004/10"
 }
 
-$Path = "$PSHOME\en-us\*dll-Help.xml"
+$Path = "$PSHOME\en-US\*dll-Help.xml"
 $Xml = Select-Xml -Path $Path -Namespace $Namespace -XPath "//command:name"
 $Xml | Format-Table @{Label="Name"; Expression= {($_.Node.InnerXml).Trim()}}, Path -AutoSize
 ```
@@ -146,13 +146,13 @@ $Xml | Format-Table @{Label="Name"; Expression= {($_.Node.InnerXml).Trim()}}, Pa
 ```Output
 Name                    Path
 ----                    ----
-Export-Counter          C:\Windows\system32\WindowsPowerShell\v1.0\en-us\Microsoft.PowerShell.Commands.Diagnostics.dll-Help.xml
-Get-Counter             C:\Windows\system32\WindowsPowerShell\v1.0\en-us\Microsoft.PowerShell.Commands.Diagnostics.dll-Help.xml
-Get-WinEvent            C:\Windows\system32\WindowsPowerShell\v1.0\en-us\Microsoft.PowerShell.Commands.Diagnostics.dll-Help.xml
-Import-Counter          C:\Windows\system32\WindowsPowerShell\v1.0\en-us\Microsoft.PowerShell.Commands.Diagnostics.dll-Help.xml
-Add-Computer            C:\Windows\system32\WindowsPowerShell\v1.0\en-us\Microsoft.PowerShell.Commands.Management.dll-Help.xml
-Add-Content             C:\Windows\system32\WindowsPowerShell\v1.0\en-us\Microsoft.PowerShell.Commands.Management.dll-Help.xml
-Checkpoint-Computer     C:\Windows\system32\WindowsPowerShell\v1.0\en-us\Microsoft.PowerShell.Commands.Management.dll-Help.xml
+Export-Counter          C:\Windows\system32\WindowsPowerShell\v1.0\en-US\Microsoft.PowerShell.Commands.Diagnostics.dll-Help.xml
+Get-Counter             C:\Windows\system32\WindowsPowerShell\v1.0\en-US\Microsoft.PowerShell.Commands.Diagnostics.dll-Help.xml
+Get-WinEvent            C:\Windows\system32\WindowsPowerShell\v1.0\en-US\Microsoft.PowerShell.Commands.Diagnostics.dll-Help.xml
+Import-Counter          C:\Windows\system32\WindowsPowerShell\v1.0\en-US\Microsoft.PowerShell.Commands.Diagnostics.dll-Help.xml
+Add-Computer            C:\Windows\system32\WindowsPowerShell\v1.0\en-US\Microsoft.PowerShell.Commands.Management.dll-Help.xml
+Add-Content             C:\Windows\system32\WindowsPowerShell\v1.0\en-US\Microsoft.PowerShell.Commands.Management.dll-Help.xml
+Checkpoint-Computer     C:\Windows\system32\WindowsPowerShell\v1.0\en-US\Microsoft.PowerShell.Commands.Management.dll-Help.xml
 ...
 ```
 

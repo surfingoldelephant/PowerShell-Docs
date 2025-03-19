@@ -94,7 +94,7 @@ This command works because the **Start** parameter of `New-TimeSpan` has an alia
 PowerShell uses the value of the **LastWriteTime** property as the value of the **Start** parameter.
 
 ```powershell
-Get-ChildItem $PSHOME\en-us\about_remote.help.txt | New-TimeSpan
+Get-ChildItem $PSHOME\en-US\about_remote.help.txt | New-TimeSpan
 ```
 
 ```Output

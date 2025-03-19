@@ -121,7 +121,7 @@ In this case, because the directory contains only .dwg files, the result is `$fa
 ### Example 4: Check for a file
 
 ```powershell
-Test-Path -Path $PROFILE -PathType leaf
+Test-Path -Path $PROFILE -PathType Leaf
 ```
 
 ```Output

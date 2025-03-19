@@ -81,7 +81,7 @@ $exportSession = @{
     CommandName = 'Get-*', 'Set-*'
     FormatTypeName = '*'
     OutputModule = "$PSHOME\Modules\Exchange"
-    Encoding = 'ASCII'
+    Encoding = 'ascii'
 }
 
 Export-PSSession @exportSession

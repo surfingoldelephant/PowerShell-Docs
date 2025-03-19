@@ -101,7 +101,7 @@ $Uri = "https://www.facebook.com" + $Form.Action
 # The WebRequestSession object in the $FB variable is passed as the value of the WebSession parameter.
 # The value of the Body parameter is the hash table in the Fields property of the form.
 # The value of the *Method* parameter is POST. The command saves the output in the $R variable.
-$R = Invoke-WebRequest -Uri $Uri -WebSession $FB -Method POST -Body $Form.Fields
+$R = Invoke-WebRequest -Uri $Uri -WebSession $FB -Method Post -Body $Form.Fields
 $R.StatusDescription
 ```
 

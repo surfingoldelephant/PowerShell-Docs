@@ -103,7 +103,7 @@ need to use the `Invoke-Command` cmdlet to run an imported command.
 ```
 $S1 = New-PSSession -ComputerName s1
 $S2 = New-PSSession -ComputerName s2
-Import-PSSession -Session s1 -Type cmdlet -Name New-Test, Get-Test -FormatTypeName *
+Import-PSSession -Session s1 -Type Cmdlet -Name New-Test, Get-Test -FormatTypeName *
 Import-PSSession -Session s2 -Type Cmdlet -Name Set-Test -FormatTypeName *
 New-Test Test1 | Set-Test -RunType Full
 ```

@@ -322,10 +322,10 @@ However, you can use the **UICulture** parameters of the `Update-Help` and
 which they're available.
 
 For example, to save the newest help files for all modules on the session in
-Japanese (ja-Jp) and French (fr-FR), type:
+Japanese (ja-JP) and French (fr-FR), type:
 
 ```powershell
-Save-Help -Path \Server\Share -UICulture ja-jp, fr-fr
+Save-Help -Path \Server\Share -UICulture ja-JP, fr-FR
 ```
 
 If help files for the modules aren't available in the languages that you

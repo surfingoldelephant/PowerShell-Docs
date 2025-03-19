@@ -343,13 +343,13 @@ but the job exists on the local computer. The results are transmitted to the loc
 
 ```powershell
 $s = New-PSSession -ComputerName Server01, Server02
-Invoke-Command -Session $s -ScriptBlock { Get-EventLog system } -AsJob
+Invoke-Command -Session $s -ScriptBlock { Get-EventLog System } -AsJob
 ```
 
 ```Output
 Id   Name    State      HasMoreData   Location           Command
 ---  ----    -----      -----         -----------        ---------------
-1    Job1    Running    True          Server01,Server02  Get-EventLog system
+1    Job1    Running    True          Server01,Server02  Get-EventLog System
 ```
 
 ```powershell
@@ -361,7 +361,7 @@ $j | Format-List -Property *
 HasMoreData   : True
 StatusMessage :
 Location      : Server01,Server02
-Command       : Get-EventLog system
+Command       : Get-EventLog System
 JobStateInfo  : Running
 Finished      : System.Threading.ManualResetEvent
 InstanceId    : e124bb59-8cb2-498b-a0d2-2e07d4e030ca

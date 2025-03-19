@@ -82,11 +82,11 @@ Set-Location HKCU:\software
 Start-Transaction
 New-Item -Path "NoPath" -Name "ContosoCompany" -UseTransaction
 New-Item -Path . -Name "ContosoCompany" -UseTransaction
-Start-Transaction -RollbackPreference never
+Start-Transaction -RollbackPreference Never
 New-Item -Path "NoPath" -Name "ContosoCompany" -UseTransaction
 New-Item -Path . -Name "ContosoCompany" -UseTransaction
 
-# Start-Transaction (-rollbackpreference error)
+# Start-Transaction (-rollbackpreference Error)
 
 Start-Transaction
 New-Item -Path "NoPath" -Name "ContosoCompany" -UseTransaction
@@ -109,9 +109,9 @@ At line:1 char:9
 ```
 
 ```powershell
-# Start-Transaction (-rollbackpreference never)
+# Start-Transaction (-rollbackpreference Never)
 
-Start-Transaction -RollbackPreference never
+Start-Transaction -RollbackPreference Never
 New-Item -Path "NoPath" -Name "ContosoCompany" -UseTransaction
 ```
 

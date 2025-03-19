@@ -78,13 +78,13 @@ To find the items in a particular scope, use the Scope parameter of
 For example, to get all the variables in the local scope, type:
 
 ```powershell
-Get-Variable -Scope local
+Get-Variable -Scope Local
 ```
 
 To get all the variables in the global scope, type:
 
 ```powershell
-Get-Variable -Scope global
+Get-Variable -Scope Global
 ```
 
 When a reference is made to a variable, alias, or function, PowerShell searches
@@ -343,7 +343,7 @@ For example, the following command gets the variables that are visible in the
 local scope:
 
 ```powershell
-Get-Variable -Scope local
+Get-Variable -Scope Local
 ```
 
 To create a variable in a particular scope, use a scope modifier or the
@@ -351,7 +351,7 @@ To create a variable in a particular scope, use a scope modifier or the
 in the global scope:
 
 ```powershell
-New-Variable -Scope global -Name a -Value "One"
+New-Variable -Scope Global -Name a -Value "One"
 ```
 
 You can also use the Scope parameter of the `New-Alias`, `Set-Alias`, or
@@ -359,7 +359,7 @@ You can also use the Scope parameter of the `New-Alias`, `Set-Alias`, or
 alias in the global scope:
 
 ```powershell
-New-Alias -Scope global -Name np -Value Notepad.exe
+New-Alias -Scope Global -Name np -Value Notepad.exe
 ```
 
 To get the functions in a particular scope, use the `Get-Item` cmdlet when you
@@ -488,10 +488,10 @@ module's scope container.
 
 If you load **Module2** from _within_ **Module1**, **Module2** is loaded into
 the scope container of Module1. Any exports from **Module2** are placed in the
-current module scope of **Module1**. If you use `Import-Module -Scope local`,
+current module scope of **Module1**. If you use `Import-Module -Scope Local`,
 then the exports are placed into the current scope object rather than at the
 top level. If you are _in a module_ and load another module using
-`Import-Module -Scope global` (or `Import-Module -Global`), that module and its
+`Import-Module -Scope Global` (or `Import-Module -Global`), that module and its
 exports are loaded into the global scope instead of the module's local scope.
 The **WindowsCompatibility** feature does this to import proxy modules into the
 global session state.
