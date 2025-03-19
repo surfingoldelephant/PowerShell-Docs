@@ -489,7 +489,7 @@ Test-Path $PROFILE
 Or, you can use it in a command to create a profile:
 
 ```powershell
-New-Item -ItemType file -Path $PROFILE -Force
+New-Item -ItemType File -Path $PROFILE -Force
 ```
 
 You can use it in a command to open the profile in **notepad.exe**:

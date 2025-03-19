@@ -203,7 +203,7 @@ requests. The following command creates a new HTTP listener using the `New-Item`
 cmdlet.
 
 ```powershell
-New-Item -Path WSMan:\localhost\Listener -Address * -Transport HTTP -Force
+New-Item -Path WSMan:\localhost\Listener -Address * -Transport http -Force
 ```
 
 ### Creating a new plug-in
@@ -515,7 +515,7 @@ Specifies the entity that is identified by the certificate.
 ### Transport \<String\>
 
 Specifies the transport to use to send and receive WS-Management protocol
-requests and responses. The value must be either HTTP or HTTPS.
+requests and responses. The value must be either **http** or **https**.
 
 Note: The Transport value is set when creating a Listener.
 

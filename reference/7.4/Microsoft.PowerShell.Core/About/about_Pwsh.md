@@ -271,9 +271,9 @@ For example:
 
 ```powershell
 # PowerShell instance 1
-pwsh -CustomPipeName mydebugpipe
+pwsh -CustomPipeName MyDebugPipe
 # PowerShell instance 2
-Enter-PSHostProcess -CustomPipeName mydebugpipe
+Enter-PSHostProcess -CustomPipeName MyDebugPipe
 ```
 
 ### -EncodedCommand | -e | -ec

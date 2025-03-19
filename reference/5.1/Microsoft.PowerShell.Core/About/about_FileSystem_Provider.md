@@ -278,7 +278,7 @@ For more information about this object, pipe the command to the
 This command creates the `logfiles` directory on the `C` drive:
 
 ```powershell
-New-Item -Path c:\ -Name logfiles -Type directory
+New-Item -Path c:\ -Name logfiles -Type Directory
 ```
 
 PowerShell also includes a `mkdir` function (alias `md`) that uses the

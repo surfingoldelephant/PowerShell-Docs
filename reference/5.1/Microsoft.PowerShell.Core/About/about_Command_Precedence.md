@@ -247,7 +247,7 @@ For example, the following command saves the `Map` function in the `$myMap`
 variable and then uses the `Call` operator to run it.
 
 ```powershell
-$myMap = (Get-Command -Name map -CommandType function)
+$myMap = (Get-Command -Name map -CommandType Function)
 & ($myMap)
 ```
 
