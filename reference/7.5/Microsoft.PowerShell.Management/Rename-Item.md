@@ -44,7 +44,7 @@ name. To move and rename an item, use the `Move-Item` cmdlet.
 This command renames the file `daily_file.txt` to `monday_file.txt`.
 
 ```powershell
-Rename-Item -Path "c:\logfiles\daily_file.txt" -NewName "monday_file.txt"
+Rename-Item -Path "C:\logfiles\daily_file.txt" -NewName "monday_file.txt"
 ```
 
 ### Example 2: Rename and move an item
@@ -54,15 +54,15 @@ for the value of the **NewName** parameter, unless the path is identical to the 
 the **Path** parameter. Otherwise, only a new name is permitted.
 
 ```powershell
-Rename-Item -Path "project.txt" -NewName "d:\archive\old-project.txt"
+Rename-Item -Path "project.txt" -NewName "D:\archive\old-project.txt"
 ```
 
 ```Output
 Rename-Item : can't rename because the target specified represents a path or device name.
 At line:1 char:12
-+ Rename-Item <<<<  -Path project.txt -NewName d:\archive\old-project.txt
++ Rename-Item <<<<  -Path project.txt -NewName D:\archive\old-project.txt
 + CategoryInfo          : InvalidArgument: (:) [Rename-Item], PS>  Move-Item -Path "project.txt" -De
-stination "d:\archive\old-project.txt"
+stination "D:\archive\old-project.txt"
 ```
 
 This example attempts to rename the `project.txt` file in the current directory to `old-project.txt`

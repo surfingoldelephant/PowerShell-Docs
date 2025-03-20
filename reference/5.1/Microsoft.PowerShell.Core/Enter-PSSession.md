@@ -130,7 +130,7 @@ PS C:\>
 PS C:\> dir C:\ps-test\Process.txt
 Get-ChildItem : Cannot find path 'C:\ps-test\Process.txt' because it does not exist.
 At line:1 char:4
-+ dir <<<<  c:\ps-test\Process.txt
++ dir <<<<  C:\ps-test\Process.txt
 ```
 
 This command shows how to work in an interactive session with a remote computer.

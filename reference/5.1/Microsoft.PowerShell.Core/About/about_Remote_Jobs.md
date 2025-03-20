@@ -137,7 +137,7 @@ all of the operations occur on the remote computer, not the local computer.
    results of the job in the PsLog.txt file on the Server01 computer.
 
    ```powershell
-   Server01\C:> Receive-Job $job > c:\logs\PsLog.txt
+   Server01\C:> Receive-Job $job > C:\logs\PsLog.txt
    ```
 
 1. To end the interactive session, use the `Exit-PSSession` cmdlet. The command
@@ -164,7 +164,7 @@ all of the operations occur on the remote computer, not the local computer.
    ```powershell
    $s = New-PSSession -ComputerName Server01
    Invoke-Command -Session $s -ScriptBlock {
-     Get-Content c:\logs\pslog.txt}
+     Get-Content C:\logs\pslog.txt}
    ```
 
 ### Start a remote job that returns the results to the local computer (AsJob)
@@ -342,7 +342,7 @@ commands remotely to manage a local job on the remote computer.
 
    ```powershell
    Invoke-Command -Session $s -Command {
-     Receive-Job -SessionId 2 > c:\logs\pslog.txt
+     Receive-Job -SessionId 2 > C:\logs\pslog.txt
    }
    ```
 

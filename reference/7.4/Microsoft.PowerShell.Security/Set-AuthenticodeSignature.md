@@ -103,7 +103,7 @@ This command adds a digital signature that includes the root authority in the tr
 signed by a third-party timestamp server.
 
 ```powershell
-Set-AuthenticodeSignature -FilePath c:\scripts\Remodel.ps1 -Certificate $cert -IncludeChain All -TimestampServer "https://timestamp.fabrikam.com/scripts/timstamper.dll"
+Set-AuthenticodeSignature -FilePath C:\scripts\Remodel.ps1 -Certificate $cert -IncludeChain All -TimestampServer "https://timestamp.fabrikam.com/scripts/timstamper.dll"
 ```
 
 The command uses the **FilePath** parameter to specify the script being signed and the

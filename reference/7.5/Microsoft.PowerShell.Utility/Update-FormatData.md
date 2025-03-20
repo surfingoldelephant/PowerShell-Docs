@@ -67,7 +67,7 @@ are not referenced in the built-in files.
 ### Example 3: Edit a formatting file and reload it
 
 ```powershell
-Update-FormatData -PrependPath "c:\test\NewFiles.format.ps1xml"
+Update-FormatData -PrependPath "C:\test\NewFiles.format.ps1xml"
 
 # Edit the NewFiles.format.ps1 file.
 

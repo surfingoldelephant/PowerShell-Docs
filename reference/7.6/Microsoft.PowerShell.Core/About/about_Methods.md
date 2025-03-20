@@ -119,7 +119,7 @@ following example uses the first `CopyTo` method to copy the `Final.txt` file
 to the `C:\Bin` directory.
 
 ```powershell
-(Get-ChildItem c:\final.txt).CopyTo("c:\bin\final.txt")
+(Get-ChildItem C:\final.txt).CopyTo("C:\bin\final.txt")
 ```
 
 > [!NOTE]
@@ -138,7 +138,7 @@ The following example uses the second `CopyTo` method to copy the `Final.txt`
 file to the `C:\Bin` directory, and to overwrite existing files.
 
 ```powershell
-(Get-ChildItem c:\final.txt).CopyTo("c:\bin\final.txt", $true)
+(Get-ChildItem C:\final.txt).CopyTo("C:\bin\final.txt", $true)
 ```
 
 ## Member-access enumeration

@@ -87,7 +87,7 @@ You can then partially specify the path to the Active Setup log file and use
 tab expansion again:
 
 ```powershell
-PS> Get-Content c:\windows\acts<Tab>
+PS> Get-Content C:\windows\acts<Tab>
 ```
 
 When you press the <kbd>Tab</kbd> key, the command expands to:

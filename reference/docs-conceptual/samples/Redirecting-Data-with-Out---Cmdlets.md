@@ -147,7 +147,7 @@ just as it's in a console window in most circumstances. For example, if you run 
 command:
 
 ```powershell
-Get-Command | Out-File -FilePath c:\temp\output.txt
+Get-Command | Out-File -FilePath C:\temp\output.txt
 ```
 
 The output will look like this:
@@ -165,7 +165,7 @@ parameter to specify line width. Because **Width** is a 32-bit integer parameter
 it can have is 2147483647. Type the following to set the line width to this maximum value:
 
 ```powershell
-Get-Command | Out-File -FilePath c:\temp\output.txt -Width 2147483647
+Get-Command | Out-File -FilePath C:\temp\output.txt -Width 2147483647
 ```
 
 The `Out-File` cmdlet is most useful when you want to save output as it would have displayed on the

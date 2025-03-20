@@ -39,8 +39,8 @@ object.
 
 - The target object that was being processed when the error occurred. This might be the input
   object, or it might be another object that your cmdlet was processing. For example, for the
-  command `Remove-Item -Recurse c:\somedirectory`, the error might be an instance of a FileInfo
-  object for "c:\somedirectory\lockedfile". The target object information is optional.
+  command `Remove-Item -Recurse C:\somedirectory`, the error might be an instance of a FileInfo
+  object for "C:\somedirectory\lockedfile". The target object information is optional.
 
 ## Error Identifier
 

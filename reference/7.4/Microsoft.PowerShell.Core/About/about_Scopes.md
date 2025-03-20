@@ -390,7 +390,7 @@ the script scope (the default for scripts), just enter the full path to the
 script file on the command line.
 
 ```powershell
-c:\scripts\sample.ps1
+C:\scripts\sample.ps1
 ```
 
 A script file must have a `.ps1` file extension to be executable. Files that
@@ -403,7 +403,7 @@ Using the call operator to run a function or script runs it in script scope.
 Using the call operator is no different than running the script by name.
 
 ```powershell
-& c:\scripts\sample.ps1
+& C:\scripts\sample.ps1
 ```
 
 You can read more about the call operator in [about_Operators][07].
@@ -412,7 +412,7 @@ To run the `Sample.ps1` script in the local scope type a dot and a space (`. `)
 before the path to the script:
 
 ```powershell
-. c:\scripts\sample.ps1
+. C:\scripts\sample.ps1
 ```
 
 Now, any functions, aliases, or variables defined in the script are added to

@@ -64,7 +64,7 @@ in the format data in the file.
 
 ```powershell
 $F = Get-FormatData -TypeName "helpinfoshort"
-Export-FormatData -InputObject $F -Path "c:\test\Help.format.ps1xml" -IncludeScriptBlock
+Export-FormatData -InputObject $F -Path "C:\test\Help.format.ps1xml" -IncludeScriptBlock
 ```
 
 These commands export the format data for the **HelpInfoShort** type to the `Help.format.ps1xml`

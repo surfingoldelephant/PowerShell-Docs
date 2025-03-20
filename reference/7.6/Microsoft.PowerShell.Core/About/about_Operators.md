@@ -202,7 +202,7 @@ of command in a string expression.
 PS> "Today is $(Get-Date)"
 Today is 12/02/2019 13:15:20
 
-PS> "Folder list: $((dir c:\ -Dir).Name -join ', ')"
+PS> "Folder list: $((dir C:\ -Dir).Name -join ', ')"
 Folder list: Program Files, Program Files (x86), Users, Windows
 ```
 
@@ -426,7 +426,7 @@ for which no value has been given become variables with no value. However, the
 automatic variable `$args` is preserved.
 
 ```powershell
-. c:\scripts\sample.ps1 1 2 -Also:3
+. C:\scripts\sample.ps1 1 2 -Also:3
 ```
 
 > [!NOTE]

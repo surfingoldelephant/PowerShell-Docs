@@ -151,7 +151,7 @@ WSManConfig: Microsoft.WSMan.Management\WSMan::localhost\Plugin\MaintenanceShell
 
 ParamName            ParamValue
 ---------            ----------
-startupscript        c:\ps-test\Mainte...
+startupscript        C:\ps-test\Mainte...
 
 "Restart WinRM service"
 WinRM service need to be restarted to make the changes effective. Do you want to run
@@ -172,7 +172,7 @@ SDKVersion       : 1
 XmlRenderingType : text
 lang             : en-US
 PSVersion        : 2.0
-startupscript    : c:\ps-test\Maintenance.ps1
+startupscript    : C:\ps-test\Maintenance.ps1
 ResourceUri      : http://schemas.microsoft.com/powershell/MaintenanceShell
 SupportsOptions  : true
 ExactMatch       : true
@@ -188,7 +188,7 @@ Get-ChildItem WSMan:\localhost\Plugin\MaintenanceShell\InitializationParameters
 ParamName     ParamValue
 ---------     ----------
 PSVersion     2.0
-startupscript c:\ps-test\Maintenance.ps1
+startupscript C:\ps-test\Maintenance.ps1
 ```
 
 ## PARAMETERS

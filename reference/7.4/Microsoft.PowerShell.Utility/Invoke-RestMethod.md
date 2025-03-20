@@ -193,7 +193,7 @@ $Form = @{
     firstName  = 'John'
     lastName   = 'Doe'
     email      = 'john.doe@contoso.com'
-    avatar     = Get-Item -Path 'c:\Pictures\jdoe.png'
+    avatar     = Get-Item -Path 'C:\Pictures\jdoe.png'
     birthday   = '1980-10-15'
     hobbies    = 'Hiking','Fishing','Jogging'
 }
@@ -668,7 +668,7 @@ name of the file is submitted as the `filename`. The MIME type is set as `applic
 
 ```powershell
 $Form = @{
-    resume = Get-Item 'c:\Users\jdoe\Documents\John Doe.pdf'
+    resume = Get-Item 'C:\Users\jdoe\Documents\John Doe.pdf'
 }
 ```
 
@@ -680,7 +680,7 @@ aren't supported.
 ```powershell
 $Form = @{
     tags     = 'Vacation', 'Italy', '2017'
-    pictures = Get-ChildItem 'c:\Users\jdoe\Pictures\2017-Italy\'
+    pictures = Get-ChildItem 'C:\Users\jdoe\Pictures\2017-Italy\'
 }
 ```
 

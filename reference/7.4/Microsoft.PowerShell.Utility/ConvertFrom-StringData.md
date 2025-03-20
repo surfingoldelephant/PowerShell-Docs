@@ -225,13 +225,13 @@ path to render correctly in the resulting `ConvertFrom-StringData` hash table. T
 ensures that the literal backslash characters render correctly in the hash table output.
 
 ```powershell
-ConvertFrom-StringData "Message=Look in c:\\Windows\\System32"
+ConvertFrom-StringData "Message=Look in C:\\Windows\\System32"
 ```
 
 ```Output
 Name                           Value
 ----                           -----
-Message                        Look in c:\Windows\System32
+Message                        Look in C:\Windows\System32
 ```
 
 ## PARAMETERS

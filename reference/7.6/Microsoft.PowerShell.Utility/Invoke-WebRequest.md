@@ -193,11 +193,11 @@ Note that the **Encoding** property is null if the web request doesn't return te
 ### Example 5: Submit a multipart/form-data file
 
 This example uses the `Invoke-WebRequest` cmdlet upload a file as a `multipart/form-data`
-submission. The file `c:\document.txt` is submitted as the form field `document` with the
+submission. The file `C:\document.txt` is submitted as the form field `document` with the
 `Content-Type` of `text/plain`.
 
 ```powershell
-$FilePath = 'c:\document.txt'
+$FilePath = 'C:\document.txt'
 $FieldName = 'document'
 $ContentType = 'text/plain'
 
@@ -226,7 +226,7 @@ $Form = @{
     firstName  = 'John'
     lastName   = 'Doe'
     email      = 'john.doe@contoso.com'
-    avatar     = Get-Item -Path 'c:\Pictures\jdoe.png'
+    avatar     = Get-Item -Path 'C:\Pictures\jdoe.png'
     birthday   = '1980-10-15'
     hobbies    = 'Hiking','Fishing','Jogging'
 }
@@ -720,7 +720,7 @@ object.
 
 ```powershell
 $Form = @{
-    resume = Get-Item 'c:\Users\jdoe\Documents\John Doe.pdf'
+    resume = Get-Item 'C:\Users\jdoe\Documents\John Doe.pdf'
 }
 ```
 
@@ -731,7 +731,7 @@ object, then the binary file contents are submitted. Nested collections aren't s
 ```powershell
 $Form = @{
     tags     = 'Vacation', 'Italy', '2017'
-    pictures = Get-ChildItem 'c:\Users\jdoe\Pictures\2017-Italy\'
+    pictures = Get-ChildItem 'C:\Users\jdoe\Pictures\2017-Italy\'
 }
 ```
 

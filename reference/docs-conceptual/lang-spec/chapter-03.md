@@ -824,7 +824,7 @@ directory, sort a set of text records, and perform some processing on a text rec
 
 ```powershell
 Get-ChildItem
-Get-ChildItem e:*.txt | Sort-Object -CaseSensitive | Process-File >results.txt
+Get-ChildItem E:*.txt | Sort-Object -CaseSensitive | Process-File >results.txt
 ```
 
 In the first case, `Get-ChildItem` creates a collection of names of the files in the current/default
@@ -832,7 +832,7 @@ directory. That collection is sent to the host environment, which, by default, w
 element's value to standard output.
 
 In the second case, `Get-ChildItem` creates a collection of names of the files in the directory
-specified, using the argument `e:*.txt`. That collection is written to the command `Sort-Object`,
+specified, using the argument `E:*.txt`. That collection is written to the command `Sort-Object`,
 which, by default, sorts them in ascending order, sensitive to case (by virtue of the
 **CaseSensitive** argument). The resulting collection is then written to command `Process-File`,
 which performs some (unknown) processing. The output from that command is then redirected to the

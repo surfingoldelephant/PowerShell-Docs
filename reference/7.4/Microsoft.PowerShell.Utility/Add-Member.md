@@ -89,7 +89,7 @@ The third command uses dot notation to get the value of the **Status** property 
 `$a`. As the output shows, the value is `Done`.
 
 ```powershell
-$A = Get-ChildItem c:\ps-test\test.txt
+$A = Get-ChildItem C:\ps-test\test.txt
 $A | Add-Member -NotePropertyName Status -NotePropertyValue Done
 $A.Status
 ```

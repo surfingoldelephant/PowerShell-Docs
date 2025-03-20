@@ -217,8 +217,8 @@ appropriate property, for example, the **CmdletProvider.Exclude** property.
 
 By default, overrides of this method should not move objects over existing objects unless the
 [System.Management.Automation.Provider.CmdletProvider.Force*](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.Force)
-property is set to `true`. For example, the FileSystem provider will not copy c:\temp\abc.txt over
-an existing c:\bar.txt file unless the
+property is set to `true`. For example, the FileSystem provider will not copy C:\temp\abc.txt over
+an existing C:\bar.txt file unless the
 [System.Management.Automation.Provider.CmdletProvider.Force*](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.Force)
 property is set to `true`. If the path specified in the `destination` parameter exists and is a
 container, the

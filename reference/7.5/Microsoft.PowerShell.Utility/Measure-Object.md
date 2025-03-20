@@ -124,7 +124,7 @@ You can use `Measure-Object` to calculate the values of these properties, just l
 property of an object.
 
 ```powershell
-Import-Csv d:\test\serviceyrs.csv | Measure-Object -Property Years -Minimum -Maximum -Average
+Import-Csv D:\test\serviceyrs.csv | Measure-Object -Property Years -Minimum -Maximum -Average
 ```
 
 ### Example 6: Measure Boolean values

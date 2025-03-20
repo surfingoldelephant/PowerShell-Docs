@@ -134,7 +134,7 @@ two `catch` blocks:
 ```powershell
 try {
     $wc = New-Object System.Net.WebClient
-    $wc.DownloadFile("http://www.contoso.com/MyDoc.doc","c:\temp\MyDoc.doc")
+    $wc.DownloadFile("http://www.contoso.com/MyDoc.doc","C:\temp\MyDoc.doc")
 } catch [System.Net.WebException],[System.IO.IOException] {
     "Unable to download MyDoc.doc from http://www.contoso.com."
 } catch {
@@ -240,14 +240,14 @@ script. A `finally` block also runs if an `exit` keyword stops the script from
 within a `catch` block.
 
 In the following example, the `try` block attempts to download a file to the
-`c:\temp` folder. The `catch` blocks handle errors that occur during the
+`C:\temp` folder. The `catch` blocks handle errors that occur during the
 download. The `finally` block disposes of the `WebClient` object and removes
 the temporary file if it exists.
 
 ```powershell
 try {
     $wc = New-Object System.Net.WebClient
-    $tempFile = "c:\temp\MyDoc.doc"
+    $tempFile = "C:\temp\MyDoc.doc"
     $wc.DownloadFile("http://www.contoso.com/MyDoc.doc",$tempFile)
 } catch [System.Net.WebException],[System.IO.IOException] {
     "Unable to download MyDoc.doc from http://www.contoso.com."

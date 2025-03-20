@@ -185,7 +185,7 @@ the Path environment variable, the `Get-Help` command that gets the script Help 
 script path.
 
 ```powershell
-PS> Get-Help c:\ps-test\update-month.ps1 -Full
+PS> Get-Help C:\ps-test\update-month.ps1 -Full
 ```
 
 ```Output

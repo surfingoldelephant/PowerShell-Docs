@@ -285,7 +285,7 @@ representation must be a UTF-16LE encoded string.
 For example:
 
 ```powershell
-$command = 'dir "c:\program files" '
+$command = 'dir "C:\program files" '
 $bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
 $encodedCommand = [Convert]::ToBase64String($bytes)
 pwsh -EncodedCommand $encodedCommand
@@ -393,7 +393,7 @@ session. By default, system-wide settings are read from the
 Note that these settings aren't used by the endpoint specified by the
 `-ConfigurationName` argument.
 
-Example: `pwsh -SettingsFile c:\myproject\powershell.config.json`
+Example: `pwsh -SettingsFile C:\myproject\powershell.config.json`
 
 ### -SSHServerMode | -sshs
 

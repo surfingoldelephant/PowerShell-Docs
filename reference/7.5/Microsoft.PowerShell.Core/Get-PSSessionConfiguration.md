@@ -208,7 +208,7 @@ Name                      PSVersion  StartupScript        Permission            
 ----                      ---------  -------------        ----------                          --------------
 microsoft.powershell      5.1                             BUILTIN\Administrators AccessAll... server02.corp.fabrikam.com
 microsoft.powershell32    5.1                             BUILTIN\Administrators AccessAll... server02.corp.fabrikam.com
-MyX86Shell                5.1        c:\test\x86Shell.ps1 BUILTIN\Administrators AccessAll... server02.corp.fabrikam.com
+MyX86Shell                5.1        C:\test\x86Shell.ps1 BUILTIN\Administrators AccessAll... server02.corp.fabrikam.com
 ```
 
 The `Enable-WSManCredSSP` cmdlet enables **CredSSP** delegation on Server01, the local computer. The

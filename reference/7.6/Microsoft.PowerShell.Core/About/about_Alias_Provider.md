@@ -161,7 +161,7 @@ You can create an alias for any item that invokes a command.
 This command creates the `np` alias for `Notepad.exe`.
 
 ```powershell
-New-Item -Path Alias:np -Value c:\windows\notepad.exe
+New-Item -Path Alias:np -Value C:\windows\notepad.exe
 ```
 
 ### Create an alias to a new function
@@ -177,7 +177,7 @@ When the command is complete, you can use either `CD32` or `go` to invoke the
 function.
 
 ```powershell
-function CD32 {Set-Location -Path c:\windows\system32}
+function CD32 {Set-Location -Path C:\windows\system32}
 Set-Item -Path Alias:go -Value CD32
 ```
 

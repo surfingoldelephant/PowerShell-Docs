@@ -95,7 +95,7 @@ parameter specifies the configuration class to use from the assembly.
 ```powershell
 $sessionConfiguration = @{
     Name='NewShell'
-    ApplicationBase='c:\MyShells\'
+    ApplicationBase='C:\MyShells\'
     AssemblyName='MyShell.dll'
     ConfigurationTypeName='MyClass'
 }

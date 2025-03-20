@@ -132,7 +132,7 @@ Get-Item -Path man | Format-Table -Wrap -AutoSize
 
 ### Working with Function provider paths
 
-These commands both get the function named `c:`. The first command can be used
+These commands both get the function named `C:`. The first command can be used
 in any drive. The second command is used in the `Function:` drive. Because the
 name ends in a colon, which is the syntax for a drive, you must qualify the
 path with the drive name. Within the `Function:` drive, you can use either

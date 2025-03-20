@@ -73,7 +73,7 @@ You can add additional parameters by calling the AddParameter method repeatedly.
 
 ```csharp
 PowerShell.Create().AddCommand("Get-ChildItem")
-                   .AddParameter("Path", @"c:\Windows")
+                   .AddParameter("Path", @"C:\Windows")
                    .AddParameter("Filter", "*.exe")
                    .Invoke();
 ```
@@ -84,7 +84,7 @@ method.
 
 ```csharp
 IDictionary parameters = new Dictionary<String, String>();
-parameters.Add("Path", @"c:\Windows");
+parameters.Add("Path", @"C:\Windows");
 parameters.Add("Filter", "*.exe");
 
 PowerShell.Create().AddCommand("Get-Process")

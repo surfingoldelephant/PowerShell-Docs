@@ -109,7 +109,7 @@ For example, the following command runs the `DiskCollect.ps1` script on the remo
 Server01 and Server02.
 
 ```powershell
-Invoke-Command -ComputerName Server01, Server02 -FilePath c:\Scripts\DiskCollect.ps1
+Invoke-Command -ComputerName Server01, Server02 -FilePath C:\Scripts\DiskCollect.ps1
 ```
 
 ### Establish a Persistent Connection

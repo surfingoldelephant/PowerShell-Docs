@@ -90,7 +90,7 @@ This command creates a directory named "Logfiles" in the `C:` drive. The **ItemT
 specifies that the new item is a directory, not a file or other file system object.
 
 ```powershell
-New-Item -Path "c:\" -Name "logfiles" -ItemType "Directory"
+New-Item -Path "C:\" -Name "logfiles" -ItemType "Directory"
 ```
 
 ### Example 3: Create a profile
@@ -128,7 +128,7 @@ instead of being specified in the value of **Name**. As indicated by the syntax,
 is valid.
 
 ```powershell
-New-Item -ItemType "Directory" -Path "c:\ps-test\scripts"
+New-Item -ItemType "Directory" -Path "C:\ps-test\scripts"
 ```
 
 ### Example 5: Create multiple files
@@ -137,7 +137,7 @@ This example creates files in two different directories. Because **Path** takes 
 you can use it to create multiple items.
 
 ```powershell
-New-Item -ItemType "File" -Path "c:\ps-test\test.txt", "c:\ps-test\Logs\test.log"
+New-Item -ItemType "File" -Path "C:\ps-test\test.txt", "C:\ps-test\Logs\test.log"
 ```
 
 ### Example 6: Use wildcards to create files in multiple directories

@@ -104,7 +104,7 @@ signed by a third-party timestamp server.
 
 ```powershell
 $SignatureParams = @{
-    FilePath = "c:\scripts\Remodel.ps1"
+    FilePath = "C:\scripts\Remodel.ps1"
     Certificate = $cert
     IncludeChain = "All"
     TimestampServer = "https://timestamp.fabrikam.com/scripts/timstamper.dll"

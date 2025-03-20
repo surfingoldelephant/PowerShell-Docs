@@ -131,10 +131,10 @@ As a result of the `Position` settings for these two parameters, you can use
 any of the following commands:
 
 ```powershell
-Get-ChildItem -Path c:\techdocs -Exclude *.ppt
-Get-ChildItem c:\techdocs -Exclude *.ppt
-Get-ChildItem -Exclude *.ppt -Path c:\techdocs
-Get-ChildItem -Exclude *.ppt c:\techdocs
+Get-ChildItem -Path C:\techdocs -Exclude *.ppt
+Get-ChildItem C:\techdocs -Exclude *.ppt
+Get-ChildItem -Exclude *.ppt -Path C:\techdocs
+Get-ChildItem -Exclude *.ppt C:\techdocs
 ```
 
 If you were to include another positional parameter without including the

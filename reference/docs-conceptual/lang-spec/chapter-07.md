@@ -2124,7 +2124,7 @@ $h1["City"] = "New York"           # adds element City
 
 [int]$Variable:v = 123.456         # v takes on the value 123
 ${E:output.txt} = "a"              # write text to the given file
-$Env:MyPath = "x:\data\file.txt"   # define the environment variable
+$Env:MyPath = "X:\data\file.txt"   # define the environment variable
 $Function:F = { param ($a, $b) "Hello there, $a, $b" }
 F 10 "red"                         # define and invoke a function
 function Demo { "Hi there from inside Demo" }

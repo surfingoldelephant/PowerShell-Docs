@@ -290,9 +290,9 @@ Examples:
 New-Object 'int[,]' 3,2
 New-Object -ArgumentList 3,2 -TypeName 'int[,]'
 
-dir e:\PowerShell\Scripts\*statement*.ps1 | ForEach-Object {$_.Length}
+dir E:\PowerShell\Scripts\*statement*.ps1 | ForEach-Object {$_.Length}
 
-dir e:\PowerShell\Scripts\*.ps1 |
+dir E:\PowerShell\Scripts\*.ps1 |
     Select-String -List "catch" |
     Format-Table Path, LineNumber -AutoSize
 ```

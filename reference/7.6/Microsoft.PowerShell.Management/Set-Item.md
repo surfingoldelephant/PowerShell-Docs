@@ -74,7 +74,7 @@ specified in the command.
 This command creates an alias of np for Notepad.
 
 ```powershell
-Set-Item -Path Alias:np -Value "c:\windows\notepad.exe"
+Set-Item -Path Alias:np -Value "C:\windows\notepad.exe"
 ```
 
 ### Example 2: Change the value of an environment variable

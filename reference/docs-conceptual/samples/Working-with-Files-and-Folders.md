@@ -75,7 +75,7 @@ You can also copy a selection of items. The following command copies all `.txt` 
 anywhere in `C:\data` to `C:\temp\text`:
 
 ```powershell
-Copy-Item -Filter *.txt -Path c:\data -Recurse -Destination C:\temp\text
+Copy-Item -Filter *.txt -Path C:\data -Recurse -Destination C:\temp\text
 ```
 
 You can still run native commands like `xcopy.exe` and `robocopy.exe` to copy files.

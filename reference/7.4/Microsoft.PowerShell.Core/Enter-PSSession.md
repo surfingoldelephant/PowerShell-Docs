@@ -147,7 +147,7 @@ PS C:\>
 PS C:\> dir C:\ps-test\Process.txt
 Get-ChildItem : Cannot find path 'C:\ps-test\Process.txt' because it does not exist.
 At line:1 char:4
-+ dir <<<<  c:\ps-test\Process.txt
++ dir <<<<  C:\ps-test\Process.txt
 ```
 
 This command shows how to work in an interactive session with a remote computer.
@@ -201,7 +201,7 @@ Otherwise, you must use key-based user authentication.
 ### Example 7: Start an interactive session using SSH with a port and user authentication key
 
 ```powershell
-PS> Enter-PSSession -HostName UserA@LinuxServer02:22 -KeyFilePath c:\sshkeys\userAKey_rsa
+PS> Enter-PSSession -HostName UserA@LinuxServer02:22 -KeyFilePath C:\sshkeys\userAKey_rsa
 ```
 
 This example shows how to start an interactive session using SSH. The username and SSH port number
@@ -216,7 +216,7 @@ $options = @{
     User = 'UserA'
     Host = 'LinuxServer02'
 }
-Enter-PSSession -KeyFilePath c:\sshkeys\userAKey_rsa -Options $options
+Enter-PSSession -KeyFilePath C:\sshkeys\userAKey_rsa -Options $options
 ```
 
 This example shows how to start an interactive session using SSH. The **Options** parameter takes a

@@ -154,8 +154,8 @@ To retrieve the names of child items, the Windows PowerShell container provider 
 method to support calls from the `Get-ChildItem` cmdlet when its `Name` parameter is specified. This
 method retrieves the names of the child items for the specified path or child item names for all
 containers if the `returnAllContainers` parameter of the cmdlet is specified. A child name is the
-leaf portion of a path. For example, the child name for the path c:\windows\system32\abc.dll is
-"abc.dll". The child name for the directory c:\windows\system32 is "system32".
+leaf portion of a path. For example, the child name for the path C:\windows\system32\abc.dll is
+"abc.dll". The child name for the directory C:\windows\system32 is "system32".
 
 Here is the implementation of the
 [System.Management.Automation.Provider.ContainerCmdletProvider.GetChildNames*](/dotnet/api/System.Management.Automation.Provider.ContainerCmdletProvider.GetChildNames)
@@ -530,8 +530,8 @@ The following conditions may apply to your implementation of
 
 - By default, overrides of this method should not copy objects over existing objects unless the
   [System.Management.Automation.Provider.CmdletProvider.Force*](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.Force)
-  property is set to `true`. For example, the FileSystem provider will not copy c:\temp\abc.txt over
-  an existing c:\abc.txt file unless the
+  property is set to `true`. For example, the FileSystem provider will not copy C:\temp\abc.txt over
+  an existing C:\abc.txt file unless the
   [System.Management.Automation.Provider.CmdletProvider.Force*](/dotnet/api/System.Management.Automation.Provider.CmdletProvider.Force)
   property is set to `true`. If the path specified in the `copyPath` parameter exists and indicates
   a container, the
@@ -622,7 +622,7 @@ uses a fictitious Access database.
    The following output appears.
 
    ```output
-   TABLE_CAT   : c:\PS\northwind
+   TABLE_CAT   : C:\PS\northwind
    TABLE_SCHEM :
    TABLE_NAME  : Customers
    TABLE_TYPE  : TABLE

@@ -38,7 +38,7 @@ with path to the item, and the **ItemType** parameter with a value of `File` or 
 For example, to create a new directory named `New.Directory` in the `C:\Temp` directory, type:
 
 ```powershell
-New-Item -Path c:\temp\New.Directory -ItemType Directory
+New-Item -Path C:\temp\New.Directory -ItemType Directory
 ```
 
 ```Output
@@ -127,13 +127,13 @@ following command fails because it attempts to move the file from the `New.Direc
 the Temp directory.
 
 ```powershell
-Rename-Item -Path C:\temp\New.Directory\fileOne.txt c:\temp\fileOne.txt
+Rename-Item -Path C:\temp\New.Directory\fileOne.txt C:\temp\fileOne.txt
 ```
 
 ```Output
 Rename-Item : can't rename because the target specified isn't a path.
 At line:1 char:12
-+ Rename-Item  <<<< -Path C:\temp\New.Directory\fileOne c:\temp\fileOne.txt
++ Rename-Item  <<<< -Path C:\temp\New.Directory\fileOne C:\temp\fileOne.txt
 ```
 
 ## Moving items

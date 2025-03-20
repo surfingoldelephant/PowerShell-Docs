@@ -87,7 +87,7 @@ This command resolves a Universal Naming Convention (UNC) path and returns the s
 ### Example 5: Get relative paths
 
 ```powershell
-Resolve-Path -Path "c:\prog*" -Relative
+Resolve-Path -Path "C:\prog*" -Relative
 ```
 
 ```Output

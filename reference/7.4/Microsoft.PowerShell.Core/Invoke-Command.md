@@ -200,7 +200,7 @@ Some code samples use splatting to reduce the line length. For more information,
 This example runs the `Test.ps1` script on the Server01 computer.
 
 ```powershell
-Invoke-Command -FilePath c:\scripts\test.ps1 -ComputerName Server01
+Invoke-Command -FilePath C:\scripts\test.ps1 -ComputerName Server01
 ```
 
 The **FilePath** parameter specifies a script that is located on the local computer. The script runs
@@ -732,7 +732,7 @@ $sshConnections = @(
         KeyFilePath = "/Users/UserB/id_rsa"
     }
 )
-$results = Invoke-Command -FilePath c:\Scripts\GetInfo.ps1 -SSHConnection $sshConnections
+$results = Invoke-Command -FilePath C:\Scripts\GetInfo.ps1 -SSHConnection $sshConnections
 ```
 
 ### Example 22: Connect to a remote SSH session using SSH options
@@ -747,7 +747,7 @@ $options = @{
     User = 'UserB'
     Host = 'LinuxServer5'
 }
-$results = Invoke-Command -FilePath c:\Scripts\CollectEvents.ps1 -KeyFilePath '/Users/UserB/id_rsa' -Options $options
+$results = Invoke-Command -FilePath C:\Scripts\CollectEvents.ps1 -KeyFilePath '/Users/UserB/id_rsa' -Options $options
 ```
 
 ## PARAMETERS

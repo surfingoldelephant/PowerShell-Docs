@@ -116,8 +116,8 @@ Microsoft.BackgroundIntelligentTransfer.Management.BitsJob =>
 ```
 
 ```powershell
-Get-FormatData *bits* | Export-FormatData -FilePath c:\test\Bits.format.ps1xml
-Get-Content c:\test\Bits.format.ps1xml
+Get-FormatData *bits* | Export-FormatData -FilePath C:\test\Bits.format.ps1xml
+Get-Content C:\test\Bits.format.ps1xml
 ```
 
 ```Output

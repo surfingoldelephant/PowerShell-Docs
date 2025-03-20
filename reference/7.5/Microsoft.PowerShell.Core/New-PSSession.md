@@ -287,7 +287,7 @@ will have to use SSH key based user authentication.
 ### Example 13: Create a session using SSH and specify the port and user authentication key
 
 ```powershell
-New-PSSession -HostName UserA@LinuxServer01:22 -KeyFilePath c:\<path>\userAKey_rsa
+New-PSSession -HostName UserA@LinuxServer01:22 -KeyFilePath C:\<path>\userAKey_rsa
 ```
 
 This example shows how to create a **PSSession** using Secure Shell (SSH). It uses the **Port**
@@ -301,11 +301,11 @@ $sshConnections = @(
     @{
           HostName    = 'WinServer1'
           UserName    = 'domain\userA'
-          KeyFilePath = 'c:\users\UserA\id_rsa'
+          KeyFilePath = 'C:\users\UserA\id_rsa'
     }
     @{
         HostName    = 'UserB@LinuxServer5'
-        KeyFilePath = 'c:\UserB\<path>\id_rsa'
+        KeyFilePath = 'C:\UserB\<path>\id_rsa'
     }
 )
 New-PSSession -SSHConnection $sshConnections

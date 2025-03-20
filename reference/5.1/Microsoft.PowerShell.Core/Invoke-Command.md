@@ -157,7 +157,7 @@ Some code samples use splatting to reduce the line length. For more information,
 This example runs the `Test.ps1` script on the Server01 computer.
 
 ```powershell
-Invoke-Command -FilePath c:\scripts\test.ps1 -ComputerName Server01
+Invoke-Command -FilePath C:\scripts\test.ps1 -ComputerName Server01
 ```
 
 The **FilePath** parameter specifies a script that is located on the local computer. The script runs

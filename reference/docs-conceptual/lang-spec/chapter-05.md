@@ -60,7 +60,7 @@ function F ($p1, $p2) {
     $h1.FirstName = "Smith"
 
     $Alias:A = "Help"
-    $Env:MyPath = "e:\Temp"
+    $Env:MyPath = "E:\Temp"
     ${E:output.txt} = 123
     $Function:F = { "Hello there" }
     $Variable:v = 10

@@ -24,7 +24,7 @@ repository.
 
 ### Reference assemblies
 
-Reference assemblies are installed in the following location by default: `c:\Program Files\Reference
+Reference assemblies are installed in the following location by default: `C:\Program Files\Reference
 Assemblies\Microsoft\WindowsPowerShell\V1.0`.
 
 > [!NOTE]

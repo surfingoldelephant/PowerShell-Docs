@@ -268,7 +268,7 @@ Invoke-CimMethod -ClassName Win32_Share -MethodName Create -Arguments @{
 This is equivalent to the following `net share` command on Windows:
 
 ```powershell
-net share tempshare=c:\temp /users:25 /remark:"test share of the temp folder"
+net share tempshare=C:\temp /users:25 /remark:"test share of the temp folder"
 ```
 
 To call a method of a WMI class that takes parameters you must know what parameters are available

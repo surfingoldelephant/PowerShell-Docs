@@ -248,7 +248,7 @@ returns the members of the **Object[]** type.
 This example shows how to determine which properties of an object can be changed.
 
 ```powershell
-$File = Get-Item c:\test\textFile.txt
+$File = Get-Item C:\test\textFile.txt
 $File.psobject.Properties | Where-Object IsSettable | Select-Object -Property Name
 ```
 

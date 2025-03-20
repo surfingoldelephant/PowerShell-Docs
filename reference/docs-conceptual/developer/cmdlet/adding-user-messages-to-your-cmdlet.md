@@ -163,7 +163,7 @@ The following code is an example of a progress message written by a cmdlet that 
 
 ```csharp
 int myId = 0;
-string myActivity = "Copy-item: Copying *.* to c:\abc";
+string myActivity = "Copy-item: Copying *.* to C:\abc";
 string myStatus = "Copying file bar.txt";
 ProgressRecord pr = new ProgressRecord(myId, myActivity, myStatus);
 WriteProgress(pr);

@@ -162,7 +162,7 @@ session.
 This example uses an explicit path to identify the module to import.
 
 ```powershell
-Import-Module -Name c:\ps-test\modules\test -Verbose
+Import-Module -Name C:\ps-test\modules\test -Verbose
 ```
 
 ```Output

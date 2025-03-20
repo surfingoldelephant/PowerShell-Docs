@@ -184,7 +184,7 @@ derivation. Let's test the sample drive provider.
 3. Create a new drive using the sample drive provider:
 
    ```powershell
-   New-PSDrive -Name mydb -Root c:\ps\northwind.mdb -PSProvider AccessDb`
+   New-PSDrive -Name mydb -Root C:\ps\northwind.mdb -PSProvider AccessDb`
    ```
 
    The following output appears:
@@ -192,7 +192,7 @@ derivation. Let's test the sample drive provider.
    ```Output
    Name     Provider     Root                   CurrentLocation
    ----     --------     ----                   ---------------
-   mydb     AccessDB     c:\ps\northwind.mdb
+   mydb     AccessDB     C:\ps\northwind.mdb
    ```
 
 4. Validate the connection. Because the connection is defined as a member of the drive, you can
@@ -208,9 +208,9 @@ derivation. Let's test the sample drive provider.
    The following output appears:
 
    ```Output
-   ConnectionString  : Driver={Microsoft Access Driver (*.mdb)};DBQ=c:\ps\northwind.mdb
+   ConnectionString  : Driver={Microsoft Access Driver (*.mdb)};DBQ=C:\ps\northwind.mdb
    ConnectionTimeout : 15
-   Database          : c:\ps\northwind
+   Database          : C:\ps\northwind
    DataSource        : ACCESS
    ServerVersion     : 04.00.0000
    Driver            : odbcjt32.dll

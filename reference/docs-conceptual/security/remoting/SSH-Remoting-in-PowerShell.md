@@ -79,7 +79,7 @@ remote computer. And, you must enable **password** or **key-based** authenticati
    Create the SSH subsystem that hosts a PowerShell process on the remote computer:
 
    ```
-   Subsystem powershell c:/progra~1/powershell/7/pwsh.exe -sshs -NoLogo
+   Subsystem powershell C:/progra~1/powershell/7/pwsh.exe -sshs -NoLogo
    ```
 
    > [!NOTE]
@@ -87,7 +87,7 @@ remote computer. And, you must enable **password** or **key-based** authenticati
    > PowerShell in SSH server mode.
 
    > [!NOTE]
-   > The default location of the PowerShell executable is `c:/progra~1/powershell/7/pwsh.exe`. The
+   > The default location of the PowerShell executable is `C:/progra~1/powershell/7/pwsh.exe`. The
    > location can vary depending on how you installed PowerShell.
    >
    > You must use the 8.3 short name for any file paths that contain spaces. There's a bug in
@@ -105,7 +105,7 @@ remote computer. And, you must enable **password** or **key-based** authenticati
    > ```Output
    > EightDotThreeFileName
    > ---------------------
-   > c:\progra~1
+   > C:\progra~1
    > ```
 
    Optionally, enable key authentication:
