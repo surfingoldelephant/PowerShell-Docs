@@ -206,7 +206,7 @@ the dollar sign (`$`). The path must be enclosed in curly braces due to
 variable naming restrictions. For more information, see [about_Variables][09].
 
 ```powershell
-${C:\Windows\System32\Drivers\etc\hosts}
+${C:\Windows\System32\drivers\etc\hosts}
 ```
 
 ### Add content to a file

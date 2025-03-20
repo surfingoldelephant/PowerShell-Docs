@@ -145,7 +145,7 @@ Get-ChildItem $Path
 ```
 
 ```Output
-Directory: C:\Users\User01\Appdata\Local\Microsoft\Windows\PowerShell
+Directory: C:\Users\User01\AppData\Local\Microsoft\Windows\PowerShell
                \ScheduledJobs\ProcessJob\Output
 ```
 

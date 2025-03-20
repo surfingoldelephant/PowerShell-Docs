@@ -162,7 +162,7 @@ Get-Module -ListAvailable | Where-Object -Property HelpInfoUri
 ```
 
 ```output
-   Directory: C:\program files\powershell\6\Modules
+   Directory: C:\Program Files\PowerShell\6\Modules
 
 ModuleType Version    Name                                PSEdition ExportedCommands
 ---------- -------    ----                                --------- ----------------

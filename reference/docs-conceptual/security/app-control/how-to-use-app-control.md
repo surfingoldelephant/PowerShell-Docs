@@ -72,7 +72,7 @@ For testing, you just need to create a default policy and a self signed code sig
    Import-Certificate -FilePath C:\certs\signing.cer -CertStoreLocation "Cert:\CurrentUser\Root\"
    $cert = Get-ChildItem Cert:\CurrentUser\My\ -CodeSigningCert
 
-   dir C:\bin\powershell\pwsh.exe | Set-AuthenticodeSignature -Certificate $cert
+   dir C:\bin\PowerShell\pwsh.exe | Set-AuthenticodeSignature -Certificate $cert
    ```
 
 1. Add the code signing certificate to the policy

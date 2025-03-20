@@ -209,7 +209,7 @@ C:\Program Files
 ```
 
 Then, the installer assures the value of the **PSModulePath** environment variable includes the path
-of the common files modules subdirectory.
+of the `Common Files\Modules` subdirectory.
 
 ```powershell
 $m = $Env:ProgramFiles + '\Common Files\Modules'

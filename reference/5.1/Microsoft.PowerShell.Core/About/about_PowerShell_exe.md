@@ -308,7 +308,7 @@ PowerShell -Command {Get-EventLog -LogName Security}
 PowerShell -Command "& {Get-EventLog -LogName Security}"
 
 # To use the -EncodedCommand parameter:
-$command = "dir 'C:\program files' "
+$command = "dir 'C:\Program Files' "
 $bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
 $encodedCommand = [Convert]::ToBase64String($bytes)
 powershell.exe -EncodedCommand $encodedCommand

@@ -262,7 +262,7 @@ Windows 10 IoT Enterprise comes with Windows PowerShell, which we can use to dep
 # Replace the placeholder information for the following variables:
 $deviceip = '<device ip address'
 $zipfile = 'PowerShell-7.5.0-win-arm64.zip'
-$downloadfolder = 'U:\users\administrator\Downloads'  # The download location is local to the device.
+$downloadfolder = 'U:\Users\Administrator\Downloads'  # The download location is local to the device.
     # There should be enough  space for the zip file and the unzipped contents.
 
 # Create PowerShell session to target device
@@ -273,7 +273,7 @@ Copy-Item $zipfile -Destination $downloadfolder -ToSession $S
 
 #Connect to the device and expand the archive
 Enter-PSSession $S
-Set-Location U:\users\administrator\Downloads
+Set-Location U:\Users\Administrator\Downloads
 Expand-Archive .\PowerShell-7.5.0-win-arm64.zip
 
 # Set up remoting to PowerShell 7

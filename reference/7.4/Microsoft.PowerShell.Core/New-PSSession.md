@@ -301,7 +301,7 @@ $sshConnections = @(
     @{
           HostName    = 'WinServer1'
           UserName    = 'domain\userA'
-          KeyFilePath = 'C:\users\UserA\id_rsa'
+          KeyFilePath = 'C:\Users\UserA\id_rsa'
     }
     @{
         HostName    = 'UserB@LinuxServer5'

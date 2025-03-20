@@ -434,7 +434,7 @@ PS> Get-Module -ListAvailable PowerShellGet | Select-Object Path
 Path
 ----
 C:\Program Files\PowerShell\Modules\PowerShellGet\2.2.1\PowerShellGet.psd1
-C:\program files\powershell\6\Modules\PowerShellGet\PowerShellGet.psd1
+C:\Program Files\PowerShell\6\Modules\PowerShellGet\PowerShellGet.psd1
 C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\2.1.2\PowerShellGet.psd1
 C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PowerShellGet.psd1
 

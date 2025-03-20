@@ -285,7 +285,7 @@ representation must be a UTF-16LE encoded string.
 For example:
 
 ```powershell
-$command = 'dir "C:\program files" '
+$command = 'dir "C:\Program Files" '
 $bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
 $encodedCommand = [Convert]::ToBase64String($bytes)
 pwsh -EncodedCommand $encodedCommand

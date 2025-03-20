@@ -522,7 +522,7 @@ WinRM loads a WOW64 process. Windows automatically redirects all references to
 `$Env:Windir\System32` to the `$Env:Windir\SysWOW64` directory.
 
 As a result, running tools in the `System32` directory that do not have
-counterparts in the `SysWow64` directory can't be found.
+counterparts in the `SysWOW64` directory can't be found.
 
 To find the processor architecture that is being used in the session, use the
 value of the **PROCESSOR_ARCHITECTURE** environment variable.
