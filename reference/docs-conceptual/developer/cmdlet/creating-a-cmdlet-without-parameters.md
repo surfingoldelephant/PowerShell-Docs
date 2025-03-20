@@ -224,7 +224,7 @@ When your cmdlet has been registered with Windows PowerShell, you can test it by
 7. Use the `Get-Member` cmdlet to list the properties available for each process.
 
     ```powershell
-    $p | Get-Member -MemberType property
+    $p | Get-Member -MemberType Property
     ```
 
     ```output

@@ -452,7 +452,7 @@ in diving deeper, I have an article about [everything you wanted to know about $
 I almost forgot to add this one until [Prasoon Karunan V][Prasoon Karunan V] reminded me of it.
 
 ```powershell
-if ($process=Get-Process notepad -ErrorAction ignore) {$process} else {$false}
+if ($process=Get-Process notepad -ErrorAction Ignore) {$process} else {$false}
 ```
 
 Normally when you assign a value to a variable, the value isn't passed onto the pipeline or

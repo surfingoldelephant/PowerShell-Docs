@@ -307,7 +307,7 @@ function New-Profile
   if (Test-Path $PROFILE)
     {Write-Error "Profile $profileName already exists on this computer."}
   else
-    {New-Item -Type file -Path $PROFILE -Force }
+    {New-Item -Type File -Path $PROFILE -Force }
 }
 ```
 

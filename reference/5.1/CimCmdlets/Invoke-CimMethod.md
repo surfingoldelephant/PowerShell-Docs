@@ -154,12 +154,12 @@ Invoke-CimMethod -ClassName Win32_Process -MethodName "Create" -Arguments @{
 
 ### Example 4: Client-side validation
 
-This example performs client-side validation for the **xyz** method by passing a **CimClass** object
+This example performs client-side validation for the **Foo** method by passing a **CimClass** object
 to `Invoke-CimMethod`.
 
 ```powershell
 $c = Get-CimClass -ClassName Win32_Process
-Invoke-CimMethod -CimClass $c -MethodName "xyz" -Arguments @{CommandLine='notepad.exe'}
+Invoke-CimMethod -CimClass $c -MethodName "Foo" -Arguments @{CommandLine='notepad.exe'}
 ```
 
 ## PARAMETERS

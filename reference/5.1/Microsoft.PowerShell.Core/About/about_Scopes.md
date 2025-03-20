@@ -332,7 +332,7 @@ change) items in a particular scope. Use the following command to find all the
 cmdlets in your session that have a **Scope** parameter:
 
 ```powershell
-Get-Help * -Parameter scope
+Get-Help * -Parameter Scope
 ```
 
 To find the variables that are visible in a particular scope, use the `Scope`

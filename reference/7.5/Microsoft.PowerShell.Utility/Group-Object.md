@@ -208,7 +208,7 @@ values are **CmdletInfo** object. The **AsString** parameter doesn't convert the
 groups to strings.
 
 ```powershell
-$A = Get-Command Get-*, Set-* -CommandType cmdlet |
+$A = Get-Command Get-*, Set-* -CommandType Cmdlet |
      Group-Object -Property Verb -AsHashTable -AsString
 $A
 ```

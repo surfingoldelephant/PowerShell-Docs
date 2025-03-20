@@ -290,7 +290,7 @@ This command creates the `log2.txt` file in the `C:\logfiles` directory and
 then adds the "test log" string to the file:
 
 ```powershell
-New-Item -Path c:\logfiles -Name log2.txt -Type file
+New-Item -Path c:\logfiles -Name log2.txt -Type File
 ```
 
 ### Create a file with content
@@ -299,7 +299,7 @@ Creates a file called `log2.txt` in the `C:\logfiles` directory and adds the
 string "test log" to the file.
 
 ```powershell
-New-Item -Path c:\logfiles -Name log2.txt -Type file -Value "test log"
+New-Item -Path c:\logfiles -Name log2.txt -Type File -Value "test log"
 ```
 
 ## Renaming files and directories

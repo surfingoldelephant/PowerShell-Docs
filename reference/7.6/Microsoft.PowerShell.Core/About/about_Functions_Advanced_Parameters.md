@@ -711,7 +711,7 @@ function TestDefaultValue {
 Use `Get-Help` to see the default value information.
 
 ```powershell
-Get-Help TestDefaultValue -Parameter name
+Get-Help TestDefaultValue -Parameter Name
 ```
 
 ```Output
