@@ -53,10 +53,10 @@ SELECT <property> FROM <WMI-class>
 ```
 
 For example, the following `SELECT` statement selects all properties (`*`) from
-the instances of the **Win32_Bios** WMI class.
+the instances of the **Win32_BIOS** WMI class.
 
 ```
-SELECT * FROM Win32_Bios
+SELECT * FROM Win32_BIOS
 ```
 
 > [!NOTE]
@@ -67,19 +67,19 @@ SELECT * FROM Win32_Bios
 To select a particular property of a WMI class, place the property name
 between the `SELECT` and `FROM` keywords.
 
-The following query selects only the name of the BIOS from the **Win32_Bios**
+The following query selects only the name of the BIOS from the **Win32_BIOS**
 WMI class. The command saves the query in the `$queryName` variable.
 
 ```
-SELECT Name FROM Win32_Bios
+SELECT Name FROM Win32_BIOS
 ```
 
 To select more than one property, use commas to separate the property names.
-The following WMI query selects the name and the version of the **Win32_Bios**
+The following WMI query selects the name and the version of the **Win32_BIOS**
 WMI class. The command saves the query in the `$queryNameVersion` variable.
 
 ```WQL
-SELECT name, version FROM Win32_Bios
+SELECT name, version FROM Win32_BIOS
 ```
 
 ## Using the WQL query
@@ -97,7 +97,7 @@ a string) and then use the query string as the value of the **Query** parameter
 of the `Get-WmiObject` cmdlet, as shown in the following example.
 
 ```powershell
-Get-WmiObject -Query "SELECT * FROM Win32_Bios"
+Get-WmiObject -Query "SELECT * FROM Win32_BIOS"
 ```
 
 ```output
@@ -112,7 +112,7 @@ You can also save the WQL statement in a variable and then use the variable as
 the value of the **Query** parameter, as shown in the following command.
 
 ```powershell
-$query = "SELECT * FROM Win32_Bios"
+$query = "SELECT * FROM Win32_BIOS"
 Get-WmiObject -Query $query
 ```
 
@@ -121,7 +121,7 @@ the query in the `$queryName` variable to get only the **Name** and **Version**
 properties of the system BIOS.
 
 ```powershell
-$queryNameVersion = "SELECT Name, Version FROM Win32_Bios"
+$queryNameVersion = "SELECT Name, Version FROM Win32_BIOS"
 Get-WmiObject -Query $queryNameVersion
 ```
 
@@ -143,11 +143,11 @@ PSComputerName   :
 
 Remember that you can use the parameters of the `Get-WmiObject` cmdlet to get
 the same result. For example, the following command also gets the values of the
-**Name** and **Version** properties of instances of the **Win32_Bios** WMI
+**Name** and **Version** properties of instances of the **Win32_BIOS** WMI
 class.
 
 ```powershell
-Get-WmiObject -Class Win32_Bios -Property Name, Version
+Get-WmiObject -Class Win32_BIOS -Property Name, Version
 ```
 
 ```output
@@ -184,7 +184,7 @@ Any WQL query that can be used with `Get-WmiObject` can also be used with
 `Get-CimInstance`.
 
 ```powershell
-Get-CimInstance -Query "SELECT * FROM Win32_Bios"
+Get-CimInstance -Query "SELECT * FROM Win32_BIOS"
 ```
 
 ```output
@@ -200,10 +200,10 @@ Version           : LENOVO - 1270
 similar.
 
 ```powershell
-PS> (Get-CimInstance -Query "SELECT * FROM Win32_Bios").GetType().FullName
+PS> (Get-CimInstance -Query "SELECT * FROM Win32_BIOS").GetType().FullName
 Microsoft.Management.Infrastructure.CimInstance
 
-PS> (Get-WmiObject -Query "SELECT * FROM Win32_Bios").GetType().FullName
+PS> (Get-WmiObject -Query "SELECT * FROM Win32_BIOS").GetType().FullName
 System.Management.ManagementObject
 ```
 
@@ -228,7 +228,7 @@ result in the `$bios` variable, and then calls the `Get()` method of the
 **ManagementObjectSearcher** object in the `$bios` variable.
 
 ```powershell
-$bios = [wmisearcher]"SELECT * FROM Win32_Bios"
+$bios = [wmisearcher]"SELECT * FROM Win32_BIOS"
 $bios.Get()
 ```
 
@@ -245,7 +245,7 @@ variable. In the following example, the `[wmisearcher]` type accelerator is
 used to cast the variable. The result is the same.
 
 ```powershell
-[wmisearcher]$bios = "SELECT * FROM Win32_Bios"
+[wmisearcher]$bios = "SELECT * FROM Win32_BIOS"
 $bios.Get()
 ```
 
@@ -261,20 +261,20 @@ When you use the `[wmisearcher]` type accelerator, it changes the query string
 into a **ManagementObjectSearcher** object, as shown in the following commands.
 
 ```powershell
-$a = "SELECT * FROM Win32_Bios"
+$a = "SELECT * FROM Win32_BIOS"
 $a.GetType().FullName
 System.String
 
-$a = [wmisearcher]"SELECT * FROM Win32_Bios"
+$a = [wmisearcher]"SELECT * FROM Win32_BIOS"
 $a.GetType().FullName
 System.Management.ManagementObjectSearcher
 ```
 
 This command format works on any query. The following command gets the value
-of the **Name** property of the **Win32_Bios** WMI class.
+of the **Name** property of the **Win32_BIOS** WMI class.
 
 ```powershell
-$biosName = [wmisearcher]"Select Name from Win32_Bios"
+$biosName = [wmisearcher]"Select Name from Win32_BIOS"
 $biosName.Get()
 ```
 

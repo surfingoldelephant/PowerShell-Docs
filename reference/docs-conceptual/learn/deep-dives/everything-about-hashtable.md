@@ -503,7 +503,7 @@ has an optional `$Credential` argument.
 
 ```powershell
 $CIMParams = @{
-    ClassName = 'Win32_Bios'
+    ClassName = 'Win32_BIOS'
     ComputerName = $ComputerName
 }
 

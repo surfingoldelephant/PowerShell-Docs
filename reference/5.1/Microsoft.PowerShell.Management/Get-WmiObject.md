@@ -161,7 +161,7 @@ This example gets the BIOS information from the local computer. The **Property**
 only the subset of properties defined in the `Types.ps1xml` configuration file are displayed.
 
 ```powershell
-Get-WmiObject -Class Win32_Bios | Format-List -Property *
+Get-WmiObject -Class Win32_BIOS | Format-List -Property *
 ```
 
 ```Output
