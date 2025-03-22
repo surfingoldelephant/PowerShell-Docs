@@ -102,7 +102,7 @@ The following type accelerators are supported with WMI:
 `[wmi]` - A shortcut for getting a single instance of a class.
 
 `[wmisearcher]` is a type accelerator for a `ManagementObjectSearcher`. It can
-take a string constructor to create a searcher that you can then do a GET()
+take a string constructor to create a searcher that you can then do a `Get()`
 on.
 
 For example:

@@ -62,7 +62,7 @@ the job trigger to the `Disable-JobTrigger` cmdlet, which disables it.
 ```powershell
 Get-ScheduledJob -Name "Backup-Archives,Inventory" | Get-JobTrigger | Disable-JobTrigger
 Get-ScheduledJob -Name "Backup-Archives,Inventory" | Get-JobTrigger |
-    Format-Table -Property ID, Frequency, At, DaysOfWeek, Enabled, @{Label="JobName";Expression={$_.JobDefinition.Name}} -AutoSize
+    Format-Table -Property Id, Frequency, At, DaysOfWeek, Enabled, @{Label="JobName";Expression={$_.JobDefinition.Name}} -AutoSize
 ```
 
 ```Output

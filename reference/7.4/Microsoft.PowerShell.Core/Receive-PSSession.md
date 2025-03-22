@@ -635,7 +635,7 @@ Accept wildcard characters: False
 
 Specifies the instance ID of the disconnected session. The instance ID is a GUID that uniquely
 identifies a **PSSession** on a local or remote computer. The instance ID is stored in the
-**InstanceID** property of the **PSSession**.
+**InstanceId** property of the **PSSession**.
 
 ```yaml
 Type: System.Guid

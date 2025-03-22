@@ -101,7 +101,7 @@ OutputBufferingMode           : Block
 AutoRestart                   : false
 MaxShells                     : 40
 MaxMemoryPerShellMB           : 1024
-MaxIdleTimeoutms              : 43200000
+MaxIdleTimeoutMs              : 43200000
 SDKVersion                    : 2
 Name                          : ITTasks
 XmlRenderingType              : text

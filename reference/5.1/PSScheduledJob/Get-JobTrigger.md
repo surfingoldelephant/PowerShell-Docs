@@ -94,7 +94,7 @@ The first command uses the `Get-ScheduledJob` cmdlet to display the scheduled jo
 computer. The display includes the IDs of the scheduled jobs.
 
 The second command uses the `Get-JobTrigger` cmdlet to get the job trigger for the `Test-HelpFiles`
-job (whose **ID** is `3`).
+job (whose **Id** is `3`).
 
 ### Example 3: Get job triggers by piping a job
 
@@ -124,7 +124,7 @@ This example gets all job triggers of all scheduled jobs on the local computer.
 
 ```powershell
 Get-ScheduledJob | Get-JobTrigger |
-    Format-Table -Property ID, Frequency, At, DaysOfWeek, Enabled, @{Label="ScheduledJob";Expression={$_.JobDefinition.Name}} -AutoSize
+    Format-Table -Property Id, Frequency, At, DaysOfWeek, Enabled, @{Label="ScheduledJob";Expression={$_.JobDefinition.Name}} -AutoSize
 ```
 
 ```Output

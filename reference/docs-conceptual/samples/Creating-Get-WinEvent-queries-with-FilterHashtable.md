@@ -55,7 +55,7 @@ If the **key-value** pairs are on the same line, they must be separated by a sem
 places **key-value** pairs on separate lines and doesn't use semicolons.
 
 This sample uses several of the **FilterHashtable** parameter's **key-value** pairs. The completed
-query includes **LogName**, **ProviderName**, **Keywords**, **ID**, and **Level**.
+query includes **LogName**, **ProviderName**, **Keywords**, **Id**, and **Level**.
 
 The accepted **key-value** pairs are shown in the following table and are included in the
 documentation for the [Get-WinEvent][06] **FilterHashtable** parameter.
@@ -232,10 +232,10 @@ Get-WinEvent -FilterHashtable @{
 ## Filtering by Event Id
 
 To get more specific data, the query's results are filtered by **Event Id**. The **Event Id** is
-referenced in the hash table as the key **ID** and the value is a specific **Event Id**. The
+referenced in the hash table as the key **Id** and the value is a specific **Event Id**. The
 **Windows Event Viewer** displays the **Event Id**. This example uses **Event Id 1023**.
 
-Update the hash table and include the **key-value** pair with the key, **ID** and the value,
+Update the hash table and include the **key-value** pair with the key, **Id** and the value,
 **1023**.
 
 ```powershell

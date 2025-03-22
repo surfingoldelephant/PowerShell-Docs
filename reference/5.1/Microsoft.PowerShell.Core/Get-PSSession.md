@@ -204,7 +204,7 @@ more variables than objects, the extra variables are not used.
 ### Example 5: Delete a session by using an instance ID
 
 ```powershell
-Get-PSSession | Format-Table -Property ComputerName, InstanceID
+Get-PSSession | Format-Table -Property ComputerName, InstanceId
 $s = Get-PSSession -InstanceId a786be29-a6bb-40da-80fb-782c67f7db0f
 Remove-PSSession -Session $s
 ```
@@ -214,7 +214,7 @@ This example shows how to get a **PSSession** by using its instance ID, and then
 
 The first command gets all of the **PSSessions** that were created in the current session. It sends
 the **PSSessions** to the `Format-Table` cmdlet, which displays the **ComputerName** and
-**InstanceID** properties of each **PSSession**.
+**InstanceId** properties of each **PSSession**.
 
 The second command uses the `Get-PSSession` cmdlet to get a particular **PSSession** and to save it
 in the `$s` variable. The command uses the **InstanceId** parameter to identify the **PSSession**.
@@ -272,7 +272,7 @@ for use.
 Get-PSSession -Id 2
 ```
 
-This command gets the **PSSession** with ID `2`. Because the value of the **ID** property is unique
+This command gets the **PSSession** with ID `2`. Because the value of the **Id** property is unique
 only in the current session, the **Id** parameter is valid only for local commands.
 
 ## PARAMETERS
@@ -555,7 +555,7 @@ You cannot use the **Id** parameter together with the **ComputerName** parameter
 
 An ID is an integer that uniquely identifies the user-managed sessions in the current session. It is
 easier to remember and type than the **InstanceId**, but it is unique only within the current
-session. The ID of a session is stored in the **ID** property of the session.
+session. The ID of a session is stored in the **Id** property of the session.
 
 ```yaml
 Type: System.Int32[]
@@ -575,9 +575,9 @@ Specifies an array of instance IDs of sessions. This cmdlet gets only the sessio
 specified instance IDs.
 
 The instance ID is a GUID that uniquely identifies a session on a local or remote computer. The
-**InstanceID** is unique, even when you have multiple sessions running in PowerShell.
+**InstanceId** is unique, even when you have multiple sessions running in PowerShell.
 
-The instance ID of a session is stored in the **InstanceID** property of the session.
+The instance ID of a session is stored in the **InstanceId** property of the session.
 
 ```yaml
 Type: System.Guid[]

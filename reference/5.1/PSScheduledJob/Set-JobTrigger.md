@@ -206,7 +206,7 @@ scheduled job has three job triggers, so the commands use the **TriggerId** para
 
 The first command uses the `Get-JobTrigger` cmdlet to get all job triggers of the `SecurityCheck`
 scheduled job. The output, which displays the IDs of the job triggers, reveals that the **Once** job
-trigger has an **ID** of `3`.
+trigger has an **Id** of `3`.
 
 The second command uses the **TriggerId** parameter of the `Get-JobTrigger` cmdlet to get the
 **Once** trigger of the `SecurityCheck` scheduled job. The command pipes the trigger to the

@@ -99,7 +99,7 @@ OutputBufferingMode           : Block
 AutoRestart                   : false
 MaxShells                     : 300
 MaxMemoryPerShellMB           : 1024
-MaxIdleTimeoutms              : 43200000
+MaxIdleTimeoutMs              : 43200000
 SDKVersion                    : 1
 Name                          : Full
 XmlRenderingType              : text

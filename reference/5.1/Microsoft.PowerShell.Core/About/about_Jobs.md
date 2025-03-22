@@ -248,7 +248,7 @@ is completed and all results are available.
 
 You can also use the `Wait-Job` cmdlet to wait for any or all of the results of
 the job. `Wait-Job` lets you wait for one or more specific job or for all jobs.
-The following command uses the `Wait-Job` cmdlet to wait for a job with **ID**
+The following command uses the `Wait-Job` cmdlet to wait for a job with **Id**
 10.
 
 ```powershell

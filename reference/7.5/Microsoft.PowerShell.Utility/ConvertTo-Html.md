@@ -176,7 +176,7 @@ This command uses the `Get-EventLog` cmdlet to get events from the Windows Power
 It uses a pipeline operator (`|`) to send the events to the `ConvertTo-Html` cmdlet, which converts
 the events to HTML format.
 
-The `ConvertTo-Html` command uses the **Property** parameter to select only the **ID**, **Level**,
+The `ConvertTo-Html` command uses the **Property** parameter to select only the **Id**, **Level**,
 and **Task** properties of the event.
 
 ### Example 9: Create a web page to display specified services

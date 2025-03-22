@@ -94,12 +94,12 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
 
 The computer names aren't evident in this display, but they're stored in the **MachineName** property of
 the process objects that `Get-Process` returns. The following command uses the `Format-Table` cmdlet
-to display the process **ID**, **ProcessName** and **MachineName** (ComputerName) properties of the
+to display the process **Id**, **ProcessName** and **MachineName** (ComputerName) properties of the
 process objects.
 
 ```powershell
 Get-Process -Name powershell -ComputerName localhost, Server01, Server01 |
-    Format-Table -Property ID, ProcessName, MachineName
+    Format-Table -Property Id, ProcessName, MachineName
 ```
 
 ```Output

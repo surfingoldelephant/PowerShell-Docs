@@ -519,7 +519,7 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
     967      30    58804      59496   416   930.97   2508 WINWORD
 ```
 
-In the above expression, each process working space (`$_.ws`) is multiplied by
+In the above expression, each process working space (`$_.WS`) is multiplied by
 `2`; and, the result, compared against `50mb` to see if it's greater than that.
 
 ## Bitwise operators

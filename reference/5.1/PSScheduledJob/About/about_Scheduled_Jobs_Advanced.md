@@ -173,8 +173,8 @@ time of each job instance.
 
 ```powershell
 Get-Job -Name UpdateHelpJob |
-  Format-Table -Property ID, PSBeginTime, PSEndTime,
-@{Label="Elapsed Time";Expression={$.PsEndTime - $.PSBeginTime}}
+  Format-Table -Property Id, PSBeginTime, PSEndTime,
+@{Label="Elapsed Time";Expression={$.PSEndTime - $.PSBeginTime}}
 ```
 
 ```Output

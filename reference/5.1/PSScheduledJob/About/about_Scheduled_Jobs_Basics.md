@@ -258,11 +258,11 @@ The default display does not show the start time, which typically distinguishes
 instances of the same scheduled job.
 
 The `Get-Job` cmdlet sends objects down the pipeline. The `Format-Table` cmdlet
-displays the **Name**, **ID**, and **BeginTime** properties of the scheduled
+displays the **Name**, **Id**, and **BeginTime** properties of the scheduled
 job.
 
 ```powershell
-Get-Job ProcessJob | Format-Table -Property Name, ID, BeginTime
+Get-Job ProcessJob | Format-Table -Property Name, Id, BeginTime
 ```
 
 ```Output

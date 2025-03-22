@@ -416,7 +416,7 @@ of all of the properties of process objects, see
 - **VM(M)**: The amount of virtual memory that the process is using, in megabytes. Virtual memory
   includes storage in the paging files on disk.
 - **CPU(s)**: The amount of processor time that the process has used on all processors, in seconds.
-- **ID**: The process ID (PID) of the process.
+- **Id**: The process ID (PID) of the process.
 - **ProcessName**: The name of the process. For explanations of the concepts related to processes,
   see the Glossary in Help and Support Center and the Help for Task Manager.
 

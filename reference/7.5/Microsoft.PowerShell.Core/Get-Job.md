@@ -113,7 +113,7 @@ instance ID of the job.
 
 ```powershell
 $j = Get-Job -Name Job1
-$ID = $j.InstanceID
+$ID = $j.InstanceId
 $ID
 ```
 

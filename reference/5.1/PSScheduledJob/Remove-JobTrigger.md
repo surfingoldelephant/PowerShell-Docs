@@ -75,7 +75,7 @@ This command deletes only the third trigger (ID = 3) from the BackupArchive sche
 ```powershell
 function Delete-AtStartup
 {
-    Get-ScheduledJob | Get-JobTrigger | Where-Object {$_.Frequency -eq "AtStartup"} | ForEach-Object { Remove-JobTrigger -InputObject $_.JobDefinition -TriggerId $_.ID}
+    Get-ScheduledJob | Get-JobTrigger | Where-Object {$_.Frequency -eq "AtStartup"} | ForEach-Object { Remove-JobTrigger -InputObject $_.JobDefinition -TriggerId $_.Id}
 }
 ```
 

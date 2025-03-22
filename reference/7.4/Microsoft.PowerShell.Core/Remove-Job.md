@@ -63,7 +63,7 @@ The `Remove-Job` cmdlet deletes PowerShell background jobs that were started by 
 cmdlet or by cmdlets such as `Invoke-Command` that support the **AsJob** parameter.
 
 You can use `Remove-Job` to delete all jobs or delete selected jobs. The jobs are identified by
-their **Name**, **ID**, **Instance ID**, **Command**, or **State**. Or, a job object can be sent
+their **Name**, **Id**, **InstanceId**, **Command**, or **State**. Or, a job object can be sent
 down the pipeline to `Remove-Job`. Without parameters or parameter values, `Remove-Job` has no
 effect.
 

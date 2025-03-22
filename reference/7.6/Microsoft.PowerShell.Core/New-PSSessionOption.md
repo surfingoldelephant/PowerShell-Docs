@@ -339,7 +339,7 @@ The idle time-out value is of significant importance if you intend to disconnect
 session. You can reconnect only if the session has not timed out.
 
 Enter a value in milliseconds. The minimum value is `60000` (1 minute). The maximum is the value of
-the **MaxIdleTimeoutms** property of the session configuration. The default value, `-1`, does not
+the **MaxIdleTimeoutMs** property of the session configuration. The default value, `-1`, does not
 set an idle time-out.
 
 The session uses the idle time-out that is set in the session options, if any. If none is set

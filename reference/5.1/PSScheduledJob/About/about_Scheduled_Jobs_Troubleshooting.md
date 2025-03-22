@@ -60,11 +60,11 @@ Id     Name         PSJobTypeName   State         HasMoreData     Location
 ```
 
 The `Get-Job` cmdlet sends **ProcessJob** objects down the pipeline. The
-`Format-Table` cmdlet displays the **Name**, **ID**, and **PSBeginTime**
+`Format-Table` cmdlet displays the **Name**, **Id**, and **PSBeginTime**
 properties of a scheduled job instance in a table.
 
 ```powershell
-Get-Job ProcessJob | Format-Table -Property Name, ID, PSBeginTime -Auto
+Get-Job ProcessJob | Format-Table -Property Name, Id, PSBeginTime -Auto
 ```
 
 ```Output

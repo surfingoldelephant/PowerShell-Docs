@@ -359,7 +359,7 @@ contained in the array.
   > string is the number of characters in the string. But the **Count**
   > property is always `1`.
 
-- **Longlength** - This property is an `[int64]` type value. Use this property
+- **LongLength** - This property is an `[int64]` type value. Use this property
   for arrays containing more than 2,147,483,647 elements.
 
 ```powershell

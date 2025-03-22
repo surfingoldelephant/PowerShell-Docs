@@ -84,7 +84,7 @@ this type exposes different members than the IDispatch members, scripts written 
 object might not work if the primary interop assembly is not installed.
 
 At line:1 char:14
-+ $A = New-Object  <<<< -COM Word.Application -Strict; $a.visible=$true
++ $A = New-Object  <<<< -ComObject Word.Application -Strict; $a.Visible=$true
 ```
 
 ### Example 4: Create a COM object to manage Windows desktop

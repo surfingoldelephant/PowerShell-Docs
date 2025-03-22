@@ -57,7 +57,7 @@ reached. To turn off this optimizing behavior, use the **Wait** parameter.
 
 ### Example 1: Select objects by property
 
-This example creates objects that have the **Name**, **ID**, and working set (**WS**) properties of
+This example creates objects that have the **Name**, **Id**, and working set (**WS**) properties of
 process objects.
 
 ```powershell

@@ -140,7 +140,7 @@ This command stops all the jobs that are blocked.
 
 ```powershell
 Get-Job | Format-Table ID, Name, Command, @{Label="State";Expression={$_.JobStateInfo.State}},
-InstanceID -Auto
+InstanceId -Auto
 ```
 
 ```Output
@@ -155,11 +155,11 @@ Id Name Command                 State  InstanceId
 Stop-Job -InstanceId e3bbfed1-9c53-401a-a2c3-a8db34336adf
 ```
 
-These commands show how to stop a job based on its **InstanceID**.
+These commands show how to stop a job based on its **InstanceId**.
 
 The first command uses the `Get-Job` cmdlet to get the jobs in the current session. The command uses
 a pipeline operator (`|`) to send the jobs to a `Format-Table` command, which displays a table of
-the specified properties of each job. The table includes the **InstanceID** of each job. It uses a
+the specified properties of each job. The table includes the **InstanceId** of each job. It uses a
 calculated property to display the job state.
 
 The second command uses a `Stop-Job` command that has the **InstanceId** parameter to stop a
