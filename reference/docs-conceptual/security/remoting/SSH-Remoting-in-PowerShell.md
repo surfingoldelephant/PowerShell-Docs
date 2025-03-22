@@ -122,7 +122,7 @@ remote computer. And, you must enable **password** or **key-based** authenticati
    Restart-Service sshd
    ```
 
-1. Add the path where OpenSSH is installed to your Path environment variable. For example,
+1. Add the path where OpenSSH is installed to your PATH environment variable. For example,
    `C:\Program Files\OpenSSH\`. This entry allows for the `ssh.exe` to be found.
 
 ## Install the SSH service on an Ubuntu Linux computer

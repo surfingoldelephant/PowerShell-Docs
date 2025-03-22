@@ -181,7 +181,7 @@ function Get-Data { }
 ```
 
 The following command gets the script Help. Because the script isn't in a directory that's listed in
-the Path environment variable, the `Get-Help` command that gets the script Help must specify the
+the PATH environment variable, the `Get-Help` command that gets the script Help must specify the
 script path.
 
 ```powershell

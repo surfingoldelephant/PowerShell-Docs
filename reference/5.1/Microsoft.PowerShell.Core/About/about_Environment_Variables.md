@@ -251,12 +251,12 @@ available in any session that loads your profile. This method works for any
 version of PowerShell on any supported platform.
 
 For example, to create the `CompanyUri` environment variable and update the
-`Path` environment variable to include the `C:\Tools` folder, add the following
+`PATH` environment variable to include the `C:\Tools` folder, add the following
 lines to your PowerShell profile:
 
 ```powershell
 $Env:CompanyUri = 'https://internal.contoso.com'
-$Env:Path += ';C:\Tools'
+$Env:PATH += ';C:\Tools'
 ```
 
 You can get the path to your PowerShell profile with the `$PROFILE` automatic

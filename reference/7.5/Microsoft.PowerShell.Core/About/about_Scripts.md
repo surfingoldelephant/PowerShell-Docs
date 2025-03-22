@@ -133,7 +133,7 @@ Invoke-Command @invokeCommandSplat
 The Get-Help cmdlet gets the help topics for scripts as well as for cmdlets
 and other types of commands. To get the help topic for a script, type
 `Get-Help` followed by the path and filename of the script. If the script
-path is in your `Path` environment variable, you can omit the path.
+path is in your `PATH` environment variable, you can omit the path.
 
 For example, to get help for the ServicesLog.ps1 script, type:
 

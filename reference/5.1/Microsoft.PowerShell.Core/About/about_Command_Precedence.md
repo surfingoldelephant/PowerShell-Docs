@@ -38,7 +38,7 @@ C:\TechDocs\FindDocs.ps1
 You can run any executable command using its full path. As a security feature,
 PowerShell doesn't run executable commands, including PowerShell scripts and
 native commands, unless the command is located in a path listed in the
-`$Env:Path` environment variable.
+`$Env:PATH` environment variable.
 
 To run an executable file that's in the current directory, specify the full
 path or use the relative path `.\` to represent the current directory.

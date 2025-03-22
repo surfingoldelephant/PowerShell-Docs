@@ -90,7 +90,7 @@ User-scoped `Path` with the Machine-scoped `Path`.
 - Compare to process inherited `PSModulePath` environment variable
   - If the same:
     - Append the **AllUsers** `PSModulePath` to the end following the semantics
-      of the `Path` environment variable
+      of the `PATH` environment variable
     - The Windows `System32` path comes from the machine defined `PSModulePath`
       so doesn't need to be added explicitly
   - If different, treat as though user explicitly modified it and don't append

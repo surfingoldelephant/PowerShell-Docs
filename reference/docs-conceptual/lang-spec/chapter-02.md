@@ -425,7 +425,7 @@ $Alias:A # invokes function F via A
 
 $Count = 10
 $Variable:Count # accesses variable Count
-$Env:Path # accesses environment variable Path
+$Env:PATH # accesses environment variable PATH
 ```
 
 Any use of a variable name with an explicit `Variable:` namespace is equivalent to the use of that

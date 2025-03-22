@@ -398,11 +398,11 @@ alias, **Type**. The acceptable values for this parameter are:
 - `Alias`: The Windows PowerShell aliases in the remote session.
 - `All`: The cmdlets and functions in the remote session.
 - `Application`: All the files other than Windows-PowerShell files in the paths that are listed in
-  the Path environment variable (`$Env:path`) in the remote session, including .txt, .exe, and .dll
+  the PATH environment variable (`$Env:PATH`) in the remote session, including .txt, .exe, and .dll
   files.
 - `Cmdlet`: The cmdlets in the remote session. "Cmdlet" is the default.
-- `ExternalScript`: The `.ps1` files in the paths listed in the Path environment variable
-  (`$Env:path`) in the remote session.
+- `ExternalScript`: The `.ps1` files in the paths listed in the PATH environment variable
+  (`$Env:PATH`) in the remote session.
 - `Filter` and `Function`: The Windows PowerShell functions in the remote session.
 - `Script`: The script blocks in the remote session.
 

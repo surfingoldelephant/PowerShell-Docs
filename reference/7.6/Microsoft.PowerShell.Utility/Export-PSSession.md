@@ -255,13 +255,13 @@ The acceptable values for this parameter are as follows:
 
 - `Alias`: All PowerShell aliases in the current session.
 - `All`: All command types. It is the equivalent of `Get-Command -Name *`.
-- `Application`: All files other than PowerShell files in paths listed in the Path environment
-  variable (`$Env:path`), including .txt, .exe, and .dll files.
+- `Application`: All files other than PowerShell files in paths listed in the PATH environment
+  variable (`$Env:PATH`), including .txt, .exe, and .dll files.
 - `Cmdlet`: The cmdlets in the current session. Cmdlet is the default.
 - `Configuration`: A PowerShell configuration. For more information, see
   [about_Session_Configurations](../Microsoft.PowerShell.Core/About/about_Session_Configurations.md).
-- `ExternalScript`: All `.ps1` files in the paths listed in the Path environment variable
-  (`$Env:path`).
+- `ExternalScript`: All `.ps1` files in the paths listed in the PATH environment variable
+  (`$Env:PATH`).
 - `Filter` and `Function`: All PowerShell functions.
 - `Script` Script blocks in the current session.
 - `Workflow` A PowerShell workflow. For more information, see [about_Workflows](/powershell/module/PSWorkflow/About/about_Workflows).
