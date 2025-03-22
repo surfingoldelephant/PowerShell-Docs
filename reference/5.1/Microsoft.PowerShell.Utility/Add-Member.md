@@ -173,7 +173,7 @@ Piping `$Asset` to `Add-Member` adds the key-value pairs in the dictionary to th
 in alphabetical order, not in the order that they were added.
 
 ```powershell
-$Asset = New-Object -TypeName PSObject
+$Asset = New-Object -TypeName psobject
 $Asset | Add-Member -NotePropertyMembers @{Name="Server30"} -TypeName Asset
 $Asset | Add-Member -NotePropertyMembers @{System="Server Core"}
 $Asset | Add-Member -NotePropertyMembers @{PSVersion="4.0"}

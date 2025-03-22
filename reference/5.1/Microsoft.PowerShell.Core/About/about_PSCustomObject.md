@@ -23,7 +23,7 @@ properties and values was more complicated. Originally, you had to use
 example:
 
 ```powershell
-PS> $object1 = New-Object -TypeName PSObject
+PS> $object1 = New-Object -TypeName psobject
 PS> Add-Member -InputObject $object1 -MemberType NoteProperty -Name one -Value 1
 PS> Add-Member -InputObject $object1 -MemberType NoteProperty -Name two -Value 2
 PS> $object1 | Get-Member
@@ -50,7 +50,7 @@ Later, you could use the **Property** parameter of `New-Object` to pass a
 **Hashtable** containing the members and values. For example:
 
 ```powershell
-PS> $object2 = New-Object -TypeName PSObject -Property @{one=1; two=2}
+PS> $object2 = New-Object -TypeName psobject -Property @{one=1; two=2}
 PS> $object2 | Get-Member
 
    TypeName: System.Management.Automation.PSCustomObject

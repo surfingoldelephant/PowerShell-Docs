@@ -278,7 +278,7 @@ in alphabetic order. To see the properties in the order they were added to the o
 the **psobject** intrinsic member.
 
 ```powershell
-$Asset = New-Object -TypeName PSObject
+$Asset = New-Object -TypeName psobject
 $d = [ordered]@{Name="Server30";System="Server Core";PSVersion="4.0"}
 $Asset | Add-Member -NotePropertyMembers $d -TypeName Asset
 $Asset.psobject.Properties | Select-Object Name, Value

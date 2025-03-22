@@ -933,7 +933,7 @@ $array = foreach ( $node in (1..5))
 
 ## Array Types
 
-By default, an array in PowerShell is created as a `[PSObject[]]` type. This allows it to contain
+By default, an array in PowerShell is created as a `[psobject[]]` type. This allows it to contain
 any type of object or value. This works because everything is inherited from the `PSObject` type.
 
 ### Strongly typed arrays

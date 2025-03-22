@@ -185,7 +185,7 @@ $Start = New-Object DateTime $Start.Year,$Start.Month,1
 $End = New-Object DateTime $End.Year,$End.Month,1
 
 ## Convert the highlighted dates into real dates.
-[DateTime[]] $HighlightDate = [DateTime[]] $HighlightDate
+[datetime[]] $HighlightDate = [datetime[]] $HighlightDate
 
 ## Retrieve the DateTimeFormat information so that the
 ## calendar can be manipulated.

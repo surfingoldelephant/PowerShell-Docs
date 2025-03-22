@@ -647,7 +647,7 @@ Measure-Command {
 Measure-Command {
     $test = 'New-Object'
     for ($i = 0; $i -lt 100000; $i++) {
-        $resultObject = New-Object -TypeName PSObject -Property @{
+        $resultObject = New-Object -TypeName psobject -Property @{
             Name = 'Name'
             Path = 'FullName'
         }

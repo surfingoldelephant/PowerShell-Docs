@@ -73,7 +73,7 @@ $myHashtable = @{
     State    = 'Texas'
 }
 
-$myObject = New-Object -TypeName PSObject -Property $myHashtable
+$myObject = New-Object -TypeName psobject -Property $myHashtable
 ```
 
 This way is quite a bit slower but it may be your best option on early versions of PowerShell.
