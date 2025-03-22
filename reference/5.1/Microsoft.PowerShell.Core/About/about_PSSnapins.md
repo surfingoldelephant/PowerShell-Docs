@@ -116,7 +116,7 @@ file that includes the snap-in. For example, the following command starts
 Windows PowerShell with the `NewConsole.psc1` console file:
 
 ```powershell
-PowerShell.exe -PSConsoleFile NewConsole.psc1
+powershell.exe -PSConsoleFile NewConsole.psc1
 ```
 
 The providers and cmdlets in the snap-in are now available for use in the

@@ -516,7 +516,7 @@ the following keys:
   values for this parameter are: None, ReadOnly, Constant, Private, or AllScope.
 
 For example:
-`@{Name='Get-PowerShellProcess';ScriptBlock={Get-Process PowerShell};Options='AllScope'}`
+`@{Name='Get-PowerShellProcess';ScriptBlock={Get-Process powershell};Options='AllScope'}`
 
 ```yaml
 Type: System.Collections.IDictionary[]

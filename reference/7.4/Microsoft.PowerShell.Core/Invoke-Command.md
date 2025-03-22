@@ -250,10 +250,10 @@ This example compares the effects of using **ComputerName** and **Session** para
 data.
 
 ```powershell
-Invoke-Command -ComputerName Server02 -ScriptBlock { $p = Get-Process PowerShell }
+Invoke-Command -ComputerName Server02 -ScriptBlock { $p = Get-Process powershell }
 Invoke-Command -ComputerName Server02 -ScriptBlock { $p.VirtualMemorySize }
 $s = New-PSSession -ComputerName Server02
-Invoke-Command -Session $s -ScriptBlock { $p = Get-Process PowerShell }
+Invoke-Command -Session $s -ScriptBlock { $p = Get-Process powershell }
 Invoke-Command -Session $s -ScriptBlock { $p.VirtualMemorySize }
 ```
 
@@ -420,7 +420,7 @@ display. You can still use the **Format** cmdlets to display the **PsComputerNam
 of the affected objects.
 
 ```powershell
-Invoke-Command -ComputerName S1, S2 -ScriptBlock { Get-Process PowerShell }
+Invoke-Command -ComputerName S1, S2 -ScriptBlock { Get-Process powershell }
 ```
 
 ```Output
@@ -432,7 +432,7 @@ S2                777      14        35100      30988   150     3.68     67   Po
 
 ```powershell
 Invoke-Command -ComputerName S1, S2 -HideComputerName -ScriptBlock {
-    Get-Process PowerShell
+    Get-Process powershell
 }
 ```
 

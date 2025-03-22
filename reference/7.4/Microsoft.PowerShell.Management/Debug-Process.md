@@ -47,7 +47,7 @@ verify that a debugger is installed and configured.
 ### Example 1: Attach a debugger to a process on the computer
 
 ```powershell
-Debug-Process -Name PowerShell
+Debug-Process -Name powershell
 ```
 
 This command attaches a debugger to the PowerShell process on the computer.
@@ -80,7 +80,7 @@ This command attaches a debugger to the processes that have process IDs 1132 and
 ### Example 5: Use Get-Process to get a process then attach a debugger to it
 
 ```powershell
-Get-Process PowerShell | Debug-Process
+Get-Process powershell | Debug-Process
 ```
 
 This command attaches a debugger to the PowerShell processes on the computer. It uses the
@@ -107,7 +107,7 @@ For more information about the `$PID` automatic variable, see
 ### Example 7: Attach a debugger to a process that uses the InputObject parameter
 
 ```powershell
-$P = Get-Process PowerShell
+$P = Get-Process powershell
 Debug-Process -InputObject $P
 ```
 

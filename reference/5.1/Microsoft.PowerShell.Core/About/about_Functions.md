@@ -22,7 +22,7 @@ run as if you had typed them at the command prompt.
 Functions can be as simple as:
 
 ```powershell
-function Get-PowerShellProcess { Get-Process PowerShell }
+function Get-PowerShellProcess { Get-Process powershell }
 ```
 
 Once a function is defined, you can use it like the built-in cmdlets. For

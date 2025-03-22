@@ -178,7 +178,7 @@ cvkey:\
 
 The `New-PSDrive` cmdlet adds the new drive only to the current PowerShell session. If you close the
 PowerShell window, the new drive is lost. To save a PowerShell drive, use the `Export-Console` cmdlet
-to export the current PowerShell session, and then use the `PowerShell.exe` **PSConsoleFile**
+to export the current PowerShell session, and then use the `powershell.exe` **PSConsoleFile**
 parameter to import it. Or, add the new drive to your Windows PowerShell profile.
 
 ## Deleting PowerShell drives

@@ -56,11 +56,11 @@ instead.
  the command by using the
  [System.Management.Automation.PSCommand.AddParameter*](/dotnet/api/System.Management.Automation.PSCommand.AddParameter)
  method For example, the following code gets a list of all of the processes that are named
- `PowerShell` running on the machine.
+ `powershell` running on the machine.
 
 ```csharp
 PowerShell.Create().AddCommand("Get-Process")
-                   .AddParameter("Name", "PowerShell")
+                   .AddParameter("Name", "powershell")
                    .Invoke();
 ```
 
@@ -95,11 +95,11 @@ PowerShell.Create().AddCommand("Get-Command")
 You can simulate batching by using the
 [System.Management.Automation.PowerShell.AddStatement*](/dotnet/api/System.Management.Automation.PowerShell.AddStatement)
 method, which adds an additional statement to the end of the pipeline The following code gets a list
-of running processes with the name `PowerShell`, and then gets the list of running services.
+of running processes with the name `powershell`, and then gets the list of running services.
 
 ```csharp
 PowerShell ps = PowerShell.Create();
-ps.AddCommand("Get-Process").AddParameter("Name", "PowerShell");
+ps.AddCommand("Get-Process").AddParameter("Name", "powershell");
 ps.AddStatement().AddCommand("Get-Service");
 ps.Invoke();
 ```

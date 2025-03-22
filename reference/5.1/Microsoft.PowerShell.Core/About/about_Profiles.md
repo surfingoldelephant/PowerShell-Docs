@@ -216,7 +216,7 @@ function Get-CmdletAlias ($cmdletName) {
 
 ```powershell
 function CustomizeConsole {
-  $hostTime = (Get-ChildItem -Path $PSHOME\PowerShell.exe).CreationTime
+  $hostTime = (Get-ChildItem -Path $PSHOME\powershell.exe).CreationTime
   $hostVersion="$($Host.Version.Major)`.$($Host.Version.Minor)"
   $Host.UI.RawUI.WindowTitle = "PowerShell $hostVersion ($hostTime)"
   Clear-Host

@@ -172,7 +172,7 @@ the job named **MyJob** is deleted.
 This example removes a job based on its **InstanceId**.
 
 ```powershell
-$job = Start-Job -ScriptBlock {Get-Process PowerShell}
+$job = Start-Job -ScriptBlock {Get-Process powershell}
 $job | Format-List -Property *
 Remove-Job -InstanceId ad02b942-8007-4407-87f3-d23e71955872
 ```
@@ -182,7 +182,7 @@ State         : Completed
 HasMoreData   : True
 StatusMessage :
 Location      : localhost
-Command       : Get-Process PowerShell
+Command       : Get-Process powershell
 JobStateInfo  : Completed
 Finished      : System.Threading.ManualResetEvent
 InstanceId    : ad02b942-8007-4407-87f3-d23e71955872

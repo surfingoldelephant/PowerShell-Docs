@@ -58,7 +58,7 @@ is supported by the target operating system can be used.
 
 ### Example 1: Compute the hash value for a file
 
-This example uses the `Get-FileHash` cmdlet to compute the hash value for the `Powershell.exe` file.
+This example uses the `Get-FileHash` cmdlet to compute the hash value for the `powershell.exe` file.
 The hash algorithm used is the default, SHA256. The output is piped to the `Format-List` cmdlet to
 format the output as a list.
 

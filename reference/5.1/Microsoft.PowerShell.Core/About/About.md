@@ -377,7 +377,7 @@ command-line parameters and describes the syntax.
 
 ### [about_PowerShell_Ise_exe](about_PowerShell_Ise_exe.md)
 
-Explains how to use the PowerShell_Ise.exe command-line tool.
+Explains how to use the `powershell_ise.exe` command-line tool.
 
 ### [about_Preference_Variables](about_Preference_Variables.md)
 

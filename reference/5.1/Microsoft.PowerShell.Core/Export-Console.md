@@ -26,8 +26,8 @@ session to a Windows PowerShell console file (.psc1). You can use this cmdlet to
 for use in future sessions.
 
 To add the snap-ins in the .psc1 console file to a session, start Windows PowerShell
-(PowerShell.exe) at the command line by using Cmd.exe or another Windows PowerShell session, and
-then use the **PSConsoleFile** parameter of PowerShell.exe to specify the console file.
+(`powershell.exe`) at the command line by using Cmd.exe or another Windows PowerShell session, and
+then use the **PSConsoleFile** parameter of `powershell.exe` to specify the console file.
 
 For more information about Windows PowerShell snap-ins, see [about_PSSnapins](About/about_PSSnapins.md).
 
@@ -110,8 +110,8 @@ Export-Console
 This example shows how to use the `$ConsoleFileName` automatic variable to determine the console
 file that will be updated if you use `Export-Console` without a **Path** parameter value.
 
-The first command uses the **PSConsoleFile** parameter of PowerShell.exe to open Windows PowerShell
-with the `Console01.psc1` file.
+The first command uses the **PSConsoleFile** parameter of `powershell.exe` to open Windows
+PowerShell with the `Console01.psc1` file.
 
 The second command uses the `Add-PSSnapin` cmdlet to add the MySnapin Windows PowerShell snap-in to
 the current session.

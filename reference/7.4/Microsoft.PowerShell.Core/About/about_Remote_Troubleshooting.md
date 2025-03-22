@@ -567,7 +567,7 @@ for the current process. The change only affects the current process.
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 ```
 
-You can also use the **ExecutionPolicy** parameter of `PowerShell.exe` to start
+You can also use the **ExecutionPolicy** parameter of `powershell.exe` to start
 a single session with a less restrictive execution policy.
 
 ```powershell

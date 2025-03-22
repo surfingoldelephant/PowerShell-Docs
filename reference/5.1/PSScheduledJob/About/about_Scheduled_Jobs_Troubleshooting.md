@@ -190,7 +190,7 @@ Receive-Job -Id 50
 ```
 
 ```powershell
-PowerShell.exe
+powershell.exe
 ```
 
 ```Output

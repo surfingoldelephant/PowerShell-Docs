@@ -164,7 +164,7 @@ False
 PS> "12/31/2007" -is [string]
 True
 
-PS> (Get-Process PowerShell)[0] -is [System.Diagnostics.Process]
+PS> (Get-Process powershell)[0] -is [System.Diagnostics.Process]
 True
 
 PS> (Get-Command Get-Member) -is [System.Management.Automation.CmdletInfo]

@@ -1099,7 +1099,7 @@ Indicates that this cmdlet gets objects when the property value doesn't match th
 expression. When the input is a single object, the matched value is saved in the `$Matches`
 automatic variable.
 
-For example: `Get-Process | Where-Object ProcessName -NotMatch "PowerShell"`
+For example: `Get-Process | Where-Object ProcessName -NotMatch "powershell"`
 
 This parameter was introduced in Windows PowerShell 3.0.
 

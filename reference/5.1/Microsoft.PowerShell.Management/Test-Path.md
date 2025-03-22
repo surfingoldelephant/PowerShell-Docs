@@ -163,13 +163,13 @@ False
 
 ### Example 6: Test if a file is newer than a specified date
 
-This command uses the **NewerThan** dynamic parameter to determine whether the `PowerShell.exe`
+This command uses the **NewerThan** dynamic parameter to determine whether the `powershell.exe`
 file on the computer is newer than `July 13, 2009`.
 
 The NewerThan parameter works only in file system drives.
 
 ```powershell
-Test-Path $PSHOME\PowerShell.exe -NewerThan "July 13, 2009"
+Test-Path $PSHOME\powershell.exe -NewerThan "July 13, 2009"
 ```
 
 ```Output

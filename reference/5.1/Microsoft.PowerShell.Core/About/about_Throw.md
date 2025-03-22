@@ -80,7 +80,7 @@ throw (Get-Process pwsh)
 
 ```Output
 At line:1 char:6
-+ throw <<<<  (Get-Process PowerShell)
++ throw <<<<  (Get-Process powershell)
 + CategoryInfo          : OperationStopped: (System.Diagnostics.Process (Pow
 erShell):Process) [],
 RuntimeException

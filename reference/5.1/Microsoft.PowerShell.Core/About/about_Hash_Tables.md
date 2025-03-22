@@ -455,7 +455,7 @@ object values and saves it in the `$p` variable.
 
 ```powershell
 $p = @{
-    "PowerShell" = (Get-Process PowerShell)
+    "PowerShell" = (Get-Process powershell)
     "Notepad" = (Get-Process notepad)
 }
 ```

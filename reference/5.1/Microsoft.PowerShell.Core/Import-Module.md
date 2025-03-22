@@ -1228,7 +1228,7 @@ Windows PowerShell includes the following aliases for `Import-Module`:
   To import a module that contains mixed-mode assemblies, start Windows PowerShell 2.0 by using the
   following command, and then try the `Import-Module` command again.
 
-  `PowerShell.exe -Version 2.0`
+  `powershell.exe -Version 2.0`
 
 - To use the CIM session feature, the remote computer must have WS-Management remoting and Windows
   Management Instrumentation (WMI), which is the Microsoft implementation of the Common Information

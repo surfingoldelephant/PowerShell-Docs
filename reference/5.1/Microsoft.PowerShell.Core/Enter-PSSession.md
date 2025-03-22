@@ -124,7 +124,7 @@ The fourth command confirms that the Process.txt file is on the remote computer.
 ```powershell
 PS C:\> Enter-PSSession -ComputerName Server01
 [Server01]: PS C:\>
-[Server01]: PS C:\> Get-Process PowerShell > C:\ps-test\Process.txt
+[Server01]: PS C:\> Get-Process powershell > C:\ps-test\Process.txt
 [Server01]: PS C:\> exit
 PS C:\>
 PS C:\> dir C:\ps-test\Process.txt

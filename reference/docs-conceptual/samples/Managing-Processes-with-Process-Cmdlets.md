@@ -81,7 +81,7 @@ example, the following command gets the PowerShell processes on the local comput
 "localhost") and on two remote computers.
 
 ```powershell
-Get-Process -Name PowerShell -ComputerName localhost, Server01, Server02
+Get-Process -Name powershell -ComputerName localhost, Server01, Server02
 ```
 
 ```Output
@@ -98,7 +98,7 @@ to display the process **ID**, **ProcessName** and **MachineName** (ComputerName
 process objects.
 
 ```powershell
-Get-Process -Name PowerShell -ComputerName localhost, Server01, Server01 |
+Get-Process -Name powershell -ComputerName localhost, Server01, Server01 |
     Format-Table -Property ID, ProcessName, MachineName
 ```
 

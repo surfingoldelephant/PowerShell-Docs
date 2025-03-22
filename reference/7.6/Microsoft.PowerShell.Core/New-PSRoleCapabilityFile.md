@@ -235,7 +235,7 @@ the following keys:
 
 For example:
 
-`@{Name="Get-PowerShellProcess";ScriptBlock={Get-Process PowerShell};Options="AllScope"}`
+`@{Name="Get-PowerShellProcess";ScriptBlock={Get-Process powershell};Options="AllScope"}`
 
 ```yaml
 Type: System.Collections.IDictionary[]

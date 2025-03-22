@@ -707,7 +707,7 @@ expression.
 
 ```powershell
 $myProcess.PeakWorkingSet
-(Get-Process PowerShell).Kill()
+(Get-Process powershell).Kill()
 'OS', 'Platform' | ForEach-Object { $PSVersionTable. $_ }
 ```
 

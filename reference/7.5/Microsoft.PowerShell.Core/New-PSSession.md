@@ -227,7 +227,7 @@ that has permission to create a session on the remote computer.
 
 ```powershell
 $s = New-PSSession -ComputerName (Get-Content Servers.txt) -Credential Domain01\Admin01 -ThrottleLimit 16
-Invoke-Command -Session $s -ScriptBlock {Get-Process PowerShell} -AsJob
+Invoke-Command -Session $s -ScriptBlock {Get-Process powershell} -AsJob
 ```
 
 These commands create a set of **PSSession** objects and then run a background job in each of the
@@ -244,7 +244,7 @@ command to `16` concurrent connections. The command saves the **PSSession** obje
 variable.
 
 The second command uses the **AsJob** parameter of the `Invoke-Command` cmdlet to start a background
-job that runs a `Get-Process PowerShell` command in each of the **PSSession** objects in `$s`.
+job that runs a `Get-Process powershell` command in each of the **PSSession** objects in `$s`.
 
 For more information about PowerShell background jobs, see
 [about_Jobs](About/about_Jobs.md) and [about_Remote_Jobs](About/about_Remote_Jobs.md).

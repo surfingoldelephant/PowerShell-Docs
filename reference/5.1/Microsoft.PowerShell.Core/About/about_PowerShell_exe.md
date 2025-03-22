@@ -279,7 +279,7 @@ Sets the window style for the session. Valid values are `Normal`, `Minimized`,
 
 ### -Help, -?, /?
 
-Displays help for `PowerShell.exe`. If you are typing a `PowerShell.exe`
+Displays help for `powershell.exe`. If you are typing a `powershell.exe`
 command in a PowerShell session, prepend the command parameters with a hyphen
 (`-`), not a forward slash (`/`). You can use either a hyphen or forward slash
 in `cmd.exe`.

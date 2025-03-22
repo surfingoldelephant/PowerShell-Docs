@@ -52,9 +52,9 @@ supported versions of Windows.
   Windows PowerShell ISE.
 
 - In a Windows PowerShell console, Cmd.exe, or the Run or Search box in
-  Windows, type "PowerShell_ise.exe". You can also use the command-line
+  Windows, type `powershell_ise.exe`. You can also use the command-line
   parameters, including the NoProfile switch. For more information, see
-  [PowerShell_ISE.exe Console Help](about_powershell_ise_exe.md).
+  [about_PowerShell_Ise_exe](about_powershell_ise_exe.md).
 
 ## Running Interactive Commands
 

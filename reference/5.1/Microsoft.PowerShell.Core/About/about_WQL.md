@@ -560,7 +560,7 @@ Get-WmiObject -Query $q
 ```
 
 The `OR` statement can be used with more than two conditions. In the following
-query, the `OR` statement gets `Winword.exe`, `Excel.exe`, or `Powershell.exe`.
+query, the `OR` statement gets `Winword.exe`, `Excel.exe`, or `powershell.exe`.
 
 ```powershell
 $q = "SELECT * FROM Win32_Process WHERE Name='winword.exe'" +

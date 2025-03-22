@@ -350,7 +350,7 @@ For example, the following command creates the `$out` variable and stores the
 process object in it:
 
 ```powershell
-Get-Process PowerShell -OutVariable out
+Get-Process powershell -OutVariable out
 ```
 
 The following command adds the process object to the `$out` variable:
