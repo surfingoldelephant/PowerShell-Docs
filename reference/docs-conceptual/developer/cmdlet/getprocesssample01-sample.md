@@ -50,7 +50,7 @@ cmdlet is a simplified version of the `Get-Process` cmdlet that is provided by W
    ```
 
    ```powershell
-   Set-Content $Env:temp\test.txt "This is a test file"
+   Set-Content $Env:TEMP\test.txt "This is a test file"
    ```
 
    ```output

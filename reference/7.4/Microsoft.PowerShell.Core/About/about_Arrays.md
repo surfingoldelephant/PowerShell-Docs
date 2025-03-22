@@ -680,7 +680,7 @@ to return.
 
 ```powershell
 # Get the zip files in the current users profile, sorted by LastAccessTime
-$Zips = dir $Env:userprofile -Recurse '*.zip' | Sort-Object LastAccessTime
+$Zips = dir $Env:USERPROFILE -Recurse '*.zip' | Sort-Object LastAccessTime
 # Get the least accessed file over 100MB
 $Zips.Where({$_.Length -gt 100MB}, 'Default', 1)
 ```

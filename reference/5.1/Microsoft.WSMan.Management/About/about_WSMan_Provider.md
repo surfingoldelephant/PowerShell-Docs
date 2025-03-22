@@ -211,7 +211,7 @@ This command creates (registers) a plug-in for the WS-Management service.
 ```powershell
 New-Item -Path WSMan:\localhost\Plugin `
          -Plugin TestPlugin `
-         -FileName %systemroot%\system32\WsmWmiPl.dll `
+         -FileName $Env:SystemRoot\system32\WsmWmiPl.dll `
          -Resource http://schemas.dmtf.org/wbem/wscim/2/cim-schema `
          -SDKVersion 1 `
          -Capability "Get","Put","Invoke","Enumerate" `

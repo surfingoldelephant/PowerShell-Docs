@@ -466,7 +466,7 @@ the **ScheduledJob** directory.
 
 The directory's location:
 
-`$Env:UserProfile\AppData\Local\Microsoft\Windows\PowerShell\ScheduledJobs<ScheduledJobName>`
+`$Env:USERPROFILE\AppData\Local\Microsoft\Windows\PowerShell\ScheduledJobs<ScheduledJobName>`
 
 For example:
 

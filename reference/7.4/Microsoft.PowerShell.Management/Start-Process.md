@@ -130,8 +130,8 @@ Note that the first command specifies a string as **ArgumentList**. The second c
 array.
 
 ```powershell
-Start-Process -FilePath "$Env:comspec" -ArgumentList "/c dir `"%SystemDrive%\Program Files`""
-Start-Process -FilePath "$Env:comspec" -ArgumentList "/c","dir","`"%SystemDrive%\Program Files`""
+Start-Process -FilePath "$Env:ComSpec" -ArgumentList "/c dir `"%SystemDrive%\Program Files`""
+Start-Process -FilePath "$Env:ComSpec" -ArgumentList "/c","dir","`"%SystemDrive%\Program Files`""
 ```
 
 ### Example 8: Create a detached process on Linux

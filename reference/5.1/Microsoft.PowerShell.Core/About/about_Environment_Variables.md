@@ -71,7 +71,7 @@ following syntax:
 $Env:<variable-name>
 ```
 
-For example, to display the value of the `WINDIR` environment variable:
+For example, to display the value of the `windir` environment variable:
 
 ```powershell
 $Env:windir

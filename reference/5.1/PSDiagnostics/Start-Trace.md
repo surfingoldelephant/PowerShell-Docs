@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ### -OutputFilePath
 
 Path of the output log file or the DSN and log set name in a SQL database. The default path is
-`$Env:systemdrive\PerfLogs\Admin`.
+`$Env:SystemDrive\PerfLogs\Admin`.
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Aliases:
 
 Required: False
 Position: 1
-Default value: $Env:systemdrive\PerfLogs\Admin
+Default value: $Env:SystemDrive\PerfLogs\Admin
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

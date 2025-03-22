@@ -518,7 +518,7 @@ For error:
 If the remote computer is running a 64-bit version of Windows, and the remote
 command uses a 32-bit session configuration, like **Microsoft.PowerShell32**,
 WinRM loads a WOW64 process. Windows automatically redirects all references to
-`$Env:Windir\System32` to the `$Env:Windir\SysWOW64` directory.
+`$Env:windir\System32` to the `$Env:windir\SysWOW64` directory.
 
 As a result, running tools in the `System32` directory that do not have
 counterparts in the `SysWOW64` directory can't be found.

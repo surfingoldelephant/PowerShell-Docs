@@ -76,7 +76,7 @@ PowerShell 7 installs to a new directory, enabling side-by-side execution with W
 
 Install locations by version:
 
-- Windows PowerShell 5.1: `$Env:WINDIR\System32\WindowsPowerShell\v1.0`
+- Windows PowerShell 5.1: `$Env:windir\System32\WindowsPowerShell\v1.0`
 - PowerShell 6.x: `$Env:ProgramFiles\PowerShell\6`
 - PowerShell 7: `$Env:ProgramFiles\PowerShell\7`
 
@@ -97,7 +97,7 @@ load both Core and Desktop modules.
 
 |            Install Scope            |                Windows PowerShell 5.1                 |              PowerShell 7.0              |
 | ----------------------------------- | ----------------------------------------------------- | ---------------------------------------- |
-| PowerShell modules                  | `$Env:WINDIR\system32\WindowsPowerShell\v1.0\Modules` | `$Env:ProgramFiles\PowerShell\7\Modules` |
+| PowerShell modules                  | `$Env:windir\system32\WindowsPowerShell\v1.0\Modules` | `$Env:ProgramFiles\PowerShell\7\Modules` |
 | User installed<br>AllUsers scope    | `$Env:ProgramFiles\WindowsPowerShell\Modules`         | `$Env:ProgramFiles\PowerShell\Modules`   |
 | User installed<br>CurrentUser scope | `$HOME\Documents\WindowsPowerShell\Modules`           | `$HOME\Documents\PowerShell\Modules`     |
 

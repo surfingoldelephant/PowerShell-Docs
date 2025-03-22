@@ -116,7 +116,7 @@ Get-ChildItem -Path Env:
 
 ### Get a selected environment variable
 
-This command gets the `WINDIR` environment Variable.
+This command gets the `windir` environment Variable.
 
 ```powershell
 Get-ChildItem -Path Env:windir
