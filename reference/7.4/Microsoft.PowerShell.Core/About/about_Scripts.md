@@ -166,7 +166,7 @@ commands, and then save them in a file named `ServiceLog.ps1`.
 
 To define parameters in a script, use a `param` statement. The `param`
 statement must be the first statement in a script, except for comments and any
-`#Require` statements.
+`#Requires` statements.
 
 Script parameters work like function parameters. The parameter values are
 available to all of the commands in the script. All of the features of

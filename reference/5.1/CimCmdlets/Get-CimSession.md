@@ -109,7 +109,7 @@ Server02     c0095981-52c5-4e7f-a5bb-c4c680541710
 
 ### Example 4: Get all the CIM sessions that have specific names
 
-This example gets all CIM sessions that have names that begin with **serv**.
+This example gets all CIM sessions that have names that begin with **Serv**.
 
 ```powershell
 Get-CimSession -ComputerName Serv*
