@@ -87,7 +87,7 @@ Get-Help <provider-name>
 For example, to get Help for the Registry provider, type:
 
 ```powershell
-Get-Help registry
+Get-Help Registry
 ```
 
 ## The **UseTransaction** parameter
@@ -214,7 +214,7 @@ data store, the data can be changed while the transaction is in progress.
 
 The examples in this section use the PowerShell Registry provider and assume
 that you are familiar with it. For information about the Registry provider,
-type `Get-Help registry`.
+type `Get-Help Registry`.
 
 ### Example 1: Committing a transaction
 

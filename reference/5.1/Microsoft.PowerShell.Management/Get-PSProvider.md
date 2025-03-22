@@ -41,11 +41,11 @@ This command displays a list of all available PowerShell providers.
 ### Example 2: Display a list of all PowerShell providers that begin with specified letters
 
 ```powershell
-Get-PSProvider f*, r* | Format-List
+Get-PSProvider F*, R* | Format-List
 ```
 
-This command displays a list of all PowerShell providers with names that begin with the letter `f`
-or `r`.
+This command displays a list of all PowerShell providers with names that begin with the letter `F`
+or `R`.
 
 ### Example 3: Find snap-ins or module that added providers to your session
 

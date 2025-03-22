@@ -335,7 +335,7 @@ Get-Help <provider-name>
 For example:
 
 ```powershell
-Get-Help certificate
+Get-Help Certificate
 ```
 
 ## Learning about providers
@@ -354,7 +354,7 @@ Get-Help <ProviderName>
 For example:
 
 ```powershell
-Get-Help registry
+Get-Help Registry
 ```
 
 For a list of Help topics about the providers, type:
