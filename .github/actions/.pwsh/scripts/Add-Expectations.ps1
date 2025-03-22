@@ -199,6 +199,6 @@ end {
   }
   # Write the summary file and exit; if any failures happened, exit code is number of failures. Any
   # exit code other than 0 is interpreted as job failure.
-  $Summary.ToString() >> $Env:GITHUB_STEP_SUMMARY
+  $Summary.ToString() >> $ENV:GITHUB_STEP_SUMMARY
   exit $Failures.Count
 }

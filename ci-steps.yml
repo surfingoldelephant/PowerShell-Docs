@@ -7,7 +7,7 @@ steps:
 #    if ((Get-Command pwsh -CommandType Application -ErrorAction Ignore) -eq $null)
 #    {
 #      Write-Verbose -Verbose "Installing pwsh"
-#      $destPath = "${Env:BUILD_ARTIFACTSTAGINGDIRECTORY}/install-powershell.ps1"
+#      $destPath = "${env:BUILD_ARTIFACTSTAGINGDIRECTORY}/install-powershell.ps1"
 #      Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/PowerShell/PowerShell/master/tools/install-powershell.ps1' -OutFile $destPath
 #      Unblock-File $destPath
 #      & $destPath -UseMSI -Quiet

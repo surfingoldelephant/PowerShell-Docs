@@ -37,7 +37,7 @@ function Write-ActionFailureSummary {
         $null = $Summary.AppendLine($RecordBlock.Trim())
         $null = $Summary.AppendLine('```').AppendLine()
         $PSStyle.OutputRendering = $Ansi
-        $Summary.ToString() >> $Env:GITHUB_STEP_SUMMARY
+        $Summary.ToString() >> $ENV:GITHUB_STEP_SUMMARY
     }
     
     end {

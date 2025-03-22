@@ -97,7 +97,7 @@ function Get-ContentWithoutHeader {
         }
     }
     if ($end -gt $start) {
-        Write-Output ($doc[$end..$($doc.Count)] -join ([Environment]::Newline))
+        Write-Output ($doc[$end..$($doc.count)] -join ([Environment]::Newline))
     }
     else {
         Write-Output ($doc -join "`r`n")
@@ -158,7 +158,7 @@ Get-ChildItem $VersionFolder -Directory | ForEach-Object -Process {
         # Adding warningaction=stop to throw errors for all warnings, erroraction=stop to make them terminating errors
         New-ExternalHelp -Path $ModulePath -OutputPath $MamlOutputFolder -Force -WarningAction Stop -ErrorAction Stop
 
-        # For each module, create Update-Help help files (cab and helpinfo.xml files)
+        # For each module, create update-help help files (cab and helpinfo.xml files)
         $cabInfo = New-ExternalHelpCab -CabFilesFolder $MamlOutputFolder -LandingPagePath $LandingPage -OutputFolder $CabOutputFolder
 
         # Only output the cab fileinfo object

@@ -251,14 +251,14 @@ process {
     }
   }
   #endregion Per-Root
-  $Summary.ToString() >> $Env:GITHUB_STEP_SUMMARY
+  $Summary.ToString() >> $ENV:GITHUB_STEP_SUMMARY
 
   if ($ExportAsCsv -or $UploadArtifact) {
     Write-Host "Exporting report as CSV to '$ExportPath'" -ForegroundColor Blue
     $StaleDocuments | Export-Csv -Path $ExportPath -Force -ErrorAction Stop
     if ($UploadArtifact) {
       Write-Host "Adding CSV path to GITHUB_ENV as 'artifactPath'" -ForegroundColor Blue
-      "artifactPath=$ExportPath" >> $Env:GITHUB_ENV
+      "artifactPath=$ExportPath" >> $ENV:GITHUB_ENV
     }
   }
 
