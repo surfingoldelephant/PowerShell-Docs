@@ -200,13 +200,13 @@ However, you can't delete it while you are in the drive. For example:
 
 ```powershell
 cd office:
-Remove-PSDrive -Name office
+Remove-PSDrive -Name Office
 ```
 
 ```Output
 Remove-PSDrive : Cannot remove drive 'Office' because it is in use.
 At line:1 char:15
-+ Remove-PSDrive  <<<< -Name office
++ Remove-PSDrive  <<<< -Name Office
 ```
 
 ## Adding and removing drives outside PowerShell

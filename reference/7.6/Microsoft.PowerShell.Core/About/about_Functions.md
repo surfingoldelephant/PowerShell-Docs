@@ -679,7 +679,7 @@ The following command displays all the functions in the current session of
 PowerShell:
 
 ```powershell
-Get-ChildItem function:
+Get-ChildItem Function:
 ```
 
 The commands in the function are stored as a script block in the definition

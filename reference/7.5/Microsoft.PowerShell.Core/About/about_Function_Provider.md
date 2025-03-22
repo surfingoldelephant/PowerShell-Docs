@@ -245,7 +245,7 @@ Get-Help Get-ChildItem
 ```
 
 ```powershell
-Get-Help Get-ChildItem -Path function:
+Get-Help Get-ChildItem -Path Function:
 ```
 
 ## See also
