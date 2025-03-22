@@ -215,11 +215,11 @@ For example, the following function finds all `.jpg` files in the current
 user's directories that were changed after the start date.
 
 ```powershell
-function Get-NewPix
+function Get-NewPicture
 {
   $start = Get-Date -Month 1 -Day 1 -Year 2010
-  $allpix = Get-ChildItem -Path $Env:USERPROFILE\*.jpg -Recurse
-  $allpix | Where-Object {$_.LastWriteTime -gt $Start}
+  $allPics = Get-ChildItem -Path $Env:USERPROFILE\*.jpg -Recurse
+  $allPics | Where-Object {$_.LastWriteTime -gt $Start}
 }
 ```
 

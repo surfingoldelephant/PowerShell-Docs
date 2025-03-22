@@ -92,16 +92,16 @@ At line:1 char:14
 This example shows how to create and use a COM object to manage your Windows desktop.
 
 The first command uses the **ComObject** parameter of the `New-Object` cmdlet to create a COM object
-with the **Shell.Application** ProgID. It stores the resulting object in the `$ObjShell` variable. The
-second command pipes the `$ObjShell` variable to the `Get-Member` cmdlet, which displays the
+with the **Shell.Application** ProgID. It stores the resulting object in the `$objShell` variable. The
+second command pipes the `$objShell` variable to the `Get-Member` cmdlet, which displays the
 properties and methods of the COM object. Among the methods is the **ToggleDesktop** method. The
 third command calls the **ToggleDesktop** method of the object to minimize the open windows on your
 desktop.
 
 ```powershell
-$Objshell = New-Object -ComObject "Shell.Application"
-$objshell | Get-Member
-$objshell.ToggleDesktop()
+$objShell = New-Object -ComObject "Shell.Application"
+$objShell | Get-Member
+$objShell.ToggleDesktop()
 ```
 
 ```Output

@@ -61,9 +61,9 @@ This command prompts you for confirmation before deleting the entries in the spe
 ```powershell
 function clear-all-event-logs ($ComputerName="localhost")
 {
-   $logs = Get-EventLog -ComputerName $computername -List | ForEach-Object {$_.Log}
-   $logs | ForEach-Object {Clear-EventLog -ComputerName $computername -LogName $_ }
-   Get-EventLog -ComputerName $computername -List
+   $logs = Get-EventLog -ComputerName $ComputerName -List | ForEach-Object {$_.Log}
+   $logs | ForEach-Object {Clear-EventLog -ComputerName $ComputerName -LogName $_ }
+   Get-EventLog -ComputerName $ComputerName -List
 }
 
 clear-all-event-logs -ComputerName Server01

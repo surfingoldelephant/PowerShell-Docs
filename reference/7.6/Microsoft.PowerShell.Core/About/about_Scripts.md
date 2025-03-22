@@ -185,7 +185,7 @@ param ($ComputerName = $(throw "ComputerName parameter is required."))
 
 function CanPing {
    $Error.Clear()
-   $tmp = Test-Connection $computername -ErrorAction SilentlyContinue
+   $tmp = Test-Connection $ComputerName -ErrorAction SilentlyContinue
 
    if (!$?)
        {Write-Host "Ping failed: $ComputerName."; return $false}
@@ -194,7 +194,7 @@ function CanPing {
 }
 
 function CanRemote {
-    $s = New-PSSession $computername -ErrorAction SilentlyContinue
+    $s = New-PSSession $ComputerName -ErrorAction SilentlyContinue
 
     if ($s -is [System.Management.Automation.Runspaces.PSSession])
         {Write-Host "Remote test succeeded: $ComputerName."}
@@ -202,7 +202,7 @@ function CanRemote {
         {Write-Host "Remote test failed: $ComputerName."}
 }
 
-if (CanPing $computername) {CanRemote $computername}
+if (CanPing $ComputerName) {CanRemote $ComputerName}
 ```
 
 To run this script, type the parameter name after the script name. For example:
