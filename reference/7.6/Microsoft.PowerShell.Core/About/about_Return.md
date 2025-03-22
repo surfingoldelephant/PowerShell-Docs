@@ -99,7 +99,7 @@ The following example includes a statement intended to let the user know that
 the function is performing a calculation:
 
 ```powershell
-function calculation {
+function Calculation {
     param ($Value)
 
     "Please wait. Working on calculation..."
@@ -107,7 +107,7 @@ function calculation {
     return $Value
 }
 
-$a = calculation 14
+$a = Calculation 14
 ```
 
 The "Please wait. Working on calculation..." string is not displayed. Instead,
@@ -128,7 +128,7 @@ the above example using the `Write-Information` cmdlet with a
 **InformationAction** set to `Continue`.
 
 ```powershell
-function calculation {
+function Calculation {
     param ($Value)
 
     Write-Information "Please wait. Working on calculation..." -InformationAction Continue
@@ -141,7 +141,7 @@ Now the information message to display in the host and not assigned to the
 variable.
 
 ```powershell
-PS> $a = calculation 14
+PS> $a = Calculation 14
 Please wait. Working on calculation...
 PS> $a
 87

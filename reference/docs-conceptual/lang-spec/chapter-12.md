@@ -112,7 +112,7 @@ Get-ChildItem "E:\*.txt" | Test2 -LiteralPath { $_ ; "`n`t";
 Get-ChildItem "E:\*.txt" | Test2
 ```
 
-Cmdlet `Get-ChildItem` (alias `Dir`) adds to the object it returns a new **NoteProperty** of type
+Cmdlet `Get-ChildItem` (alias `dir`) adds to the object it returns a new **NoteProperty** of type
 `string`, called **PSPath**.
 
 ### 12.3.2 The AllowEmptyCollection attribute

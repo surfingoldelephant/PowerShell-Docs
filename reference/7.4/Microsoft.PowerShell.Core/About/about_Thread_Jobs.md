@@ -174,9 +174,9 @@ The first example above shows a `foreach` loop that creates 1000 thread jobs to
 do a simple string write. Due to job overhead, it takes over 36 seconds to
 complete.
 
-The second example runs the `ForEach` cmdlet to do the same 1000 operations.
-This time, `ForEach-Object` runs sequentially, on a single thread, without any
-job overhead. It completes in a mere 7 milliseconds.
+The second example runs the `ForEach-Object` cmdlet to do the same 1000
+operations. This time, `ForEach-Object` runs sequentially, on a single thread,
+without any job overhead. It completes in a mere 7 milliseconds.
 
 In the following example, up to 5000 entries are collected for 10 separate
 system logs. Since the script involves reading a number of logs, it makes sense

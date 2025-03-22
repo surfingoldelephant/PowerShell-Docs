@@ -212,7 +212,7 @@ are equivalent and interchangeable. The output is the same for all three cases.
 "Microsoft.PowerShell.Core", "Microsoft.PowerShell.Host" |
     ForEach-Object -MemberName Split -ArgumentList "."
 "Microsoft.PowerShell.Core", "Microsoft.PowerShell.Host" |
-    Foreach Split "."
+    foreach Split "."
 ```
 
 ```Output
@@ -231,7 +231,7 @@ argument.
 The second command uses the **MemberName** parameter to specify the **Split** method and the
 **ArgumentList** parameter to identify the dot (`.`) as the split delimiter.
 
-The third command uses the **Foreach** alias of the `ForEach-Object` cmdlet and omits the names of
+The third command uses the `foreach` alias of the `ForEach-Object` cmdlet and omits the names of
 the **MemberName** and **ArgumentList** parameters, which are optional.
 
 ### Example 8: Using ForEach-Object with two script blocks

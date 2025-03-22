@@ -173,7 +173,7 @@ NestedModules     : {}
 ```
 
 ```powershell
-Get-Command hello
+Get-Command Hello
 ```
 
 ```Output

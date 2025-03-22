@@ -4,7 +4,7 @@ ms.date: 11/16/2022
 title: Displaying progress while multi-threading
 ---
 
-# Writing Progress across multiple threads with Foreach Parallel
+# Writing Progress across multiple threads with `ForEach-Object -Parallel`
 
 Starting in PowerShell 7.0, the ability to work in multiple threads simultaneously is possible using
 the **Parallel** parameter in the

@@ -438,17 +438,17 @@ or file name.
 
 .EXAMPLE
 
-PS> extension -Name "File"
+PS> Add-Extension -Name "File"
 File.txt
 
 .EXAMPLE
 
-PS> extension -Name "File" -Extension "doc"
+PS> Add-Extension -Name "File" -Extension "doc"
 File.doc
 
 .EXAMPLE
 
-PS> extension "File" "doc"
+PS> Add-Extension "File" "doc"
 File.doc
 
 .LINK
@@ -523,17 +523,17 @@ file name.
 
 Example 1
 
-PS> extension -Name "File"
+PS> Add-Extension -Name "File"
 File.txt
 
 Example 2
 
-PS> extension -Name "File" -Extension "doc"
+PS> Add-Extension -Name "File" -Extension "doc"
 File.doc
 
 Example 3
 
-PS> extension "File" "doc"
+PS> Add-Extension "File" "doc"
 File.doc
 
 RELATED LINKS
@@ -587,17 +587,17 @@ file name.
 
 .EXAMPLE
 
-PS> extension -Name "File"
+PS> Add-Extension -Name "File"
 File.txt
 
 .EXAMPLE
 
-PS> extension -Name "File" -Extension "doc"
+PS> Add-Extension -Name "File" -Extension "doc"
 File.doc
 
 .EXAMPLE
 
-PS> extension "File" "doc"
+PS> Add-Extension "File" "doc"
 File.doc
 
 .LINK
