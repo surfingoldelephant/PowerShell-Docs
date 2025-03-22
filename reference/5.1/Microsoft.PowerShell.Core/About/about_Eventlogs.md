@@ -86,8 +86,8 @@ recorded in the Windows PowerShell event log.
 
 There are six event log preference variables; two variables for each of the
 three logging components: the engine (the Windows PowerShell program), the
-providers, and the commands. The LifeCycleEvent variables log normal starting
-and stopping events. The Health variables log error events.
+providers, and the commands. The `LifecycleEvent` variables log normal starting
+and stopping events. The `Health` variables log error events.
 
 The following table lists the event log preference variables.
 
