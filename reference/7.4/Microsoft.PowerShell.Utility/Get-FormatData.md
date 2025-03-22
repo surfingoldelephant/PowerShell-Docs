@@ -104,7 +104,7 @@ data that is added by a module.
 
 ```powershell
 $A = Get-FormatData
-Import-Module bitstransfer
+Import-Module BitsTransfer
 $B = Get-FormatData
 Compare-Object $A $B
 ```
