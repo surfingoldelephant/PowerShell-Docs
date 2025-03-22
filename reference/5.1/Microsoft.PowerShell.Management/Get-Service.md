@@ -73,7 +73,7 @@ display name finds network-related services even when the service name doesn't i
 xmlprov, the Network Provisioning Service.
 
 ```powershell
-Get-Service -Displayname "*network*"
+Get-Service -DisplayName "*network*"
 ```
 
 ### Example 4: Get services that begin with a search string and an exclusion

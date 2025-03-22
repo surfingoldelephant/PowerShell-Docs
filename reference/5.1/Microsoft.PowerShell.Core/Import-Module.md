@@ -116,7 +116,7 @@ Starting in Windows PowerShell 3.0, you can use `Import-Module` to import Common
 you use cmdlets that are implemented in non-managed code assemblies, such as those written in C++.
 
 For remote computers that don't have PowerShell remoting enabled, including computers that aren't
-running the Windows operating system, you can use the **CIMSession** parameter of `Import-Module`
+running the Windows operating system, you can use the **CimSession** parameter of `Import-Module`
 to import CIM modules from the remote computer. The imported commands run implicitly on the remote
 computer. A **CIMSession** is a connection to Windows Management Instrumentation (WMI) on the
 remote computer.
@@ -1187,7 +1187,7 @@ Windows PowerShell includes the following aliases for `Import-Module`:
   in the `PSModulePath` environmental variable. For more information, see
   [about_Modules](About/about_Modules.md).
 
-  You can also use the **PSSession** and **CIMSession** parameters to import modules that are
+  You can also use the **PSSession** and **CimSession** parameters to import modules that are
   installed on remote computers. However, commands that use the cmdlets in these modules run in the
   remote session on the remote computer.
 

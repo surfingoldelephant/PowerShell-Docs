@@ -60,10 +60,10 @@ method and set the **Visible** property of the object to `$true` to make the app
 The second instance gets the same results with individual commands.
 
 ```powershell
-$IE1 = New-Object -COMObject InternetExplorer.Application -Property @{Navigate2="www.microsoft.com"; Visible = $true}
+$IE1 = New-Object -ComObject InternetExplorer.Application -Property @{Navigate2="www.microsoft.com"; Visible = $true}
 
 # The following command gets the same results as the example above.
-$IE2 = New-Object -COMObject InternetExplorer.Application`
+$IE2 = New-Object -ComObject InternetExplorer.Application`
 $IE2.Navigate2("www.microsoft.com")`
 $IE2.Visible = $true`
 ```
@@ -74,7 +74,7 @@ This example demonstrates that adding the **Strict** parameter causes the `New-O
 generate a non-terminating error when the COM object uses an interop assembly.
 
 ```powershell
-$A = New-Object -COMObject Word.Application -Strict -Property @{Visible = $true}
+$A = New-Object -ComObject Word.Application -Strict -Property @{Visible = $true}
 ```
 
 ```Output
@@ -99,7 +99,7 @@ third command calls the **ToggleDesktop** method of the object to minimize the o
 desktop.
 
 ```powershell
-$Objshell = New-Object -COMObject "Shell.Application"
+$Objshell = New-Object -ComObject "Shell.Application"
 $objshell | Get-Member
 $objshell.ToggleDesktop()
 ```
@@ -324,7 +324,7 @@ This cmdlet returns the object that it creates.
 
 - `New-Object` provides the most commonly-used functionality of the VBScript CreateObject
   function. A statement like `Set objShell = CreateObject("Shell.Application")` in VBScript can be
-  translated to `$objShell = New-Object -COMObject "Shell.Application"` in PowerShell.
+  translated to `$objShell = New-Object -ComObject "Shell.Application"` in PowerShell.
 - `New-Object` expands upon the functionality available in the Windows Script Host environment by
   making it easy to work with .NET Framework objects from the command line and within scripts.
 

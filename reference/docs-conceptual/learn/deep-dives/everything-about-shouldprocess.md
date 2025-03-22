@@ -577,7 +577,7 @@ function Test-ShouldContinue {
 ```
 
 By placing the `$Force` to the left of the `-or` operator, it gets evaluated first. Writing it
-this way short circuits the execution of the `if` statement. If `$force` is `$true`, then the
+this way short circuits the execution of the `if` statement. If `$Force` is `$true`, then the
 `ShouldContinue` is not executed.
 
 ```powershell

@@ -260,7 +260,7 @@ host application but doesn't return an object, this function includes a
 ```powershell
 function prompt {
     $color = Get-Random -Min 1 -Max 16
-    Write-Host ("PS " + $(Get-Location) +">") -NoNewLine `
+    Write-Host ("PS " + $(Get-Location) +">") -NoNewline `
      -ForegroundColor $Color
     return " "
 }

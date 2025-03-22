@@ -90,7 +90,7 @@ $sharePath  = '\\Server01\Transcripts'
 $username   = $Env:USERNAME
 $hostname   = hostname
 $version    = $PSVersionTable.PSVersion.ToString()
-$datetime   = Get-Date -f 'yyyyMMddHHmmss'
+$datetime   = Get-Date -F 'yyyyMMddHHmmss'
 $filename   = "Transcript-${username}-${hostname}-${version}-${datetime}.txt"
 $Transcript = (Join-Path -Path $sharePath -ChildPath $filename).ToString()
 Start-Transcript

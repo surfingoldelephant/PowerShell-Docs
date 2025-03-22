@@ -497,7 +497,7 @@ The following examples show how to use the arithmetic operators in expressions
 with PowerShell commands:
 
 ```powershell
-(Get-Date) + (New-TimeSpan -day 1)
+(Get-Date) + (New-TimeSpan -Day 1)
 ```
 
 The parenthesis operator forces the evaluation of the `Get-Date` cmdlet and the

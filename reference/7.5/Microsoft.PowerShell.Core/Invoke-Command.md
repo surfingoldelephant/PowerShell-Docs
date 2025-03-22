@@ -461,8 +461,8 @@ For more information about the `param` keyword, see
 $parameters = @{
     ComputerName = 'Server01'
     ScriptBlock  = {
-        param ($param1, $param2)
-        Get-ChildItem -Name $param1 -Include $param2
+        param ($Param1, $Param2)
+        Get-ChildItem -Name $Param1 -Include $Param2
     }
     ArgumentList = 'a*', '*.pdf'
 }
@@ -476,8 +476,8 @@ ac.pdf
 az.pdf
 ```
 
-`Invoke-Command` uses the **ScriptBlock** parameter that defines two variables, `$param1` and
-`$param2`. `Get-ChildItem` uses the named parameters, **Name** and **Include** with the variable
+`Invoke-Command` uses the **ScriptBlock** parameter that defines two variables, `$Param1` and
+`$Param2`. `Get-ChildItem` uses the named parameters, **Name** and **Include** with the variable
 names. The **ArgumentList** passes the values to the variables.
 
 ### Example 12: Use the $args automatic variable in a script block

@@ -130,10 +130,10 @@ This example emits a cursor change VT escape in response to a **Vi** mode change
 function OnViModeChange {
     if ($args[0] -eq 'Command') {
         # Set the cursor to a blinking block.
-        Write-Host -NoNewLine "$([char]0x1b)[1 q"
+        Write-Host -NoNewline "$([char]0x1b)[1 q"
     } else {
         # Set the cursor to a blinking line.
-        Write-Host -NoNewLine "$([char]0x1b)[5 q"
+        Write-Host -NoNewline "$([char]0x1b)[5 q"
     }
 }
 Set-PSReadLineOption -ViModeIndicator Script -ViModeChangeHandler $Function:OnViModeChange
@@ -153,9 +153,9 @@ to history.
 
 ```powershell
 $ScriptBlock = {
-    param ([string]$line)
+    param ([string]$Line)
 
-    if ($line -match "^git") {
+    if ($Line -match "^git") {
         return $false
     } else {
         return $true

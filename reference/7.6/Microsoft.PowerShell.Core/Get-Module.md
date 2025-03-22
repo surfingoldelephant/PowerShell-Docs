@@ -81,7 +81,7 @@ These include computers that are not running the Windows operating system, and c
 PowerShell but do not have PowerShell remoting enabled.
 
 Start by creating a CIM session on the remote computer. A CIM session is a connection to Windows
-Management Instrumentation (WMI) on the remote computer. Then use the **CIMSession** parameter of
+Management Instrumentation (WMI) on the remote computer. Then use the **CimSession** parameter of
 `Get-Module` to get CIM modules from the CIM session. When you import a CIM module by using the
 `Import-Module` cmdlet and then run the imported commands, the commands run implicitly on the remote
 computer. You can use this WMI and CIM strategy to manage the remote computer.

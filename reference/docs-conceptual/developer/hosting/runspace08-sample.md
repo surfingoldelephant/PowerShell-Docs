@@ -79,7 +79,7 @@ namespace Microsoft.Samples.PowerShell.Runspaces
         // Add the Sort-Object cmdlet and its parameters to the pipeline of
         // the PowerShell object so that we can sort the HandleCount property
         //  in descending order.
-        powershell.AddCommand("Sort-Object").AddParameter("descending").AddParameter("property", "handlecount");
+        powershell.AddCommand("Sort-Object").AddParameter("Descending").AddParameter("Property", "HandleCount");
 
         // Run the commands of the pipeline synchronously.
         results = powershell.Invoke();
